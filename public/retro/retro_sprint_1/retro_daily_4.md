@@ -9,4 +9,4 @@
 
   * CONTINUAR HACIENDO: Se han estado respetando las dailys en los días y horarios que habíamos acordado.
 
-  * DEJAR DE HACER/HACER MENOS: No depender tanto de que otro compañero te diga que hacer y de que de manera.
+  * DEJAR DE HACER/HACER MENOS: No depender tanto de que otro compañero te diga que hacer y de que manera.
