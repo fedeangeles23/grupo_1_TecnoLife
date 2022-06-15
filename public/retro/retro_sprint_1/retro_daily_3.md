@@ -1,6 +1,6 @@
 ### RETRO DAILY 3 :
 
-  **Para esta daily se mostraron progresos en la comunicación del equipo en general y se pudo avanzar en el proyecto**
+  **Para esta daily se mostraron progresos en la comunicación del equipo en general y se pudo avanzar en el proyecto. Elegimos los colores que nos tenía a mal traer por que no lograbamos ponernos de a cuerdo en la paleta de colores**
 
   * COMENZAR A HACER: Que el integrante que se comunica poco trate de hacerlo mas.
 
