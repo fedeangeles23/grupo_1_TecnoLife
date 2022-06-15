@@ -1,4 +1,4 @@
-### RETRO DAILY 1 :
+### PRIMERA REUNIÓN DEL EQUIPO :
 
   **La primer reunión fue un desastre, nos encontramos en una posición en la que algunos integrantes del equipo no disponían de tiempo para presentarse por "x" o "y" motivo. Lo que llevó a transmitir lo charlado de manera privada o en una reunión extra **
 
