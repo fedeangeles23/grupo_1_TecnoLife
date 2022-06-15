@@ -1,6 +1,6 @@
 ### RETRO DAILY 2 :
 
-* COMENZAR A HACER: Que el integrante que se comunica poco trate de hacerlo mas.
+  * COMENZAR A HACER: Que el integrante que se comunica poco trate de hacerlo mas.
 
   * HACER MÁS: Que los integrantes del equipo que estén muy atrasados con Playground traten de ponerse al día tanto con la plataforma como con la cursada en general.
 
