@@ -1,9 +1,11 @@
 ### RETRO DAILY 1 :
 
-COMENZAR A HACER: Tomar la iniciativa en algunos temas de conversación.
+ **Bueno se comenzó lento, con inseguridades pero pudimos ponernos de acuerdo con horarios, temas personales, tareas extras y organización general. Con todo esto se comenzó el sprint**
 
-HACER MÁS: Que los integrantes del equipo que estén muy atrasados con Playground traten de ponerse al día tanto con la plataforma como con la cursada en general.
+ * COMENZAR A HACER: Tomar la iniciativa en algunos temas de conversación.
 
-CONTINUAR HACIENDO: Seguir haciendo dailys programadas por acuerdo mútuo. Seguir prácticando para mejorar en lo individual y lo grupal.
+ * HACER MÁS: Que los integrantes del equipo que estén muy atrasados con Playground traten de ponerse al día tanto con la plataforma como con la cursada en general.
 
-DEJAR DE HACER/HACER MENOS: No ser negligente con las tareas asignadas.
+ * CONTINUAR HACIENDO: Seguir haciendo dailys programadas por acuerdo mútuo. Seguir prácticando para mejorar en lo individual y lo grupal.
+
+ * DEJAR DE HACER/HACER MENOS: No ser negligente con las tareas asignadas.
