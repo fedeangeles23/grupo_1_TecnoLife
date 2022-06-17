@@ -19,7 +19,7 @@ Televisores, Smart TV, Celulares libres, Notebooks, Tablets, Aires Acondicionado
 
 ### Integrantes del proyecto:
 
-[Federico Nahuel Angeles](https://github.com/fedeangeles23), 28 años.
+[Federico Nahuel Angeles](https://github.com/fedeangeles23) **(Capitán)**, 28 años.
 * Técnico electrónico.
 * Estudiante de programación web Full Stack en Digital House.
 
