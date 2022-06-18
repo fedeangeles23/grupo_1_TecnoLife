@@ -5,7 +5,7 @@
 
 ## **TECNO LIFE**
 
-[![logo-tecnolife.jpg](https://i.postimg.cc/WbBs1G7F/logo-tecnolife.jpg)](https://postimg.cc/8jm2yr9N)
+[![logo-tecnolife.jpg](https://i.postimg.cc/VvfWGgNd/logo-tecnolife.jpg)](https://postimg.cc/R6YtqcKB)
 
 ### Descripción del sitio web:
 
