@@ -11,7 +11,7 @@
 }
 
 .header .logo img{
-    height: 4rem;
+    height: 3rem;
     border-radius: 50%;
 }
 
@@ -20,23 +20,27 @@
 .header #menu-btn{
     color:#fff;
     cursor: pointer;
-    font-size: 2.5rem;
-    margin-right: 1rem;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.2rem;
 }
 
-.header #menu-btn:hover{
-    color:var(--main-color);
-}
-
-.header #cart-btn{
+.header .icons{
     color:#fff;
     cursor: pointer;
-    font-size: 2.5rem;
-    margin-left: 2rem;
+    font-size: 2rem;
 }
 
-.header #cart-btn:hover{
+.header .icons #heart-btn:hover{
     color:var(--main-color);
+}
+
+.header .icons #cart-btn:hover{
+    color:var(--main-color);
+}
+
+.header .icons #cart-btn {
+    margin-left: 0.5rem;
 }
 
 /* Ends menu btns */
@@ -53,19 +57,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--main-color);
+    padding: 8px 1%;
+    border-radius: 2px 0px 0px 2px;
 }
 
 .header .search .categories p{
     color:#fff;
     cursor: pointer;
-    font-size: 1.5rem;
-    margin-right: 1rem;
+    font-size: 1rem;
+    margin-right: 0.2rem;
 }
 
 .header .search-form{
     background: #fff;
-    width: 30rem;
-    height: 3rem;
+    width: 25rem;
+    height: 2.5rem;
     display: flex;
     align-items: center;
     border-radius: 25px;
@@ -74,7 +81,7 @@
 .header .search .search-form input{
     height: 100%;
     width: 100%;
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     color:var(--black);
     padding:1rem;
     text-transform: none;
@@ -82,8 +89,8 @@
 
 .header .search-form label{
     cursor: pointer;
-    font-size: 2.2rem;
-    margin-right: 1.5rem;
+    font-size: 1.3rem;
+    margin-right: 1rem;
     color:var(--black);
 }
 
