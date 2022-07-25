@@ -67,7 +67,7 @@
 
 .contact .row{
     display: flex;
-    background:var(--black);
+    background:var(--azul1);
     flex-wrap: wrap;
     gap:1rem;
 }
@@ -76,6 +76,8 @@
     flex:1 1 45rem;
     width: 100%;
     object-fit: cover;
+    border: 1px solid;
+    border-color: var(--azul1);
 }
 
 .contact .row form{
@@ -95,23 +97,37 @@
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background:var(--bg);
-    border:var(--border);
 }
 
 .contact .row form .inputBox span{
     color:#fff;
     font-size: 2rem;
-    padding-left: 2rem;
+    margin-right: 1.5rem;
+    background-color: var(--azul1);
 }
 
 .contact .row form .inputBox input{
     width: 100%;
     padding:2rem;
     font-size: 1.7rem;
-    color:#fff;
+    color:var(--black);
     text-transform: none;
-    background:none;
+    background: #fafafa;
+    border:var(--border);
+}
+
+.btn-map{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn-map:hover{
+    letter-spacing: .1rem;
 }
 
 /* Main Home - Contact settings ends */
