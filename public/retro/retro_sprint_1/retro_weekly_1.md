@@ -2,7 +2,7 @@
 
 ### RETRO PRIMERA REUNIÓN :
 
-  **La primer reunión fue un desastre, nos encontramos en una posición en la que algunos integrantes del equipo no disponían de tiempo para presentarse por "x" o "y" motivo. Lo que llevó a transmitir lo charlado de manera privada o en una reunión extra **
+  **La primer reunión fue un desastre, nos encontramos en una posición en la que algunos integrantes del equipo no disponían de tiempo para presentarse por "x" o "y" motivo. Lo que llevó a transmitir lo charlado de manera privada o en una reunión extra**
 
   * COMENZAR A HACER: Que los integrantes que no hablan ya sea por verguenza o x motivo comiencen a participar y aportar mas al equipo.
 
