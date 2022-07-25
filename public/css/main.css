@@ -1,0 +1,64 @@
+/* Start Home Slider */
+
+.home-slider{
+    display: flex;
+    justify-content: center;    /* Alinear al centro sobre el eje X */
+    flex-direction: column;
+    align-items: center;
+    background:url(../img/home-img.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-slider .slider{
+    width: 1100px;
+    height: 240px;
+    border: 2px solid var(--main-color);
+    background: var(--bg-gray);
+}
+
+.home-slider .pay-system{
+    width: 1100px;
+    display: flex;
+    height: 50px;
+    margin-top: 5px;
+    border: 1px solid var(--main-color2);
+    background: var(--bg-gray);
+}
+
+/* End Home Slider */
+
+/* Main Home - Our menu settings start */
+
+.simple-cards .box-simple-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap:1rem;
+}
+
+.simple-cards .box-simple-cards .simple-card{
+    padding:2rem;
+    text-align: center;
+    background-color: var(--bg-gray);
+    border: 2px solid var(--main-color2);   
+}
+
+.simple-cards .box-simple-cards .simple-card img{
+    height: 1rem;
+}
+
+.simple-cards .box-simple-cards .simple-card h3{
+    color: var(--main-color2);
+    font-size: 2rem;
+    padding:1rem 0;
+}
+
+.simple-cards .box-simple-cards .simple-card:hover{
+    background:#fff;
+}
+
+.simple-cards .box-simple-cards .simple-card:hover > *{
+    color:var(--bg);
+}
+
+/* Main Home - Our menu settings ends */

@@ -4,9 +4,9 @@
     align-items: center;
     justify-content: space-between;
     padding:1rem 3%;
-    position: fixed;
+    /* position: fixed; */
     top:0; left: 0; right: 0;
-    z-index: 1000;
+   /*  z-index: 1000; */
 }
 
 .header .logo img{
@@ -59,7 +59,7 @@
     justify-content: center;
     align-items: center;
     background-color: var(--main-color);
-    padding: 7px 1%;
+    padding: 4px 1%;
     border: 1px solid;
     border-color: #daa520 #d3ad7f #daa520 #daa520;
 }
@@ -86,13 +86,13 @@
     border: 1px solid #daa520;
 }
 
-    .header .search .search-form input{
-        height: 100%;
-        width: 100%;
-        font-size: 1.1rem;
-        padding:1rem;
-        text-transform: none;
-    }
+.header .search .search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.1rem;
+    padding:1rem;
+    text-transform: none;
+}
 
 .header .search-form label{
     cursor: pointer;
