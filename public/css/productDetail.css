@@ -1,9 +1,3 @@
-body {
-    padding-left: 35px;
-    padding-right: 35px;
-    box-sizing: border-box;
-}
-
 .dProducto {
     display: flex;
     margin-top: 20px;

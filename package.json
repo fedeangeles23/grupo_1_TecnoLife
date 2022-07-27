@@ -1,0 +1,16 @@
+{
+  "name": "Tecno Life",
+  "version": "1.0.0",
+  "description": "Tecno Life",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Agustín",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.18"
+  }
+}
