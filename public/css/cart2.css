@@ -12,7 +12,7 @@
     text-align: center;
 }
 
-.contenedor-carteles2 .carteles2:nth-child(2):nth-child(2) {
+.contenedor-carteles2 .carteles2:nth-child(2) {
     background-color: #2D3C60;
 }
 
@@ -21,10 +21,8 @@
 .datosDeEnvio,
 .factura {
     background-color: #2D3C60;
-    display: flex;
     flex-direction: column;
-    padding: 15px 0;
-    margin: 40px 0;
+    margin-bottom: 50px;
 }
 
 .titular div,
@@ -97,15 +95,9 @@
 }
 
 @media screen and (min-width:415px) and (max-width:744px) {
-    .contenedor-carteles2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-
     .contenedor-carteles2 .carteles2 {
-        width: 35%;
+        width: 87.5%;
+        transform: translateX(8.5%);
     }
 
     .titular,
@@ -113,7 +105,8 @@
     .datosDeEnvio,
     .factura {
         background-color: #2D3C60;
-        display: flex;
+        width: 75%;
+        transform: translateX(18%);
         flex-direction: column;
         margin-bottom: 50px;
     }
@@ -142,15 +135,9 @@
 }
 
 @media screen and (min-width:745px) and (max-width:1024px) {
-    .contenedor-carteles2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-
     .contenedor-carteles2 .carteles2 {
-        width: 35%;
+        width: 87.5%;
+        transform: translateX(8.5%);
     }
 
     .titular,
@@ -158,7 +145,8 @@
     .datosDeEnvio,
     .factura {
         background-color: #2D3C60;
-        display: flex;
+        width: 75%;
+        transform: translateX(18%);
         flex-direction: column;
         margin-bottom: 50px;
     }
@@ -187,15 +175,9 @@
 }
 
 @media screen and (min-width:1025px) and (max-width:1440px) {
-    .contenedor-carteles2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-
     .contenedor-carteles2 .carteles2 {
-        width: 35%;
+        width: 87.5%;
+        transform: translateX(8.5%);
     }
 
     .titular,
@@ -203,7 +185,8 @@
     .datosDeEnvio,
     .factura {
         background-color: #2D3C60;
-        display: flex;
+        width: 75%;
+        transform: translateX(18%);
         flex-direction: column;
         margin-bottom: 50px;
     }
@@ -232,15 +215,9 @@
 }
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
-    .contenedor-carteles2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-
     .contenedor-carteles2 .carteles2 {
-        width: 35%;
+        width: 87.5%;
+        transform: translateX(8.5%);
     }
 
     .titular,
@@ -248,7 +225,8 @@
     .datosDeEnvio,
     .factura {
         background-color: #2D3C60;
-        display: flex;
+        width: 75%;
+        transform: translateX(18%);
         flex-direction: column;
         margin-bottom: 50px;
     }
