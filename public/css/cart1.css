@@ -64,9 +64,14 @@
 }
 
 @media screen and (min-width:415px) and (max-width:744px){
+    .contenedor-carteles {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
     .contenedor-carteles .carteles {
-        width: 86.4%;
-        transform: translateX(8.6%);
+        width: 28.9%;
+        transform: translateX(2.1%);
     }
 
     .contenedor-producto {
@@ -117,9 +122,14 @@
 }
 
 @media screen and (min-width:745px) and (max-width:1024px){
+    .contenedor-carteles {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
     .contenedor-carteles .carteles {
-        width: 86.4%;
-        transform: translateX(8.6%);
+        width: 28.9%;
+        transform: translateX(2.1%);
     }
 
     .contenedor-producto {
@@ -153,9 +163,14 @@
 }
 
 @media screen and (min-width:1025px) and (max-width:1440px){
+    .contenedor-carteles {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
     .contenedor-carteles .carteles {
-        width: 86.4%;
-        transform: translateX(8.6%);
+        width: 28.9%;
+        transform: translateX(2.1%);
     }
 
     .contenedor-producto {
@@ -189,9 +204,14 @@
 }
 
 @media screen and (min-width:1441px) and (max-width:1920px){
+    .contenedor-carteles {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
     .contenedor-carteles .carteles {
-        width: 86.4%;
-        transform: translateX(8.6%);
+        width: 28.9%;
+        transform: translateX(2.1%);
     }
 
     .contenedor-producto {
