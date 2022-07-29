@@ -96,6 +96,7 @@
 
 @media screen and (min-width:415px) and (max-width:744px) {
     .contenedor-carteles2 .carteles2 {
+        border-radius: 0.5rem;
         width: 87.5%;
         transform: translateX(8.5%);
     }
@@ -104,6 +105,7 @@
     .tipoDeEnvio,
     .datosDeEnvio,
     .factura {
+        border-radius: 0.5rem;
         background-color: #2D3C60;
         width: 75%;
         transform: translateX(18%);
@@ -141,6 +143,7 @@
     }
     
     .contenedor-carteles2 .carteles2 {
+        border-radius: 0.5rem;
         width: 29%;
         transform: translateX(3.7%);
     }
@@ -149,6 +152,7 @@
     .tipoDeEnvio,
     .datosDeEnvio,
     .factura {
+        border-radius: 0.5rem;
         background-color: #2D3C60;
         width: 75%;
         transform: translateX(18%);
@@ -186,6 +190,7 @@
     }
     
     .contenedor-carteles2 .carteles2 {
+        border-radius: 0.5rem;
         width: 29%;
         transform: translateX(3.7%);
     }
@@ -194,6 +199,7 @@
     .tipoDeEnvio,
     .datosDeEnvio,
     .factura {
+        border-radius: 0.5rem;
         background-color: #2D3C60;
         width: 75%;
         transform: translateX(18%);
@@ -231,6 +237,7 @@
     }
     
     .contenedor-carteles2 .carteles2 {
+        border-radius: 0.5rem;
         width: 29%;
         transform: translateX(3.7%);
     }
@@ -239,6 +246,7 @@
     .tipoDeEnvio,
     .datosDeEnvio,
     .factura {
+        border-radius: 0.5rem;
         background-color: #2D3C60;
         width: 75%;
         transform: translateX(18%);

@@ -2,10 +2,9 @@
 
 .home-slider{
     display: flex;
-    justify-content: center;    /* Alinear al centro sobre el eje X */
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* background:url(../img/slider/whirlpool-Banner.jpg) no-repeat; */
     background-size: cover;
     background-position: center;
 }
@@ -54,10 +53,10 @@
     height: 1rem;
 }
 
-.simple-cards .box-simple-cards .simple-card h3{
+.simple-cards .box-simple-cards .simple-card h3 {
     color: var(--main-color2);
     font-size: 2rem;
-    padding:1rem 0;
+    padding: 0 0 1rem 0px;
 }
 
 .simple-cards .box-simple-cards .simple-card:hover{
@@ -92,7 +91,7 @@
 }
 
 .card h4 {
-    padding: 18px 0;
+    padding: 0 0 18px 0;
 }
 
 .card .img-container{
@@ -228,14 +227,14 @@
     background-color: var(--azul1);
 }
 
-.contact .row form .inputBox input{
+.contact .row form .inputBox input {
     width: 100%;
-    padding:2rem;
-    font-size: 1.7rem;
-    color:var(--black);
+    padding: 1rem;
+    font-size: 2rem;
+    color: var(--black);
     text-transform: none;
     background: #fafafa;
-    border:var(--border);
+    border: var(--border);
 }
 
 .btn-map{
