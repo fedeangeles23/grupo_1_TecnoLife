@@ -1,12 +1,10 @@
 .header{
-    background: var(--header2);
+    background: var(--header);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding:1rem 3%;
-    /* position: fixed; */
     top:0; left: 0; right: 0;
-   /*  z-index: 1000; */
 }
 
 .header .logo img{

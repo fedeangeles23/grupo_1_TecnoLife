@@ -41,11 +41,6 @@
   padding: 15px 20px;
 }
 
-.registro main button:hover {
-  background: #e4a457;
-
-}
-
 .registro .bottom {
   margin-bottom: 20px;
 }
@@ -61,5 +56,5 @@
 }
 
 .link:hover {
-  color: #e4a457;
+  color:var(--main-color)
 }

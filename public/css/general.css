@@ -2,13 +2,14 @@
 
 /* generals settings start */
 
-*{
+* {
     font-family: 'Roboto', sans-serif;
-    margin:0; padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    outline: none; border:none;
+    outline: none;
+    border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: .2s linear;
 }
 
@@ -16,21 +17,21 @@
 
 /* HTML - webkit settings start */
 
-html{
+html {
     overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
 }
 
-html::-webkit-scrollbar{
+html::-webkit-scrollbar {
     width: .8rem;
 }
 
-html::-webkit-scrollbar-track{
+html::-webkit-scrollbar-track {
     background: transparent;
 }
 
-html::-webkit-scrollbar-thumb{
+html::-webkit-scrollbar-thumb {
     background: #bababa;
 }
 
@@ -38,8 +39,8 @@ html::-webkit-scrollbar-thumb{
 
 /* Section settings start */
 
-section{
-    padding:2rem 7%;
+section {
+    padding: 2rem 7%;
 }
 
 /* Section settings ends */
@@ -54,9 +55,14 @@ section{
     font-size: 5rem;
 }
 
-.welcome span{
-    color:var(--main-color);
+.welcome span {
+    color: var(--main-color);
     text-transform: uppercase;
+}
+
+.spacing:hover {
+    background: var(--main-color);
+    letter-spacing: .1rem;
 }
 
 .heading {
@@ -67,8 +73,8 @@ section{
     font-size: 3.2rem;
 }
 
-.heading span{
-    color:var(--main-color);
+.heading span {
+    color: var(--main-color);
     text-transform: uppercase;
 }
 

@@ -42,8 +42,8 @@
 }
 
 .login main button:hover {
-  background: #e4a457;
-
+  background: var(--main-color);
+  letter-spacing: .1rem;
 }
 
 .login .bottom {
@@ -61,5 +61,5 @@
 }
 
 .link:hover {
-  color: #e4a457;
+  color: var(--main-color);
 }
