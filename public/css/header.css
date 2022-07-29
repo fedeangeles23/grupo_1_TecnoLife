@@ -84,10 +84,10 @@
     margin-right: 0.2rem;
 }
 
-.header .search-form{
+.header .search-form {
     background: #fff;
-    width: 35rem;
-    height: 3rem;
+    width: 34rem;
+    height: 2.5rem;
     display: flex;
     align-items: center;
     border-radius: 0px 25px 25px 0px;

@@ -8,44 +8,42 @@
     <title>Tecno Life</title>
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 
-<body>
+<!-- header section start  -->
 
-    <!-- header section start  -->
+<header class="header">
 
-    <header class="header">
+    <a href="#" class="logo">
+        <img src="/img/logo/logo-tecnolife.jpg" alt="">
+    </a>
 
-        <a href="#" class="logo">
-            <img src="/public/img/logo/logo-tecnolife.jpg" alt="">
-        </a>
+    <div class="search">
 
-        <div class="search">
-
-            <div class="categories">
-                <div class="fas fa-bars" id="menu-btn"></div>
-                <p>CATEGORIAS</p>
-            </div>
-
-            <div class="search-form">
-                <input type="search" id="search-box" placeholder="Buscar aquí...">
-                <label for="search-box" class="fas fa-search"></label>
-            </div>
-
+        <div class="categories">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <p>CATEGORIAS</p>
         </div>
 
-        <div class="icons">
-            <div class="fas fa-user" id="user-btn"></div>
-            <div class="fas fa-heart" id="heart-btn"></div>
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Buscar aquí...">
+            <label for="search-box" class="fas fa-search"></label>
         </div>
 
-    </header>
+    </div>
+
+    <div class="icons">
+        <div class="fas fa-user" id="user-btn"></div>
+        <div class="fas fa-heart" id="heart-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+    </div>
+
+</header>
 
 <body>
     <section class="contenedor-carteles">
@@ -63,7 +61,7 @@
         <div>
             <section class="producto">
                 <div class="detalle-producto">
-                    <img src="/public/img/imagenes/img-2.jpg" alt="" width="100%">
+                    <img src="/img/products/img-2.jpg" alt="" width="100%">
                     <div>
                         <h4>HP</h4>
                         <h4>Notebook HP SLIM7 CI5/8GB/SSD 514GB 14”</h4>
@@ -109,7 +107,7 @@
     </section>
     <section class="contenedor-continuar">
         <h3>Precio Final: $150.000</h3>
-        <button class="continuar"><a href="cart2.html">Continuar</a></button>
+        <button class="continuar"><a href="/procesoDeCompra2">Continuar</a></button>
     </section>
 </body>
 

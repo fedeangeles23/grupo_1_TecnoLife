@@ -17,7 +17,6 @@
 /* HTML - webkit settings start */
 
 html{
-    font-size: 65%;
     overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
@@ -32,8 +31,7 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background: #fff;
-    border-radius: 5rem;
+    background: #bababa;
 }
 
 /* HTML - webkit settings ends */

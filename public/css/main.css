@@ -5,16 +5,23 @@
     justify-content: center;    /* Alinear al centro sobre el eje X */
     flex-direction: column;
     align-items: center;
-    background:url(../img/slider/whirlpool-Banner.jpg) no-repeat;
+    /* background:url(../img/slider/whirlpool-Banner.jpg) no-repeat; */
     background-size: cover;
     background-position: center;
 }
 
 .home-slider .slider{
+    display: flex;
     width: 1100px;
     height: 240px;
     border: 2px solid var(--main-color);
     background: var(--bg-gray);
+}
+
+.home-slider .slider img {
+    transform: translateX(30%);
+    width: 665px;
+    height: 236px;
 }
 
 .home-slider .pay-system{
@@ -70,7 +77,7 @@
     justify-items: center;
     margin-top: 7rem;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 10px;
+    column-gap: 7px;
 }
 
 .card{
@@ -81,7 +88,7 @@
     margin-bottom: 30px;
     border-radius: 15px;
     height: 440px;
-    width: 300px;
+    width: 295px;
 }
 
 .card h4 {
@@ -145,7 +152,7 @@
 
 .info-container button{
     background-color: #3a4a72;
-    padding: 8px 15px;
+    padding: 4px 20px;
     border-radius: 50px;
     width: 35%;
     border: solid 1px #3a4a72;
@@ -155,27 +162,26 @@
     background-color: #232a3f;
 }
 
-@media screen and (max-width:1279px) and (min-width: 745px) {
+@media screen and (max-width:1320px) and (min-width: 990px) {
     .article{
         grid-template-columns: repeat(3, 1fr);
     }
+    .card:nth-child(4) {
+        display: none;
+    }
 }
 
-@media screen and (max-width:744px) and (min-width:415px) {
+@media screen and (max-width:989px) and (min-width:657px) {
     .article{
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width:414px) {
+@media screen and (max-width:660px) {
     .article{
         grid-template-columns: repeat(1, 1fr);
     }
 }
-
-
-
-
 
 /* Main Home - Slider Cards end */
 
