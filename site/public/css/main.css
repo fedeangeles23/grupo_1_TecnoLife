@@ -32,6 +32,19 @@
     background: var(--bg-gray);
 }
 
+@media screen and (max-width:744px) {
+
+    main .welcome{
+        display: none;
+    }
+
+    main .home-slider {
+        display: none;
+    }
+
+}
+
+
 /* End Home Slider */
 
 /* Main Home - Our menu settings start */
