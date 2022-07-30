@@ -91,6 +91,7 @@
     }
     
     .contenedor-producto .garantia {
+        transform: translateX(2.3rem);
         display: flex;
         flex-direction: column;
         margin: 15px 0;
@@ -227,6 +228,7 @@
         flex-direction: column;
         justify-content: space-evenly;
         width: 70%;
+        align-items: center;
     }
 
     .contenedor-continuar {
@@ -262,16 +264,12 @@
         margin: 0 0 35px 25px;
     }
 
-    .contenedor-producto .producto img,
-    .contenedor-producto .producto h4 {
-        width: 100%;
-    }
-
     .contenedor-producto .extras {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         width: 70%;
+        align-items: center;
     }
 
     .contenedor-continuar {

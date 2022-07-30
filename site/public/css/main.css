@@ -74,9 +74,9 @@
 .article{
     display: grid;
     justify-items: center;
-    margin-top: 7rem;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 7px;
+    margin-top: 5rem;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 8px;
 }
 
 .card{
@@ -161,9 +161,21 @@
     background-color: #232a3f;
 }
 
+@media screen and (max-width:1695px) and (min-width: 1321px) {
+    .article{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .card:nth-child(5) {
+        display: none;
+    }
+}
+
 @media screen and (max-width:1320px) and (min-width: 990px) {
     .article{
         grid-template-columns: repeat(3, 1fr);
+    }
+    .card:nth-child(5) {
+        display: none;
     }
     .card:nth-child(4) {
         display: none;
@@ -174,11 +186,39 @@
     .article{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .card:nth-child(5) {
+        display: none;
+    }
+
+    .card:nth-child(4) {
+        display: none;
+    }
+
+    .card:nth-child(3) {
+        display: none;
+    }
 }
 
 @media screen and (max-width:660px) {
     .article{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card:nth-child(5) {
+        display: none;
+    }
+
+    .card:nth-child(4) {
+        display: none;
+    }
+
+    .card:nth-child(3) {
+        display: none;
+    }
+
+    .card:nth-child(2) {
+        display: none;
     }
 }
 
@@ -235,9 +275,10 @@
     gap:1rem;
 }
 
-.contact .row .map{
-    flex:1 1 45rem;
+.contact .row .map {
+    flex: 1 1 45rem;
     width: 100%;
+    height: 538px;
     object-fit: cover;
     border: 1px solid;
     border-color: var(--azul1);
