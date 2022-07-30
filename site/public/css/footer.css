@@ -33,7 +33,7 @@ ul {
 }
 
 .footer-col ul li a {
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
     color: #bbbbbb;
 }
@@ -54,6 +54,10 @@ ul {
 
 .footer-col .social-links a:hover {
     color: #E4A457;
+}
+
+.footer-col .social-links a{
+    font-size: 40px;
 }
 
 .Copiright {

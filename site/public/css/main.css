@@ -49,6 +49,10 @@
 
 /* Main Home - Our menu settings start */
 
+.box-simple-cards{
+    margin-top: 90px;
+}
+
 .simple-cards .box-simple-cards{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
@@ -97,7 +101,7 @@
     background-color: white;
     text-align: center;
     border: solid 1px black;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     border-radius: 15px;
     height: 440px;
     width: 295px;
@@ -164,7 +168,7 @@
 
 .info-container button{
     background-color: #3a4a72;
-    padding: 4px 20px;
+    padding: 4px 12px;
     border-radius: 50px;
     width: 35%;
     border: solid 1px #3a4a72;
@@ -243,6 +247,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:1.5rem;
+    margin-top: 90px;
 }
 
 .review .box-container .box{
@@ -286,6 +291,7 @@
     background:var(--azul1);
     flex-wrap: wrap;
     gap:1rem;
+    margin-top: 90px;
 }
 
 .contact .row .map {
