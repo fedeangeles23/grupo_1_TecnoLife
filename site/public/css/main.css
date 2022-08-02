@@ -251,6 +251,7 @@
 }
 
 .review .box-container .box{
+    width: 72%;
     border:var(--border);
     text-align: center;
     padding:3rem 2rem;
@@ -332,7 +333,7 @@
 .contact .row form .inputBox input {
     width: 100%;
     padding: 0.5rem;
-    font-size: 2rem;
+    font-size: 1rem;
     color: var(--black);
     text-transform: none;
     background: #fafafa;
@@ -342,7 +343,7 @@
 .btn-map{
     margin-top: 1rem;
     display: inline-block;
-    padding:.9rem 3rem;
+    padding:.5rem 2rem;
     font-size: 1.7rem;
     color:#fff;
     background: black;
