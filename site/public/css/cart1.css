@@ -80,8 +80,8 @@
 
     .contenedor-carteles .carteles {
         border-radius: 0.5rem;
-        width: 28.9%;
-        transform: translateX(2.1%);
+        width: 86.8%;
+        transform: translateX(8%);
     }
 
     .contenedor-producto {
@@ -91,7 +91,6 @@
     }
     
     .contenedor-producto .garantia {
-        transform: translateX(2.3rem);
         display: flex;
         flex-direction: column;
         margin: 15px 0;
@@ -112,10 +111,9 @@
     
     .contenedor-continuar button {
         background-color: #3a4a72;
-        padding: 8px 0px;
         margin: 8px 0px 12px 0px;
         border-radius: 50px;
-        width: 20%;
+        width: 65%;
         border: solid 1px #3a4a72;
         color: white;
     }

@@ -83,10 +83,10 @@
 
 .contenedor-continuar2 button {
     background-color: #3a4a72;
-    padding: 8px 0px;
+    padding: 10px 0px;
     margin: 8px 0px 12px 0px;
     border-radius: 50px;
-    width: 20%;
+    width: 50%;
     border: solid 1px #3a4a72;
 }
 
@@ -118,20 +118,23 @@
     .datosDeEnvio input,
     .factura select {
         display: flex;
-        width: 40%;
-        margin: 0 0 0px 30%;
-        padding: 8px 0;
+        width: 60%;
+        margin: 0 0 0px 21%;
+        padding: 8px 6px;
     }
+
+    
 
     .titular small,
     .datosDeEnvio small {
         color: #ed4b4b;
-        margin: 0px 0 0 30%;
+        margin: 0px 0 0 21%;
     }
 
     .factura small {
         display: flex;
         justify-content: center;
+        text-align: center;
         color: #ed4b4b;
     }
 }
@@ -154,8 +157,8 @@
     .factura {
         border-radius: 0.5rem;
         background-color: #2D3C60;
-        width: 75%;
-        transform: translateX(18%);
+        width: 55%;
+        transform: translateX(41%);
         flex-direction: column;
         margin-bottom: 50px;
     }
@@ -165,21 +168,31 @@
     .datosDeEnvio input,
     .factura select {
         display: flex;
-        width: 40%;
-        margin: 0 0 0px 30%;
-        padding: 8px 0;
+        width: 65%;
+        margin: 0 0 0px 17%;
+        padding: 8px 6px;
     }
 
     .titular small,
     .datosDeEnvio small {
         color: #ed4b4b;
-        margin: 0px 0 0 30%;
+        margin: 0px 0 0 17%;
     }
 
     .factura small {
         display: flex;
         justify-content: center;
+        text-align: center;
         color: #ed4b4b;
+    }
+
+    .contenedor-continuar2 button {
+        background-color: #3a4a72;
+        padding: 10px 0px;
+        margin: 8px 0px 12px 0px;
+        border-radius: 50px;
+        width: 40%;
+        border: solid 1px #3a4a72;
     }
 }
 
@@ -201,8 +214,8 @@
     .factura {
         border-radius: 0.5rem;
         background-color: #2D3C60;
-        width: 75%;
-        transform: translateX(18%);
+        width: 53%;
+        transform: translateX(45%);
         flex-direction: column;
         margin-bottom: 50px;
     }
@@ -212,21 +225,31 @@
     .datosDeEnvio input,
     .factura select {
         display: flex;
-        width: 40%;
-        margin: 0 0 0px 30%;
-        padding: 8px 0;
+        width: 57%;
+        margin: 0 0 0px 20%;
+        padding: 8px 6px;
     }
 
     .titular small,
     .datosDeEnvio small {
         color: #ed4b4b;
-        margin: 0px 0 0 30%;
+        margin: 0px 0 0 20%;
     }
 
     .factura small {
         display: flex;
         justify-content: center;
+        text-align: center;
         color: #ed4b4b;
+    }
+
+    .contenedor-continuar2 button {
+        background-color: #3a4a72;
+        padding: 10px 0px;
+        margin: 8px 0px 12px 0px;
+        border-radius: 50px;
+        width: 22%;
+        border: solid 1px #3a4a72;
     }
 }
 
@@ -248,18 +271,8 @@
     .factura {
         border-radius: 0.5rem;
         background-color: #2D3C60;
-        width: 75%;
-        transform: translateX(18%);
-        flex-direction: column;
-        margin-bottom: 50px;
-    }
-
-    .titular,
-    .tipoDeEnvio,
-    .datosDeEnvio,
-    .factura {
-        background-color: #2D3C60;
-        display: flex;
+        width: 53%;
+        transform: translateX(45%);
         flex-direction: column;
         margin-bottom: 50px;
     }
@@ -269,20 +282,30 @@
     .datosDeEnvio input,
     .factura select {
         display: flex;
-        width: 40%;
-        margin: 0 0 0px 30%;
-        padding: 8px 0;
+        width: 57%;
+        margin: 0 0 0px 21%;
+        padding: 8px 6px;
     }
 
     .titular small,
     .datosDeEnvio small {
         color: #ed4b4b;
-        margin: 0px 0 0 30%;
+        margin: 0px 0 0 21%;
     }
 
     .factura small {
         display: flex;
         justify-content: center;
+        text-align: center;
         color: #ed4b4b;
+    }
+
+    .contenedor-continuar2 button {
+        background-color: #3a4a72;
+        padding: 10px 0px;
+        margin: 8px 0px 12px 0px;
+        border-radius: 50px;
+        width: 15%;
+        border: solid 1px #3a4a72;
     }
 }
