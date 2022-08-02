@@ -11,5 +11,6 @@ app.get('/ingresar', (req, res) => res.sendFile(path.resolve(__dirname, 'views',
 app.get('/detalleDeProducto', (req, res) => res.sendFile(path.resolve(__dirname, 'views', 'productDetail.html')))
 app.get('/procesoDeCompra1', (req, res) => res.sendFile(path.resolve(__dirname, 'views', 'cart1.html')))
 app.get('/procesoDeCompra2', (req, res) => res.sendFile(path.resolve(__dirname, 'views', 'cart2.html')))
+app.get('/categorias', (req, res) => res.sendFile(path.resolve(__dirname, 'views', 'categories.html')))
 
 app.listen(port, () => console.log(`Servidor abierto en http://localhost:${port}`))
