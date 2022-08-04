@@ -1,53 +1,63 @@
-.login main {
-  border-radius: 0.5rem;
-  background-color: #3A4A72;
-  width: 35%;
-  margin: 0 auto;
-  padding: 30px 0 40px 0;
-  margin-bottom: 60px;
-  margin-top: 60px;
-  color: #FFFFFF;
-  font-family: 'Roboto', sans-serif;
+
+
+
+.login main{
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    background-color: #3A4A72;
+    
+
+}
+.login main h1{
+    text-align: center;
+    color: white;
 }
 
-.login main h1 {
-  text-align: center;
-  padding: 20px 0;
-}
+.login main .container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
 
-.login main .container label {
-  margin-bottom: 5px;
+    
 }
-
-.login main .container input {
-  display: flex;
-  margin: 0 0 0 8%;
-  width: 85%;
-  padding: 9px;
+.login main .container label{
+    margin-bottom: 5px;
 }
-
-.login main small {
-  margin: 5px 0 0 8%;
-  color: #ed4b4b;
+.login main .container input{
+    width: 94%;
+    padding: 10px;
 }
+.login main small{
+    margin-top: 5px;
+color: red;
 
-.login main button {
-  border-radius: 0.5rem;
-  width: 85%;
-  margin: 0 0 0 8%;
-  color: #e1dfdf;
-  font-size: 15px;
-  background: #000000;
-  padding: 15px 20px;
-}
-
-.login main button:hover {
+  }
+  .login main button:hover {
   background: var(--main-color);
   letter-spacing: .1rem;
 }
+.login main button{
+   
+  width: 100%;
+  font-size: 20px;
+  background: black;
+  padding: 15px;
+  color: white;
+
+    
+}
+
 
 .login .bottom {
   margin-bottom: 20px;
+  font-size: 15px;
+
 }
 
 .login .button p {
@@ -62,4 +72,19 @@
 
 .link:hover {
   color: var(--main-color);
+}
+
+
+@media(max-width: 767px) {
+    .login main .container input{
+    width: 94%;
+    padding: 9px;
+    }
+}
+
+@media(max-width: 574px) {
+    .login main .container input{
+    width: 94%;
+    padding: 9px;    
+  }
 }
