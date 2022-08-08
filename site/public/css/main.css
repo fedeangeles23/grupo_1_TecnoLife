@@ -243,15 +243,8 @@
 
 /* Main Home - Customer's review settings start */
 
-.review .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
-    margin-top: 90px;
-}
-
 .review .box-container .box{
-    width: 72%;
+    width: 100%;
     border:var(--border);
     text-align: center;
     padding:3rem 2rem;
@@ -283,6 +276,87 @@
     color:var(--main-color);
 }
 
+@media screen and (max-width: 414px){
+    .review .box-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap:0.8rem;
+        margin-top: 90px;
+    }
+
+    .review .box-container .box:nth-child(2) {
+        display: none;
+    }
+
+    .review .box-container .box:nth-child(3) {
+        display: none;
+    }
+
+    .review .box-container .box:nth-child(4) {
+        display: none;
+    }
+}
+
+@media screen and (min-width:415px) and (max-width:744px){
+    .review .box-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap:0.8rem;
+        margin-top: 90px;
+    }
+
+    .review .box-container .box:nth-child(2) {
+        display: none;
+    }
+
+    .review .box-container .box:nth-child(3) {
+        display: none;
+    }
+
+    .review .box-container .box:nth-child(4) {
+        display: none;
+    }
+}
+
+@media screen and (min-width:745px) and (max-width:1024px){
+    .review .box-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:0.8rem;
+        margin-top: 90px;
+    }
+
+    .review .box-container .box:nth-child(3) {
+        display: none;
+    }
+
+    .review .box-container .box:nth-child(4) {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1440px) {
+    .review .box-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:0.8rem;
+        margin-top: 90px;
+    }
+
+    .review .box-container .box:nth-child(4) {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1441px) and (max-width:1920px) {
+    .review .box-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap:0.8rem;
+        margin-top: 90px;
+    }
+}
+
 /* Main Home - Customer's review settings ends */
 
 /* Main Home - Contact settings start */
@@ -296,17 +370,14 @@
 }
 
 .contact .row .map {
-    flex: 1 1 45rem;
-    width: 100%;
+    width: 50%;
     height: 538px;
     object-fit: cover;
-    border: 1px solid;
-    border-color: var(--azul1);
 }
 
 .contact .row form{
-    flex:1 1 45rem;
-    padding:5rem 2rem;
+    flex:1 1 1rem;
+    padding:8rem 0 0 0;
     text-align: center;
 }
 
@@ -331,7 +402,8 @@
 }
 
 .contact .row form .inputBox input {
-    width: 100%;
+    width: 85%;
+    margin: 0 auto;
     padding: 0.5rem;
     font-size: 1rem;
     color: var(--black);
@@ -353,6 +425,48 @@
 .btn-map:hover{
     background: var(--main-color);
     letter-spacing: .1rem;
+}
+
+@media screen and (max-width: 414px){
+    .contact .row .map {
+        width: 100%;
+        height: 538px;
+        object-fit: cover;
+    }
+
+    .contact .row form{
+        flex:1 1 50.8rem;
+        padding:5rem 2rem;
+        text-align: center;
+    } 
+}
+
+@media screen and (min-width:415px) and (max-width:744px){
+    .contact .row .map {
+        width: 100%;
+        height: 538px;
+        object-fit: cover;
+    }
+
+    .contact .row form{
+        flex:1 1 50.8rem;
+        padding:5rem 2rem;
+        text-align: center;
+    } 
+}
+
+@media screen and (min-width:745px) and (max-width:1024px){
+    .contact .row .map {
+        width: 100%;
+        height: 538px;
+        object-fit: cover;
+    }
+
+    .contact .row form{
+        flex:1 1 50.8rem;
+        padding:5rem 2rem;
+        text-align: center;
+    }   
 }
 
 /* Main Home - Contact settings ends */
