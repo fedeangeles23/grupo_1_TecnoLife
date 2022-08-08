@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <%- include('./partials/head') %> 
+
+<body>
+
+    <%- include('./partials/header') %> 
+
+    <section class="contenedor-carteles">
+        <div class="carteles">
+            <p>Carrito</p>
+        </div>
+        <div class="carteles">
+            <p>Verificar Compra</p>
+        </div>
+        <div class="carteles">
+            <p>Forma de Pago</p>
+        </div>
+    </section>
+    <section class="contenedor-producto">
+        <div>
+            <section class="producto">
+                <div class="detalle-producto">
+                    <img src="/img/products/img-2.jpg" alt="" width="100%">
+                    <div>
+                        <h4>HP</h4>
+                        <h4>Notebook HP SLIM7 CI5/8GB/SSD 514GB 14”</h4>
+                        <h4>Precio: $150.000,00</h4>
+                    </div>
+                </div>
+                <section class="extras">
+                    <section class="cantidad">
+                        <label for="cantidad">Cantidad de productos:</label>
+                        <select name="cantidad" id="cantidad">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </section>
+                    <section class="garantia">
+                        <div>
+                            <input type="radio" name="garantía">
+                            <label for="radio">Garantía de fábrica</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="garantía">
+                            <label for="radio">1 año adic: $7.500,00</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="garantía">
+                            <label for="radio">2 años adic: $11.500,00</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="garantía">
+                            <label for="radio">3 años adic: $13.000,00</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="garantía">
+                            <label for="radio">4 años adic: $16.000,00</label>
+                        </div>
+                    </section>
+                    <label for="" class="aviso">* La cantidad de productos y los años de garantía extras modifican el
+                        precio final del producto *</label>
+                </section>
+            </section>
+    </section>
+    <section class="contenedor-continuar">
+        <h3>Precio Final del producto: $150.000</h3>
+        <button class="continuar"><a href="/procesoDeCompra2">Verificar datos</a></button>
+    </section>
+
+    <%- include('./partials/footer') %> 
+</body>
+
+</html>
