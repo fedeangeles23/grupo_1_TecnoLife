@@ -24,5 +24,6 @@ app.use('/cart2', indexRouter)
 app.use('/login', indexRouter)
 app.use('/productDetail', indexRouter)
 app.use('/register', indexRouter)
+app.use('perfil', indexRouter)
 
 app.listen(port, () => console.log(`Servidor abierto en http://localhost:${port}`))

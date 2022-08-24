@@ -20,5 +20,8 @@ module.exports = {
     },
     register: (req,res) => {
         return res.render('register')
+    },
+    perfil: (req,res) => {
+        return res.render('perfil')
     }
 }
