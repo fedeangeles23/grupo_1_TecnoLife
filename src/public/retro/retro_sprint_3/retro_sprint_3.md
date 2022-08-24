@@ -1,4 +1,4 @@
-### RETRO FINAL SPRINT 2:
+### RETRO FINAL SPRINT 3:
 
     ** Este sprint no salió como esperabamos nuevamente, con la pérdida de un integrante del grupo y con la entrega del sprint casi sin completar, buscamos la forma de seguir mejorando nuestro proyecto tanto individual como grupal para hacer buenas entregas en tiempo y forma.
 
@@ -22,5 +22,5 @@
   - Buscar más referentes y nuevos para la implementación del proyecto.
 
   * DEJAR DE HACER/HACER MENOS:
-  
+
   - No depender tanto de que otro compañero te diga que hacer y de que manera.
