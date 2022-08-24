@@ -10,6 +10,6 @@ router.get('/cart2', cart2)
 router.get('/login', login)
 router.get('/productDetail', productDetail)
 router.get('/register', register)
-router.get('/perfil', perfil)
+router.get('perfil', perfil)
 
 module.exports = router
