@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/* generals settings start */
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+/* generals settings ends */
+
+/* HTML - webkit settings start */
+
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #bababa;
+}
+
+/* HTML - webkit settings ends */
+
+/* Section settings start */
+
+section {
+    padding: 2rem 7%;
+}
+
+/* Section settings ends */
+
+/* Heading settings start */
+
+.welcome {
+    text-align: center;
+    color: #2D3C60;
+    text-transform: uppercase;
+    padding: 3rem 0 1rem 0;
+    font-size: 5rem;
+}
+
+.welcome span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.spacing:hover {
+    background: var(--main-color);
+    letter-spacing: .1rem;
+}
+
+.heading {
+    text-align: center;
+    color: #2D3C60;
+    text-transform: uppercase;
+    /* padding-bottom: 3.5rem; */
+    margin-bottom: -30px;
+    font-size: 3.2rem;
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+/* Heading settings ends */

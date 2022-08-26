@@ -32,7 +32,11 @@ Televisores, Smart TV, Celulares libres, Notebooks, Tablets, Aires Acondicionado
 * Programación en sistemas (UNLA)
 
 [Martín Avendano](https://github.com/martinavendano), 18 años.
+<<<<<<< HEAD
 * Estudiante de diseño de video y audio. 
+=======
+* Estudiante de programación web Full Stack en Digital House.
+>>>>>>> b8c768843a89ffe1845843e427c94acdb078acbf
 
 ### Sitios web de referencia:
 
