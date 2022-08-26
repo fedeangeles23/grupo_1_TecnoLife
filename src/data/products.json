@@ -1,0 +1,20 @@
+[{
+    "id": 1,
+        "name": "name",
+        "description": "description",
+        "category": "categoría",
+        "discount": 0,
+        "price": 0,
+        "details": [
+            "detalles"
+        ],
+        "image": [
+            "imagen.jpg"
+        ],
+        "stock": 1,
+        "moreDetails": [
+            "",
+            "",
+            ""
+        ] 
+}]
