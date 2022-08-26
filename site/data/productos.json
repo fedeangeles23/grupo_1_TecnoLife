@@ -1,0 +1,299 @@
+[
+    {
+        "id": 1,
+        "marca": "Samsung ",
+        "titulo": "Monitor gamer Samsung",
+        "categorias": "monitores",
+        "precio": 52999,
+        "descuento": 20,
+        "descripcion": "Samsung está fielmente comprometida en brindar productos de calidad y que contribuyan a crear un mejor futuro para las personas",
+        "stock": 10,
+        "imagenes": [
+            "D_NQ_NP_2X_735145-MLA48131216536_112021-F.webp",
+            "D_NQ_NP_2X_973781-MLA48131216539_112021-F",
+            "D_NQ_NP_2X_642347-MLA48131245448_112021-F"
+            
+        ]
+    },
+    {
+        "id": 2,
+        "marca": "TCL",
+        "titulo": "Smart TV TCL 55P725 TV DLED 4K 55",
+        "categorias": "televisores",
+        "precio": 121999,
+        "descuento": 20,
+        "descripcion": "TCL es una de las empresas líderes en la industria global de televisores, dedicada a la investigación y desarrollo de productos electrónicos. ",
+        "stock": 8,
+        "imagenes": [
+            "D_NQ_NP_2X_753706-MLA45370840433_032021-F",
+            "D_NQ_NP_2X_930913-MLA45370840431_032021-F",
+            "D_NQ_NP_2X_613809-MLA45370894337_032021-F",
+            "D_NQ_NP_2X_613809-MLA45370894337_032021-F"
+        ]
+    },
+    {
+        "id": 3,
+        "marca": "Philips",
+        "titulo": "Smart TV Philips 7000 Series 50PUD7406/77 LED 4K 50",
+        "categorias": "televisores",
+        "precio": 109999,
+        "descuento": 10,
+        "descripcion": "El compromiso de Philips es brindar nuevas e innovadoras tecnologías. Es por esa razón que se centra en los detalles para poder ofrecer productos que marcan la diferencia y crean una experiencia visual más increíble y auténtica.",
+        "stock": 13,
+        "imagenes": [
+            "D_NQ_NP_2X_759980-MLA44628290185_012021-F",
+            "D_NQ_NP_2X_886670-MLA44628265236_012021-F",
+            "D_NQ_NP_2X_886670-MLA44628265236_012021-F"
+        ]
+    },
+    {
+        "id": 4,
+        "marca": "BGH",
+        "titulo": "Smart Tv Bgh 32 Pne040257 Hd Led 100-240v",
+        "categorias": "televisores",
+        "precio": 64999,
+        "descuento": 10,
+        "descripcion": "Android TV BGH: ofrece una experiencia de uso mas amigable y con una interfaz grafica intuitiva.",
+        "stock": 3,
+        "imagenes": [
+            "D_NQ_NP_2X_628196-MLA50496649960_062022-F"
+            
+        ]
+    },
+    {
+        "id": 5,
+        "marca": "Redragon",
+        "titulo": "Teclado gamer Redragon",
+        "categorias": "teclados",
+        "precio": 5000,
+        "descuento": 40,
+        "descripcion": "",
+        "stock": 50,
+        "imagenes": [
+            "D_NQ_NP_2X_606339-MLA50305127238_062022-F",
+            "D_NQ_NP_2X_726770-MLA50305127082_062022-F"
+            
+            
+        ]
+    },
+    {
+        "id": 5,
+        "marca": "Redragon",
+        "titulo": "Teclado gamer Redragon",
+        "categorias": "teclados",
+        "precio": 5000,
+        "descuento": 40,
+        "descripcion": "",
+        "stock": 50,
+        "imagenes": [
+            "D_NQ_NP_2X_654842-MLA32722683116_102019-F",
+            "D_NQ_NP_2X_926692-MLA32722683120_102019-F"
+            
+            
+        ]
+    },
+    {
+        "id": 5,
+        "marca": "Redragon",
+        "titulo": "Teclado gamer Redragon",
+        "categorias": "teclados",
+        "precio": 5000,
+        "descuento": 40,
+        "descripcion": "",
+        "stock": 50,
+        "imagenes": [
+            "D_NQ_NP_2X_815666-MLA32722390520_102019-F",
+            "D_NQ_NP_2X_815666-MLA32722390520_102019-F"
+            
+            
+        ]
+    },
+    {
+        "id": 8,
+        "marca": " Kotion",
+        "titulo": "Auriculares gamer inalámbricos",
+        "categorias": "Auriculares gamer",
+        "precio": 15000,
+        "descuento": 0,
+        "stock": 1,
+        "descripcion": "",
+        "imagenes": [
+            "Auriculares gamer inalámbricos",
+            "D_NQ_NP_2X_643199-MLA43683893423_102020-F"
+        ]
+    },
+    {
+        "id": 9,
+        "marca": "",
+        "titulo": "Auriculares gamer inalámbricos",
+        "categorias": "Auriculares gamer",
+        "precio": 15000,
+        "descuento": 0,
+        "stock": 1,
+        "descripcion": "",
+        "imagenes": [
+            "D_NQ_NP_2X_655577-MLA40762447178_022020-F",
+            "D_NQ_NP_2X_650643-MLA40782098031_022020-F",
+            "D_NQ_NP_2X_675916-MLA40762447172_022020-F"
+        ]
+    },
+    {
+        "id": 10,
+        "marca": "JBL",
+        "titulo": "Parlante JBL",
+        "categorias": "parlante",
+        "precio": 15000,
+        "descuento": 0,
+        "stock": 1,
+        "descripcion": "",
+        "imagenes": [
+            "D_NQ_NP_2X_700140-2",
+            "D_NQ_NP_2X_741122-2",
+            "D_NQ_NP_2X_799856-1"
+        
+        ]
+    },
+    {
+        "id": 11,
+        "marca": "Unnic Soundflow",
+        "titulo": "Parlante ",
+        "categorias": "",
+        "precio": 15000,
+        "descuento": 0,
+        "stock": 1,
+        "descripcion": "",
+        "imagenes": [
+            "MHC-V02-New--1000x1000-"
+        ]
+    },
+    {
+        "id": 12,
+        "marca": "Redragon ",
+        "titulo": "Fuente de alimentación para P",
+        "categorias": "",
+        "precio": 15000,
+        "descuento": 0,
+        "stock": 1,
+        "descripcion": "",
+        "imagenes": [
+            "D_NQ_NP_2X_621068-MLA45977597418_052021-F "
+        ]
+    },
+    {
+        "id": 13,
+        "marca": "Apple",
+        "titulo": "Apple Macbook Air (13 pulgadas, 2020",
+        "categorias": "Notebooks",
+        "precio": 262999,
+        "descuento": 20,
+        "stock": 5,
+        "descripcion": "La notebook más delgada y ligera de Apple viene con los superpoderes del chip M1. Termina todos tus proyectos mucho más rápido con el CPU de 8 núcleos y disfruta como nunca antes de apps y juegos con gráficos avanzados gracias al GPU de hasta 8 núcleos.",
+        "imagenes": [
+            "D_NQ_NP_2X_813631-MLA46516512349_062021-F",
+            "D_NQ_NP_2X_948162-MLA46516517283_062021-F",
+            "D_NQ_NP_2X_945805-MLA48354136564_112021-F"
+        ]
+    },
+    {
+        "id": 14,
+        "marca": " ",
+        "titulo": "",
+        "categorias": "Notebooks",
+        "precio": 15000,
+        "descuento": 0,
+        "stock": 1,
+        "descripcion": "",
+        "imagenes": [
+            "D_NQ_NP_2X_808339-MLA49838728244_052022-F",
+            "D_NQ_NP_2X_653808-MLA49838585672_052022-F",
+            "D_NQ_NP_2X_700791-MLA49838608595_052022-F"
+        ]
+    },
+
+    {
+        "id": 15,
+        "marca": "",
+        "titulo": "",
+        "categorias": "Notebooks",
+        "precio": 15000,
+        "descuento": 0,
+        "stock": 1,
+        "descripcion": "",
+        "imagenes": [
+            "D_NQ_NP_2X_616019-MLA49064421804_022022-F",
+            "D_NQ_NP_2X_801440-MLA49064449308_022022-F",
+            "D_NQ_NP_2X_948257-MLA49064421808_022022-F"
+            
+        ]
+    },
+    {
+        "id": 16,
+        "marca": "Redragon ",
+        "titulo": "Fuente de alimentación para P",
+        "categorias": "",
+        "precio": 15000,
+        "descuento": 0,
+        "stock": 1,
+        "descripcion": "",
+        "imagenes": [
+            "D_NQ_NP_2X_621068-MLA45977597418_052021-F "
+        ]
+    },
+    {
+        "id": 17,
+        "marca": "Sony",
+        "titulo": "PlayStation 4",
+        "categorias": "",
+        "precio": 15000,
+        "descuento": 0,
+        "stock": 1,
+        "descripcion": "consolas",
+        "imagenes": [
+            "D_NQ_NP_2X_650785-MLA44174322700_112020-F",
+            "D_NQ_NP_2X_739747-MLA44174322737_112020-F"
+        ]
+    },
+    {
+        "id": 18,
+        "marca": "Sony ",
+        "titulo": "PlayStation 5",
+        "categorias": "",
+        "precio": 15000,
+        "descuento": 0,
+        "stock": 1,
+        "descripcion": "",
+        "imagenes": [
+            "D_NQ_NP_2X_841787-MLA44484414455_012021-F",
+            "D_NQ_NP_2X_739160-MLA44484414453_012021-F"
+        ]
+    },
+    {
+        "id": 19,
+        "marca": "Redragon ",
+        "titulo": "Fuente de alimentación para P",
+        "categorias": "",
+        "precio": 15000,
+        "descuento": 0,
+        "stock": 1,
+        "descripcion": "",
+        "imagenes": [
+            "D_NQ_NP_2X_621068-MLA45977597418_052021-F "
+        ]
+    },
+    {
+        "id": 20,
+        "marca": "Samsung ",
+        "titulo": "Monitor gamer Samsung",
+        "categorias": "monitores",
+        "precio": 59999,
+        "descuento": 20,
+        "descripcion": "Samsung está fielmente comprometida en brindar productos de calidad y que contribuyan a crear un mejor futuro para las personas",
+        "stock": 10,
+        "imagenes": [
+            "D_NQ_NP_2X_735145-MLA48131216536_112021-F.webp",
+            "D_NQ_NP_2X_973781-MLA48131216539_112021-F",
+            "D_NQ_NP_2X_642347-MLA48131245448_112021-F"
+            
+        ]
+    }
+]
