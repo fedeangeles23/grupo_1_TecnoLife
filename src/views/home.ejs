@@ -16,8 +16,25 @@
 
         <section class="home-slider" id="home-slider">
 
-            <div class="slider">
-                <img src="/img/slider/whirlpool-Banner.jpg" alt="">
+            <div class="container-slider">
+                <div class="slider" id="slider">
+                    <div class="slider__section">
+                        <img src="/img/slider/slider-1.jpg" alt="" class="slider__img">
+                    </div>
+                    <div class="slider__section">
+                        <img src="/img/slider/slider-2.jpg" alt="" class="slider__img">
+                    </div>
+                    <div class="slider__section">
+                        <img src="/img/slider/slider-3.jpg" alt="" class="slider__img">
+                    </div>
+                    <div class="slider__section">
+                        <img src="/img/slider/slider-4.jpg" alt="" class="slider__img">
+                    </div>
+                </div>
+        
+                <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+                <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+        
             </div>
 
             <div class="pay-system">
@@ -482,6 +499,10 @@
     </main>
 
     <%- include('./partials/footer') %> 
+
+    <!-- Scripts -->
+
+    <script src="/js/slider.js"></script>
 
 </body>
 
