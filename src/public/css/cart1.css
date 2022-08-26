@@ -1,0 +1,281 @@
+.contenedor-carteles {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-carteles .carteles {
+    border-radius: 0.5rem;
+    padding: 17px 0;
+    border: 2px solid black;
+    background-color: #8f8f8f;
+    color: whitesmoke;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.contenedor-carteles .carteles:nth-child(1) {
+    background-color: #2D3C60;
+}
+
+.contenedor-producto {
+    border-radius: 0.5rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+
+.contenedor-producto .garantia {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 15px 8px;
+    align-items: flex-start;
+}
+
+.contenedor-producto .aviso {
+    color: #ed4b4b;
+}
+
+.contenedor-continuar {
+    margin-bottom: 60px;
+    border-radius: 0.5rem;
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.contenedor-continuar h3 {
+    margin: 10px 0 10px 0;
+}
+
+.contenedor-continuar a{
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.contenedor-continuar button {
+    background-color: #3a4a72;
+    padding: 8px 0px;
+    margin: 8px 0px 12px 0px;
+    border-radius: 50px;
+    width: 20%;
+    border: solid 1px #3a4a72;
+    color: white;
+}
+
+.contenedor-continuar button:active {
+    background-color: #232a3f;
+}
+
+@media screen and (min-width:415px) and (max-width:744px){
+    .contenedor-carteles {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-carteles .carteles {
+        border-radius: 0.5rem;
+        width: 86.8%;
+        transform: translateX(8%);
+    }
+
+    .contenedor-producto {
+        border-radius: 0.5rem;
+        width: 74.4%;
+        transform: translateX(18%);
+    }
+    
+    .contenedor-producto .garantia {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0;
+    }
+    
+    .contenedor-continuar {
+        background-color: white;
+        border: 2px solid black;
+        text-align: center;
+    }
+
+    .contenedor-continuar a{
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .contenedor-continuar button {
+        background-color: #3a4a72;
+        margin: 8px 0px 12px 0px;
+        border-radius: 50px;
+        width: 65%;
+        border: solid 1px #3a4a72;
+        color: white;
+    }
+    
+    .contenedor-continuar button:active {
+        background-color: #232a3f;
+    }
+    
+    .contenedor-continuar {
+        margin-bottom: 60px;
+        width: 74.4%;
+        transform: translateX(18%);
+        background-color: white;
+        border: 2px solid black;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:745px) and (max-width:1024px){
+    .contenedor-carteles {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .contenedor-carteles .carteles {
+        border-radius: 0.5rem;
+        width: 28.9%;
+        transform: translateX(2.1%);
+    }
+
+    .contenedor-producto {
+        border-radius: 0.5rem;
+        width: 74.4%;
+        transform: translateX(18%);
+    }
+    
+    .contenedor-producto .garantia {
+        transform: translateX(5.7rem);
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0;
+    }
+    
+    .contenedor-continuar {
+        background-color: white;
+        border: 2px solid black;
+        text-align: center;
+    }
+
+    .contenedor-continuar a{
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .contenedor-continuar button {
+        background-color: #3a4a72;
+        padding: 8px 0px;
+        margin: 8px 0px 12px 0px;
+        border-radius: 50px;
+        width: 20%;
+        border: solid 1px #3a4a72;
+        color: white;
+    }
+    
+    .contenedor-continuar button:active {
+        background-color: #232a3f;
+    }
+    
+    .contenedor-continuar {
+        margin-bottom: 60px;
+        width: 74.4%;
+        transform: translateX(18%);
+        background-color: white;
+        border: 2px solid black;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1440px){
+    .contenedor-carteles {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .contenedor-carteles .carteles {
+        border-radius: 0.5rem;
+        width: 28.9%;
+        transform: translateX(2.1%);
+    }
+
+    .contenedor-producto {
+        border-radius: 0.5rem;
+        width: 74.4%;
+        transform: translateX(18%);
+    }
+    
+    .contenedor-producto .producto {
+        display: flex;
+        margin: 0 0 35px 25px;
+    }
+
+    .contenedor-producto .producto img {
+        width: 100%;
+    }
+
+    .contenedor-producto .extras {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 70%;
+        align-items: center;
+    }
+
+    .contenedor-continuar {
+        margin-bottom: 60px;
+        width: 74.4%;
+        transform: translateX(18%);
+        background-color: white;
+        border: 2px solid black;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1441px) and (max-width:1920px){
+    .contenedor-carteles {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .contenedor-carteles .carteles {
+        border-radius: 0.5rem;
+        width: 28.9%;
+        transform: translateX(2.1%);
+    }
+
+    .contenedor-producto {
+        border-radius: 0.5rem;
+        width: 74.4%;
+        transform: translateX(18%);
+    }
+    
+    .contenedor-producto .producto {
+        display: flex;
+        margin: 0 0 35px 25px;
+    }
+
+    .contenedor-producto .extras {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 70%;
+        align-items: center;
+    }
+
+    .contenedor-continuar {
+        margin-bottom: 60px;
+        width: 74.4%;
+        transform: translateX(18%);
+        background-color: white;
+        border: 2px solid black;
+        text-align: center;
+    }
+}
