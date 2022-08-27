@@ -35,16 +35,18 @@
         </tr>
       </thead>
       <tbody>
+        <% productos.forEach(producto => { %>
         <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>Mark</td>
-          <td>Mark</td>
-          <td>Mark</td>
+          <th scope="row"><a href="/admin/editar/<%= producto.id %>"><%= producto.id %> </a></th>
+          <td><a href="/admin/editar/<%= producto.id %>"><%= producto.Marca %></a></td>
+          <td><a href="/products/detail/<%= producto.id %>"><%= producto.Stock %></a></td>
+          <td><a href="/admin/editar/<%= producto.id %> "><%= producto.Precio %></a></td>
+          <td><a href="/admin/editar/<%= producto.id %> "><%= producto.Descuento %></a></td>
+          <td><a href="/admin/editar/<%= producto.id%>"> <form class="trashForm" action="/admin/eliminar/<%= producto.id %>?_method=DELETE" method="post" ><button type="submit" class="trash"><i class="fa-solid fa-trash-can icon"></i></button></form>  <button class="edit"> <a href="/admin/editar/<%= producto.id %> "><i class="fa-solid fa-pen-to-square icon"></i> </a></button></a></td>
+          <td>
+          </td>
         </tr>
-
+        
       </tbody>
     </table>
   </div>
