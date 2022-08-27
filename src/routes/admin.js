@@ -5,9 +5,10 @@ let {create, edit, list, update, trash, store} = require('../controllers/adminCo
 
 router.get('/list', list);
 router.get('/create', create);
+router.get('/edit/:id', edit);
+
 router.post('/create',store);
 
-router.get('/edit/:id', edit);
 router.put('/edit/:id',upload.single('Image'), update)
 
 router.delete('/:id', trash);

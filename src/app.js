@@ -1,7 +1,6 @@
 const express = require('express')
 const methodOverride = require('method-override')
 const path = require('path');
-const adminController = require('./controllers/adminController');
 const app = express()
 const port = 3000;
 
