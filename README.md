@@ -34,6 +34,11 @@ Televisores, Smart TV, Celulares libres, Notebooks, Tablets, Aires Acondicionado
 [Martín Avendano](https://github.com/martinavendano), 18 años.
 * Estudiante de diseño de video y audio. 
 
+* Estudiante de programación web Full Stack en Digital House.
+
+* Estudiante de diseño de video y audio. 
+>>>>>>> 002af5e2a9bdba305f711d90949b2dfc23f4e185
+
 ### Sitios web de referencia:
 
 Estos son algunos de los sitios web que hemos tomado como referencia para nuestro e-commerce.
