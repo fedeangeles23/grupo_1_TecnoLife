@@ -1,70 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <%- include('./partials/head') %> 
+<%- include('./partials/head') %>
 
-<body>
+    <body>
 
-    <%- include('./partials/header') %> 
+        <%- include('./partials/header') %>
 
-    <section class="dProducto">
-        <section class="imagen-grande">
-            <img src="/img/products/img-1.webp" width="100%" class="imagen-pequeña" alt="">
+            <section class="dProducto">
+                <section class="imagen-grande">
+                    <% productos.forEach(producto=> { %>
+                        <img src="/img/products/<%= producto.imagenes[0] %> " width="100%" alt="">
 
-            <div class="grupo-imagenes-pequeñas">
-                <div class="columna-imagenes-pequeñas">
-                    <img src="/img/products/img-1.webp" width="100%" class="imagen-pequeña" alt="">
+                        <div class="grupo-imagenes-pequeñas">
+                            <div class="columna-imagenes-pequeñas">
+                                <img src="/img/products/<%= producto.imagenes[0] %>" width="100%" class="imagen-pequeña"
+                                    alt="">
+                            </div>
+                            <div class="columna-imagenes-pequeñas">
+                                <img src="/img/products/<%= producto.imagenes[1] %>" width="100%" class="imagen-pequeña"
+                                    alt="">
+                            </div>
+                            <div class="columna-imagenes-pequeñas">
+                                <img src="/img/products/<%= producto.imagenes[2] %>" width="100%" class="imagen-pequeña"
+                                    alt="">
+                            </div>
+                            <div class="columna-imagenes-pequeñas">
+                                <img src="/img/products/<%= producto.imagenes[3] %>" width="100%" class="imagen-pequeña"
+                                    alt="">
+                            </div>
+                        </div>
+                </section>
+                <section class="especificacion-producto">
+                    <h2>
+                        <%= producto.marca %>
+                    </h2>
+                    <h2>
+                        <%= producto.titulo %>
+                    </h2>
+                    <h4>Online: <%= producto.precio %>
+                    </h4>
+                    <h4>12 x <%= (producto.precio / 12) %> CUOTAS SIN INTERÉS</h4>
+                    <button class="boton-carrito"><a href="/cart1">Añadir al Carrito</a></button>
+                </section>
+            </section>
+            <section class="info-producto">
+                <div>
+                    <h3>ESPECIFICACIONES DEL PRODUCTO</h3>
+                    <H5>
+                        <%= producto.descripcion %>
+                    </H5>
                 </div>
-                <div class="columna-imagenes-pequeñas">
-                    <img src="/img/products/img-2.jpg" width="100%" class="imagen-pequeña" alt="">
-                </div>
-                <div class="columna-imagenes-pequeñas">
-                    <img src="/img/products/img-3.jpg" width="100%" class="imagen-pequeña" alt="">
-                </div>
-                <div class="columna-imagenes-pequeñas">
-                    <img src="/img/products/img-4.png" width="100%" class="imagen-pequeña" alt="">
-                </div>
-            </div>
-        </section>
-        <section class="especificacion-producto">
-            <h2>Notebook Acer Predator I7 11va 16gb Ssd Rtx3060 Gamer</h2>
-            <h4>Online: $329.999</h4>
-            <h4>12 x $27.449,91 CUOTAS SIN INTERÉS</h4>
-            <button class="boton-carrito"><a href="/procesoDeCompra1">Añadir al Carrito</a></button>
-        </section>
-    </section>
-    <section class="info-producto">
-        <div>
-            <h3>ESPECIFICACIONES</h3>
-            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur molestiae laborum error ipsa
-                perferendis non ratione provident fugiat dolores, beatae, quaerat amet illum quasi aperiam modi at.
-                Officia, porro totam.</h5>
-            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur molestiae laborum error ipsa
-                perferendis non ratione provident fugiat dolores, beatae, quaerat amet illum quasi aperiam modi at.
-                Officia, porro totam.</h5>
-            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur molestiae laborum error ipsa
-                perferendis non ratione provident fugiat dolores, beatae, quaerat amet illum quasi aperiam modi at.
-                Officia, porro totam.</h5>
-            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur molestiae laborum error ipsa
-                perferendis non ratione provident fugiat dolores, beatae, quaerat amet illum quasi aperiam modi at.
-                Officia, porro totam.</h5>
-            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur molestiae laborum error ipsa
-                perferendis non ratione provident fugiat dolores, beatae, quaerat amet illum quasi aperiam modi at.
-                Officia, porro totam.</h5>
-            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur molestiae laborum error ipsa
-                perferendis non ratione provident fugiat dolores, beatae, quaerat amet illum quasi aperiam modi at.
-                Officia, porro totam.</h5>
-            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur molestiae laborum error ipsa
-                perferendis non ratione provident fugiat dolores, beatae, quaerat amet illum quasi aperiam modi at.
-                Officia, porro totam.</h5>
-            <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur molestiae laborum error ipsa
-                perferendis non ratione provident fugiat dolores, beatae, quaerat amet illum quasi aperiam modi at.
-                Officia, porro totam.</h5>
-        </div>
-    </section>
+            </section>
+            <% }); %>
 
-    <%- include('./partials/footer') %> 
+                <%- include('./partials/footer') %>
 
-</body>
+    </body>
 
 </html>
