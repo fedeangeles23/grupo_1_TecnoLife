@@ -1,1 +1,34 @@
-[]
+[
+    {
+        "id": 2,
+        "marca": "LENOVO",
+        "titulo": "Notebook",
+        "categorias": "Notebooks",
+        "precio": 250000,
+        "descuento": 0,
+        "stock": 50,
+        "descripcion": "Notebooks para programar",
+        "imagenes": [
+            "default-image.png",
+            "default-image.png",
+            "default-image.png",
+            "default-image.png"
+        ]
+    },
+    {
+        "id": 3,
+        "marca": "HP",
+        "titulo": "Notebook",
+        "categorias": "Notebooks",
+        "precio": 100000,
+        "descuento": 0,
+        "stock": 80,
+        "descripcion": "Notebooks para edición",
+        "imagenes": [
+            "default-image.png",
+            "default-image.png",
+            "default-image.png",
+            "default-image.png"
+        ]
+    }
+]

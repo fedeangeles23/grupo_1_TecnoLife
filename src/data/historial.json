@@ -1,26 +1,13 @@
 [
     {
         "id": 1,
-        "marca": "SAMSUNG",
-        "titulo": "Celular motorola super epico de 20gb de ram",
-        "precio": 150000,
-        "descripcion": "este celular motorola puede con cualquier juego del mercado!",
-        "imagenes": [
-            "D_NQ_NP_2X_804287-MLA49587128302_042022-F.webp",
-            "D_NQ_NP_667767-MLA40077047262_122019-V.webp",
-            "D_NQ_NP_2X_804287-MLA49587128302_042022-F.webp",
-            "D_NQ_NP_667767-MLA40077047262_122019-V.webp"
-        ]
-    },
-    {
-        "id": 1,
-        "marca": "asus",
-        "titulo": "Alto celular para jueguitos",
+        "marca": "asus  ",
+        "titulo": "Alto celular para jueguitos  ",
         "categorias": "Smartphones",
         "precio": 250000,
         "descuento": 0,
-        "stock": 20,
-        "descripcion": "alto celular papá",
+        "stock": 30,
+        "descripcion": "Celular para videojuegos de altos requisitos",
         "imagenes": [
             "default-image.png",
             "default-image.png",
