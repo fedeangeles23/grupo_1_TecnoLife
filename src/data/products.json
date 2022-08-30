@@ -1,0 +1,402 @@
+[
+    {
+        "id": 1,
+        "name": "name",
+        "description": "description",
+        "category": "categoría",
+        "discount": 0,
+        "price": 0,
+        "details": [
+            "detalles"
+        ],
+        "image": [
+            "imagen.jpg"
+        ],
+        "stock": 1,
+        "moreDetails": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 2,
+        "name": "name",
+        "description": "description",
+        "category": "categoría",
+        "discount": 0,
+        "price": 0,
+        "details": [
+            "detalles"
+        ],
+        "image": [
+            "imagen.jpg"
+        ],
+        "stock": 1,
+        "moreDetails": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 3,
+        "name": "name",
+        "description": "description",
+        "category": "categoría",
+        "discount": 0,
+        "price": 0,
+        "details": [
+            "detalles"
+        ],
+        "image": [
+            "imagen.jpg"
+        ],
+        "stock": 1,
+        "moreDetails": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 4,
+        "name": "name",
+        "description": "description",
+        "category": "categoría",
+        "discount": 0,
+        "price": 0,
+        "details": [
+            "detalles"
+        ],
+        "image": [
+            "imagen.jpg"
+        ],
+        "stock": 1,
+        "moreDetails": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 5,
+        "name": "name",
+        "description": "description",
+        "category": "categoría",
+        "discount": 0,
+        "price": 0,
+        "details": [
+            "detalles"
+        ],
+        "image": [
+            "imagen.jpg"
+        ],
+        "stock": 1,
+        "moreDetails": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 6,
+        "name": "name",
+        "description": "description",
+        "category": "categoría",
+        "discount": 0,
+        "price": 0,
+        "details": [
+            "detalles"
+        ],
+        "image": [
+            "imagen.jpg"
+        ],
+        "stock": 1,
+        "moreDetails": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 7,
+        "name": "name",
+        "description": "description",
+        "category": "categoría",
+        "discount": 0,
+        "price": 0,
+        "details": [
+            "detalles"
+        ],
+        "image": [
+            "imagen.jpg"
+        ],
+        "stock": 1,
+        "moreDetails": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 8,
+        "name": "name",
+        "description": "description",
+        "category": "categoría",
+        "discount": 0,
+        "price": 0,
+        "details": [
+            "detalles"
+        ],
+        "image": [
+            "imagen.jpg"
+        ],
+        "stock": 1,
+        "moreDetails": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 9,
+        "name": "name",
+        "description": "description",
+        "category": "categoría",
+        "discount": 0,
+        "price": 0,
+        "details": [
+            "detalles"
+        ],
+        "image": [
+            "imagen.jpg"
+        ],
+        "stock": 1,
+        "moreDetails": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 10,
+        "name": "name",
+        "description": "description",
+        "category": "categoría",
+        "discount": 0,
+        "price": 0,
+        "details": [
+            "detalles"
+        ],
+        "image": [
+            "imagen.jpg"
+        ],
+        "stock": 1,
+        "moreDetails": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 11,
+        "name": "name",
+        "description": "description",
+        "category": "categoría",
+        "discount": 0,
+        "price": 0,
+        "details": [
+            "detalles"
+        ],
+        "image": [
+            "imagen.jpg"
+        ],
+        "stock": 1,
+        "moreDetails": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 12,
+        "name": "name",
+        "description": "description",
+        "category": "categoría",
+        "discount": 0,
+        "price": 0,
+        "details": [
+            "detalles"
+        ],
+        "image": [
+            "imagen.jpg"
+        ],
+        "stock": 1,
+        "moreDetails": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 13,
+        "name": "name",
+        "description": "description",
+        "category": "categoría",
+        "discount": 0,
+        "price": 0,
+        "details": [
+            "detalles"
+        ],
+        "image": [
+            "imagen.jpg"
+        ],
+        "stock": 1,
+        "moreDetails": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 14,
+        "name": "name",
+        "description": "description",
+        "category": "categoría",
+        "discount": 0,
+        "price": 0,
+        "details": [
+            "detalles"
+        ],
+        "image": [
+            "imagen.jpg"
+        ],
+        "stock": 1,
+        "moreDetails": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 15,
+        "name": "name",
+        "description": "description",
+        "category": "categoría",
+        "discount": 0,
+        "price": 0,
+        "details": [
+            "detalles"
+        ],
+        "image": [
+            "imagen.jpg"
+        ],
+        "stock": 1,
+        "moreDetails": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 16,
+        "name": "name",
+        "description": "description",
+        "category": "categoría",
+        "discount": 0,
+        "price": 0,
+        "details": [
+            "detalles"
+        ],
+        "image": [
+            "imagen.jpg"
+        ],
+        "stock": 1,
+        "moreDetails": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 17,
+        "name": "name",
+        "description": "description",
+        "category": "categoría",
+        "discount": 0,
+        "price": 0,
+        "details": [
+            "detalles"
+        ],
+        "image": [
+            "imagen.jpg"
+        ],
+        "stock": 1,
+        "moreDetails": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 18,
+        "name": "name",
+        "description": "description",
+        "category": "categoría",
+        "discount": 0,
+        "price": 0,
+        "details": [
+            "detalles"
+        ],
+        "image": [
+            "imagen.jpg"
+        ],
+        "stock": 1,
+        "moreDetails": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 19,
+        "name": "name",
+        "description": "description",
+        "category": "categoría",
+        "discount": 0,
+        "price": 0,
+        "details": [
+            "detalles"
+        ],
+        "image": [
+            "imagen.jpg"
+        ],
+        "stock": 1,
+        "moreDetails": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 20,
+        "name": "name",
+        "description": "description",
+        "category": "categoría",
+        "discount": 0,
+        "price": 0,
+        "details": [
+            "detalles"
+        ],
+        "image": [
+            "imagen.jpg"
+        ],
+        "stock": 1,
+        "moreDetails": [
+            "",
+            "",
+            ""
+        ]
+    }
+]

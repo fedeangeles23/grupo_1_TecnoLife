@@ -1,11 +1,17 @@
 {
   "dependencies": {
+<<<<<<< HEAD
     "cookie-parse": "^0.4.0",
     "cookie-parser": "^1.4.6",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
     "method-override": "^3.0.0",
     "morgan": "^1.10.0",
+=======
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "method-override": "^3.0.0",
+>>>>>>> 6cfeb4df41915a17dfd40ce693c8b50147f4da2c
     "multer": "^1.4.5-lts.1",
     "nodemon": "^2.0.19"
   }
