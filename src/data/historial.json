@@ -1,18 +1,1 @@
-[
-    {
-        "id": 1,
-        "marca": "asus  ",
-        "titulo": "Alto celular para jueguitos  ",
-        "categorias": "Smartphones",
-        "precio": 250000,
-        "descuento": 0,
-        "stock": 30,
-        "descripcion": "Celular para videojuegos de altos requisitos",
-        "imagenes": [
-            "default-image.png",
-            "default-image.png",
-            "default-image.png",
-            "default-image.png"
-        ]
-    }
-]
+[]

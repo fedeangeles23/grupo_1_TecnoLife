@@ -173,7 +173,6 @@
     
     .especificacion-producto {
         width: 110%;
-        padding-top: 9%;
         text-align: center;
     }
 
@@ -195,7 +194,7 @@
         padding: 8px 0px;
         margin: 8px 0px 12px 0px;
         border-radius: 50px;
-        width: 35%;
+        width: 60%;
         border: solid 1px #3a4a72;
         color: white;
     }
@@ -212,7 +211,6 @@
     
     .especificacion-producto {
         width: 50%;
-        padding-top: 13%;
         text-align: center;
     }
 

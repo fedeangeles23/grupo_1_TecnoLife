@@ -1,34 +1,18 @@
 [
     {
-        "id": 2,
-        "marca": "LENOVO",
-        "titulo": "Notebook",
-        "categorias": "Notebooks",
-        "precio": 250000,
+        "id": 1,
+        "marca": "XIAOMI",
+        "titulo": "celular",
+        "categorias": "Smartphones",
+        "precio": 200000,
         "descuento": 0,
-        "stock": 50,
-        "descripcion": "Notebooks para programar",
+        "stock": 10,
+        "descripcion": "celular xiaomi para sacar lindas fotos",
         "imagenes": [
-            "default-image.png",
-            "default-image.png",
-            "default-image.png",
-            "default-image.png"
-        ]
-    },
-    {
-        "id": 3,
-        "marca": "HP",
-        "titulo": "Notebook",
-        "categorias": "Notebooks",
-        "precio": 100000,
-        "descuento": 0,
-        "stock": 80,
-        "descripcion": "Notebooks para edición",
-        "imagenes": [
-            "default-image.png",
-            "default-image.png",
-            "default-image.png",
-            "default-image.png"
+            "xiaomi1.webp",
+            "xiaomi2.webp",
+            "xiaomi3.webp",
+            "xiaomi4.webp"
         ]
     }
 ]

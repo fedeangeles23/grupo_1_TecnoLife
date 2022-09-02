@@ -8,7 +8,7 @@
     <main>
         <h1>Editando el producto</h1>
 
-        <form action="/admin/edit/<%= producto.id %> ?_method=PUT" method="post">
+        <form action="/admin/edit/<%= producto.id %> ?_method=PUT" method="post" enctype="multipart/form-data">
             <section>
                 <div class="form-floating m-2">
                     <input type="text" name="Marca" class="form-control" id="marca" placeholder="Marca"
@@ -40,13 +40,12 @@
                     <small>Obligatorio</small>
                 </div>
                 <div class="form-floating">
-                    <input type="number" class="form-control" id="Descuento" placeholder="Descuento"
-                        value="<%=producto.descuento%>">
                     <div class="form-floating m-2">
                         <input type="number" name="Descuento" class="form-control" id="Descuento"
                             placeholder="Descuento" value="<%=producto.descuento%>">
                         <label for="Descuento">Descuento</label>
                     </div>
+                </div>
                     <div class="form-floating m-2">
                         <input type="number" name="Stock" class="form-control" id="Stock" placeholder="Stock"
                             value="<%=producto.stock%>">
@@ -60,9 +59,8 @@
                         <small>Obligatorio</small>
                     </div>
                     <div class="m-2">
-                        <label for="formFileMultiple" name="imagen" class="form-label">Subir imagenes del
-                            producto</label>
-                        <input class="form-control" type="file" id="formFileMultiple" multiple>
+                        <label for="formFileMultiple" class="form-label">Subir imagenes del producto</label>
+                        <input class="form-control" type="file" name="imagenes" id="formFileMultiple" multiple>
                         <small>Obligatorio</small>
                     </div>
 
