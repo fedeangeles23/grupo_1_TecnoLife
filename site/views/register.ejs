@@ -11,20 +11,28 @@
         <h1>Crear cuenta</h1>
         <form action="" method="post">
             <div class="container bottom">
-                <input type="text" name="name" id="name" placeholder="Ingresa tu nombre y apellido" required>
-                <small>Debe ingresar nombre y apellido</small>
+                <input type="text" name="name" id="name" placeholder="Ingresa tu nombre y apellido" value="<%= locals.old && old.name ? old.name : null%>">
+                <% if (locals.errors && errors.name) { %>
+                    <small><%= errors.name.msg %></small>
+                <% } %>
             </div>
             <div class="container bottom">
-                <input type="text" name="name" id="name" placeholder="Ingresa tu email" required>
-                <small>Debe ingresar tu email</small>
+                <input type="text" name="email" id="email" placeholder="Ingresa tu email"value="<%= locals.old && old.email ? old.email : null%>"> required>
+                <% if (locals.errors && errors.email) { %>
+                    <small><%= errors.email.msg %></small>
+                <% } %>
             </div>
             <div class="container bottom">
-                <input type="password" name="name" id="name" placeholder="Ingresa tu contraseña" required>
-                <small>Debe ingresar su contraseña</small>
+                <input type="password" name="pass" id="pass" placeholder="Ingresa tu contraseña" required>
+                <% if (locals.errors && errors.pass) { %>
+                    <small><%= errors.pass.msg %></small>
+                <% } %>                
             </div>
             <div class="container bottom">
-                <input type="password" name="name" id="name" placeholder="Confirme su contraseña" required>
-                <small>Debe confirmar su contraseña</small>
+                <input type="password" name="pass2" id="pass2" placeholder="Confirme su contraseña" required>
+                <% if (locals.errors && errors.pass2) { %>
+                    <small><%= errors.pass2.msg %></small>
+                <% } %>                    
             </div>
             <div class="button">
                 <button class = "spacing">REGISTRARSE</button>
