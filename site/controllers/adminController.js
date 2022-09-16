@@ -31,22 +31,21 @@ module.exports = {
         })
     },
     store:(req,res) => {
-
+        //return res.send(req.file)
         let errors = validationResult(req)
         if (req.fileValidationError) {
-            let imagenes = {
-                params : 'imagenes'
-            /* necesito el multer de productos 
-             msg:
-            */
+            let imagen = {
+                param: 'imagen',
+                msg: req.fileValidationError,
             }
-            errors.errors.push(imagenes)
+            errors.errors.push(imagen)
         }
-
-        if (errors.isEmpty()) {
-        let img = req.files.map(imagen => {
+        /* console.log(req.body);
+  return res.send(errors.mapped()) */
+       if (errors.isEmpty()) {
+        /* let img = req.files.map(imagen => {
             return imagen.filename
-        })
+        }) */
 
         let {Marca,Titulo,Categoria,Precio,Descuento,Stock,Descripcion} = req.body
 
@@ -68,7 +67,7 @@ module.exports = {
         return res.redirect('/admin/list')
     
         }else{
-            return res.send(errors.mapped())
+             /* return res.send(errors.mapped())*/
             return res.render('admin/crearProducto',{
                 errors : errors.mapped(),
                 old: req.body

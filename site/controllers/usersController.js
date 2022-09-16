@@ -38,7 +38,7 @@ module.exports = {
             return res.send(req.boby)
         }else{
             /* return res.send(errors.mapped())*/
-           return res.render('/register',{
+           return res.render('register',{
             errors:errors.mapped(),
             old:req.boby
            })

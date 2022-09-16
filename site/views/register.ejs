@@ -23,13 +23,13 @@
                 <% } %>
             </div>
             <div class="container bottom">
-                <input type="password" name="pass" id="pass" placeholder="Ingresa tu contraseña" required>
+                <input type="password" name="pass" id="pass"value="<%= locals.old && old.pass ? old.pass: null %>" placeholder="Ingresa tu contraseña" required>
                 <% if (locals.errors && errors.pass) { %>
                     <small><%= errors.pass.msg %></small>
                 <% } %>                
             </div>
             <div class="container bottom">
-                <input type="password" name="pass2" id="pass2" placeholder="Confirme su contraseña" required>
+                <input type="password" name="pass2" id="pass2" value="<%= locals.old && old.pass2 ? old.pass2: null %>" placeholder="Confirme su contraseña" required>
                 <% if (locals.errors && errors.pass2) { %>
                     <small><%= errors.pass2.msg %></small>
                 <% } %>                    

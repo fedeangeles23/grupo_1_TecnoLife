@@ -13,14 +13,18 @@
         <form action="/admin/edit" method="post" enctype="multipart/form-data">
             <section>
                 <div class="form-floating m-2">
-                    <input type="text" name="Marca" class="form-control" id="marca" placeholder="Marca">
+                    <input type="text" name="Marca" class="form-control" id="marca" value="<%=locals.old && old.marca ?old.marca: null %>" placeholder="Marca">
                     <label for="marca">Marca</label>
-                    <small>Obligatorio</small>
+                    <% if (locals.errors && errors.marca) { %>
+                        <small><%= errors.marca.msg %> </small>
+                    <% } %>
                 </div>
                 <div class="form-floating m-2">
-                    <input type="text" name="Titulo" class="form-control" id="Titulo" placeholder="Titulo">
+                    <input type="text" name="Titulo" class="form-control" id="Titulo" value="<%=locals.old && old.titulo ?old.titulo: null %>" placeholder="Titulo">
                     <label for="Titulo">Titulo</label>
-                    <small>Obligatorio</small>
+                    <% if (locals.errors && errors.titulo) { %>
+                        <small><%= errors.titulo.msg %> </small>
+                    <% } %>                    
                 </div>
                 <div class="form-floating m-2">
                     <select class="form-select" name="Categoria" id="floatingSelect" aria-label="Floating label select example">
@@ -39,32 +43,45 @@
 
                     </select>
                     <label for="floatingSelect">Categoria</label>
-                    <small>Obligatorio</small>
+                    <% if (locals.errors && errors.categoria) { %>
+                        <small><%= errors.categoria.msg %> </small>
+                    <% } %>                       
                   </div>
                 <div class="form-floating m-2">
-                    <input type="number" name="Precio" class="form-control" id="Precio" placeholder="Precio">
+                    <input type="number" name="Precio" class="form-control" id="Precio"value="<%=locals.old && old.precio ?old.precio: null%>" placeholder="Precio">
                     <label for="Precio">Precio</label>
-                    <small>Obligatorio</small>
+                    <% if (locals.errors && errors.precio) { %>
+                        <small><%= errors.precio.msg %> </small>
+                    <% } %>
                 </div>
                 <div class="form-floating m-2">
-                    <input type="number" name="Descuento" class="form-control" id="Descuento" value="0" placeholder="Descuento">
+                    <input type="number" name="Descuento" class="form-control" id="Descuento" value="<%=locals.old && old.descuento ? old.descuento: null%>" placeholder="Descuento">
                     <label for="Descuento">Descuento</label>
+                    <% if (locals.errors && errors.descuento) { %>
+                        <small><%= errors.descuento.msg %> </small>
+                    <% } %>
                 </div>
                 <div class="form-floating m-2">
-                    <input type="number" name="Stock" class="form-control" id="Stock" placeholder="Stock">
+                    <input type="number" name="Stock" class="form-control" id="Stock" value="<%=locals.old && old.stock ?old.stock: null %>" placeholder="Stock">
                     <label for="Stock" value="1">Stock</label>
+                    <% if (locals.errors && errors.stock) { %>
+                        <small><%= errors.stock.msg %> </small>
+                    <% } %>
                 </div>
-                <div class="form-floating m-2">
-                    <textarea class="form-control" name="Descripcion" placeholder="Por favor inserte la descripcion del producto"
-                        id="floatingTextarea"></textarea>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="description" placeholder="Descripción" name="Descripcion" value="">
                     <label for="floatingTextarea">Descripcion</label>
-                    <small>Obligatorio</small>
+                    <% if (locals.errors && errors.descripcion) { %>
+                        <small><%= errors.descripcion.msg %> </small>
+                    <% } %>              
                 </div>
   
                 <div class="mb-3">
                     <label for="formFileMultiple" class="form-label">Subir imagenes del producto</label>
-                    <input class="form-control" type="file" id="formFileMultiple" name="imagenes" multiple>
-                    <small>Obligatorio</small>
+                    <input class="form-control" type="file" id="formFileMultiple"  value="<%= locals.old && old.imagen ? old.nombre: null %>"name="imagen" multiple>
+                    <% if (locals.errors && errors.imagen) { %>
+                        <small><%= errors.imagen.msg %> </small>
+                    <% } %>                
                 </div>
   
   
