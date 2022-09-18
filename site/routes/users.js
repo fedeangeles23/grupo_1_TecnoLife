@@ -1,13 +1,15 @@
 const express = require('express');
-const {login,register, processRegister, processLogin} = require ('../controllers/usersController');
 const router = express.Router();
+const {login,register, processRegister, processLogin} = require ('../controllers/usersController');
+
+
 const registerValidation = require('../validations/registerValidation');
-const loginValidator = require('../validations/loginValidation');
+const loginValidation = require('../validations/loginValidation');
 
 
 router.get('/register', register);
 router.post('/register',registerValidator,processRegister)
-
+/* router.get('/login', login); */
 router.get('/login', login);
 router.post('/login',loginValidator,processLogin)
 
