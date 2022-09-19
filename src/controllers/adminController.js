@@ -108,5 +108,13 @@ module.exports = {
         guardarHistorial(historialModificado)
 
         return res.redirect('/admin/list')
-    }
+    },
+    crash: (req, res) => {
+        idParams = +req.params.id
+
+        let historialModificado = historial.filter(producto => producto.id !== idParams)
+        guardarHistorial(historialModificado)
+
+        return res.redirect('/admin/list')
+    },
 }

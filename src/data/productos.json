@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "marca": "XIAOMI",
-        "titulo": "celular",
+        "marca": "XIAOMI ",
+        "titulo": "celular ",
         "categorias": "Smartphones",
         "precio": 200000,
         "descuento": 0,
@@ -13,6 +13,22 @@
             "xiaomi2.webp",
             "xiaomi3.webp",
             "xiaomi4.webp"
+        ]
+    },
+    {
+        "id": 2,
+        "marca": "DELL",
+        "titulo": "Notebook DELL",
+        "categorias": "Notebooks",
+        "precio": 250000,
+        "descuento": 0,
+        "stock": 3,
+        "descripcion": "Notebook DELL ideal para el home office",
+        "imagenes": [
+            "dell1.webp",
+            "dell2.webp",
+            "dell3.webp",
+            "dell4.webp"
         ]
     }
 ]
