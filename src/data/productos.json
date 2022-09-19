@@ -1,1 +1,15 @@
-[]
+[
+    {
+        "id": 1,
+        "marca": "SAMSUNG",
+        "titulo": "Celular motorola super epico de 20gb de ram",
+        "precio": 150000,
+        "descripcion": "este celular motorola puede con cualquier juego del mercado!",
+        "imagenes": [
+            "D_NQ_NP_2X_804287-MLA49587128302_042022-F.webp",
+            "D_NQ_NP_667767-MLA40077047262_122019-V.webp",
+            "D_NQ_NP_2X_804287-MLA49587128302_042022-F.webp",
+            "D_NQ_NP_667767-MLA40077047262_122019-V.webp"
+        ]
+    }
+]

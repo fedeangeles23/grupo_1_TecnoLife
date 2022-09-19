@@ -1,78 +1,160 @@
 <!DOCTYPE html>
 <html lang="es">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-<!-- font awesome cdn link  -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<body>
+    <main class="create">
+        <!-- Titulo -->
+        <h1 class="text-center pt-5 pb-5">Editando el producto <%= producto.titulo %> </h1>
 
-<body class="crear-editar">
-    <main>
-        <h1>Editando el producto</h1>
+        <!-- Comienzo del Formulario -->
+        <form action="" method="POST" enctype="multipart/form-data">
 
-        <form action="/admin/edit/<%= producto.id %> ?_method=PUT" method="post">
-            <section>
-                <div class="form-floating m-2">
-                    <input type="text" name="Marca" class="form-control" id="marca" placeholder="Marca"
-                        value="<%= producto.marca %> ">
-                    <label for="marca">Marca</label>
-                    <small>Obligatorio</small>
-                </div>
-                <div class="form-floating m-2">
-                    <input type="text" name="Titulo" class="form-control" id="Titulo" placeholder="Titulo"
-                        value="<%= producto.titulo %> ">
-                    <label for="Titulo">Titulo</label>
-                    <small>Obligatorio</small>
-                </div>
-                <div class="form-floating m-2">
-                    <select class="form-select" name="Categoria" id="floatingSelect"
-                        aria-label="Floating label select example">
-                        <% categorias.forEach(categoria=> { %>
-                            <option value="<%= categoria %>"
-                                <%=producto.categorias.toLowerCase () === categoria.toLowerCase () ? 'selected' : null %> > <%= categoria %> </option>
-                            <% }) %>
-                    </select>
-                    <label for="floatingSelect">Categoria</label>
-                    <small>Obligatorio</small>
-                </div>
-                <div class="form-floating m-2">
-                    <input type="number" name="Precio" class="form-control" id="Precio" placeholder="Precio"
-                        value="<%=producto.precio%>">
-                    <label for="Precio m-2">Precio</label>
-                    <small>Obligatorio</small>
-                </div>
-                <div class="form-floating">
-                    <input type="number" class="form-control" id="Descuento" placeholder="Descuento"
-                        value="<%=producto.descuento%>">
-                    <div class="form-floating m-2">
-                        <input type="number" name="Descuento" class="form-control" id="Descuento"
-                            placeholder="Descuento" value="<%=producto.descuento%>">
-                        <label for="Descuento">Descuento</label>
-                    </div>
-                    <div class="form-floating m-2">
-                        <input type="number" name="Stock" class="form-control" id="Stock" placeholder="Stock"
-                            value="<%=producto.stock%>">
-                        <label for="Stock">Stock</label>
-                    </div>
-                    <div class="form-floating m-2">
-                        <textarea class="form-control h-100" name="Descripcion"
-                            placeholder="Por favor inserte la descripcion del producto"
-                            id="floatingTextarea"><%= producto.descripcion %></textarea>
-                        <label for="floatingTextarea">Descripcion</label>
-                        <small>Obligatorio</small>
-                    </div>
-                    <div class="m-2">
-                        <label for="formFileMultiple" name="imagen" class="form-label">Subir imagenes del
-                            producto</label>
-                        <input class="form-control" type="file" id="formFileMultiple" multiple>
-                        <small>Obligatorio</small>
+            <!-- Contenedor de imagenes y Principales -->
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+
+                    <!-- Principales -->
+                    <div class="col col-lg-4 col-md-12 col-sm-12">
+                        <div class="form-floating mb-3"> 
+                            <input type="text" class="form-control" name="titulo" placeholder="Nombre del producto" id="name" value="<%= producto.titulo %>" placeholder="name@example.com">
+                            <label for="name">Nombre del producto</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="text" name="marca" value="<%= producto.marca %>" placeholder="Marca del Producto" id="brand">
+                            <label class="form-label" for="brand">Marca del Producto</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="number" name="precio" value="<%= producto.precio %>" placeholder="Precio del producto" id="price">
+                            <label class="form-label" for="price">Precio del producto</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="number" name="descuento" value="<%= producto.descuento %>" placeholder="Descuento del producto" id="discount">
+                            <label class="form-label" for="discount">Descuento del producto</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="text" name="stock" value="<%= producto.stock %>" placeholder="Stock con el que cuenta el producto" id="stock">
+                            <label class="form-label" for="stock">Stock con el que cuenta el producto</label>
+                        </div>
                     </div>
 
-                    <div class="button">
-                        <button class="btn btn-outline-success" type="submit">Editar Producto</button>
+                    <!-- Imagenes!  -->
+
+                    <div class="col col-lg-7 col-md-12 col-sm-12">
+
+                        <section class="img-product">
+
+                            <div class="container">
+                                <div class="row">
+
+                                    <!-- Imagen 1 -->
+
+                                    <div class="col col-5">
+                                        <label class="selectImg" for="product-img">
+                                            <img id="img-preview" class="img-fluid img-thumbnail imagen-height rounded" src="/images/productos/<%= producto.imagenes[0]%>" alt="">
+                                            <div class="imgHover">
+                                                <p class="text-center">Selecionar Imagen 1</p>
+                                            </div>
+                                        </label>
+                                        <div class="form-admin__box inactivo">
+                                            <input class="d-none" id="product-img" type="file" name="imagen" placeholder="Imagen del Producto" accept="image/*" multiple>
+                                        </div>
+                                    </div>
+
+                                    <!-- Imagen 2 -->
+
+                                    <div class="col col-5">
+                                        <label class="selectImg" for="product-sub-img-1">
+                                            <img id="sub-img-preview-1" class="img-fluid img-thumbnail  imagen-height rounded" src="/images/productos/<%= producto.imagenes[1]%>" alt="" >
+                                            <div class="imgHover">
+                                                <p class="text-center">Selecionar Imagen 2</p>
+                                            </div>
+                                        </label>
+                                        <div class="form_desciption__box inactivo">
+                                            <input class="d-none" id="product-sub-img-1" type="file" name="imagen" placeholder="Imagen del Producto">
+                                        </div>
+                                    </div>
+
+                                    <!-- Imagen 3 -->
+
+                                    <div class="col col-5">
+                                        <label class="selectImg" for="product-sub-img-2">
+                                            <img id="sub-img-preview-2" class="img-fluid img-thumbnail imagen-height rounded" src="/images/productos/<%= producto.imagenes[2]%>" height="auto" alt="" >
+                                            <div class="imgHover">
+                                                <p class="text-center">Selecionar Imagen 3</p>
+                                            </div>
+                                        </label>
+                                        <div class="form_desciption__box inactivo">
+                                            <input class="d-none " id="product-sub-img-2" type="file" name="imagen" placeholder="Imagen del Producto">
+                                        </div>
+                                    </div>
+
+                                    <!-- Imagen 4 -->
+
+                                    <div class="col col-5">
+                                        <label class="selectImg" for="product-sub-img-3">
+                                            <img id="sub-img-preview-3" class="img-fluid img-thumbnail imagen-height rounded" src="/images/productos/<%= producto.imagenes[3]%>" alt="" >
+                                            <div class="imgHover">
+                                                <p class="text-center">Selecionar Imagen 4</p>
+                                            </div>
+                                        </label>
+                                        <div class="form_desciption__box inactivo">
+                                            <input class="d-none" id="product-sub-img-3" type="file" name="imagen" placeholder="Imagen del Producto">
+                                        </div>
+                                    </div>
+
+                                    <!-- Columnas -->
+
+                                </div>
+                            </div>
+
+                        </section>
                     </div>
 
-            </section>
+                    <!-- Fin del contenido principal -->
+
+                </div>
+
+            </div>
+
+            <div class="container">
+                <div class="row">
+
+
+                    <!-- Selects  -->
+                    <div class="container m-3" >
+                        <div class="row justify-content-around align-items-center">
+                            <div class="col col-4">
+                                <h3 class="text-center">Categorias</h3>
+                                <select class="form-select" name="categoria" id="floatingSelect" aria-label="Floating label select example"></select>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="container m-3" >
+                        <div class="row">
+                            <div class="col col-12">
+                                <div class="form-floating"> 
+                                    <textarea name="descripcion" id="description" cols="300" rows="300" class="form-control" placeholder="Leave a comment here" style="resize: none;"><%= producto.descripcion %></textarea>
+                                    <label for="description">Descripcion del producto</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <!-- Button -->
+
+            <div class="create-button text-center mt-5 pb-5">
+                <button class="btn btn-primary" type="submit">Editar producto</button>
+            </div>
         </form>
     </main>
 </body>
-
 </html>

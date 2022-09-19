@@ -2,6 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const productos = require('../data/productos.json')
 const historial = require('../data/historial.json')
+const { validationResult } = require('express-validator')
 
 const guardar = (dato) => fs.writeFileSync(path.join(__dirname, '../data/productos.json')
 ,JSON.stringify(dato,null,4),'utf-8')
@@ -30,6 +31,20 @@ module.exports = {
         })
     },
     store:(req,res) => {
+        let errors = validationResult(req)
+        if (req.fileValidationError) {
+            let imagen = {
+                param: 'imagen',
+                msg: req.fileValidationError,
+            }
+            errors.errors.push(imagen)
+
+        if (errors.isEmpty()) {
+            let img = req.files.map(imagen => {
+                return imagen.filename
+            })
+        }
+
         let {Marca,Titulo,Categoria,Precio,Descuento,Stock,Descripcion} = req.body
 
         let productoNuevo = {
@@ -41,36 +56,51 @@ module.exports = {
             descuento:+Descuento,
             stock:+Stock,
             descripcion:Descripcion,
-            imagenes: [
-                "default-image.png",
-                "default-image.png",
-                "default-image.png",
-                "default-image.png"
-            ],
+            imagenes: (req.files.length === 4) ? img : ['default-image.png','default-image.png','default-image.png','default-image.png']
         }
 
         productos.push(productoNuevo)
         guardar(productos)
+        
         /* Redirección a la lista de productos */
         return res.redirect('/admin/list')
+        } else {
+            /* return res.send(errors.mapped()) */
+            return res.send(errors)
+        }
     },
     update:(req,res) => {
-        idParams = +req.params.id
-        let {Marca,Titulo,Categoria,Precio,Descuento,Stock,Descripcion} = req.body
-
-        productos.forEach(producto => {
-            if (producto.id === idParams) {
-                producto.marca = Marca
-                producto.titulo = Titulo
-                producto.categorias = Categoria
-                producto.precio = +Precio
-                producto.descuento = +Descuento
-                producto.stock = +Stock
-                producto.descripcion = Descripcion
+        const idParams = +req.params.id
+        const { Marca, Titulo, Categoria, Precio, Descuento, Stock, Descripcion } = req.body
+        let errors = validationResult(req)
+        if (req.fileValidationError) {
+            let imagen = {
+                param: 'imagen',
+                msg: req.fileValidationError,
             }
-        })
-        guardar(productos)
-        return res.redirect('/admin/list')
+            errors.errors.push(imagen)
+        }
+        if (errors.isEmpty()) {
+            productos.forEach(producto => {
+                if (producto.id === idParams) {
+                    producto.marca = Marca
+                    producto.titulo = Titulo
+                    producto.categorias = Categoria
+                    producto.precio = +Precio
+                    producto.descuento = +Descuento
+                    producto.stock = +Stock
+                    producto.descripcion = Descripcion
+                }
+            })
+            guardar(productos)
+            return res.redirect('/admin/list')
+            } else {
+                /* return res.send(errors.mapped()) */
+                return res.render('admin/crearProducto', {
+                    errors: errors.mapped(),
+                    old: req.body
+                })
+            }
     },
     destroy:(req,res) => {
         idParams = +req.params.id
@@ -93,5 +123,32 @@ module.exports = {
             productos: historial,
             redirection: "list"
         })
+    },
+    restore: (req, res) => {
+        idParams = +req.params.id
+        let productoParaRestaurar = historial.find((elemento) => {
+            return elemento.id == idParams
+        })
+        productos.push(productoParaRestaurar)
+        guardar(productos)
+        let historialModificado = historial.filter(producto => producto.id !== idParams)
+        guardarHistorial(historialModificado)
+        return res.redirect('/admin/list')
+    },
+    crash: (req, res) => {
+        idParams = +req.params.id
+
+        let producto = historial.find(product => product.id === idParams)
+        let ruta = (dato) => fs.existsSync(path.join(__dirname, '..', '..', 'public', 'images', 'productos', dato))
+        producto.imagenes.forEach(imagen => {
+            if (ruta(imagen) && (imagen !== "default-image.png")) {
+                fs.unlinkSync(path.join(__dirname, '..', '..', 'public', 'images', 'productos', imagen))
+            }
+    })
+
+    let historialModificado = historial.filter(producto => producto.id !== idParams)
+    guardarHistorial(historialModificado)
+    return res.redirect('/admin/list')
+        
     }
 }
