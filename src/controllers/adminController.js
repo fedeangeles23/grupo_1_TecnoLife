@@ -31,42 +31,42 @@ module.exports = {
         })
     },
     store:(req,res) => {
+
         let errors = validationResult(req)
         if (req.fileValidationError) {
-            let imagen = {
-                param: 'imagen',
-                msg: req.fileValidationError,
+            let imagenes = {
+                param: 'imagenes',
+                msg: req.fileValidationError
             }
-            errors.errors.push(imagen)
-
-        if (errors.isEmpty()) {
+            errors.errors.push(imagenes)
+            
             let img = req.files.map(imagen => {
                 return imagen.filename
             })
-        }
-
-        let {Marca,Titulo,Categoria,Precio,Descuento,Stock,Descripcion} = req.body
-
-        let productoNuevo = {
-            id: productos[productos.length - 1].id + 1,
-            marca:Marca,
-            titulo:Titulo,
-            categorias:Categoria,
-            precio:+Precio,
-            descuento:+Descuento,
-            stock:+Stock,
-            descripcion:Descripcion,
-            imagenes: (req.files.length === 4) ? img : ['default-image.png','default-image.png','default-image.png','default-image.png']
-        }
-
-        productos.push(productoNuevo)
-        guardar(productos)
-        
-        /* Redirección a la lista de productos */
-        return res.redirect('/admin/list')
+            let { marca, titulo, categoria, precio, descuento, stock, descripcion } = req.body
+            let productoNuevo = {
+                id: productos[productos.length - 1].id + 1,
+                marca,
+                titulo,
+                categoria,
+                precio: +precio,
+                descuento: +descuento,
+                stock: +stock,
+                descripcion,
+                imagenes: req.files.length === 4 ? img : ['default-image.png', 'default-image.png', 'default-image.png', 'default-image.png'],
+            }
+            productos.push(productoNuevo)
+            guardar(productos)
+            /* Redirecciona a la lista de productos */
+            return res.redirect('/admin/list')
+            /* Redirecciona al detalle del producto recien creado */
+            /* res.redirect(`/products/detail/${productoNuevo.id}`) */
         } else {
             /* return res.send(errors.mapped()) */
-            return res.send(errors)
+            return res.render('admin/crearProducto', {
+                errors: errors.mapped(),
+                old: req.body
+            })
         }
     },
     update:(req,res) => {

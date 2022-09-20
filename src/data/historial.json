@@ -1,3 +1,50 @@
 [
-
+    {
+        "id": 2,
+        "precio": null,
+        "descuento": null,
+        "stock": null,
+        "imagenes": [
+            "default-image.png",
+            "default-image.png",
+            "default-image.png",
+            "default-image.png"
+        ]
+    },
+    {
+        "id": 2,
+        "precio": null,
+        "descuento": null,
+        "stock": null,
+        "imagenes": [
+            "default-image.png",
+            "default-image.png",
+            "default-image.png",
+            "default-image.png"
+        ]
+    },
+    {
+        "id": 2,
+        "precio": null,
+        "descuento": null,
+        "stock": null,
+        "imagenes": [
+            "default-image.png",
+            "default-image.png",
+            "default-image.png",
+            "default-image.png"
+        ]
+    },
+    {
+        "id": 2,
+        "precio": null,
+        "descuento": null,
+        "stock": null,
+        "imagenes": [
+            "default-image.png",
+            "default-image.png",
+            "default-image.png",
+            "default-image.png"
+        ]
+    }
 ]
