@@ -15,38 +15,38 @@
                     <!-- Principales -->
                     <div class="col col-lg-4 col-md-12 col-sm-12">
                         <div class="form-floating mb-3"> 
-                            <input type="text" class="form-control" name="titulo" placeholder="Nombre del producto" id="titulo" value="<%= locals.old && old.titulo ? old.titulo : null%>" placeholder="name@example.com">
+                            <input type="text" class="form-control" name="Titulo" placeholder="Nombre del producto" id="Titulo" value="<%= locals.old && old.titulo ? old.titulo : null%>" placeholder="name@example.com">
                             <label for="titulo">Nombre del producto</label>
                             <p class="span text-danger">
-                                <%= locals.errors && errors.titulo ? errors.titulo.msg : null %>
+                                <%= locals.errors && errors.Titulo ? errors.Titulo.msg : null %>
                             </p>
                         </div>
                         <div class="form-floating mb-3">
-                            <input class="form-control" type="text" name="marca" placeholder="Marca del Producto" id="marca" value="<%= locals.old && old.marca ? old.marca : null%>">
-                            <label class="form-label" for="marca">Marca del Producto</label>
+                            <input class="form-control" type="text" name="marca" placeholder="Marca del Producto" id="brand" value="<%= locals.old && old.marca ? old.marca : null%>">
+                            <label class="form-label" for="brand">Marca del Producto</label>
+                            <% if (locals.errors && errors.marca) { %>
+                                <p class="span text-danger"><%= errors.marca.msg %></p>
+                            <% } %>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="number" name="Precio" placeholder="Precio del producto" id="price" value="<%= locals.old && old.precio ? old.precio : null%>">
+                            <label class="form-label" for="price">Precio del producto</label>
                             <p class="span text-danger">
-                                <%= locals.errors && errors.marca ? errors.marca.msg : null %>
+                                <%= locals.errors && errors.Precio ? errors.Precio.msg : null %>
                             </p>
                         </div>
                         <div class="form-floating mb-3">
-                            <input class="form-control" type="number" name="precio" placeholder="Precio del producto" id="precio" value="<%= locals.old && old.precio ? old.precio : null%>">
-                            <label class="form-label" for="precio">Precio del producto</label>
+                            <input class="form-control" type="number" name="Descuento" placeholder="Descuento del producto" id="discount" value="<%= locals.old && old.descuento ? old.descuento : 0%>">
+                            <label class="form-label" for="discount">Descuento del producto</label>
                             <p class="span text-danger">
-                                <%= locals.errors && errors.precio ? errors.precio.msg : null %>
+                                <%= locals.errors && errors.Descuento ? errors.Descuento.msg : null %>
                             </p>
                         </div>
                         <div class="form-floating mb-3">
-                            <input class="form-control" type="number" name="descuento" placeholder="Descuento del producto" id="descuento" value="<%= locals.old && old.descuento ? old.descuento : 0%>">
-                            <label class="form-label" for="descuento">Descuento del producto</label>
-                            <p class="span text-danger">
-                                <%= locals.errors && errors.descuento ? errors.descuento.msg : null %>
-                            </p>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input class="form-control" type="text" name="stock" placeholder="Stock con el que cuenta el producto" id="stock" value="<%= locals.old && old.stock ? old.stock : null%>">
+                            <input class="form-control" type="text" name="Stock" placeholder="Stock con el que cuenta el producto" id="stock" value="<%= locals.old && old.stock ? old.stock : null%>">
                             <label class="form-label" for="stock">Stock con el que cuenta el producto</label>
                             <p class="span text-danger">
-                                <%= locals.errors && errors.stock ? errors.stock.msg : null %>
+                                <%= locals.errors && errors.Stock ? errors.Stock.msg : null %>
                             </p>
                         </div>
                     </div>
@@ -67,7 +67,7 @@
                                             </div>
                                         </label>
                                         <div class="form-admin__box inactivo">
-                                            <input class="d-none" id="product-img" type="file" name="imagenes" placeholder="Imagen del Producto" accept="img/*" multiple>
+                                            <input class="d-none" id="product-img" type="file" name="imagen" placeholder="Imagen del Producto" accept="image/*" multiple>
                                         </div>
                                     </div>
                                     <!-- Imagen 2 -->
@@ -79,7 +79,7 @@
                                             </div>
                                         </label>
                                         <div class="form_desciption__box inactivo">
-                                            <input class="d-none" id="product-sub-img-1" type="file" name="imagenes" placeholder="Imagen del Producto">
+                                            <input class="d-none" id="product-sub-img-1" type="file" name="imagen" placeholder="Imagen del Producto">
                                         </div>
                                     </div>
                                     <!-- Imagen 3 -->
@@ -91,7 +91,7 @@
                                             </div>
                                         </label>
                                         <div class="form_desciption__box inactivo">
-                                            <input class="d-none " id="product-sub-img-2" type="file" name="imagenes" placeholder="Imagen del Producto">
+                                            <input class="d-none " id="product-sub-img-2" type="file" name="imagen" placeholder="Imagen del Producto">
                                         </div>
                                     </div>
                                     <!-- Imagen 4 -->
@@ -103,14 +103,14 @@
                                             </div>
                                         </label>
                                         <div class="form_desciption__box inactivo">
-                                            <input class="d-none" id="product-sub-img-3" type="file" name="imagenes" placeholder="Imagen del Producto">
+                                            <input class="d-none" id="product-sub-img-3" type="file" name="imagen" placeholder="Imagen del Producto">
                                         </div>
                                     </div>
                                     <!-- Columnas -->
 
                                 </div>
                                 <p class="span text-danger">
-                                    <%= locals.errors && errors.imagenes ? errors.imagenes.msg : null %>
+                                    <%= locals.errors && errors.imagen ? errors.imagen.msg : null %>
                                 </p>
                             </div>
 
@@ -154,8 +154,8 @@
                         <div class="row">
                             <div class="col col-12">
                                 <div class="form-floating"> 
-                                    <textarea name="descripcion" id="descripcion" cols="300" rows="300" class="form-control" placeholder="Leave a comment here" style="resize: none;"><%= locals.old && old.descripcion ? old.descripcion : null%></textarea>
-                                    <label for="descripcion">Descripcion del producto</label>
+                                    <textarea name="descripcion" id="description" cols="300" rows="300" class="form-control" placeholder="Leave a comment here" style="resize: none;"><%= locals.old && old.descripcion ? old.descripcion : null%></textarea>
+                                    <label for="description">Descripcion del producto</label>
                                 </div>
                                 <p class="span text-danger">
                                     <%= locals.errors && errors.descripcion ? errors.descripcion.msg : null %>

@@ -31,18 +31,25 @@ module.exports = {
         })
     },
     store:(req,res) => {
-
+        /* console.log(req.files) */
         let errors = validationResult(req)
+/*         console.log(req.body)
+        console.log("llegando")
+        return res.send(errors.mapped()) */
         if (req.fileValidationError) {
             let imagenes = {
-                param: 'imagenes',
+                param: 'imagen',
                 msg: req.fileValidationError
             }
             errors.errors.push(imagenes)
-            
+        }
+
+        if (errors.isEmpty()) {
             let img = req.files.map(imagen => {
                 return imagen.filename
             })
+            
+            console.log(img)
             let { marca, titulo, categoria, precio, descuento, stock, descripcion } = req.body
             let productoNuevo = {
                 id: productos[productos.length - 1].id + 1,
@@ -55,6 +62,7 @@ module.exports = {
                 descripcion,
                 imagenes: req.files.length === 4 ? img : ['default-image.png', 'default-image.png', 'default-image.png', 'default-image.png'],
             }
+            console.log(productoNuevo)
             productos.push(productoNuevo)
             guardar(productos)
             /* Redirecciona a la lista de productos */

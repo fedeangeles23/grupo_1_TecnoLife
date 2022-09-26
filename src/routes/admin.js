@@ -10,12 +10,12 @@ router.get('/history', history);
 
 /* Creando un producto */
 router.get('/create', create);
-router.post('/create',store);
-router.post('/create',upload.array('imagenes'),productValidator,store);
+/* router.post('/create',store); */
+router.post('/create',upload.array('imagen'),productValidator,store);
 
 /* Editando un producto */
 router.get('/edit/:id', edit);
-router.put('/edit/:id',upload.array('imagenes'),productValidator, update);
+router.put('/edit/:id',upload.array('imagen'),productValidator, update);
 
 /* Eliminando un producto */
 router.delete('/destroy/:id', destroy);
