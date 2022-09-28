@@ -12,14 +12,14 @@
         <form action="" method="post">
             <div class="container bottom">
                 <input type="email" name="email" id="email" placeholder="Ingresa tu email" required>
-                <% if (locals.errors && errors.name) { %>
-                    <small><%= errors.name.msg %></small>
+                <% if (locals.errors && errors.email) { %>
+                    <small><%= errors.email.msg %></small>
                 <% } %>                
             </div>
             <div class="container bottom">
-                <input type="password" name="pass" id="pass" placeholder="Ingresa tu contraseña" required>
-                <% if (locals.errors && errors.pass) { %>
-                    <small><%= errors.pass.msg %> </small>
+                <input type="password" name="contrasenia" id="contrasenia" placeholder="Ingresa tu contraseña" required>
+                <% if (locals.errors && errors.contrasenia) { %>
+                    <small><%= errors.contrasenia.msg %> </small>
                 <% } %>                 
             </div>
             <div class="button">

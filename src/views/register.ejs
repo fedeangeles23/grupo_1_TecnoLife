@@ -11,9 +11,9 @@
         <h1>Crear cuenta</h1>
         <form action="" method="post">
             <div class="container bottom">
-                <input type="text" name="name" id="name" placeholder="Ingresa tu nombre y apellido" value="<%= locals.old && old.name ? old.name : null%>">
-                <% if (locals.errors && errors.name) { %>
-                    <small><%= errors.name.msg %></small>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre y apellido" value="<%= locals.old && old.nombre ? old.nombre : null%>">
+                <% if (locals.errors && errors.nombre) { %>
+                    <small><%= errors.nombre.msg %></small>
                 <% } %>
             </div>
             <div class="container bottom">
@@ -23,15 +23,15 @@
                 <% } %>
             </div>
             <div class="container bottom">
-                <input type="password" name="pass" id="pass"value="<%= locals.old && old.pass ? old.pass: null %>" placeholder="Ingresa tu contraseña" required>
-                <% if (locals.errors && errors.pass) { %>
-                    <small><%= errors.pass.msg %></small>
+                <input type="password" name="contrasenia" id="contrasenia" placeholder="Ingresa tu contraseña" required>
+                <% if (locals.errors && errors.contrasenia) { %>
+                    <small><%= errors.contrasenia.msg %></small>
                 <% } %>                
             </div>
             <div class="container bottom">
-                <input type="password" name="pass2" id="pass2" value="<%= locals.old && old.pass2 ? old.pass2: null %>" placeholder="Confirme su contraseña" required>
-                <% if (locals.errors && errors.pass2) { %>
-                    <small><%= errors.pass2.msg %></small>
+                <input type="password" name="contrasenia2" id="contrasenia2"  placeholder="Confirme su contraseña" required>
+                <% if (locals.errors && errors.contrasenia2) { %>
+                    <small><%= errors.contrasenia2.msg %></small>
                 <% } %>                    
             </div>
             <div class="button">
