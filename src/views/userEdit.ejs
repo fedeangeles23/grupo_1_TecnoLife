@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head') %> 
+
+<body class="edit">
+
+    <%- include('./partials/header') %> 
+
+    <main class="edit">
+        <form method="POST" action="" enctype="" class="form-user">
+            <br>
+            <h4>Editar Cuenta</h4>
+
+            <div class="inputs">
+                <div class="box">
+                    <label for="user"></label>
+                    <div class="contenedor">
+                    <input class="input" type="text" name="name" placeholder="Edite su usuario"
+                        value="">
+                        
+                </div>
+            </div>
+
+                <div class="box">
+                    <label for="user"></label>
+                    <div class="contenedor">
+                    <input class="input" type="text" name="email" placeholder="Edite su Email"
+                        value="">
+                </div>
+            </div>
+
+            <div class="box">
+                <label for="password"></label>
+                <div class="contenedor">
+                <input class="input" type="password" name="password" placeholder="Edite su Contraseña">
+            </div>
+        </div>
+
+                <div class="box-imagen">
+                    <div class="cargarImagen">
+                    <label for="image">Editar foto de perfil</label>
+                    </div>
+                    <div>
+                    <input class="input" type="file" name="image" placeholder="Agregar imagen">
+                </div>
+            </div>
+
+                <div class="box">
+                    <button class="button" type="submit" id="button-submit">ACTUALIZAR DATOS DE LA CUENTA</button>
+                </div>  
+
+                
+        </form>
+
+    </main>
+ <%- include('./partials/footer') %> 
+
+</body>
+</html>

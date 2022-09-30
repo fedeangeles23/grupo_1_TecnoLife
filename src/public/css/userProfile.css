@@ -1,0 +1,47 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  background-color: #3A4A72;
+  }
+  h3 {
+    font-size: 36px;
+  }
+  
+  h4 {
+    font-size: 30px;
+  }
+  
+  
+  
+  main {
+    text-align: center;
+    padding-top: 30px;
+  }
+  .UserAvatar img {
+  width: 260px;
+  height: 290px;
+  border-radius: 100%;  
+  
+  }
+  
+  .usuarioEmail{
+  font-size: 50px;
+  }
+  
+  .button1 {
+  background-color: #E4A457;
+  color: black;
+  border: 2px solid #070707;
+  border-radius: 30px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;
+  }
+  
+  .button1:hover {
+  background-color: #E4A457;
+  color: white;
+  }
