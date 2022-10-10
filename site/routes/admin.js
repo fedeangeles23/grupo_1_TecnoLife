@@ -1,23 +1,11 @@
 const {list,create,edit,store,update,destroy,history,restore} = require('../controllers/adminController')
 const express = require('express');
 const router = express.Router();
-const path = require('path')
-const multer = require('multer')
+const upload = require('../middlewares/multerProductos')
+const adminCheck = require('../middlewares/adminCheck')
 const productsValidator= require('../validations/productsValidator')
 
 
-const storage = multer.diskStorage({
-    destination: (req,file,callback) => {
-        callback(null,'./public/img/products')
-    },
-    filename:(req,file,callback) => {
-        callback(null,'img-' + Date.now() + path.extname(file.originalname))
-    }
-})
-
-const upload = multer({
-    storage
-})
 
 /* GET home page. */
 router.get('/list', list);
