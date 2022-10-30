@@ -9,7 +9,6 @@
 
             <section class="dProducto">
                 <section class="imagen-grande">
-                    <% productos.forEach(producto=> { %>
                         <img src="/img/products/<%= producto.imagenes[0] %> " width="100%" alt="">
 
                         <div class="grupo-imagenes-pequeñas">
@@ -52,7 +51,6 @@
                     </H5>
                 </div>
             </section>
-            <% }); %>
 
                 <%- include('./partials/footer') %>
 

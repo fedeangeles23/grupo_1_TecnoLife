@@ -31,5 +31,5 @@ module.exports = [
     /* Descripcion */
     check('Descripcion').trim()
     .notEmpty().withMessage('Este campo es obligatorio').bail()
-    .isLength({min:10}).withMessage('Debe contener al menos 10 caracteres'),
+    .isLength({min:8}).withMessage('Debe contener al menos 10 caracteres'),
 ]

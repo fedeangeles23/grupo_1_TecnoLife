@@ -4,7 +4,7 @@ module.exports = {
     productDetail : (req,res) => {
         let id = +req.params.id
         let producto = productos.find((producto) => producto.id === id)
-        return res.render ('productDetail',{productos})
+        return res.render ('productDetail',{producto})
     },
     cart1: (req,res) => {
         res.render('cart1')

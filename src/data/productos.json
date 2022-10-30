@@ -11,5 +11,18 @@
             "D_NQ_NP_2X_804287-MLA49587128302_042022-F.webp",
             "D_NQ_NP_667767-MLA40077047262_122019-V.webp"
         ]
+    },
+    {
+        "id": 2,
+        "marca": "ASUS",
+        "precio": 100000,
+        "descuento": 0,
+        "stock": 5,
+        "imagenes": [
+            "img-1664496316670.jpg",
+            "img-1664496316671.webp",
+            "img-1664496316673.webp",
+            "img-1664496316674.webp"
+        ]
     }
 ]

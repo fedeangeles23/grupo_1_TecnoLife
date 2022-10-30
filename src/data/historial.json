@@ -46,5 +46,31 @@
             "default-image.png",
             "default-image.png"
         ]
+    },
+    {
+        "id": 2,
+        "marca": "ASUS",
+        "precio": null,
+        "descuento": null,
+        "stock": null,
+        "imagenes": [
+            "img-1664496039383.jpg",
+            "img-1664496039383.webp",
+            "img-1664496039385.webp",
+            "img-1664496039385.webp"
+        ]
+    },
+    {
+        "id": 2,
+        "marca": "ASUS",
+        "precio": 100000,
+        "descuento": 0,
+        "stock": 5,
+        "imagenes": [
+            "img-1664496227510.jpg",
+            "img-1664496227511.webp",
+            "img-1664496227513.webp",
+            "img-1664496227513.webp"
+        ]
     }
 ]

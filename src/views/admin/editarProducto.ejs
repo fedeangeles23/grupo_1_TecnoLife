@@ -20,35 +20,35 @@
                     <small>Obligatorio</small>
                 </div>
                 <div class="form-floating m-2">
-                    <input type="text" name="titulo" class="form-control" id="titulo" placeholder="titulo" value="<%= producto.titulo %> ">
-                    <label for="titulo">Titulo</label>
+                    <input type="text" name="Titulo" class="form-control" id="Titulo" placeholder="Titulo" value="<%= producto.Titulo %> ">
+                    <label for="Titulo">Titulo</label>
                     <small>Obligatorio</small>
                 </div>
                 <div class="form-floating m-2">
-                    <select class="form-select" name="categoria" id="floatingSelect" aria-label="Floating label select example">
+                    <select class="form-select" name="Categoria" id="floatingSelect" aria-label="Floating label select example">
                       <% categorias.forEach(categoria => { %>
-                        <option value="<%= categoria %>" <%= producto.categorias.toLowerCase() === categoria.toLowerCase() ? 'selected' : null %> ><%= categoria %></option>
+                        <option value="<%= Categoria %>" <%= producto.categorias.toLowerCase() === categoria.toLowerCase() ? 'selected' : null %> ><%= categoria %></option>
                       <% }) %>
                     </select>
                     <label for="floatingSelect">Categoria</label>
                     <small>Obligatorio</small>
                   </div>
                 <div class="form-floating m-2">
-                    <input type="number" name="precio" class="form-control" id="precio" placeholder="precio" value="<%=producto.precio%>">
-                    <label for="Precio m-2">Precio</label>
+                    <input type="number" name="Precio" class="form-control" id="Precio" placeholder="Precio" value="<%=producto.precio%>">
+                    <label for="Precio">Precio</label>
                     <small>Obligatorio</small>
                 </div>
                 <div class="form-floating m-2">
-                    <input type="number" name="descuento" class="form-control" id="descuento" placeholder="descuento" value="<%=producto.descuento%>">
+                    <input type="number" name="Descuento" class="form-control" id="Descuento" placeholder="Descuento" value="<%=producto.descuento%>">
                     <label for="descuento">Descuento</label>
                 </div>
                 <div class="form-floating m-2">
-                    <input type="number" name="stock" class="form-control" id="stock" placeholder="stock" value="<%=producto.stock%>">
-                    <label for="stock">Stock</label>
+                    <input type="number" name="Stock" class="form-control" id="Stock" placeholder="Stock" value="<%=producto.stock%>">
+                    <label for="Stock">Stock</label>
                 </div>
                 
                 <div class="form-floating m-2">
-                    <textarea class="form-control h-100" name="descripcion" placeholder="Por favor inserte la descripcion del producto"
+                    <textarea class="form-control h-100" name="Descripcion" placeholder="Por favor inserte la descripcion del producto"
                         id="floatingTextarea"><%= producto.descripcion %></textarea>
                     <label for="floatingTextarea">Descripcion</label>
                     <small>Obligatorio</small>
