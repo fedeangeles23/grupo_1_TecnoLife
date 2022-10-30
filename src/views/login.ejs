@@ -11,15 +11,19 @@
         <h1>Iniciá sesión</h1>
         <form action="" method="post">
             <div class="container bottom">
-                <input type="text" name="name" id="name" placeholder="Ingresa tu email" required>
-                <small>Debe ingresar su email</small>
+                <input type="email" name="email" id="email" placeholder="Ingresa tu email" required>
+                <% if (locals.errors && errors.name) { %>
+                    <small><%= errors.name.msg %></small>
+                <% } %>                
             </div>
             <div class="container bottom">
-                <input type="password" name="name" id="name" placeholder="Ingresa tu contraseña" required>
-                <small>Debe ingresar su contraseña</small>
+                <input type="password" name="pass" id="pass" placeholder="Ingresa tu contraseña" required>
+                <% if (locals.errors && errors.pass) { %>
+                    <small><%= errors.pass.msg %> </small>
+                <% } %>                 
             </div>
             <div class="button">
-                <button class = "spacing">INICIAR SESIÓN</button>
+                <button type="submit" class = "spacing">INICIAR SESIÓN</button>
                 <p>¿Has olvidado tu contraseña?</p>
                 <p>¿No tenés una cuenta en nuestra página?</p>
                 <p><a class="link" href="/register">Registrate aquí</a></p>
