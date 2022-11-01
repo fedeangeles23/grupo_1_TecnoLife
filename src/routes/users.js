@@ -9,7 +9,7 @@ const upload = require ('../middlewares/multerUsuarios')
 
 router.get('/register', registerValidation,register);
 router.post('/register',registerValidation, upload.single('Image'), registerValidation, processRegister)
-/* router.get('/login', login); */
+
 router.get('/login', login);
 router.post('/login',loginValidation, processLogin)
 
