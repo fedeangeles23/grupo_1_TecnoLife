@@ -3,7 +3,7 @@ const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class carrito extends Model {
+  class Carrito extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -11,14 +11,27 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Carrito.belongsTo(models.Productos, {
+        as: 'producto',
+        foreignKey: 'productos_id'
+      })
+      Carrito.belongsTo(models.Usuarios, {
+        as: 'usuario',
+        foreignKey: 'usuarios_id'
+      })
+      Carrito.hasMany(models.Ordenes, {
+        as: 'ordenes',
+        foreignKey: 'carritos_id'
+      })
     }
   }
-  carrito.init({
-    productos_id: DataTypes.STRING,
-    usuarios_id: DataTypes.STRING
+  Carrito.init({
+    productos_id: DataTypes.INTEGER,
+    usuarios_id: DataTypes.INTEGER
   }, {
     sequelize,
-    modelName: 'carrito',
+    modelName: 'Carrito',
+    timestamps: true
   });
-  return carrito;
+  return Carrito;
 };

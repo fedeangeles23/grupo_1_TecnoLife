@@ -32,24 +32,13 @@
         <tbody>
           <% productos.forEach(producto=> { %>
             <tr>
-              <th scope="row"><a href="/admin/edit/<%= producto.id %>"> 
-                <%= producto.id %>
-                </a></th>
-              <td><a href="/admin/edit/<%= producto.id %>">
-                  <%= producto.marca %>
-                </a></td>
-              <td colspan="2"><a href="/admin/edit/<%= producto.id %>">
-                  <%= producto.titulo %>
-                </a></td>
-              <td><a href="/admin/edit/<%= producto.id %> ">
-                  <%= producto.stock %>
-                </a></td>
-              <td><a href="/admin/edit/<%= producto.id %> ">
-                  <%= producto.precio %>
-                </a></td>
-              <td><a href="/admin/edit/<%= producto.id %> ">
-                  <%= producto.descuento %>
-                </a></td>
+              <th scope="row"><a href="/admin/edit/<%= producto.id %>"> <%= producto.id %></a></th>
+              <td><a href="/admin/edit/<%= producto.id %>"> <%= producto.marca %> </a></td>
+              <td><a href="/admin/edit/<%= producto.id %>"> <%= producto.titulo %> </a></td>
+              <td><a href="/admin/edit/<%= producto.id %> "> <%= producto.stock %> </a></td>
+              <td><a href="/admin/edit/<%= producto.id %> "> <%= producto.precio %> </a></td>
+              <td><a href="/admin/edit/<%= producto.id %> "> <%= producto.descuento %> </a></td>
+              <td><a href="/admin/edit/<%= producto.id %> "> <%= producto.accion %> </a></td>
               <td>
                 <div>
                   <a href="/admin/edit/<%= producto.id%>">

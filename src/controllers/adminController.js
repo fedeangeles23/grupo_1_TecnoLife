@@ -61,7 +61,6 @@ module.exports = {
                 descripcion,
                 imagenes: req.files.length === 4 ? img : ['default-image.png', 'default-image.png', 'default-image.png', 'default-image.png'],
             }
-            console.log(productoNuevo)
             productos.push(productoNuevo)
             guardar(productos)
             /* Redirecciona a la lista de productos */
@@ -91,7 +90,7 @@ module.exports = {
             productos.forEach(producto => {
                 if (producto.id === idParams) {
                     producto.marca = Marca
-                    producto.titulo = Titulo
+                    producto.Titulo = Titulo
                     producto.categorias = Categoria
                     producto.precio = +Precio
                     producto.descuento = +Descuento

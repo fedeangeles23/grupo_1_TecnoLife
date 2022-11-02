@@ -15,7 +15,7 @@
                     <!-- Principales -->
                     <div class="col col-lg-4 col-md-12 col-sm-12">
                         <div class="form-floating mb-3"> 
-                            <input type="text" class="form-control" name="Titulo" placeholder="Nombre del producto" id="Titulo" value="<%= locals.old && old.Titulo ? old.Titulo : null%>" placeholder="name@example.com">
+                            <input type="text" class="form-control" name="Titulo" placeholder="Nombre del producto" id="Titulo" value="<%= locals.old && old.Titulo ? old.Titulo : null%>">
                             <label for="Titulo">Nombre del producto</label>
                             <p class="span text-danger">
                                 <%= locals.errors && errors.Titulo ? errors.Titulo.msg : null %>
@@ -113,7 +113,6 @@
                                     <%= locals.errors && errors.imagen ? errors.imagen.msg : null %>
                                 </p>
                             </div>
-
                         </section>
                     </div>
                     <!-- Fin del contenido principal -->
@@ -148,8 +147,6 @@
 
                         </div>
                     </div>
-
-
                     <div class="container m-3" >
                         <div class="row">
                             <div class="col col-12">

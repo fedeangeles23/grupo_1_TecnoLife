@@ -1,28 +1,41 @@
 [
     {
         "id": 1,
-        "marca": "SAMSUNG",
-        "titulo": "Celular motorola super epico de 20gb de ram",
-        "precio": 150000,
-        "descripcion": "este celular motorola puede con cualquier juego del mercado!",
-        "imagenes": [
-            "D_NQ_NP_2X_804287-MLA49587128302_042022-F.webp",
-            "D_NQ_NP_667767-MLA40077047262_122019-V.webp",
-            "D_NQ_NP_2X_804287-MLA49587128302_042022-F.webp",
-            "D_NQ_NP_667767-MLA40077047262_122019-V.webp"
-        ]
-    },
-    {
-        "id": 2,
         "marca": "ASUS",
         "precio": 100000,
         "descuento": 0,
         "stock": 5,
         "imagenes": [
-            "img-1664496316670.jpg",
-            "img-1664496316671.webp",
-            "img-1664496316673.webp",
-            "img-1664496316674.webp"
+            "img-1667266442243.webp",
+            "img-1667266442244.webp",
+            "img-1667266442246.webp",
+            "img-1667266442247.webp"
+        ]
+    },
+    {
+        "id": 2,
+        "marca": "INTEL",
+        "precio": 100000,
+        "descuento": 0,
+        "stock": 5,
+        "imagenes": [
+            "img-1667266512473.webp",
+            "img-1667266512474.webp",
+            "img-1667266512477.webp",
+            "img-1667266512477.webp"
+        ]
+    },
+    {
+        "id": 3,
+        "marca": "ASUS",
+        "precio": 100000,
+        "descuento": 0,
+        "stock": 4,
+        "imagenes": [
+            "img-1667349082137.webp",
+            "img-1667349082139.webp",
+            "img-1667349082141.webp",
+            "img-1667349082144.webp"
         ]
     }
 ]
