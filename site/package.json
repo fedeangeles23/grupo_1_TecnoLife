@@ -2,10 +2,10 @@
   "name": "site",
   "version": "1.0.0",
   "description": "Tecno Life",
-  "main": "/src/app.js",
+  "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./src/app.js"
+    "start": "nodemon ./site/src/app.js"
   },
   "keywords": [],
   "author": "Tecno Life",
