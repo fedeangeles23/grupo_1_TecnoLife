@@ -1,0 +1,27 @@
+Tipografía: Roboto
+
+Colores: 
+Blanco #FAFAFA - Gris #F1E5E5 - Gris #989898 - Gris #90979D
+Celeste #9AD2F3 - Azul #3A4A72 - Azul #232F3E - Negro #2D2D2D
+Rojo #B01D17 - Rojo #D7443E - Naranja #E99441 - Naranja #E4A457
+Verde #2DA503, Verde #29723D - Violeta #580C59 - Violeta #750B77
+
+Figma: https://www.figma.com/file/FtUolI4aoTg3Ul4QFzU66Z/Proyecto---Grupo-1?node-id=0%3A1
+
+
+Para la versión Tablet:
+
+Oculto: Nav
+Modificado: Lupa del search modificado.
+Modificado: Disposición del menú hamburguesa
+Adaptado: Buscador e íconos adaptados.
+Oculto: Icono favoritos 
+Oculto: Banner del home
+Oculto:: Tarjetas de Sony
+Oculto: El asistente virtual
+Adaptado: Footer
+
+Para la versión Mobile:
+
+Los iconos del nav se fueron al menú nav desplegable.
+Se omitieron algunas tarjetas.
