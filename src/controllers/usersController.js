@@ -14,16 +14,18 @@ module.exports = {
         let errors = validationResult(req)
 
         if (errors.isEmpty()) {
-            let { name, lastname, email, pass, phonenumber } = req.body
+            let { name, email, pass, } = req.body
 
 
         db.Usuarios.crate({
+            nombreUsuario: null,
             nombre: name,
             apellido:lastname,
             genero:null,
             email:email,
             password:bcrypt.hashSync(pass, 12),
             ciudad:null,
+            rolId: 2,
             imagen:"default-avatar.png",
         })
     
@@ -74,7 +76,7 @@ processLogin: (req, res) => {
                 rol: usuario.rolId
             }/**/
             if (recordarme) {
-                res.cookie ('', req.session.userLogin, { maxAge: 1000 * 60 * 60 * 24 })
+                res.cookie ('TecnoLife', req.session.userLogin, { maxAge: 1000 * 60 * 60 * 24 })
             }
             return res.redirect('/profile')
         })

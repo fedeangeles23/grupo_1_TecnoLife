@@ -1,18 +1,101 @@
-let productos = require('../data/productos.json')
+//let productos = require('../data/productos.json')
+const db = require('../database/models');
+let Sequelize = require('sequelize')
 
-module.exports = {
-    productDetail : (req,res) => {
-        let id = +req.params.id
-        let producto = productos.find((producto) => producto.id === id)
-        return res.render ('productDetail',{producto})
+module.exports ={
+    detail: (req,res) =>{
+        let idParams= +req.params.id;
+        db.Productos.findByPk(idParams,{
+            include : [{
+                all : true
+            }]
+        })
+        .then(producto => {
+
+            db.Productos.findAll({
+                where : {
+                    categoriasId: producto.categoriasId
+                },
+                limit : 4,
+                order : [[Sequelize.literal("RAND()")]],
+                include : [{
+                    all : true
+            }]
+            
+        })
+        //
+            .then(productos => {
+            return res.render('productDetail',{
+                producto,
+                productos
+            })
+        })})
+        .catch(error => res.send(error))
     },
-    cart1: (req,res) => {
-        res.render('cart1')
+    cart: (req,res) =>{
+        let idParams= +req.params.id;
+        db.Productos.findByPk(idParams,{
+            include : [{
+                all : true
+            }]
+        })
+        .then(producto => {
+
+            db.Productos.findAll({
+                where : {
+                    categoriasId: producto.categoriasId
+                },
+                limit : 4,
+                order : [[Sequelize.literal("RAND()")]],
+                include : [{
+                    all : true
+            }]
+            })
+            .then(productos => {
+            return res.render('productCart',{
+                producto,
+                productos
+            })
+        })})
+        .catch(error => res.send(error))
+
+
     },
-    cart2: (req,res) => {
-        res.render('cart2')
+    list: (req,res) =>{
+        db.Productos.findAll({
+            include : [{
+                all : true
+        }]
+        })
+        .then(productos => {
+            let imagenes= [] 
+            productos.forEach(producto =>{
+                imagenes.push(producto.imagenes)
+            })
+            return res.render('listaProductos',{productos})
+    })
+    .catch(error => res.send(error))
+
     },
-    cart3: (req,res) => {
-        res.render('cart3')
-    }
+    categoria : (req,res) => {
+        let categoriaSeleccionada = req.params.categoria
+        db.Categorias.findOne({
+            where : {
+                nombre : categoriaSeleccionada
+            },
+            include : [{
+                association : 'productos',
+                include: [{
+                    all : true
+                }]
+            }]
+        })
+        .then(categorias => {
+           return res.render('products',{
+                categorias
+            })
+        })
+        .catch(error => res.send(error))
+
+    },
 }
