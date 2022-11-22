@@ -3,12 +3,12 @@
 
     <%- include('./partials/head') %> 
 
-<body class="registro">
+<body class="register">
 
     <%- include('./partials/header') %> 
 
     <main>
-        <h1>Crear cuenta</h1>
+        <h1 class="mb-2">Crear cuenta</h1>
         <form action="" method="post">
             <div class="container bottom">
                 <input type="text" name="name" id="name" placeholder="Ingresa tu nombre y apellido" value="<%= locals.old && old.name ? old.name : null%>">
@@ -17,7 +17,7 @@
                 <% } %>
             </div>
             <div class="container bottom">
-                <input type="text" name="email" id="email" placeholder="Ingresa tu email"value="<%= locals.old && old.email ? old.email : null%>"> required>
+                <input type="text" name="email" id="email" placeholder="Ingresa tu email"value="<%= locals.old && old.email ? old.email : null%>" required>
                 <% if (locals.errors && errors.email) { %>
                     <small><%= errors.email.msg %></small>
                 <% } %>
@@ -37,7 +37,7 @@
             <div class="button">
                 <button class = "spacing">REGISTRARSE</button>
                 <p>¿Ya tenés creada una cuenta?</p>
-                <p><a class="link" href="/login">Inicia sesión aquí</a></p>
+                <p><a class="link" href="/users/login">Inicia sesión aquí</a></p>
             </div>
         </form>
     </main>

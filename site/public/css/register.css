@@ -1,8 +1,8 @@
 
 
 
-.login main{
-    width: 90%;
+.register main{
+    width: 100%;
     max-width: 400px;
     margin: 0 auto;
     padding-bottom: 50px;
@@ -10,39 +10,42 @@
     
 
 }
-.login main h1{
+
+.register main h1{
     text-align: center;
     color: white;
+    padding: 15px;
+
 }
 
-.login main .container{
+.register main .container{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: flex-start;
+    align-content: center;
     justify-content: center;
     font-weight: bold;
     color: white;
 
     
 }
-.login main .container label{
+.register main .container label{
     margin-bottom: 5px;
 }
-.login main .container input{
+.register main .container input{
     width: 94%;
     padding: 10px;
 }
-.login main small{
+.register main small{
     margin-top: 5px;
 color: red;
 
   }
-  .login main button:hover {
+  .register main button:hover {
   background: var(--main-color);
   letter-spacing: .1rem;
 }
-.login main button{
+.register main button{
    
   width: 100%;
   font-size: 20px;
@@ -54,37 +57,38 @@ color: red;
 }
 
 
-.login .bottom {
+.register .bottom {
   margin-bottom: 20px;
   font-size: 15px;
 
 }
 
-.login .button p {
+.register .button p {
   color: #ffffff;
   text-align: center;
   margin-top: 20px;
 }
 
-.link {
+.register .link {
   color: #fafafa;
 }
 
-.link:hover {
+.register .link:hover {
   color: var(--main-color);
 }
 
-
+/*
 @media(max-width: 767px) {
-    .login main .container input{
+    .register main .container input{
     width: 94%;
     padding: 9px;
     }
 }
 
 @media(max-width: 574px) {
-    .login main .container input{
+    .register main .container input{
     width: 93%;
     padding: 8px;    
   }
 }
+*/
