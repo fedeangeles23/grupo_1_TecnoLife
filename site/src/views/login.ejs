@@ -11,13 +11,18 @@
         <h1>Iniciá sesión</h1>
         <form action="" method="post">
             <div class="container bottom">
-                <input type="email" name="email" id="email" placeholder="Ingresa tu email" value="<%= locals.old && old.name ? old.email : null %>">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Ingresa tu email" value="<%= locals.old && old.email ? old.email : null %>">
                 <% if (locals.errors && errors.email) { %>
                     <small><%= errors.email.msg %></small>
                 <% } %>                
             </div>
             <div class="container bottom">
+                <label for="name">Contraseña</label>
+                <div class="password">
                 <input type="password" name="pass" id="pass" placeholder="Ingresa tu contraseña">
+                <i class="fas fa-eye-slash" id="eye-pass"></i>
+                </div>
                 <% if (locals.errors && errors.pass) { %>
                     <small><%= errors.pass.msg %></small>
                 <% } %>          
