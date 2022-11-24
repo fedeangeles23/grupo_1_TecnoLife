@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "marca": "ASUS",
+        "precio": 100000,
+        "descuento": 0,
+        "stock": 5,
+        "imagenes": [
+            "img-1667266442243.webp",
+            "img-1667266442244.webp",
+            "img-1667266442246.webp",
+            "img-1667266442247.webp"
+        ]
+    },
+    {
+        "id": 2,
+        "marca": "INTEL",
+        "precio": 100000,
+        "descuento": 0,
+        "stock": 5,
+        "imagenes": [
+            "img-1667266512473.webp",
+            "img-1667266512474.webp",
+            "img-1667266512477.webp",
+            "img-1667266512477.webp"
+        ]
+    },
+    {
+        "id": 3,
+        "marca": "ASUS",
+        "precio": 100000,
+        "descuento": 0,
+        "stock": 4,
+        "imagenes": [
+            "img-1667349082137.webp",
+            "img-1667349082139.webp",
+            "img-1667349082141.webp",
+            "img-1667349082144.webp"
+        ]
+    }
+]
