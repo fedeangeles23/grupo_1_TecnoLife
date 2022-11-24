@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url("general.css");
 @import url("variables.css");
 @import url("header.css");
@@ -9,3 +10,4 @@
 @import url("register.css");
 @import url("productDetail.css");
 @import url("categories.css");
+@import url("welcome.css");
