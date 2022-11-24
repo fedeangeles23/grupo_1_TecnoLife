@@ -434,7 +434,7 @@
 
 /* Main Home - Contact settings start */
 
-.contact .row{
+.contact .contenedor-m{
     display: flex;
     background:var(--azul1);
     flex-wrap: wrap;
@@ -442,39 +442,39 @@
     margin-top: 90px;
 }
 
-.contact .row .map {
+.contact .contenedor-m .map {
     width: 50%;
     height: 538px;
     object-fit: cover;
 }
 
-.contact .row form{
+.contact .contenedor-m form{
     flex:1 1 1rem;
     padding:8rem 0 0 0;
     text-align: center;
 }
 
-.contact .row form h3{
+.contact .contenedor-m form h3{
     text-transform: uppercase;
     font-size: 3.5rem;
     color:#fff;
 }
 
-.contact .row form .inputBox{
+.contact .contenedor-m form .inputBox{
     display: flex;
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-.contact .row form .inputBox span{
+.contact .contenedor-m form .inputBox span{
     color:#fff;
     font-size: 2rem;
     margin-right: 1.5rem;
     background-color: var(--azul1);
 }
 
-.contact .row form .inputBox input {
+.contact .contenedor-m form .inputBox input {
     width: 85%;
     margin: 0 auto;
     padding: 0.5rem;
