@@ -1,110 +1,90 @@
-.register main {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  padding-bottom: 50px;
-  background-color: #3A4A72;
 
 
-}
 
-.register main h1 {
-  text-align: center;
-  color: white;
-  padding: 20px;
+.login main{
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    background-color: #3A4A72;
+    
 
 }
-
-.register main .container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  font-weight: bold;
-  color: white;
-
-
+.login main h1{
+    text-align: center;
+    color: white;
 }
 
-.register main .password {
-  width: 100%;
-  position: relative;
+.login main .container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+
+    
 }
-
-.register main .password i {
-  position: absolute;
-  top: 14px;
-  right: 10px;
-  color: black
+.login main .container label{
+    margin-bottom: 5px;
 }
-
-
-
-.register main .container label {
-  margin-bottom: 5px;
+.login main .container input{
+    width: 94%;
+    padding: 10px;
 }
+.login main small{
+    margin-top: 5px;
+color: red;
 
-.register main .container input {
-  width: 100%;
-  padding: 10px;
-}
-
-.register main small {
-  margin-top: 5px;
-  color: red;
-
-}
-
-.register main button:hover {
+  }
+  .login main button:hover {
   background: var(--main-color);
   letter-spacing: .1rem;
 }
-
-.register main button {
-
+.login main button{
+   
   width: 100%;
   font-size: 20px;
   background: black;
   padding: 15px;
   color: white;
 
-
+    
 }
 
 
-.register .bottom {
+.login .bottom {
   margin-bottom: 20px;
   font-size: 15px;
 
 }
 
-.register .button p {
+.login .button p {
   color: #ffffff;
   text-align: center;
   margin-top: 20px;
 }
 
-.register .link {
+.link {
   color: #fafafa;
 }
 
-.register .link:hover {
+.link:hover {
   color: var(--main-color);
 }
 
-/*
+
 @media(max-width: 767px) {
-    .register main .container input{
+    .login main .container input{
     width: 94%;
     padding: 9px;
     }
 }
 
 @media(max-width: 574px) {
-    .register main .container input{
+    .login main .container input{
     width: 93%;
     padding: 8px;    
   }
 }
-*/

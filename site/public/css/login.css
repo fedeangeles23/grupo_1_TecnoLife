@@ -1,76 +1,56 @@
-.login main {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  padding-bottom: 50px;
-  background-color: #3A4A72;
 
 
-}
 
-.login main h1 {
-  text-align: center;
-  color: white;
-  padding: 20px;
+.login main{
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    background-color: #3A4A72;
+    
 
 }
-
-.login main .container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  font-weight: bold;
-  color: white;
-
-
-
+.login main h1{
+    text-align: center;
+    color: white;
 }
 
-.login main .password {
-  width: 100%;
-  position: relative;
+.login main .container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+
+    
 }
-
-.login main .password i {
-  position: absolute;
-  top: 14px;
-  right: 10px;
-  color: black
+.login main .container label{
+    margin-bottom: 5px;
 }
-
-
-
-.login main .container label {
-  margin-bottom: 5px;
+.login main .container input{
+    width: 94%;
+    padding: 10px;
 }
+.login main small{
+    margin-top: 5px;
+color: red;
 
-.login main .container input {
-  width: 100%;
-  padding: 10px;
-}
-
-.login main small {
-  margin-top: 5px;
-  color: red;
-
-}
-
-.login main button:hover {
+  }
+  .login main button:hover {
   background: var(--main-color);
   letter-spacing: .1rem;
 }
-
-.login main button {
-
+.login main button{
+   
   width: 100%;
   font-size: 20px;
   background: black;
   padding: 15px;
   color: white;
 
-
+    
 }
 
 
@@ -86,15 +66,15 @@
   margin-top: 20px;
 }
 
-.login .link {
+.link {
   color: #fafafa;
 }
 
-.login .link:hover {
+.link:hover {
   color: var(--main-color);
 }
 
-/*
+
 @media(max-width: 767px) {
     .login main .container input{
     width: 94%;
@@ -104,8 +84,7 @@
 
 @media(max-width: 574px) {
     .login main .container input{
-    width: 93%;
-    padding: 8px;    
+    width: 94%;
+    padding: 9px;    
   }
 }
-*/

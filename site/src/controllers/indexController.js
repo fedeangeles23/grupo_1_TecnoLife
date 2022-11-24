@@ -1,60 +1,12 @@
-let db = require('../database/models')
-const { Op } = require("sequelize");
+let productos = require('../data/productos.json')
 
 module.exports = {
-    home: (req, res) => {
-    //    let aside = db.Asides.findAll()
-         db.Productos.findAll({
-            include: ['category', 'marca', 'imagenes']
+    home: (req,res) => {
+        return res.render('home',{
+            productos
         })
-    
-            .then(productos => {
-                return res.render('home'/*,
-                    {
-                        
-                        productos
-                    }*/)
-            })
-            .catch(error => res.send(error))
     },
-    home2 :(req, res)=> {
-        res.render('home')
-
-
-
-
-    },
-    prueba: (req, res) =>{
-        db.Productos.findAll({
-            include: ['category', 'marca', 'imagenes']
-        })
-        .then(productos=>{
-       res.send(productos)     
-        })
-        .catch(error =>res.send(error))
-
-    },
-    search: (req, res) => {
-        let elemento = req.query.search
-
-        db.Productos.findAll({
-            where : {
-                [Op.or] : [
-                    {nombre : {[Op.substring] : elemento}},
-                    {descripcion : {[Op.substring] : elemento}}
-                ]
-            }
-        })
-
-        return res.render('busqueda',
-            {
-                busqueda: elemento,
-                resultados
-            });
-    },
-    categories:(req, res)=>{
-
-
-        console.log();
+    categories: (req,res) => {
+        return res.render('categories')
     }
 }
