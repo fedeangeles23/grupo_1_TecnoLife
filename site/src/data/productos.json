@@ -1,10 +1,13 @@
 [
     {
         "id": 1,
-        "marca": "ASUS",
+        "marca": "HP",
+        "Titulo": "notebook hp intel",
+        "categorias": "Smartphones",
         "precio": 100000,
-        "descuento": 0,
+        "descuento": 10,
         "stock": 5,
+        "descripcion": "balato balato",
         "imagenes": [
             "img-1667266442243.webp",
             "img-1667266442244.webp",
@@ -14,28 +17,18 @@
     },
     {
         "id": 2,
-        "marca": "INTEL",
+        "marca": "Samsung",
+        "Titulo": "smartphone Samsung Galaxy A20",
+        "categorias": "Smartphones",
         "precio": 100000,
         "descuento": 0,
         "stock": 5,
+        "descripcion": "Compralo pibe",
         "imagenes": [
             "img-1667266512473.webp",
             "img-1667266512474.webp",
             "img-1667266512477.webp",
             "img-1667266512477.webp"
-        ]
-    },
-    {
-        "id": 3,
-        "marca": "ASUS",
-        "precio": 100000,
-        "descuento": 0,
-        "stock": 4,
-        "imagenes": [
-            "img-1667349082137.webp",
-            "img-1667349082139.webp",
-            "img-1667349082141.webp",
-            "img-1667349082144.webp"
         ]
     }
 ]

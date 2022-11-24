@@ -16,8 +16,8 @@
                     <!-- Principales -->
                     <div class="col col-lg-4 col-md-12 col-sm-12">
                         <div class="form-floating mb-3"> 
-                            <input type="text" class="form-control" name="Titulo" placeholder="Nombre del producto" id="Titulo" value="<%= producto.titulo %> " placeholder="name@example.com">
-                            <label for="Titulo">Nombre del producto</label>
+                            <input type="text" class="form-control" name="titulo" placeholder="Nombre del producto" id="titulo" value="<%= producto.Titulo %> " placeholder="name@example.com">
+                            <label for="titulo">Nombre del producto</label>
                             <p class="span text-danger">
                                 <%= locals.errors && errors.Titulo ? errors.Titulo.msg : null %>
                             </p>
@@ -141,8 +141,8 @@
                         <div class="row">
                             <div class="col col-12">
                                 <div class="form-floating"> 
-                                    <textarea name="Descripcion" id="Descripcion" cols="300" rows="300" class="form-control" placeholder="Leave a comment here" style="resize: none;" value="<%= producto.descripcion %>"></textarea>
-                                    <label for="Descripcion">Descripcion del producto</label>
+                                    <textarea name="descripcion" id="descripcion" cols="300" rows="300" class="form-control" placeholder="Leave a comment here" style="resize: none;" value="<%= producto.descripcion %>"></textarea>
+                                    <label for="descripcion">Descripcion del producto</label>
                                 </div>
                                 <p class="span text-danger">
                                     <%= locals.errors && errors.Descripcion ? errors.Descripcion.msg : null %>

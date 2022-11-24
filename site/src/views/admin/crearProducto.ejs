@@ -17,10 +17,10 @@
                     <!-- Principales -->
                     <div class="col col-lg-4 col-md-12 col-sm-12">
                         <div class="form-floating mb-3"> 
-                            <input type="text" class="form-control" name="Titulo" placeholder="Nombre del producto" id="Titulo" value="<%= locals.old && old.Titulo ? old.Titulo : null%>">
-                            <label for="Titulo">Nombre del producto</label>
+                            <input type="text" class="form-control" name="titulo" placeholder="Título del producto" id="titulo" value="<%= locals.old && old.titulo ? old.titulo : null%>">
+                            <label for="titulo">Nombre del producto</label>
                             <p class="span text-danger">
-                                <%= locals.errors && errors.Titulo ? errors.Titulo.msg : null %>
+                                <%= locals.errors && errors.titulo ? errors.titulo.msg : null %>
                             </p>
                         </div>
                         <div class="form-floating mb-3">
@@ -31,21 +31,21 @@
                             <% } %>
                         </div>
                         <div class="form-floating mb-3">
-                            <input class="form-control" type="number" name="Precio" placeholder="Precio del producto" id="price" value="<%= locals.old && old.precio ? old.precio : null%>">
+                            <input class="form-control" type="number" name="Precio" placeholder="Precio del producto" id="price" value="<%= locals.old && old.Precio ? old.Precio : null%>">
                             <label class="form-label" for="price">Precio del producto</label>
                             <p class="span text-danger">
                                 <%= locals.errors && errors.Precio ? errors.Precio.msg : null %>
                             </p>
                         </div>
                         <div class="form-floating mb-3">
-                            <input class="form-control" type="number" name="Descuento" placeholder="Descuento del producto" id="discount" value="<%= locals.old && old.descuento ? old.descuento : 0%>">
+                            <input class="form-control" type="number" name="Descuento" placeholder="Descuento del producto" id="discount" value="<%= locals.old && old.Descuento ? old.Descuento : 0%>">
                             <label class="form-label" for="discount">Descuento del producto</label>
                             <p class="span text-danger">
                                 <%= locals.errors && errors.Descuento ? errors.Descuento.msg : null %>
                             </p>
                         </div>
                         <div class="form-floating mb-3">
-                            <input class="form-control" type="text" name="Stock" placeholder="Stock con el que cuenta el producto" id="stock" value="<%= locals.old && old.stock ? old.stock : null%>">
+                            <input class="form-control" type="text" name="Stock" placeholder="Stock con el que cuenta el producto" id="stock" value="<%= locals.old && old.Stock ? old.Stock : null%>">
                             <label class="form-label" for="stock">Stock con el que cuenta el producto</label>
                             <p class="span text-danger">
                                 <%= locals.errors && errors.Stock ? errors.Stock.msg : null %>
@@ -112,7 +112,7 @@
 
                                 </div>
                                 <p class="span text-danger">
-                                    <%= locals.errors && errors.imagen ? errors.imagen.msg : null %>
+                                    <%= locals.errors && errors.imagenes ? errors.imagenes.msg : null %>
                                 </p>
                             </div>
                         </section>
@@ -129,12 +129,12 @@
                         <div class="row justify-content-around align-items-center">
                             <div class="col col-4">
                                 <h3 class="text-center">Categorias</h3>
-                                <select class="form-select" name="Categoria" id="floatingSelect" aria-label="Floating label select example">
-                                    <% if (locals.errors && old.Categoria) { %>
+                                <select class="form-select" name="categoria" id="floatingSelect" aria-label="Floating label select example">
+                                    <% if (locals.errors && old.categoria) { %>
                                         <option hidden value="">Selecciona una opcion</option>
-                                        <option <%= old.Categoria === "Smartphones" ? "selected" : null %>  value="Smartphones">Smartphones</option>
-                                        <option <%= old.Categoria === "Tablets" ? "selected" : null %>   value="Tablets">Tablets</option>
-                                        <option <%= old.Categoria === "Notebooks" ? "selected" : null %>   value="Notebooks">Notebooks</option>
+                                        <option <%= old.categoria === "Smartphones" ? "selected" : null %>  value="Smartphones">Smartphones</option>
+                                        <option <%= old.categoria === "Tablets" ? "selected" : null %>   value="Tablets">Tablets</option>
+                                        <option <%= old.categoria === "Notebooks" ? "selected" : null %>   value="Notebooks">Notebooks</option>
                                     <% }else{ %>
                                         <option selected hidden value="">Selecciona una opcion</option>
                                         <option value="Smartphones">Smartphones</option>
@@ -143,7 +143,7 @@
                                     <% } %> 
                                   </select>
                                   <p class="span text-danger">
-                                    <%= locals.errors && errors.Categoria ? errors.Categoria.msg : null %>
+                                    <%= locals.errors && errors.categoria ? errors.categoria.msg : null %>
                                 </p>
                             </div>
 
@@ -153,11 +153,11 @@
                         <div class="row">
                             <div class="col col-12">
                                 <div class="form-floating"> 
-                                    <textarea name="Descripcion" id="Descripcion" cols="300" rows="300" class="form-control" placeholder="Leave a comment here" style="resize: none;"><%= locals.old && old.Descripcion ? old.Descripcion : null%></textarea>
-                                    <label for="Descripcion">Descripcion del producto</label>
+                                    <textarea name="descripcion" id="descripcion" cols="300" rows="300" class="form-control" placeholder="Leave a comment here" style="resize: none;"><%= locals.old && old.descripcion ? old.descripcion : null%></textarea>
+                                    <label for="descripcion">Descripcion del producto</label>
                                 </div>
                                 <p class="span text-danger">
-                                    <%= locals.errors && errors.Descripcion ? errors.Descripcion.msg : null %>
+                                    <%= locals.errors && errors.descripcion ? errors.descripcion.msg : null %>
                                 </p>
                             </div>
                         </div>
