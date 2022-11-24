@@ -65,7 +65,7 @@
     justify-content: center;
     align-items: center;
     background-color: var(--main-color);
-    padding: 7px 1%;
+    padding: 5px 1%;
     border: 1px solid;
     border-color: #daa520 #d3ad7f #daa520 #daa520;
 }
@@ -129,6 +129,10 @@
         display: none;
     }
 
+    .header .buscar .categories{
+        padding: 7px 1%;
+    }
+
 }
 
 @media screen and (min-width: 950px) {
@@ -152,6 +156,10 @@
         display: none;
     }
 
+    .header .buscar .categories{
+        padding: 7px 1%;
+    }
+
 }
 
 @media screen and (min-width:745px) and (max-width:779px){
@@ -168,6 +176,10 @@
         display: none;
     }
         
+    .header .buscar .categories{
+        padding: 7px 1%;
+    }
+
 }
 
 @media screen and (max-width:744px) {
