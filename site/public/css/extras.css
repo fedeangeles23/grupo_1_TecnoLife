@@ -3,11 +3,11 @@
 #button-up{
     width: 60px;
     height: 60px;
-    background: #46a2fd;
+    background: #2D3C60;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--main-color);
     border-radius: 50%;
     font-size: 20px;
     position: fixed;
