@@ -116,6 +116,10 @@
 
 
 @media screen and (min-width:950px) and (max-width:1100px){
+
+    .header .buscar .categories{
+        padding: 7px 1%;
+    }
     
     .header .buscar-form {
         max-width: 30rem;
@@ -136,6 +140,7 @@
 }
 
 @media screen and (min-width: 950px) {
+
     .header .menu-nav #menu-btn{
         display: none;
     }
@@ -143,6 +148,10 @@
 
 
 @media screen and (min-width:780px) and (max-width:949px){
+
+    .header .buscar .categories{
+        padding: 7px 1%;
+    }
     
     .header .buscar-form {
         max-width: 20rem;
@@ -163,6 +172,10 @@
 }
 
 @media screen and (min-width:745px) and (max-width:779px){
+
+    .header .buscar .categories{
+        padding: 7px 1%;
+    }
     
     .header .buscar-form {
         max-width: 15rem;
