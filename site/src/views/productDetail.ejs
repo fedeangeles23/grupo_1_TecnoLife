@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include('./partials/head') %>
+
+    <body>
+
+        <%- include('./partials/header') %>
+
+            <section class="dProducto">
+                <section class="imagen-grande">
+                        <img src="/img/products/<%= producto.imagenes[0] %> " width="100%" alt="">
+
+                        <div class="grupo-imagenes-pequeñas">
+                            <div class="columna-imagenes-pequeñas">
+                                <img src="/img/products/<%= producto.imagenes[0] %>" width="100%" class="imagen-pequeña"
+                                    alt="">
+                            </div>
+                            <div class="columna-imagenes-pequeñas">
+                                <img src="/img/products/<%= producto.imagenes[1] %>" width="100%" class="imagen-pequeña"
+                                    alt="">
+                            </div>
+                            <div class="columna-imagenes-pequeñas">
+                                <img src="/img/products/<%= producto.imagenes[2] %>" width="100%" class="imagen-pequeña"
+                                    alt="">
+                            </div>
+                            <div class="columna-imagenes-pequeñas">
+                                <img src="/img/products/<%= producto.imagenes[3] %>" width="100%" class="imagen-pequeña"
+                                    alt="">
+                            </div>
+                        </div>
+                </section>
+                <section class="especificacion-producto">
+                    <h2>
+                        <%= producto.marca %>
+                    </h2>
+                    <h2>
+                        <%= producto.titulo %>
+                    </h2>
+                    <h4>Online: <%= producto.precio %>
+                    </h4>
+                    <h4>12 x <%= (producto.precio / 12) %> CUOTAS SIN INTERÉS</h4>
+                    <button class="boton-carrito"><a href="/cart1">Añadir al Carrito</a></button>
+                </section>
+            </section>
+            <section class="info-producto">
+                <div>
+                    <h3>ESPECIFICACIONES DEL PRODUCTO</h3>
+                    <H5>
+                        <%= producto.descripcion %>
+                    </H5>
+                </div>
+            </section>
+
+                <%- include('./partials/footer') %>
+
+    </body>
+
+</html>

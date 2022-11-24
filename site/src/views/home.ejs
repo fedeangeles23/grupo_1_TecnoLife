@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include('./partials/head') %>
+
+    <body>
+
+        <!-- header section start  -->
+
+        <%- include('./partials/header') %>
+
+            <main>
+                <h2 class="welcome">WELCOME TO <span>TECNOLIFE</span></h2>
+                <!-- Section Slider start -->
+
+
+                <section class="home-slider" id="home-slider">
+
+                    <div class="container-slider">
+                        <div class="slider" id="slider">
+                            <div class="slider__section">
+                                <img src="/img/slider/slider-1.jpg" alt="" class="slider__img">
+                            </div>
+                            <div class="slider__section">
+                                <img src="/img/slider/slider-2.jpg" alt="" class="slider__img">
+                            </div>
+                            <div class="slider__section">
+                                <img src="/img/slider/slider-3.jpg" alt="" class="slider__img">
+                            </div>
+                            <div class="slider__section">
+                                <img src="/img/slider/slider-4.jpg" alt="" class="slider__img">
+                            </div>
+                        </div>
+
+                        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+                        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+
+                    </div>
+
+                    <!-- Linea bajo carusel -->
+
+                    <div class="lineabajocarousel">
+                        <div class="col1linea">
+                            <img class="imgtrucklinea" src="/images/delivery-truck (1).png" alt="">
+                            <span>ENVÍOS A <b> TODO EL PAÍS </b> </span>
+                        </div>
+
+                        <div class="col2linea">
+                            <img class="tarjetaslinea" src="/images/549d2cb2275c2ae398b2f7bd1450.png" alt="">
+                            <span>Pagá con crédito y débito
+                            </span>
+                            <a href="#" id="open" class="cta">Ver promociones</a>
+                        </div>
+
+                        <div class="modal-container" id="modal_container">
+                            <div class="modal modal-close">
+                                <p class="close" id="close">X</p>
+                                <img src="/img/medio-de-pago.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col3linea">
+                            <img class="envioslinea" src="/images/ayudar.png" alt="">
+                            <span>Consulta tus dudas al <b>0810-1111-4444</b> </span>
+
+                        </div>
+                    </div>
+                    <br>
+                    <!-- End Linea bajo carusel -->
+
+                </section>
+
+                <!-- Start section marcas -->
+
+                <section class="simple-cards" id="simple-cards">
+
+                    <h1 class="heading">#Marcas <span>destacadas</span> </h1>
+
+                    <div class="box-simple-cards">
+
+                        <div class="simple-card">
+                            <img src="/img/" alt="">
+                            <h3>Marca 1</h3>
+                            <a href="#" class="btn">Ver productos</a>
+                        </div>
+
+                        <div class="simple-card">
+                            <img src="/img/" alt="">
+                            <h3>Marca 2</h3>
+                            <a href="#" class="btn">Ver productos</a>
+                        </div>
+
+                        <div class="simple-card">
+                            <img src="/img/" alt="">
+                            <h3>Marca 3</h3>
+                            <a href="#" class="btn">Ver productos</a>
+                        </div>
+
+                        <div class="simple-card">
+                            <img src="/img/" alt="">
+                            <h3>Marca 4</h3>
+                            <a href="#" class="btn">Ver productos</a>
+                        </div>
+
+                        <div class="simple-card">
+                            <img src="/img/" alt="">
+                            <h3>Marca 5</h3>
+                            <a href="#" class="btn">Ver productos</a>
+                        </div>
+
+                        <div class="simple-card">
+                            <img src="/img/" alt="">
+                            <h3>Marca 6</h3>
+                            <a href="#" class="btn">Ver productos</a>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Ofertas en notebooks -->
+                <h1 class="heading">#ofertas en <span>Notebooks</span> </h1>
+                <div class="article">
+                    <div class="card">
+                        <% productos.forEach(producto=> { %>
+                            <div class="img-container">
+                                <a href="/products/detail/<%= producto.id %> ">
+                                    <img src="/img/products/<%= producto.imagenes[0] %>" alt="">
+                                </a>
+                                <h4>
+                                    <%= producto.marca %>
+                                </h4>
+                                <h4>
+                                    <%= producto.titulo %>
+                                </h4>
+                                <div class="favorite">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="info-container">
+                                <h4>Precio Online: <%=producto.precio %>
+                                </h4>
+                                <h4>12 x <%= (producto.precio / 12) %> CUOTAS SIN INTERÉS</h4>
+                                <div class="align">
+                                    <button><a class="details" href="/products/detail/<%= producto.id %>">+
+                                            Detalles</a></button>
+                                    <button><a class="add" href="/cart1">Añadir</a></button>
+                                </div>
+                            </div>
+                            <% }) %>
+                    </div>
+                </div>
+                <!-- Ofertas en smart tv -->
+                <section>
+                    <h1 class="heading">#Ofertas en <span>Smart Tv</span> </h1>
+                    <div class="article">
+                    </div>
+                </section>
+                <!-- Productos destacados -->
+                <section>
+                    <h1 class="heading">#Productos <span>destacados</span> </h1>
+                    <div class="article">
+                </section>
+
+                <!-- customer's review section starts  -->
+
+                <section class="review" id="review">
+
+                    <h1 class="heading"> #OPINIONES <span>DESTACADAS</span> </h1>
+
+                    <div class="box-container">
+
+                        <div class="box">
+                            <img src="/img/reviews/quote-img.png" alt="" class="quote">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga
+                                sequi
+                                nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex
+                                aliquam minus
+                                vel? Nemo.</p>
+                            <img src="/img/reviews/user-incog.jpg" class="user" alt="">
+                            <h3>No Name</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <img src="/img/reviews/quote-img.png" alt="" class="quote">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga
+                                sequi
+                                nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex
+                                aliquam minus
+                                vel? Nemo.</p>
+                            <img src="/img/reviews/user-incog.jpg" class="user" alt="">
+                            <h3>No Name</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <img src="/img/reviews/quote-img.png" alt="" class="quote">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga
+                                sequi
+                                nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex
+                                aliquam minus
+                                vel? Nemo.</p>
+                            <img src="/img/reviews/user-incog.jpg" class="user" alt="">
+                            <h3>No Name</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <img src="/img/reviews/quote-img.png" alt="" class="quote">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga
+                                sequi
+                                nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex
+                                aliquam minus
+                                vel? Nemo.</p>
+                            <img src="/img/reviews/user-incog.jpg" class="user" alt="">
+                            <h3>No Name</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- customer's review section ends -->
+
+                <!-- contact section starts  -->
+
+                <section class="contact" id="contact">
+
+                    <h1 class="heading"> <span>#contacta </span>con nosotros </h1>
+
+                    <div class="contenedor-m">
+
+                        <iframe class="map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1643.209209665209!2d-58.71295544171532!3d-34.54295988577898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd0d7e07c78b%3A0xf879e262f796e21a!2sPlaza%20de%20San%20Miguel!5e0!3m2!1ses-419!2sar!4v1659146353832!5m2!1ses-419!2sar"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        <form action="">
+                            <div class="inputBox">
+                                <span class="fas fa-user"></span>
+                                <input type="text" placeholder="Nombre">
+                            </div>
+                            <div class="inputBox">
+                                <span class="fas fa-envelope"></span>
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="inputBox">
+                                <span class="fas fa-phone"></span>
+                                <input type="number" placeholder="Número">
+                            </div>
+                            <input type="submit" value="Contactar" class="btn-map">
+                        </form>
+
+                    </div>
+
+                </section>
+
+                <!-- contact section ends -->
+
+            </main>
+
+            <%- include('./partials/footer') %>
+
+                <!-- Scripts -->
+
+                <script src="/js/slider.js"></script>
+                <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert -->
+                <script src="/js/welcome.js"></script> <!-- SweetAlert -->
+
+    </body>
+
+</html>
