@@ -1,5 +1,5 @@
 //let productos = require('../data/productos.json')
-const db = require('../database/models');
+let db = require('../database/models');
 let Sequelize = require('sequelize')
 
 module.exports ={

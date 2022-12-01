@@ -1,5 +1,5 @@
 'use strict';
-let listado = ['Notebooks','Tablets','Auriculares','Televisores']
+let listado = ['Notebooks','Tablets','Auriculares','Televisores','Almacenamiento','Monitores','Teclados','Mouses','Parlantes','Cargadores']
 
 let categorias = listado.map(categoria =>{
 let elemento = {

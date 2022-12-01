@@ -1,5 +1,5 @@
 'use strict';
-let listado = ['Samsung','Apple','Nokia','Xiaomi','Asus','Motorola']
+let listado = ['Apple','Nokia','Xiaomi','Motorola']
 
 let marcas = listado.map(marca =>{
 let elemento = {
@@ -11,7 +11,6 @@ let elemento = {
 return elemento
 })
 
-// @type {import('sequelize-cli').Migration}
 module.exports = {
   async up(queryInterface, Sequelize) {
 
