@@ -260,20 +260,34 @@
                             style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                        <form action="">
-                            <div class="inputBox">
+                        <form action="https://formsubmit.co/fedeangeles23@gmail.com" method="POST">
+
+                            <div name="contact-form" class="inputBox">
                                 <span class="fas fa-user"></span>
-                                <input type="text" placeholder="Nombre">
+                                <input type="text" placeholder="Nombre" name="name">
                             </div>
+
                             <div class="inputBox">
                                 <span class="fas fa-envelope"></span>
-                                <input type="email" placeholder="Email">
+                                <input type="email" placeholder="Email" name="email">
                             </div>
+
                             <div class="inputBox">
                                 <span class="fas fa-phone"></span>
-                                <input type="number" placeholder="Número">
+                                <input type="number" placeholder="Teléfono" name="phone">
                             </div>
+
+                            <div class="inputBox">
+                                <span class="fas fa-comment"></span>
+                                <textarea class="textarea" type="comments"  placeholder="Razón de contacto..." name="comment"></textarea>
+                            </div>
+
                             <input type="submit" value="Contactar" class="btn-map">
+
+                            <input type="hidden" name="_next" value="http://localhost:3000">
+
+                            <input type="hidden" name="_captcha" value="false">
+                        
                         </form>
 
                     </div>
@@ -296,7 +310,7 @@
                 <script src="/js/slider.js"></script>
                 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert -->
                 <script src="/js/welcome.js"></script> <!-- SweetAlert -->
-                <script src="/js/buttonUp.js" ></script>
+                <script src="/js/buttonUp.js"></script>
                 <script src="/js/modalPromo.js"></script>
 
 
