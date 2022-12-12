@@ -225,6 +225,7 @@
 /* Main Home - Our menu settings start */
 
 .box-simple-cards{
+   
     margin-top: 90px;
 }
 
@@ -569,7 +570,6 @@
 .contact .contenedor-m form .inputBox{
     display: flex;
     align-items: center;
-    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -591,8 +591,18 @@
     border: var(--border);
 }
 
+.contact .contenedor-m form .inputBox .textarea{
+    width: 85%;
+    margin: 0 auto;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: var(--black);
+    text-transform: none;
+    background: #fafafa;
+    border: var(--border);
+}
+
 .btn-map{
-    margin-top: 1rem;
     display: inline-block;
     padding:.5rem 2rem;
     font-size: 1.7rem;
