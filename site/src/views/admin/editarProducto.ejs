@@ -16,7 +16,7 @@
                     <!-- Principales -->
                     <div class="col col-lg-4 col-md-12 col-sm-12">
                         <div class="form-floating mb-3"> 
-                            <input type="text" class="form-control" name="Titulo" placeholder="Nombre del producto" id="Titulo" value="<%= producto.titulo %> " placeholder="name@example.com">
+                            <input type="text" class="form-control" name="Titulo" placeholder="Nombre del producto" id="Titulo" value="<%= producto.Titulo %> " placeholder="name@example.com">
                             <label for="Titulo">Nombre del producto</label>
                             <p class="span text-danger">
                                 <%= locals.errors && errors.Titulo ? errors.Titulo.msg : null %>
@@ -37,7 +37,7 @@
                             </p>
                         </div>
                         <div class="form-floating mb-3">
-                            <input class="form-control" type="number" name="Descuento" placeholder="Descuento del producto" id="discount" value="<%= producto.descuento %> ">
+                            <input class="form-control" type="number" name="Descuento" placeholder="Descuento del producto" id="discount" value="<%= producto.Descuento %> ">
                             <label class="form-label" for="discount">Descuento del producto</label>
                             <p class="span text-danger">
                                 <%= locals.errors && errors.Descuento ? errors.Descuento.msg : null %>
@@ -128,7 +128,7 @@
                                 <h3 class="text-center">Categorias</h3>
                                 <select class="form-select" name="Categoria" id="floatingSelect" aria-label="Floating label select example">
                                     <% categorias.forEach(categoria => { %>
-                                        <option value="<%= categoria %>" <%= producto.categorias === categoria ? 'selected' : null %> ><%= categoria %></option>
+                                        <option value="<%= categoria %>" <%= producto.Categoria === categoria ? 'selected' : null %> ><%= categoria %></option>
                                     <% }) %>
                                   </select>
                                   <p class="span text-danger">
@@ -141,7 +141,7 @@
                         <div class="row">
                             <div class="col col-12">
                                 <div class="form-floating"> 
-                                    <textarea name="Descripcion" id="Descripcion" cols="300" rows="300" class="form-control" placeholder="Leave a comment here" style="resize: none;" value="<%= producto.descripcion %>"></textarea>
+                                    <textarea name="Descripcion" id="Descripcion" cols="300" rows="300" class="form-control" placeholder="Leave a comment here" style="resize: none;" value="<%= producto.Descripcion %>"></textarea>
                                     <label for="Descripcion">Descripcion del producto</label>
                                 </div>
                                 <p class="span text-danger">

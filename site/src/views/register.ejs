@@ -17,7 +17,7 @@
                 <% } %>
             </div>
             <div class="container bottom">
-                <input type="text" name="email" id="email" placeholder="Ingresa tu email"value="<%= locals.old && old.email ? old.email : null%>"> required>
+                <input type="text" name="email" id="email" placeholder="Ingresa tu email"value="<%= locals.old && old.email ? old.email : null%>">
                 <% if (locals.errors && errors.email) { %>
                     <small><%= errors.email.msg %></small>
                 <% } %>

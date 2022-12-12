@@ -267,11 +267,12 @@
     display: grid;
     justify-items: center;
     margin-top: 5rem;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     column-gap: 8px;
+    gap: 1.5rem;
 }
 
-.card{
+.tarjeta{
     font-family: sans-serif;
     background-color: white;
     text-align: center;
@@ -282,25 +283,25 @@
     width: 295px;
 }
 
-.card h4 {
+.tarjeta h4 {
     padding: 0 0 12px 0;
 }
 
-.card .img-container{
+.tarjeta .img-container{
     overflow: hidden;
     position: relative;
 }
 
-.card .img-container p{
+.tarjeta .img-container p{
     font-size: 18px;
 }
 
-.card .img-container img{
+.tarjeta .img-container img{
     width: 65%;
     margin: 15px 0px;
 }
 
-.card .img-container .price{
+.tarjeta .img-container .price{
     position: absolute;
     top: 10px;
     left: 0;
@@ -309,7 +310,7 @@
     padding: 15px;
 }
 
-.card .img-container .favorite{
+.tarjeta .img-container .favorite{
     position: absolute;
     top: 2px;
     right: -2px;
@@ -319,11 +320,11 @@
     cursor: pointer;
 }
 
-.card .img-container .favorite i{
+.tarjeta .img-container .favorite i{
     transform: translatey(14px);
 }
 
-.card .img-container .favorite:hover i{
+.tarjeta .img-container .favorite:hover i{
     fill: red;
 }
 

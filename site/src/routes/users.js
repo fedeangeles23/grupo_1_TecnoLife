@@ -1,4 +1,4 @@
-const express = require('express');
+/* const express = require('express');
 const {login,register, processRegister, processLogin} = require ('../controllers/usersController');
 const router = express.Router();
 
@@ -11,9 +11,9 @@ router.get('/register', registerValidation,register);
 router.post('/register',registerValidation, upload.single('Image'), registerValidation, processRegister)
 
 router.get('/login', login);
-router.post('/login',loginValidation, processLogin)
+router.post('/login',loginValidation, processLogin) */
 
 /* router.get('/perfil', perfil);
 router.delete('/logout', logout); */
 
-module.exports = router;
+/* module.exports = router; */

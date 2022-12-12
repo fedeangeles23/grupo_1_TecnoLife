@@ -49,16 +49,16 @@ module.exports = {
                 return imagen.filename
             })
             
-            let { marca, titulo, categoria, Precio, Descuento, Stock, descripcion } = req.body
+            let { marca, Titulo, Categoria, Precio, Descuento, Stock, Descripcion } = req.body
             let productoNuevo = {
                 id: productos[productos.length - 1].id + 1,
                 marca,
-                titulo,
-                categoria,
+                Titulo,
+                Categoria,
                 precio: +Precio,
                 descuento: +Descuento,
                 stock: +Stock,
-                descripcion,
+                Descripcion,
                 imagenes: req.files.length === 4 ? img : ['default-image.png', 'default-image.png', 'default-image.png', 'default-image.png'],
             }
             productos.push(productoNuevo)

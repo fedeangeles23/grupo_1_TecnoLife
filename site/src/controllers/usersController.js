@@ -20,7 +20,6 @@ module.exports = {
            })
         }
     },
-
     register: (req,res) => {
         return res.render('register')
     },
@@ -43,4 +42,8 @@ module.exports = {
             old:req.boby
            })
         }
-    }}
+    },
+    profile: (req,res) => {
+        return res.render('profile')
+    }
+}
