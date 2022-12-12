@@ -118,37 +118,37 @@
                 </section>
 
                 <!-- Ofertas en notebooks -->
-                <h1 class="heading">#ofertas en <span>Notebooks</span> </h1>
-                <div class="article">
-                    <div class="tarjeta">
+                <section>
+                    <h1 class="heading">#ofertas en <span>Notebooks</span> </h1>
+                    <div class="article">
                         <% productos.forEach(producto=> { %>
-                            <div class="img-container">
-                                <a href="/products/detail/<%= producto.id %> ">
-                                    <img src="/img/products/<%= producto.imagenes[0] %>" alt="">
-                                </a>
-                                <h4>
-                                    <%= producto.marca %>
-                                </h4>
-                                <h4>
-                                    <%= producto.Titulo %>
-                                </h4>
-                                <div class="favorite">
-                                    <i class="fas fa-heart"></i>
+                            <div class="tarjeta">
+                                <div class = "arriba">
+                                    <div class="img-container">
+                                        <a href="/products/detail/<%= producto.id %> ">
+                                            <img src="/img/products/<%= producto.imagenes[0] %>" alt="">
+                                        </a>
+                                        <h5><%= producto.marca %></h5>
+                                        <h5><%= producto.Titulo %></h5>
+                                        <div class="favorite">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="abajo">
+                                    <div class="info-container">
+                                        <h5>Precio Online: $<%=producto.precio %></h5>
+                                        <h5>12 x $<%= (producto.precio / 12) %> CUOTAS SIN INTERÉS</h5>
+                                        <div class="align">
+                                            <button><a class="details" href="/products/detail/<%= producto.id %>">+Detalles</a></button>
+                                            <button><a class="add" href="/cart1">Añadir</a></button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="info-container">
-                                <h4>Precio Online: <%=producto.precio %>
-                                </h4>
-                                <h4>12 x <%= (producto.precio / 12) %> CUOTAS SIN INTERÉS</h4>
-                                <div class="align">
-                                    <button><a class="details" href="/products/detail/<%= producto.id %>">+
-                                            Detalles</a></button>
-                                    <button><a class="add" href="/cart1">Añadir</a></button>
-                                </div>
-                            </div>
-                            <% }) %>
+                        <% }) %>
                     </div>
-                </div>
+                </section>
                 <!-- Ofertas en smart tv -->
                 <section>
                     <h1 class="heading">#Ofertas en <span>Smart Tv</span> </h1>

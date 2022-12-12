@@ -268,7 +268,7 @@
     display: grid;
     justify-items: center;
     margin-top: 5rem;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     column-gap: 8px;
     gap: 1.5rem;
 }
@@ -278,13 +278,13 @@
     background-color: white;
     text-align: center;
     border: solid 1px black;
-    /* margin-bottom: 30px; */
+    margin-bottom: 30px;
     border-radius: 15px;
-    height: 425px;
-    width: 295px;
+    max-height: 425px;
+    max-width: 295px;
 }
 
-.tarjeta h4 {
+.tarjeta h5 {
     padding: 0 0 12px 0;
 }
 
