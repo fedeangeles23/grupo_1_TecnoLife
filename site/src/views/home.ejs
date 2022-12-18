@@ -279,7 +279,8 @@
 
                             <div class="inputBox">
                                 <span class="fas fa-comment"></span>
-                                <textarea class="textarea" type="comments"  placeholder="Razón de contacto..." name="comment"></textarea>
+                                <textarea class="textarea" type="comments" placeholder="Razón de contacto..."
+                                    name="comment"></textarea>
                             </div>
 
                             <input type="submit" value="Contactar" class="btn-map">
@@ -287,7 +288,7 @@
                             <input type="hidden" name="_next" value="http://localhost:3000">
 
                             <input type="hidden" name="_captcha" value="false">
-                        
+
                         </form>
 
                     </div>
@@ -296,9 +297,15 @@
 
                 <!-- contact section ends -->
 
-                <div id="button-up">
-                    <i class="fas fa-chevron-up"></i>
+                <!-- button go up -->
+
+                <div class="up" id="up">
+                    <input type="button" class="text-up" value="Volver al inicio">
+                    <span class="icon">
+                        <i class="fas fa-chevron-up"></i>
+                    </span>
                 </div>
+
 
 
             </main>
@@ -307,12 +314,16 @@
 
                 <!-- Scripts -->
 
-                <script src="/js/slider.js"></script>
+                <script src="/js/slider.js"></script> <!-- Slider -->
+
                 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert -->
                 <script src="/js/welcome.js"></script> <!-- SweetAlert -->
-                <script src="/js/buttonUp.js"></script>
-                <script src="/js/modalPromo.js"></script>
 
+
+                <!-- Go to up -->
+                <script src="/js/jquery-3.6.1.js"></script>
+                <script src="/js/up.js"></script>
+                
 
     </body>
 
