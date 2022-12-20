@@ -31,21 +31,21 @@
                             <% } %>
                         </div>
                         <div class="form-floating mb-3">
-                            <input class="form-control" type="number" name="Precio" placeholder="Precio del producto" id="price" value="<%= locals.old && old.precio ? old.precio : null%>">
+                            <input class="form-control" type="number" name="Precio" placeholder="Precio del producto" id="price" value="<%= locals.old && old.Precio ? old.Precio : null%>">
                             <label class="form-label" for="price">Precio del producto</label>
                             <p class="span text-danger">
                                 <%= locals.errors && errors.Precio ? errors.Precio.msg : null %>
                             </p>
                         </div>
                         <div class="form-floating mb-3">
-                            <input class="form-control" type="number" name="Descuento" placeholder="Descuento del producto" id="discount" value="<%= locals.old && old.descuento ? old.descuento : 0%>">
+                            <input class="form-control" type="number" name="Descuento" placeholder="Descuento del producto" id="discount" value="<%= locals.old && old.Descuento ? old.Descuento : 0%>">
                             <label class="form-label" for="discount">Descuento del producto</label>
                             <p class="span text-danger">
                                 <%= locals.errors && errors.Descuento ? errors.Descuento.msg : null %>
                             </p>
                         </div>
                         <div class="form-floating mb-3">
-                            <input class="form-control" type="text" name="Stock" placeholder="Stock con el que cuenta el producto" id="stock" value="<%= locals.old && old.stock ? old.stock : null%>">
+                            <input class="form-control" type="text" name="Stock" placeholder="Stock con el que cuenta el producto" id="stock" value="<%= locals.old && old.Stock ? old.Stock : null%>">
                             <label class="form-label" for="stock">Stock con el que cuenta el producto</label>
                             <p class="span text-danger">
                                 <%= locals.errors && errors.Stock ? errors.Stock.msg : null %>

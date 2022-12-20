@@ -118,37 +118,37 @@
                 </section>
 
                 <!-- Ofertas en notebooks -->
-                <h1 class="heading">#ofertas en <span>Notebooks</span> </h1>
-                <div class="article">
-                    <div class="card">
+                <section>
+                    <h1 class="heading">#ofertas en <span>Notebooks</span> </h1>
+                    <div class="article">
                         <% productos.forEach(producto=> { %>
-                            <div class="img-container">
-                                <a href="/products/detail/<%= producto.id %> ">
-                                    <img src="/img/products/<%= producto.imagenes[0] %>" alt="">
-                                </a>
-                                <h4>
-                                    <%= producto.marca %>
-                                </h4>
-                                <h4>
-                                    <%= producto.titulo %>
-                                </h4>
-                                <div class="favorite">
-                                    <i class="fas fa-heart"></i>
+                            <div class="tarjeta">
+                                <div class = "arriba">
+                                    <div class="img-container">
+                                        <a href="/products/detail/<%= producto.id %> ">
+                                            <img src="/img/products/<%= producto.imagenes[0] %>" alt="">
+                                        </a>
+                                        <h5><%= producto.marca %></h5>
+                                        <h5><%= producto.Titulo %></h5>
+                                        <div class="favorite">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="abajo">
+                                    <div class="info-container">
+                                        <h5>Precio Online: $<%=producto.precio %></h5>
+                                        <h5>12 x $<%= (producto.precio / 12) %> CUOTAS SIN INTERÉS</h5>
+                                        <div class="align">
+                                            <button><a class="details" href="/products/detail/<%= producto.id %>">+Detalles</a></button>
+                                            <button><a class="add" href="/cart1">Añadir</a></button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="info-container">
-                                <h4>Precio Online: <%=producto.precio %>
-                                </h4>
-                                <h4>12 x <%= (producto.precio / 12) %> CUOTAS SIN INTERÉS</h4>
-                                <div class="align">
-                                    <button><a class="details" href="/products/detail/<%= producto.id %>">+
-                                            Detalles</a></button>
-                                    <button><a class="add" href="/cart1">Añadir</a></button>
-                                </div>
-                            </div>
-                            <% }) %>
+                        <% }) %>
                     </div>
-                </div>
+                </section>
                 <!-- Ofertas en smart tv -->
                 <section>
                     <h1 class="heading">#Ofertas en <span>Smart Tv</span> </h1>
@@ -260,20 +260,35 @@
                             style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                        <form action="">
-                            <div class="inputBox">
+                        <form action="https://formsubmit.co/fedeangeles23@gmail.com" method="POST">
+
+                            <div name="contact-form" class="inputBox">
                                 <span class="fas fa-user"></span>
-                                <input type="text" placeholder="Nombre">
+                                <input type="text" placeholder="Nombre" name="name">
                             </div>
+
                             <div class="inputBox">
                                 <span class="fas fa-envelope"></span>
-                                <input type="email" placeholder="Email">
+                                <input type="email" placeholder="Email" name="email">
                             </div>
+
                             <div class="inputBox">
                                 <span class="fas fa-phone"></span>
-                                <input type="number" placeholder="Número">
+                                <input type="number" placeholder="Teléfono" name="phone">
                             </div>
+
+                            <div class="inputBox">
+                                <span class="fas fa-comment"></span>
+                                <textarea class="textarea" type="comments" placeholder="Razón de contacto..."
+                                    name="comment"></textarea>
+                            </div>
+
                             <input type="submit" value="Contactar" class="btn-map">
+
+                            <input type="hidden" name="_next" value="http://localhost:3000">
+
+                            <input type="hidden" name="_captcha" value="false">
+
                         </form>
 
                     </div>
@@ -282,9 +297,15 @@
 
                 <!-- contact section ends -->
 
-                <div id="button-up">
-                    <i class="fas fa-chevron-up"></i>
+                <!-- button go up -->
+
+                <div class="up" id="up">
+                    <input type="button" class="text-up" value="Volver al inicio">
+                    <span class="icon">
+                        <i class="fas fa-chevron-up"></i>
+                    </span>
                 </div>
+
 
 
             </main>
@@ -293,12 +314,16 @@
 
                 <!-- Scripts -->
 
-                <script src="/js/slider.js"></script>
+                <script src="/js/slider.js"></script> <!-- Slider -->
+
                 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert -->
                 <script src="/js/welcome.js"></script> <!-- SweetAlert -->
-                <script src="/js/buttonUp.js" ></script>
-                <script src="/js/modalPromo.js"></script>
 
+
+                <!-- Go to up -->
+                <script src="/js/jquery-3.6.1.js"></script>
+                <script src="/js/up.js"></script>
+                
 
     </body>
 

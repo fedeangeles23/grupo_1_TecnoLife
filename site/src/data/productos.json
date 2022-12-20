@@ -1,41 +1,50 @@
 [
     {
         "id": 1,
-        "marca": "ASUS",
-        "precio": 100000,
+        "marca": "SAMSUNG",
+        "Titulo": "NOTEBOOK SAMSUNG INTEL I3 10100",
+        "Categoria": "Notebooks",
+        "precio": 300000,
         "descuento": 0,
-        "stock": 5,
+        "stock": 4,
+        "Descripcion": "Compralo.",
         "imagenes": [
-            "img-1667266442243.webp",
-            "img-1667266442244.webp",
-            "img-1667266442246.webp",
-            "img-1667266442247.webp"
+            "img-1669294071856.webp",
+            "img-1669294071857.webp",
+            "img-1669294071857.webp",
+            "img-1669294071858.webp"
         ]
     },
     {
         "id": 2,
-        "marca": "INTEL",
-        "precio": 100000,
-        "descuento": 0,
-        "stock": 5,
+        "marca": "RAZER",
+        "Titulo": "NOTEBOOK RAZER GAMER",
+        "Categoria": "Notebooks",
+        "precio": 300000,
+        "descuento": 20,
+        "stock": 50,
+        "Descripcion": "Compralo, no te vas a arrepentir.",
         "imagenes": [
-            "img-1667266512473.webp",
-            "img-1667266512474.webp",
-            "img-1667266512477.webp",
-            "img-1667266512477.webp"
+            "img-1669294207776.webp",
+            "img-1669294207777.webp",
+            "img-1669294207778.webp",
+            "img-1669294207778.webp"
         ]
     },
     {
         "id": 3,
-        "marca": "ASUS",
-        "precio": 100000,
-        "descuento": 0,
-        "stock": 4,
+        "marca": "HP",
+        "Titulo": "NOTEBOOK HP INTEL 5",
+        "Categoria": "Notebooks",
+        "precio": 4500000,
+        "descuento": 5,
+        "stock": 30,
+        "Descripcion": "Compralo.",
         "imagenes": [
-            "img-1667349082137.webp",
-            "img-1667349082139.webp",
-            "img-1667349082141.webp",
-            "img-1667349082144.webp"
+            "img-1669295321820.webp",
+            "img-1669295321821.webp",
+            "img-1669295321822.webp",
+            "img-1669295321823.webp"
         ]
     }
 ]
