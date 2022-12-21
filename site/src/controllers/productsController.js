@@ -6,13 +6,7 @@ module.exports = {
         let producto = productos.find((producto) => producto.id === id)
         return res.render ('productDetail',{producto})
     },
-    cart1: (req,res) => {
-        res.render('cart1')
+    carrito: (req,res) => {
+        res.render('carrito')
     },
-    cart2: (req,res) => {
-        res.render('cart2')
-    },
-    cart3: (req,res) => {
-        res.render('cart3')
-    }
 }

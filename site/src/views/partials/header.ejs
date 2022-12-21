@@ -1,31 +1,79 @@
-<header class="header">
+<header>
+    <a href="/" class="logo">
+      <img src="img/logo-tecnolife.jpg" alt="">
+    </a>
+    <div class="navigation">
+      <ul class="menu">
+        <div class="close-btn"></div>
+        <li class="menu-item c">
+          <a class="sub-btn c" href="#">
+            <div class="fas fa-bars" id="menu-btn"></div> CATEGORIAS
+          </a>
+          <ul class="sub-menu">
+            <li class="sub-item more">
+              <a class="more-btn" href="#">Items 01 <i class="fas fa-angle-right"></i></a>
+              <ul class="more-menu">
+                <li class="more-item"><a href="#">Sub Item 01</a></li>
+                <li class="more-item"><a href="#">Sub Item 02</a></li>
+              </ul>
+            </li>
+            <li class="sub-item more">
+              <a class="more-btn" href="#">Items 02 <i class="fas fa-angle-right"></i></a>
+              <ul class="more-menu">
+                <li class="more-item"><a href="#">Sub Item 01</a></li>
+                <li class="more-item"><a href="#">Sub Item 02</a></li>
+              </ul>
+            </li>
+            <li class="sub-item more">
+              <a class="more-btn" href="#">Items 03 <i class="fas fa-angle-right"></i></a>
+              <ul class="more-menu">
+                <li class="more-item"><a href="#">Sub Item 01</a></li>
+                <li class="more-item"><a href="#">Sub Item 02</a></li>
+              </ul>
+            </li>
+            <li class="sub-item more">
+              <a class="more-btn" href="#">Items 04 <i class="fas fa-angle-right"></i></a>
+              <ul class="more-menu">
+                <li class="more-item"><a href="#">Sub Item 01</a></li>
+                <li class="more-item"><a href="#">Sub Item 02</a></li>
+              </ul>
+            </li>
+            <li class="sub-item more">
+              <a class="more-btn" href="#">Items 05 <i class="fas fa-angle-right"></i></a>
+              <ul class="more-menu">
+                <li class="more-item"><a href="#">Sub Item 01</a></li>
+                <li class="more-item"><a href="#">Sub Item 02</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
 
-    <div class="menu-nav">
-        <div class="fas fa-bars" id="menu-btn"></div>
 
-        <a href="/" class="logo">
-            <img src="/img/logo/logo-tecnolife.jpg" alt="">
-        </a>
-    </div>
-
-    <div class="buscar">
-
-        <div class="categories">
-            <div class="fas fa-bars" id="menu-btn"></div>
-            <p>CATEGORIAS</p>
+        <div class="search-form">
+          <input type="search" id="buscar-box" placeholder="Buscar aquí...">
+          <label for="buscar-box" class="fas fa-search"></label>
         </div>
 
-        <div class="buscar-form">
-            <input type="search" id="buscar-box" placeholder="Buscar aquí...">
-            <label for="buscar-box" class="fas fa-search"></label>
-        </div>
-
+        <li class="menu-item">
+          <a class="sub-btn" href="#">
+            <div class="fas fa-user" id="user-btn"></div> CUENTA
+          </a>
+          <ul class="sub-menu">
+            <li class="sub-item"><a href="#">Iniciar Sesión</a></li>
+            <li class="sub-item"><a href="#">Registrarse</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a class="sub-btn" href="#">
+            <div class="fas fa-shopping-cart" id="cart-btn"></div> CARTERA
+          </a>
+          <ul class="sub-menu">
+            <li class="sub-item"><a href="#">EN DESARROLLO (.-.)</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
+    <div class="menu-btn"></div>
+  </header>
 
-    <div class="icons">
-        <div class="fas fa-user" id="user-btn"></div>
-        <div class="fas fa-heart" id="heart-btn"></div>
-        <div class="fas fa-shopping-cart" id="cart-btn"></div>
-    </div>
-
-</header>
+  <script src="/js/header.js"></script>

@@ -6,7 +6,7 @@ const{validationResult}= require ('express-validator')
 
 module.exports = {
     login: (req,res) => {
-        return res.render('login')
+        return res.render('/login')
     },
     processLogin:(req,res)=>{
         let errors = validationResult(req)
@@ -21,7 +21,7 @@ module.exports = {
         }
     },
     register: (req,res) => {
-        return res.render('register')
+        return res.render('/register')
     },
     processRegister:(req,res)=>{
         let errors = validationResult (req)
@@ -37,7 +37,7 @@ module.exports = {
             return res.send(req.boby)
         }else{
             /* return res.send(errors.mapped())*/
-           return res.render('register',{
+           return res.render('/register',{
             errors:errors.mapped(),
             old:req.boby
            })

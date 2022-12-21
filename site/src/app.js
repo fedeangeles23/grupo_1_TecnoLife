@@ -28,7 +28,7 @@ app.use(express.urlencoded({ extended: false }));
 
 /* Requerir las rutas */
 let indexRouter = require('./routes/index');
-/* let usersRouter = require('./routes/users'); */
+let usersRouter = require('./routes/users');
 let productsRouter = require('./routes/products')
 let adminRouter = require('./routes/admin');
 
@@ -36,12 +36,10 @@ let adminRouter = require('./routes/admin');
 app.use('/', indexRouter)
 app.use('/categories', indexRouter)
 app.use('/products', productsRouter)
-app.use('/cart1', productsRouter)
-app.use('/cart2', productsRouter)
-app.use('/cart3', productsRouter)
-app.use('/login', indexRouter)
-app.use('/register', indexRouter)
-app.use('/profile', indexRouter)
+app.use('/carrito', indexRouter)
+app.use('/login', usersRouter)
+app.use('/register', usersRouter)
+app.use('/profile', usersRouter)
 app.use('/admin', adminRouter)
 
 app.listen(port, () => console.log(`Servidor abierto en http://localhost:${port}`))
