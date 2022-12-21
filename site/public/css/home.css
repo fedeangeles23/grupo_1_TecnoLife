@@ -629,7 +629,7 @@
     position: relative;
     max-width: 355px;
     width: 100%;
-    border-radius: 35px;
+    border-radius: 70px;
     padding: 20px 30px 10px 30px;
     background: #fff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -668,6 +668,7 @@
 
 .card .img-product {
     position: relative;
+    width: 268px;
     height: 210px;
 }
 
@@ -687,6 +688,11 @@
 }
 
 /* Info del producto */
+
+.card .show-details {
+    width: 268px;
+    height: 124px;
+}
 
 .card .show-details .show_name {
     font-size: 24px;
@@ -711,6 +717,8 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
+    width: 268px;
+    height: 48.5px;
 }
 
 .color-price .color-option .color {
@@ -792,7 +800,6 @@
 .slide-content{
     margin: 0 40px;
     overflow: hidden;
-    border-radius: 25px;
   }
 
   .swiper-navBtn{

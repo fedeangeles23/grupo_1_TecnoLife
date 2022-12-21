@@ -46,5 +46,21 @@
             "img-1669295321822.webp",
             "img-1669295321823.webp"
         ]
+    },
+    {
+        "id": 4,
+        "marca": "NOBLEX",
+        "Titulo": "NOTEBOOK",
+        "Categoria": "Notebooks",
+        "precio": 500000,
+        "descuento": 0,
+        "stock": 20,
+        "Descripcion": "compralo, no te vas a arrepentir.",
+        "imagenes": [
+            "img-1671659092379.webp",
+            "img-1671659092379.webp",
+            "img-1671659092379.webp",
+            "img-1671659092381.webp"
+        ]
     }
 ]
