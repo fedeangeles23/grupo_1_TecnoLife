@@ -5,15 +5,15 @@ module.exports = {
     home: (req, res) => {
     //    let aside = db.Asides.findAll()
          db.Productos.findAll({
-            include: ['category', 'marca', 'imagenes']
+            include: [{all: true}]
         })
     
             .then(productos => {
-                return res.render('home'/*,
+                /* res.send(productos) */
+                return res.render('home',
                     {
-                        
                         productos
-                    }*/)
+                })
             })
             .catch(error => res.send(error))
     },

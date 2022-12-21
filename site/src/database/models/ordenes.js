@@ -11,14 +11,6 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Ordenes.belongsTo(models.Carrito, {
-        as: 'carrito',
-        foreignKey: 'carritos_id'
-      })
-      Ordenes.belongsTo(models.Usuarios, {
-        as: 'usuario',
-        foreignKey: 'usuarios_id'
-      })
     }
   }
   Ordenes.init({
