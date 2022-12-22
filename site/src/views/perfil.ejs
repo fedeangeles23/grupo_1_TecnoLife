@@ -16,11 +16,14 @@
 </head>
 
 <body>
+  
   <div class="container rounded bg-white mt-5 mb-5">
     <div class="row">
+      
+      <form action="/users/perfil/<%=locals.userLogin.id%>?_method=put" method="post" enctype="multipart/form-data">
       <div class="col-md-3 border-right">
         <div class="d-flex flex-column align-items-center text-center p-3 py-5">
-          <img class="rounded-circle mt-5" width="150px" src="/img/reviews/user-incog.jpg">
+          <img class="rounded-circle mt-5" width="150px" src="/img/usuarios/<%=locals.userLogin.imagen%>">
           <span class="font-weight-bold">Nombre de usuario</span><span class="text-black-50">@mail.com</span>
         </div>
       </div>
@@ -32,50 +35,51 @@
           <div class="row mt-2">
             <div class="col-md-6">
               <label class="labels">Nombre</label>
-              <input type="text" class="form-control" placeholder="" value=<%=locals.userLogin.nombre%>>
+              <input type="text"name="nombre" class="form-control" placeholder="" value=<%=locals.userLogin.nombre%>>
             </div>
-            <div class="col-md-6"><label class="labels">Apellido</label><input type="text" class="form-control" value=<%=locals.userLogin.apellido%>>
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-md-12"><label class="labels">Número de teléfono</label><input type="text"
-                class="form-control" placeholder="" value=<%=locals.userLogin.ciudad%>>
-            </div>
-            <div class="col-md-12"><label class="labels">genero</label><input type="text"
-                class="form-control" placeholder="" value=<%=locals.userLogin.genero%>>
-            </div>
-            <div class="col-md-12"><label class="labels">Dirección Línea 2</label><input type="text"
-                class="form-control" placeholder=""value=<%=locals.userLogin.ciudad%>>
-            </div>
-            <div class="col-md-12"><label class="labels">Código postal</label><input type="text" class="form-control"
-                placeholder=""value=<%=locals.userLogin.ciudad%>>
-            </div>
-            <div class="col-md-12"><label class="labels">Provincia</label><input type="text" class="form-control"
-                placeholder=""value=<%=locals.userLogin.ciudad%>>
-            </div>
-            <div class="col-md-12"><label class="labels">Ciudad</label><input type="text" class="form-control"
-                placeholder=""value=<%=locals.userLogin.ciudad%>>
-            </div>
-            <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control"
-                placeholder=""value=<%=locals.userLogin.email%>>
+            <div class="col-md-6"><label class="labels">Apellido</label><input type="text"name="apellido" class="form-control"
+                value=<%=locals.userLogin.apellido%>>
             </div>
           </div>
           <div class="row mt-3">
-            <div class="col-md-6">
-              <label class="labels">Pais</label><input type="text" class="form-control" placeholder=""value=<%=locals.userLogin.nombre%>>
+
+            <div class="col-md-12"><label class="labels">genero</label>
+              <select name="genero" id="">
+                <option value="Masculino">Masculino</option>
+                  
+                <option value="femenino">femenino</option>
+                  
+              </select>
             </div>
-            <div class="col-md-6">
-              <label class="labels">Estado</label><input type="text" class="form-control" value=<%=locals.userLogin.nombre%>>
+            <div class="col-md-12"><label class="labels">Dirección  </label><input type="text"name="direccion"
+                class="form-control" placeholder="" value=<%=locals.userLogin.direccion%>>
             </div>
+            <div class="col-md-12"><label class="labels">Código postal</label><input type="text"name="codigopostal" class="form-control"
+                placeholder="" value=<%=locals.userLogin.codigopostal%>>
+            </div>
+            <div class="col-md-12"><label class="labels">Ciudad</label><input type="text" name="ciudad"class="form-control"
+                placeholder="" value=<%=locals.userLogin.ciudad%>>
+            </div>
+            <div class="col-md-12"><label class="labels">Email</label><input disabled type="text" class="form-control"
+                placeholder="" value=<%=locals.userLogin.email%>>
+            </div>
+<input type="file"name="imagen">
           </div>
+
           <div class="mt-5 text-center">
-            <button class="btn btn-primary profile-button" type="button">Guardar Perfil</button>
-          </div>
+            <button class="btn btn-primary profile-button" type="submit">Guardar Perfil</button>
+            <form action="/users/logout?_method=DELETE" method="post">
+              <button type="submit"><i class="fas fa-power-off"></i> Cerrar sesion</button>
+          </form>
+                  </div>
         </div>
       </div>
+    </form>
     </div>
   </div>
+
 </body>
 <!-- MDB -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.js"></script>
+
 </html>

@@ -13,8 +13,10 @@ module.exports = [
     /* Clave */
     check('pass').trim()
     .notEmpty().withMessage('Debe ingresar su clave').bail()
-    .isLength({min:8}).withMessage('Debe contener al menos 8 caracteres'),
-
+    .isLength({min:8}).withMessage('Debe contener al menos 8 caracteres')
+    .matches(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(.{8,20})$/)
+    .withMessage('La contraseña debe contener al menos un número, una mayúscula, una minúscula y tener como minimo 8 caracteres'),
+    
      body('pass')
     .custom((value,{req}) =>{
 

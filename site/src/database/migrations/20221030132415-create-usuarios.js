@@ -29,6 +29,12 @@ module.exports = {
       ciudad: {
         type: Sequelize.STRING(100),
       },
+      direccion: {
+        type: Sequelize.STRING(100),
+      },
+      codigopostal: {
+        type: Sequelize.STRING(100),
+      },
       imagen: {
         type: Sequelize.STRING(100),
         allowNull: false
