@@ -1,18 +1,18 @@
 .register main {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  padding-bottom: 50px;
+  border-radius: 0.5rem;
   background-color: #3A4A72;
-
-
+  width: 35%;
+  margin: 0 auto;
+  padding: 30px 0 40px 0;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
 }
 
 .register main h1 {
   text-align: center;
-  color: white;
-  padding: 20px;
-
+  padding: 20px 0;
 }
 
 .register main .container {
@@ -23,8 +23,6 @@
   justify-content: center;
   font-weight: bold;
   color: white;
-
-
 }
 
 .register main .password {
@@ -39,8 +37,6 @@
   color: black
 }
 
-
-
 .register main .container label {
   margin-bottom: 5px;
 }
@@ -53,7 +49,6 @@
 .register main small {
   margin-top: 5px;
   color: red;
-
 }
 
 .register main button:hover {
@@ -62,21 +57,18 @@
 }
 
 .register main button {
-
-  width: 100%;
-  font-size: 20px;
-  background: black;
-  padding: 15px;
-  color: white;
-
-
+  border-radius: 0.5rem;
+  width: 85%;
+  margin: 0 0 0 8%;
+  color: #e1dfdf;
+  font-size: 15px;
+  background: #000000;
+  padding: 15px 20px;
 }
-
 
 .register .bottom {
   margin-bottom: 20px;
   font-size: 15px;
-
 }
 
 .register .button p {

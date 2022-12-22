@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 allHoverImages.forEach((image) => {
     image.addEventListener('mouseover', () =>{
-        imgContainer.querySelector('img').src = image.src;
+        imgContainer.querySelector('img-d').src = image.src;
         resetActiveImg();
         image.parentElement.classList.add('active');
     });
