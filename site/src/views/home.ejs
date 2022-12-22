@@ -79,8 +79,7 @@
 
                                         <div class="img-product">
                                             <a href="/products/detail/<%= producto.id %> ">
-                                                <img class="item" src="/img/products/notebook-acer-spin-5-f1.webp"
-                                                    alt="Notebook-spin">
+                                                <img class="item" src="/img/products/<%= producto.imagenes[0].nombre%>"alt="Notebook-spin">
                                             </a>
                                         </div>
 
@@ -89,7 +88,11 @@
                                                 <%= producto.nombre %>
                                             </span>
                                             <p>
-                                                <%= producto.descripcion %>
+                                                <% if (producto.descripcion.length > 50) { %>
+                                                    <%- `${producto.descripcion.slice(0,150)}...` %>
+                                                <% } else { %>
+                                                    <%= producto.descripcion %>
+                                                <% } %>
                                             </p>
                                         </div>
 
@@ -100,7 +103,7 @@
                                             </div>
 
                                             <div class="price">
-                                                <span class="price_num">$<%=producto.precio %></span>
+                                                <span class="price_num">$<%=producto.precio%></span>
                                                 <span class="price_letter">Precio lista</span>
                                             </div>
 
@@ -143,8 +146,7 @@
                                     </div>
 
                                     <div class="img-product">
-                                        <img id="notebook" class="item" src="/img/products/notebook-spin.webp"
-                                            alt="Notebook-spin">
+                                        <img id="notebook" class="item" src="/img/products/notebook-spin.webp"alt="Notebook-spin">
                                     </div>
 
                                     <div class="show-details">

@@ -24,8 +24,12 @@
                             </p>
                         </div>
                         <div class="form-floating mb-3">
-                            <input class="form-control" type="text" name="marca" placeholder="Marca del Producto" id="brand" value="<%= locals.old && old.marca ? old.marca : null%>">
-                            <label class="form-label" for="brand">Marca del Producto</label>
+                            <select class="form-select" name="marca" id="floatingSelect" aria-label="Floating label select example" value="<%= locals.old && old.marca ? old.marca : null%>">
+                                <option hidden value="">Selecciona una marca</option>
+                                <% marcas.forEach(marca => { %>
+                                    <option <%= locals.errors && old.marca === marca.id ? "selected" : null %>  value = <%= marca.id %>><%= marca.nombre %> </option>
+                                <% }) %> 
+                              </select>
                             <% if (locals.errors && errors.marca) { %>
                                 <p class="span text-danger"><%= errors.marca.msg %></p>
                             <% } %>
@@ -124,23 +128,15 @@
             <div class="container">
                 <div class="row">
         
-                    <!-- Selects  -->
+                    <!-- Selects categorie  -->
                     <div class="container m-3" >
                         <div class="row justify-content-around align-items-center">
                             <div class="col col-4">
                                 <h3 class="text-center">Categorias</h3>
                                 <select class="form-select" name="Categoria" id="floatingSelect" aria-label="Floating label select example">
-                                    <% if (locals.errors && old.Categoria) { %>
-                                        <option hidden value="">Selecciona una opcion</option>
-                                        <option <%= old.Categoria === "Smartphones" ? "selected" : null %>  value="Smartphones">Smartphones</option>
-                                        <option <%= old.Categoria === "Tablets" ? "selected" : null %>   value="Tablets">Tablets</option>
-                                        <option <%= old.Categoria === "Notebooks" ? "selected" : null %>   value="Notebooks">Notebooks</option>
-                                    <% }else{ %>
-                                        <option selected hidden value="">Selecciona una opcion</option>
-                                        <option value="Smartphones">Smartphones</option>
-                                        <option value="Tablets">Tablets</option>
-                                        <option value="Notebooks">Notebooks</option>
-                                    <% } %> 
+                                    <% categorias.forEach(categoria => { %>
+                                        <option <%= locals.errors && old.Categoria === categoria.id ? "selected" : null %>  value = <%= categoria.id %>><%= categoria.name %> </option>
+                                    <% }) %>
                                   </select>
                                   <p class="span text-danger">
                                     <%= locals.errors && errors.Categoria ? errors.Categoria.msg : null %>
@@ -170,5 +166,6 @@
             </div>
         </form>
     </main>
+    <script src="/js/imagenesCRUD.js"></script>
 </body>
 </html>

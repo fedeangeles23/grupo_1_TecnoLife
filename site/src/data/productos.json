@@ -168,7 +168,7 @@
         "descuento": 10,
         "descripcion": "Auriculares inalámbricos Sony WH-CH510 negro",
         "categorias_id": "3",
-        "marcas_id": "6",
+        "marcas_id": "11",
         "imagenes": [
             "Auriculares-Sony-WH-CH510-f1.webp",
             "Auriculares-Sony-WH-CH510-f2.webp",
@@ -216,7 +216,7 @@
         "descuento": 10,
         "descripcion": "Disco sólido interno Kingston SA400S37/960G 960GB",
         "categorias_id": "5",
-        "marcas_id": "6",
+        "marcas_id": "12",
         "imagenes": [
             "Kingston SSD 960GB-f1.webp",
             "Kingston SSD 960GB-f2.webp",
@@ -232,7 +232,7 @@
         "descuento": 10,
         "descripcion": "Disco sólido interno Gigabyte GP-GSTFS31120GNTD 120GB negro",
         "categorias_id": "5",
-        "marcas_id": "6",
+        "marcas_id": "13",
         "imagenes": [
             "SSD Gigabyte 120GB-f1.webp",
             "SSD Gigabyte 120GB-f2.webp",
@@ -248,7 +248,7 @@
         "descuento": 10,
         "descripcion": "Monitor gamer Samsung F24T35 led 24'' azul y gris oscuro 100V/240V",
         "categorias_id": "1",
-        "marcas_id": "6",
+        "marcas_id": "1",
         "imagenes": [
             "img-1667266512473.webp",
             "img-1667266512474.webp",
@@ -264,7 +264,7 @@
         "descuento": 10,
         "descripcion": "Teclado gamer HP GK200 QWERTY HP Blue español color negro con luz RGB",
         "categorias_id": "7",
-        "marcas_id": "6",
+        "marcas_id": "4",
         "imagenes": [
             "Teclado HP GK200 QWERTY-f1.webp",
             "Teclado HP GK200 QWERTY-f2.webp",
@@ -280,7 +280,7 @@
         "descuento": 10,
         "descripcion": "Mouse Gamer Lenovo Legion M500 Rgb 16000dp",
         "categorias_id": "8",
-        "marcas_id": "6",
+        "marcas_id": "2",
         "imagenes": [
             "Mouse Gamer Lenovo Legion M500 Rgb 16000dp-f1.webp",
             "Mouse Gamer Lenovo Legion M500 Rgb 16000dp-f2.webp",
@@ -296,7 +296,7 @@
         "descuento": 10,
         "descripcion": "Parlante Sony Extra Bass Srs-xb13 Portatil Con Bluetooth",
         "categorias_id": "9",
-        "marcas_id": "2",
+        "marcas_id": "11",
         "imagenes": [
             "Sony Extra Bass-f1.webp",
             "Sony Extra Bass-f2.webp",

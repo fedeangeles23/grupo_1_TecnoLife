@@ -2,6 +2,7 @@ const fs = require('fs')
 const path = require('path')
 let db = require('../database/models')
 const { validationResult } = require('express-validator')
+
 module.exports = {
     list: (req, res) => {
         db.Productos.findAll({
@@ -137,7 +138,7 @@ module.exports = {
         }
         if (errors.isEmpty()) {
             const idParams = +req.params.id
-            const { marca, titulo, categoria, precio, descuento, stock, descripcion } = req.body
+            const { marca, Titulo, Categoria, Precio, Descuento, Stock, Descripcion } = req.body
             let producto = db.Productos.findOne({
                 where: {
                     id: idParams
@@ -147,13 +148,13 @@ module.exports = {
                 }]
             })
             let actualizacion = db.Productos.update({
-                nombre: titulo,
-                precio: +precio,
-                descuento: +descuento,
-                stock: +stock,
-                descripcion: descripcion,
-                categoriasId: +categoria,
-                marcasId: +marca,
+                nombre: Titulo,
+                precio: +Precio,
+                descuento: +Descuento,
+                stock: +Stock,
+                descripcion: Descripcion,
+                categorias_id: +Categoria,
+                marcas_id: +marca,
             }, {
                 where: {
                     id: idParams
@@ -162,29 +163,150 @@ module.exports = {
 
             Promise.all([producto, actualizacion])
                 .then(([producto, actualizacion]) => {
-                    if (req.files) {
-                        db.Imagenes.update({
-                            nombre: req.files[0].filename,
-                            productosId: producto.id
-                        }, {
+                    let imagen1
+                    let imagen2
+                    let imagen3
+                    let imagen4
+                    let promesas = []
+
+                /* Imagen 1 */
+                /* Existe en la base de datos */
+                if (producto.imagenes[0].length !== 0) {
+                    /* viene una imagen nueva */
+                    if(!!req.files.imagen1){
+                        /* Guardo el nombre en una variable para despues borrarla */
+                        imagen1 = producto.imagenes[0].nombre
+                        /* La reemplazamos en la base de datos */
+                        promesas.push(
+                            db.Imagenes.update({
+                            nombre:req.files.imagen1[0].filename
+                        },{
                             where: {
-                                id: producto.imagenes[0].id
+                                id : producto.imagenes[0].id
                             }
-                        })
-                            .then(data => {
-                                return res.redirect('/admin/listaProductos')
-                            })
-                    } else {
-                        return res.redirect('/admin/listaProductos')
+                        }))
+                        /* Borramos la imagen anterior */
+                        if(fs.existsSync(path.join(__dirname,'../../public/images/productos',imagen1))){
+                            fs.unlinkSync(path.join(__dirname, '../../public/images/productos', imagen1))
+                        }
                     }
+                }else{
+                    /* Si no existe la imagen en la base de datos, tenemos que crearla */
+                    if(!!req.files.imagen1){
+
+                        /* Creamos la imagen en la base de datos */
+                        promesas.push(
+                        db.Imagenes.create({
+                            nombre: req.files.imagen1[0].filename,
+                            productosId: producto.id
+                        }))
+                    }
+                }
+                /* Imagen 2 */
+                if (producto.imagenes[1].length !== 0) {
+                    if(!!req.files.imagen2){
+                        imagen2 = producto.imagenes[1].nombre
+                        promesas.push(
+                        db.Imagenes.update({
+                            nombre:req.files.imagen2[0].filename
+                        },{
+                            where: {
+                                id : producto.imagenes[1].id
+                            }
+                        }))
+                        if(fs.existsSync(path.join(__dirname,'../../public/images/productos',imagen2))){
+                            fs.unlinkSync(path.join(__dirname, '../../public/images/productos', imagen2))
+                        }
+                    }
+                }else{
+                    if(!!req.files.imagen2){
+                        promesas.push(
+                        db.Imagenes.create({
+                            nombre: req.files.imagen2[0].filename,
+                            productosId: producto.id
+                        }))
+                    }
+                }
+                /* Imagen 3 */
+                if (producto.imagenes[2].length !== 0) {
+                    if(!!req.files.imagen3){
+                        imagen3 = producto.imagenes[2].nombre
+                        promesas.push(
+                        db.Imagenes.update({
+                            nombre:req.files.imagen3[0].filename
+                        },{
+                            where: {
+                                id : producto.imagenes[2].id
+                            }
+                        }))
+                        if(fs.existsSync(path.join(__dirname,'../../public/images/productos',imagen3))){
+                            fs.unlinkSync(path.join(__dirname, '../../public/images/productos', imagen3))
+                        }
+                    }
+                }else{
+                    if(!!req.files.imagen3){
+                        promesas.push(
+                        db.Imagenes.create({
+                            nombre: req.files.imagen3[0].filename,
+                            productosId: producto.id
+                        }))
+                    }
+                }
+                /* Imagen 4 */
+                if (producto.imagenes[3].length !== 0) {
+                    if(!!req.files.imagen4){
+                        imagen4 = producto.imagenes[3].nombre
+                        promesas.push(
+                        db.Imagenes.update({
+                            nombre:req.files.imagen4[0].filename
+                        },{
+                            where: {
+                                id : producto.imagenes[3].id
+                            }
+                        }))
+                        if(fs.existsSync(path.join(__dirname,'../../public/images/productos',imagen4))){
+                            fs.unlinkSync(path.join(__dirname, '../../public/images/productos', imagen4))
+                        }
+                    }
+                }else{
+                    if(!!req.files.imagen4){
+                        promesas.push(
+                        db.Imagenes.create({
+                            nombre: req.files.imagen4[0].filename,
+                            productosId: producto.id
+                        }))
+                    }
+                }
+                Promise.all(promesas)
+                .then(promesas => {
+                    return res.redirect('/admin/list')
                 })
-                .catch(error => res.send(error))
-        } else {
-            
-            return res.render('admin/crearProducto', {
-                errors: errors.mapped(),
-                old: req.body
             })
+            .catch(error => res.send(error))
+        } else {
+            console.log(errors.mapped()) 
+            let idParams = +req.params.id
+            let categorias = db.Categorias.findAll()
+            let marcas = db.Marcas.findAll()
+            let producto = db.Productos.findOne({
+                where: {
+                    id: idParams
+                },
+                include: [{
+                    all: true
+                }]
+            })
+        Promise.all([categorias, marcas, producto])
+            .then(([categorias, marcas, producto]) => {
+                return res.render('admin/editarProducto', {
+                    producto,
+                    categorias,
+                    marcas,
+                    errors:errors.mapped(),
+                    old: req.body
+                })
+            })
+            .catch(error => res.send(error))
         }
     },
     destroy: (req, res) => {
