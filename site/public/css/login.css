@@ -1,60 +1,44 @@
 .login main {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  padding-bottom: 50px;
+  border-radius: 0.5rem;
   background-color: #3A4A72;
-
-
+  width: 35%;
+  margin: 0 auto;
+  padding: 30px 0 40px 0;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
 }
 
 .login main h1 {
   text-align: center;
-  color: white;
-  padding: 20px;
-
+  padding: 20px 0;
 }
-
-.login main .container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  font-weight: bold;
-  color: white;
-
-
-
-}
-
-.login main .password {
-  width: 100%;
-  position: relative;
-}
-
-.login main .password i {
-  position: absolute;
-  top: 14px;
-  right: 10px;
-  color: black
-}
-
-
 
 .login main .container label {
   margin-bottom: 5px;
 }
 
 .login main .container input {
-  width: 100%;
-  padding: 10px;
+  display: flex;
+  margin: 0 0 0 8%;
+  width: 85%;
+  padding: 9px;
 }
 
 .login main small {
-  margin-top: 5px;
-  color: red;
+  margin: 5px 0 0 8%;
+  color: #ed4b4b;
+}
 
+.login main button {
+  border-radius: 0.5rem;
+  width: 85%;
+  margin: 0 0 0 8%;
+  color: #e1dfdf;
+  font-size: 15px;
+  background: #000000;
+  padding: 15px 20px;
 }
 
 .login main button:hover {
@@ -62,22 +46,8 @@
   letter-spacing: .1rem;
 }
 
-.login main button {
-
-  width: 100%;
-  font-size: 20px;
-  background: black;
-  padding: 15px;
-  color: white;
-
-
-}
-
-
 .login .bottom {
   margin-bottom: 20px;
-  font-size: 15px;
-
 }
 
 .login .button p {
@@ -86,26 +56,10 @@
   margin-top: 20px;
 }
 
-.login .link {
+.link {
   color: #fafafa;
 }
 
-.login .link:hover {
+.link:hover {
   color: var(--main-color);
 }
-
-/*
-@media(max-width: 767px) {
-    .login main .container input{
-    width: 94%;
-    padding: 9px;
-    }
-}
-
-@media(max-width: 574px) {
-    .login main .container input{
-    width: 93%;
-    padding: 8px;    
-  }
-}
-*/

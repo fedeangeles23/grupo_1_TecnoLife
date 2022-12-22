@@ -147,11 +147,11 @@ module.exports = {
                 }]
             })
             let actualizacion = db.Productos.update({
-                nombre: Titulo,
-                precio: +Precio,
-                descuento: +Descuento,
-                stock: +Stock,
-                descripcion: Descripcion,
+                nombre: titulo,
+                precio: +precio,
+                descuento: +descuento,
+                stock: +stock,
+                descripcion: descripcion,
                 categoriasId: +categoria,
                 marcasId: +marca,
             }, {
@@ -302,7 +302,4 @@ module.exports = {
             .catch(error => res.send(error))
     },
 }
-  //  let historialModificado = historial.filter(producto => producto.id !== idParams)
-    //guardarHistorial(historialModificado)
-    //return res.redirect('/admin/list')
 
