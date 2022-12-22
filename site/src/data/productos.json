@@ -1,13 +1,46 @@
 [
     {
         "id": 1,
-        "nombre": "HP",
+        "nombre": "Samsung 7 Spin",
         "stock": 5,
-        "precio": 100000,
+        "precio": 120000,
         "descuento": 10,
-        "descripcion": "balato balato",
+        "descripcion": "Samsung Notebook 7 Spin 2 en 1 13.3'' portátil pantalla táctil NP740U3L-L02US (Intel Core i5-6200U, 8 GB de memoria, disco duro de 1 TB, diseño plegable de 360°, platino)",
         "categorias_id": "1",
         "marcas_id": "1",
+        "imagenes": [
+            "notebook-acer-spin-5-f1.webp",
+            "notebook-acer-spin-5-f2.webp",
+            "notebook-acer-spin-5-f3.webp",
+            "notebook-acer-spin-5-f4.webp"
+        ]
+    },
+
+    {
+        "id": 2,
+        "nombre": "Notebook Lenovo 15itl6",
+        "stock": 5,
+        "precio": 290000,
+        "descuento": 10,
+        "descripcion": "Notebook Lenovo 15itl6 Core I7-1165g7 512ssd 8ram 15.6 Win11",
+        "categorias_id": "1",
+        "marcas_id": "2",
+        "imagenes": [
+            "Notebook-Lenovo-15itl6-f1.webp",
+            "Notebook-Lenovo-15itl6-f2.webp",
+            "Notebook-Lenovo-15itl6-f3.webp",
+            "Notebook-Lenovo-15itl6-f4.webp"
+        ]
+    },
+    {
+        "id": 3,
+        "nombre": "Notebook Acer Aspire 5",
+        "stock": 5,
+        "precio": 120000,
+        "descuento": 20,
+        "descripcion": "Acer Aspire 5 A515-54 plateada 15.6'', Intel Core i5 10210U 8GB de RAM 256GB SSD, Intel UHD Graphics 620 1920x1080px Windows 10 Home",
+        "categorias_id": "1",
+        "marcas_id": "3",
         "imagenes": [
             "img-1667266442243.webp",
             "img-1667266442244.webp",
@@ -16,46 +49,14 @@
         ]
     },
     {
-        "id": 2,
-        "nombre": "HP",
-        "stock": 5,
-        "precio": 100000,
-        "descuento": 10,
-        "descripcion": "balato balato",
-        "categorias_id": "1",
-        "marcas_id": "1",
-        "imagenes": [
-            "img-1667266512473.webp",
-            "img-1667266512474.webp",
-            "img-1667266512477.webp",
-            "img-1667266512477.webp"
-        ]
-    },
-    {
-        "id": 3,
-        "nombre": "HP",
-        "stock": 5,
-        "precio": 100000,
-        "descuento": 10,
-        "descripcion": "balato balato",
-        "categorias_id": "1",
-        "marcas_id": "1",
-        "imagenes": [
-            "img-1667266512473.webp",
-            "img-1667266512474.webp",
-            "img-1667266512477.webp",
-            "img-1667266512477.webp"
-        ]
-    },
-    {
         "id": 4,
-        "nombre": "HP",
+        "nombre": "Notebook HP",
         "stock": 5,
-        "precio": 100000,
+        "precio": 180000,
         "descuento": 10,
-        "descripcion": "balato balato",
+        "descripcion": "Notebook HP 15-dy2054la plateada natural 15.6'', Intel Core i5 1135G7 8GB de RAM 256GB SSD, Intel Iris Xe Graphics G7 80EUs 1366x768px Windows 11 Home",
         "categorias_id": "1",
-        "marcas_id": "1",
+        "marcas_id": "4",
         "imagenes": [
             "img-1667266512473.webp",
             "img-1667266512474.webp",
@@ -65,13 +66,189 @@
     },
     {
         "id": 5,
-        "nombre": "HP",
+        "nombre": "Notebook Dell Inspiron",
         "stock": 5,
-        "precio": 100000,
+        "precio": 188000,
         "descuento": 10,
-        "descripcion": "balato balato",
+        "descripcion": "Notebook Dell Inspiron 3515 azul 15.5'', AMD Ryzen 7 3700U 8GB de RAM 512GB SSD, AMD Radeon RX Vega 10 60 Hz 1920x1080px Windows 11 Home",
         "categorias_id": "1",
+        "marcas_id": "5",
+        "imagenes": [
+            "img-1667266512473.webp",
+            "img-1667266512474.webp",
+            "img-1667266512477.webp",
+            "img-1667266512477.webp"
+        ]
+    },
+    {
+        "id": 6,
+        "nombre": "EXO Smart L33E",
+        "stock": 5,
+        "precio": 75000,
+        "descuento": 10,
+        "descripcion": "Notebook EXO Smart L33E gris 14'', Intel Celeron N4020 4GB de RAM 64GB SSD, Intel UHD Graphics 600 1366x768px Windows 10 Home",
+        "categorias_id": "1",
+        "marcas_id": "6",
+        "imagenes": [
+            "img-1667266512473.webp",
+            "img-1667266512474.webp",
+            "img-1667266512477.webp",
+            "img-1667266512477.webp"
+        ]
+    },
+    {
+        "id": 7,
+        "nombre": "Tab A7 Lite",
+        "stock": 5,
+        "precio": 38000,
+        "descuento": 15,
+        "descripcion": "Tablet Samsung Galaxy Tab A7 Lite SM-T220 8.7'' 32GB gris y 3GB de memoria RAM",
+        "categorias_id": "2",
         "marcas_id": "1",
+        "imagenes": [
+            "tab-a7-f1.webp",
+            "tab-a7-f2.webp",
+            "tab-a7-f3.webp",
+            "tab-a7-f4.webp"
+        ]
+    },
+    {
+        "id": 8,
+        "nombre": "Tab A A8",
+        "stock": 5,
+        "precio": 74000,
+        "descuento": 10,
+        "descripcion": "Tablet Samsung Galaxy Tab A A8 SM-X200 10.5'' 64GB dark gray y 4GB de memoria RAM",
+        "categorias_id": "2",
+        "marcas_id": "1",
+        "imagenes": [
+            "img-1667266512473.webp",
+            "img-1667266512474.webp",
+            "img-1667266512477.webp",
+            "img-1667266512477.webp"
+        ]
+    },
+    {
+        "id": 6,
+        "nombre": "EXO Smart L33E",
+        "stock": 5,
+        "precio": 75000,
+        "descuento": 10,
+        "descripcion": "Notebook EXO Smart L33E gris 14'', Intel Celeron N4020 4GB de RAM 64GB SSD, Intel UHD Graphics 600 1366x768px Windows 10 Home",
+        "categorias_id": "1",
+        "marcas_id": "6",
+        "imagenes": [
+            "img-1667266512473.webp",
+            "img-1667266512474.webp",
+            "img-1667266512477.webp",
+            "img-1667266512477.webp"
+        ]
+    },
+    {
+        "id": 6,
+        "nombre": "EXO Smart L33E",
+        "stock": 5,
+        "precio": 75000,
+        "descuento": 10,
+        "descripcion": "Notebook EXO Smart L33E gris 14'', Intel Celeron N4020 4GB de RAM 64GB SSD, Intel UHD Graphics 600 1366x768px Windows 10 Home",
+        "categorias_id": "1",
+        "marcas_id": "6",
+        "imagenes": [
+            "img-1667266512473.webp",
+            "img-1667266512474.webp",
+            "img-1667266512477.webp",
+            "img-1667266512477.webp"
+        ]
+    },
+    {
+        "id": 6,
+        "nombre": "EXO Smart L33E",
+        "stock": 5,
+        "precio": 75000,
+        "descuento": 10,
+        "descripcion": "Notebook EXO Smart L33E gris 14'', Intel Celeron N4020 4GB de RAM 64GB SSD, Intel UHD Graphics 600 1366x768px Windows 10 Home",
+        "categorias_id": "1",
+        "marcas_id": "6",
+        "imagenes": [
+            "img-1667266512473.webp",
+            "img-1667266512474.webp",
+            "img-1667266512477.webp",
+            "img-1667266512477.webp"
+        ]
+    },
+    {
+        "id": 6,
+        "nombre": "EXO Smart L33E",
+        "stock": 5,
+        "precio": 75000,
+        "descuento": 10,
+        "descripcion": "Notebook EXO Smart L33E gris 14'', Intel Celeron N4020 4GB de RAM 64GB SSD, Intel UHD Graphics 600 1366x768px Windows 10 Home",
+        "categorias_id": "1",
+        "marcas_id": "6",
+        "imagenes": [
+            "img-1667266512473.webp",
+            "img-1667266512474.webp",
+            "img-1667266512477.webp",
+            "img-1667266512477.webp"
+        ]
+    },
+    {
+        "id": 6,
+        "nombre": "EXO Smart L33E",
+        "stock": 5,
+        "precio": 75000,
+        "descuento": 10,
+        "descripcion": "Notebook EXO Smart L33E gris 14'', Intel Celeron N4020 4GB de RAM 64GB SSD, Intel UHD Graphics 600 1366x768px Windows 10 Home",
+        "categorias_id": "1",
+        "marcas_id": "6",
+        "imagenes": [
+            "img-1667266512473.webp",
+            "img-1667266512474.webp",
+            "img-1667266512477.webp",
+            "img-1667266512477.webp"
+        ]
+    },
+    {
+        "id": 6,
+        "nombre": "EXO Smart L33E",
+        "stock": 5,
+        "precio": 75000,
+        "descuento": 10,
+        "descripcion": "Notebook EXO Smart L33E gris 14'', Intel Celeron N4020 4GB de RAM 64GB SSD, Intel UHD Graphics 600 1366x768px Windows 10 Home",
+        "categorias_id": "1",
+        "marcas_id": "6",
+        "imagenes": [
+            "img-1667266512473.webp",
+            "img-1667266512474.webp",
+            "img-1667266512477.webp",
+            "img-1667266512477.webp"
+        ]
+    },
+    {
+        "id": 6,
+        "nombre": "EXO Smart L33E",
+        "stock": 5,
+        "precio": 75000,
+        "descuento": 10,
+        "descripcion": "Notebook EXO Smart L33E gris 14'', Intel Celeron N4020 4GB de RAM 64GB SSD, Intel UHD Graphics 600 1366x768px Windows 10 Home",
+        "categorias_id": "1",
+        "marcas_id": "6",
+        "imagenes": [
+            "img-1667266512473.webp",
+            "img-1667266512474.webp",
+            "img-1667266512477.webp",
+            "img-1667266512477.webp"
+        ]
+    },
+    {
+        "id": 6,
+        "nombre": "EXO Smart L33E",
+        "stock": 5,
+        "precio": 75000,
+        "descuento": 10,
+        "descripcion": "Notebook EXO Smart L33E gris 14'', Intel Celeron N4020 4GB de RAM 64GB SSD, Intel UHD Graphics 600 1366x768px Windows 10 Home",
+        "categorias_id": "1",
+        "marcas_id": "6",
         "imagenes": [
             "img-1667266512473.webp",
             "img-1667266512474.webp",
