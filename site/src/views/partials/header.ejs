@@ -75,8 +75,20 @@
         </div> -->
       </form>
 
-    </ul>
-  </div>
-  <div class="menu-btn"></div>
+    </div>
+
+    <div class="icons">       <% if (locals.userLogin && locals.userLogin.rol === "admin") { %>
+        <li><a href="/admin/list">Admin</a></li>
+    <% } %>
+        <div class="fas fa-user" id="user-btn"></div>
+        <div class="fas fa-heart" id="heart-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+             <% if (locals.userLogin) { %>
+                    <li><a href="/users/perfil">Bienvenido <%= locals.userLogin.nombre %> </a></li>
+                <% } else { %>
+                    <li><a href="/users/login">Login</a></li>
+                    <li><a href="/users/register">Registro</a></li>
+                <% } %>
+    </div>
+
 </header>
-  <script src="/js/header.js"></script>

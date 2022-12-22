@@ -8,14 +8,32 @@ module.exports = [
       check('email').trim()
       .notEmpty().withMessage('Debe ingresar su email').bail()
       .isEmail().withMessage('Debe ingresar un email valido'),
-      
+
+      body('email').custom((value) => {
+        return db.Usuarios.findOne({
+            where: {
+                email: value,
+            }
+        })
+        .then((user) => {
+            if(user){
+                return Promise.reject('Email ya registrado')
+            }
+        })
+    }),
+
 /* Contraseña*/
     check('pass')
         .notEmpty().withMessage('Debe ingresar una clave').bail()
-        .isLength({ min: 8 }).withMessage('Debe contener al menos 8 caracteres'),
+        
+        .matches(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(.{8,20})$/)
+        .withMessage('La contraseña debe contener al menos un número, una mayúscula, una minúscula y tener como minimo 8 caracteres'),
+        
     check('pass2')
         .notEmpty().withMessage('Debe repetir la clave').bail()
-        .isLength({ min: 8 }).withMessage('Debe contener al menos 8 caracteres').bail(),
+        .matches(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(.{8,20})$/)
+        .withMessage('La contraseña debe contener al menos un número, una mayúscula, una minúscula y tener como minimo 8 caracteres'),
+     
 
     body('pass2').custom((value,{req}) => value !== req.body.pass ? false : true).withMessage('Las contraseñas no coinciden')
 

@@ -19,7 +19,7 @@
             </div>
             <div class="container bottom">
                 <label for="email">Email</label>
-                <input type="text" name="email" id="email" placeholder="Ingresa tu email"value="<%= locals.old && old.email ? old.email : null%>" required>
+                <input type="text" name="email" id="email" placeholder="Ingresa tu email"value="<%= locals.old && old.email ? old.email : null%>" >
                 <% if (locals.errors && errors.email) { %>
                     <small><%= errors.email.msg %></small>
                 <% } %>
@@ -27,7 +27,7 @@
             <div class="container bottom">
                 <label for="pass1">Contraseña</label>
                 <div class="password">
-                <input type="password" name="pass" id="pass"value="<%= locals.old && old.pass ? old.pass: null %>" placeholder="Ingresa tu contraseña" required>
+                <input type="password" name="pass" id="pass"value="<%= locals.old && old.pass ? old.pass: null %>" placeholder="Ingresa tu contraseña" >
                 <i class="fas fa-eye-slash" id="eye-pass"></i>
                 </div>
                 <% if (locals.errors && errors.pass) { %>
@@ -37,7 +37,7 @@
             <div class="container bottom">
                 <label for="pass2">Repita Su Contraseña</label>
                 <div class="password">
-                <input type="password" name="pass2" id="pass2" value="<%= locals.old && old.pass2 ? old.pass2: null %>" placeholder="Confirme su contraseña" required>
+                <input type="password" name="pass2" id="pass2" value="<%= locals.old && old.pass2 ? old.pass2: null %>" placeholder="Confirme su contraseña" >
                 <i class="fas fa-eye-slash" id="eye-pass2"></i>
             </div>
 
