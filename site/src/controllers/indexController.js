@@ -4,18 +4,39 @@ const { Op } = require("sequelize");
 module.exports = {
     home: (req, res) => {
     //    let aside = db.Asides.findAll()
-         db.Productos.findAll({
-            include: [{all: true}]
+
+        let marcas = db.Marcas.findAll()
+        
+        let ofertasNotebooks = db.Productos.findAll({
+            where: {
+                categorias_id : 1
+            },
+            include: [
+                {all : true} 
+            ]
         })
-    
-            .then(productos => {
-                /* res.send(productos) */
-                return res.render('home',
-                    {
-                        productos
-                })
+
+        let smarts =  db.Productos.findAll({
+            where: {
+                categorias_id : 4
+            },
+            include: [
+                {all : true} 
+            ]
+        })
+         
+        Promise.all([marcas, ofertasNotebooks, smarts])
+        .then(([marcas, ofertasNotebooks, smarts]) => {
+            /* return res.send(ofertasNotebooks) */
+            return res.render("home", {
+                marcas,
+                ofertasNotebooks,
+                smarts
             })
-            .catch(error => res.send(error))
+
+        })
+        .catch(error => res.send(error))
+      
     },
     home2 :(req, res)=> {
         res.render('home')

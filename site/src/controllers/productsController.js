@@ -1,4 +1,3 @@
-//let productos = require('../data/productos.json')
 let db = require('../database/models');
 let Sequelize = require('sequelize')
 
@@ -14,7 +13,7 @@ module.exports ={
 
             db.Productos.findAll({
                 where : {
-                    categoriasId: producto.categoriasId
+                    categorias_id: producto.categorias_id
                 },
                 limit : 4,
                 order : [[Sequelize.literal("RAND()")]],
@@ -25,6 +24,7 @@ module.exports ={
         })
         //
             .then(productos => {
+/*                 res.send(producto) */
             return res.render('productDetail',{
                 producto,
                 productos

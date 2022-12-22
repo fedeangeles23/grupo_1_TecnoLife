@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {login,register, processRegister, processLogin} = require ('../controllers/usersController');
+const {login,register,perfil,logout, processRegister, processLogin} = require ('../controllers/usersController');
 
 
 const registerValidation = require('../validations/registerValidation');
@@ -13,7 +13,7 @@ router.post('/register',registerValidation, upload.single('Image'), registerVali
 router.get('/login', login);
 router.post('/login',loginValidation, processLogin)
 
-/* router.get('/perfil', perfil);
-router.delete('/logout', logout); */
+ router.get('/perfil', perfil);
+router.delete('/logout', logout); 
 
 module.exports = router;

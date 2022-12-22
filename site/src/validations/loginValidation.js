@@ -1,4 +1,4 @@
-const { decodeBase64 } = require('bcryptjs');
+const bcryptjs = require('bcryptjs');
 const {check, body}=require ('express-validator');
 const db = require('../database/models')
 

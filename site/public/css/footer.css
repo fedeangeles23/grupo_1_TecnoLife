@@ -1,9 +1,9 @@
-.container {
+.container-f {
     max-width: 1170px;
     margin: auto;
 }
 
-.row {
+.row-f {
     display: flex;
     flex-wrap: wrap;
 }

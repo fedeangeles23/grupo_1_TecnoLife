@@ -4,55 +4,45 @@
 <%- include('./partials/head') %>
 
     <body>
-
         <%- include('./partials/header') %>
 
-            <section class="dProducto">
-                <section class="imagen-grande">
-                        <img src="/img/products/<%= producto.imagenes[0] %> " width="100%" alt="">
-
-                        <div class="grupo-imagenes-pequeñas">
-                            <div class="columna-imagenes-pequeñas">
-                                <img src="/img/products/<%= producto.imagenes[0] %>" width="100%" class="imagen-pequeña"
-                                    alt="">
-                            </div>
-                            <div class="columna-imagenes-pequeñas">
-                                <img src="/img/products/<%= producto.imagenes[1] %>" width="100%" class="imagen-pequeña"
-                                    alt="">
-                            </div>
-                            <div class="columna-imagenes-pequeñas">
-                                <img src="/img/products/<%= producto.imagenes[2] %>" width="100%" class="imagen-pequeña"
-                                    alt="">
-                            </div>
-                            <div class="columna-imagenes-pequeñas">
-                                <img src="/img/products/<%= producto.imagenes[3] %>" width="100%" class="imagen-pequeña"
-                                    alt="">
-                            </div>
+        <div class="main-wrapper">
+            <div class="container-d">
+                <div class="product-div">
+                    <div class="product-div-left">
+                        <div class="img-container-d">
+                            <img class = "img-d" src="/img/products/<%= producto.imagenes[0].nombre %>" alt="watch">
                         </div>
-                </section>
-                <section class="especificacion-producto">
-                    <h2>
-                        <%= producto.marca %>
-                    </h2>
-                    <h2>
-                        <%= producto.titulo %>
-                    </h2>
-                    <h4>Online: <%= producto.precio %>
-                    </h4>
-                    <h4>12 x <%= (producto.precio / 12) %> CUOTAS SIN INTERÉS</h4>
-                    <button class="boton-carrito"><a href="/cart1">Añadir al Carrito</a></button>
-                </section>
-            </section>
-            <section class="info-producto">
-                <div>
-                    <h3>ESPECIFICACIONES DEL PRODUCTO</h3>
-                    <H5>
-                        <%= producto.descripcion %>
-                    </H5>
+                        <div class="hover-container">
+                            <div><img src="/img/products/<%= producto.imagenes[0].nombre %>"></div>
+                            <div><img src="/img/products/<%= producto.imagenes[1].nombre %>"></div>
+                            <div><img src="/img/products/<%= producto.imagenes[2].nombre %>"></div>
+                            <div><img src="/img/products/<%= producto.imagenes[3].nombre %>"></div>
+                        </div>
+                    </div>
+                    <div class="product-div-right">
+                        <div class="product-rating">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star-half-alt"></i></span>
+                            <span>(350 ratings)</span>
+                        </div>
+                        <span class="product-name"><%= producto.marca.nombre %></span>
+                        <span class="product-name"><%= producto.nombre %></span>
+                        <span class="product-price">Precio Online: $<%= producto.precio %></span>
+                        <span class="product-price">12 x $<%= (producto.precio / 12) %> CUOTAS SIN INTERÉS</span>
+                        <p class="product-description"><%= producto.descripcion %></p>
+                        <div class="btn-groups">
+                            <button type="button" class="add-cart-btn"><i class="fas fa-shopping-cart"><a href="/cart1"></a></i>Agregar al Carrito</button>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </div>
+        </div>
 
-                <%- include('./partials/footer') %>
+        <%- include('./partials/footer') %>
 
     </body>
 

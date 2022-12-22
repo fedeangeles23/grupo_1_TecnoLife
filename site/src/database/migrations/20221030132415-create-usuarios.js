@@ -14,11 +14,9 @@ module.exports = {
       },
       apellido: {
         type: Sequelize.STRING(100),
-        allowNull: false
       },
       genero: {
         type: Sequelize.STRING(100),
-        allowNull: false
       },
       email: {
         type: Sequelize.STRING(100),
@@ -30,7 +28,6 @@ module.exports = {
       },
       ciudad: {
         type: Sequelize.STRING(100),
-        allowNull: false
       },
       imagen: {
         type: Sequelize.STRING(100),
