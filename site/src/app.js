@@ -3,6 +3,8 @@ const methodOverride = require('method-override')
 const cookieParser = require('cookie-parser');
 const path = require('path');
 const app = express()
+const session = require("express-session")
+const userLogin = require ('./middlewares/userLoginCheck')
 const port = 3000;
 
 /* View engine setup */
@@ -21,11 +23,16 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 
 /* Middlewares */
 app.use(express.json())
-app.use(express.static(path.join(__dirname, 'public')))
-app.use(express.static(path.resolve(__dirname, 'public')))
+/*app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.resolve(__dirname, 'public')))*/
 app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended: false }));
-
+/* Login e inicio de sesion */
+app.use(session({
+    secret: "La Comision 17"
+  }))
+  
+  app.use(userLogin)
 /* Requerir las rutas */
 let indexRouter = require('./routes/index');
 let usersRouter = require('./routes/users');

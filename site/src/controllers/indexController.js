@@ -27,7 +27,7 @@ module.exports = {
          
         Promise.all([marcas, ofertasNotebooks, smarts])
         .then(([marcas, ofertasNotebooks, smarts]) => {
-            //return res.send(ofertasNotebooks)
+            /* return res.send(ofertasNotebooks) */
             return res.render("home", {
                 marcas,
                 ofertasNotebooks,

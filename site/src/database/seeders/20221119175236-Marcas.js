@@ -1,5 +1,5 @@
 'use strict';
-let listado = ['Apple','Nokia','Xiaomi','Motorola']
+let listado = ['Samsung','Lenovo', 'Acer', 'HP', 'Dell', 'Exo', 'Apple','Nokia','Xiaomi','Motorola']
 
 let marcas = listado.map(marca =>{
 let elemento = {

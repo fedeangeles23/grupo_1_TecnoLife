@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="/css/style.css">
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
   <!-- Google Fonts -->
@@ -20,7 +20,7 @@
     <div class="row">
       <div class="col-md-3 border-right">
         <div class="d-flex flex-column align-items-center text-center p-3 py-5">
-          <img class="rounded-circle mt-5" width="150px" src="/css/img/perfil-pixlr-bg-result.png">
+          <img class="rounded-circle mt-5" width="150px" src="/img/reviews/user-incog.jpg">
           <span class="font-weight-bold">Nombre de usuario</span><span class="text-black-50">@mail.com</span>
         </div>
       </div>
@@ -32,41 +32,40 @@
           <div class="row mt-2">
             <div class="col-md-6">
               <label class="labels">Nombre</label>
-              <input type="text" class="form-control" placeholder="" value="">
+              <input type="text" class="form-control" placeholder="" value=<%=locals.userLogin.nombre%>>
             </div>
-            <div class="col-md-6"><label class="labels">Apellido</label><input type="text" class="form-control" value=""
-                placeholder="">
+            <div class="col-md-6"><label class="labels">Apellido</label><input type="text" class="form-control" value=<%=locals.userLogin.apellido%>>
             </div>
           </div>
           <div class="row mt-3">
             <div class="col-md-12"><label class="labels">Número de teléfono</label><input type="text"
-                class="form-control" placeholder="" value="">
+                class="form-control" placeholder="" value=<%=locals.userLogin.ciudad%>>
             </div>
-            <div class="col-md-12"><label class="labels">Dirección Línea 1</label><input type="text"
-                class="form-control" placeholder="" value="">
+            <div class="col-md-12"><label class="labels">genero</label><input type="text"
+                class="form-control" placeholder="" value=<%=locals.userLogin.genero%>>
             </div>
             <div class="col-md-12"><label class="labels">Dirección Línea 2</label><input type="text"
-                class="form-control" placeholder="" value="">
+                class="form-control" placeholder=""value=<%=locals.userLogin.ciudad%>>
             </div>
             <div class="col-md-12"><label class="labels">Código postal</label><input type="text" class="form-control"
-                placeholder="" value="">
+                placeholder=""value=<%=locals.userLogin.ciudad%>>
             </div>
             <div class="col-md-12"><label class="labels">Provincia</label><input type="text" class="form-control"
-                placeholder="" value="">
+                placeholder=""value=<%=locals.userLogin.ciudad%>>
             </div>
             <div class="col-md-12"><label class="labels">Ciudad</label><input type="text" class="form-control"
-                placeholder="" value="">
+                placeholder=""value=<%=locals.userLogin.ciudad%>>
             </div>
             <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control"
-                placeholder="" value="">
+                placeholder=""value=<%=locals.userLogin.email%>>
             </div>
           </div>
           <div class="row mt-3">
             <div class="col-md-6">
-              <label class="labels">Pais</label><input type="text" class="form-control" placeholder="" value="">
+              <label class="labels">Pais</label><input type="text" class="form-control" placeholder=""value=<%=locals.userLogin.nombre%>>
             </div>
             <div class="col-md-6">
-              <label class="labels">Estado</label><input type="text" class="form-control" value="" placeholder="">
+              <label class="labels">Estado</label><input type="text" class="form-control" value=<%=locals.userLogin.nombre%>>
             </div>
           </div>
           <div class="mt-5 text-center">
