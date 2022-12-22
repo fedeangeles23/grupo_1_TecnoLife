@@ -2,12 +2,12 @@
     {
         "id": 1,
         "nombre": "HP",
-        "Titulo": "notebook hp intel",
-        "categorias": "Smartphones",
+        "stock": 5,
         "precio": 100000,
         "descuento": 10,
-        "stock": 5,
         "descripcion": "balato balato",
+        "categorias_id": "1",
+        "marcas_id": "1",
         "imagenes": [
             "img-1667266442243.webp",
             "img-1667266442244.webp",
@@ -17,13 +17,61 @@
     },
     {
         "id": 2,
-        "nombre": "Samsung",
-        "Titulo": "smartphone Samsung Galaxy A20",
-        "categorias": "Smartphones",
-        "precio": 100000,
-        "descuento": 0,
+        "nombre": "HP",
         "stock": 5,
-        "descripcion": "Compralo pibe",
+        "precio": 100000,
+        "descuento": 10,
+        "descripcion": "balato balato",
+        "categorias_id": "1",
+        "marcas_id": "1",
+        "imagenes": [
+            "img-1667266512473.webp",
+            "img-1667266512474.webp",
+            "img-1667266512477.webp",
+            "img-1667266512477.webp"
+        ]
+    },
+    {
+        "id": 3,
+        "nombre": "HP",
+        "stock": 5,
+        "precio": 100000,
+        "descuento": 10,
+        "descripcion": "balato balato",
+        "categorias_id": "1",
+        "marcas_id": "1",
+        "imagenes": [
+            "img-1667266512473.webp",
+            "img-1667266512474.webp",
+            "img-1667266512477.webp",
+            "img-1667266512477.webp"
+        ]
+    },
+    {
+        "id": 4,
+        "nombre": "HP",
+        "stock": 5,
+        "precio": 100000,
+        "descuento": 10,
+        "descripcion": "balato balato",
+        "categorias_id": "1",
+        "marcas_id": "1",
+        "imagenes": [
+            "img-1667266512473.webp",
+            "img-1667266512474.webp",
+            "img-1667266512477.webp",
+            "img-1667266512477.webp"
+        ]
+    },
+    {
+        "id": 5,
+        "nombre": "HP",
+        "stock": 5,
+        "precio": 100000,
+        "descuento": 10,
+        "descripcion": "balato balato",
+        "categorias_id": "1",
+        "marcas_id": "1",
         "imagenes": [
             "img-1667266512473.webp",
             "img-1667266512474.webp",
