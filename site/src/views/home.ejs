@@ -110,13 +110,13 @@
             <h1 class="heading">#ofertas en <span>Notebooks</span> </h1>
             <div class="article">
                 <div class="card">
-                    <% productos.forEach(producto => { %>
+                    <% ofertasNotebooks.forEach(producto => { %>
                         <div class="img-container">
                             <a href="/products/detail/<%= producto.id %> ">
-                                <img src = "/img/products/<%= producto.imagenes[0] %>" alt = "">    
+                                <img src = "/img/products/<%= producto.imagenes[0].nombre %>" alt = "">    
                             </a>
-                            <h4><%= producto.marca %> </h4>
-                            <h4><%= producto.titulo %> </h4>
+                            <h4><%= producto.marca.nombre %> </h4>
+                            <h4><%= producto.nombre %> </h4>
                             <div class="favorite">
                                 <i class="fas fa-heart"></i>
                             </div>
