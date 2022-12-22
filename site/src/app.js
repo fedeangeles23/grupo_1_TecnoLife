@@ -34,12 +34,12 @@ let adminRouter = require('./routes/admin');
 
 /* Rutas */
 app.use('/', indexRouter)
+app.use('/categories', indexRouter)
 app.use('/products', productsRouter)
-app.use('/users', usersRouter)
+app.use('/carrito', indexRouter)
+app.use('/login', usersRouter)
+app.use('/register', usersRouter)
+app.use('/profile', usersRouter)
 app.use('/admin', adminRouter)
-/* app.use('/categories', indexRouter)
-app.use('/carrito', indexRouter) */
-/* app.use('/register', usersRouter)
-app.use('/profile', usersRouter) */
 
 app.listen(port, () => console.log(`Servidor abierto en http://localhost:${port}`))

@@ -1,3 +1,17 @@
+section {
+    padding: 50px 100px;
+}
+
+.section-home h1 {
+    display: flex;
+    justify-content: center;
+    color: #2f3956;
+    font-size: 4vw;
+    font-weight: 800;
+    text-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+    /* opacity: 0.1; */
+}
+
 /* Start Home Slider */
 
 .container-slider {
@@ -222,7 +236,7 @@
 
 /* End Home Slider */
 
-/* Main Home - Our menu settings start */
+/* marcas */
 
 .box-simple-cards{
    
@@ -236,31 +250,35 @@
 }
 
 .simple-cards .box-simple-cards .simple-card{
+    display: flex;
+    flex-direction: column;
     padding:2rem;
     text-align: center;
-    background-color: var(--bg-gray);
-    border: 2px solid var(--main-color2);   
+    border: 4px solid #2f3956; 
 }
 
 .simple-cards .box-simple-cards .simple-card img{
-    height: 1rem;
+    height: 4rem;
 }
 
-.simple-cards .box-simple-cards .simple-card h3 {
-    color: var(--main-color2);
-    font-size: 2rem;
-    padding: 0 0 1rem 0px;
-}
 
 .simple-cards .box-simple-cards .simple-card:hover{
-    background:#fff;
+    background: #7793e6;
+    opacity: 1;
 }
 
-.simple-cards .box-simple-cards .simple-card:hover > *{
+/* .simple-cards .box-simple-cards .simple-card:hover > *{
     color:var(--bg);
-}
+} */
 
-/* Main Home - Our menu settings ends */
+.simple-cards .box-simple-cards .simple-card .see-products {
+    font-family: sans-serif;
+    text-decoration: none;
+    color:#fff;
+}
+.simple-cards .box-simple-cards .simple-card a:hover {
+    color:#fff;
+}
 
 /* querys de las tarjetas viejas para revisar */
 /* @media screen and (max-width:1695px) and (min-width: 1321px) {
@@ -835,7 +853,3 @@
       display: none;
     }
   }
-
-
-
-

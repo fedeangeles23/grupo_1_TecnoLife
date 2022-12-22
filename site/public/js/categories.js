@@ -12,6 +12,16 @@ const productos = [
         precio: 1000
     },
     {
+        id: "Notebook-01",
+        titulo: "Notebook Acer Aspire 5",
+        imagen: "./img/Notebooks/Acer-Aspire-5.webp",
+        categoria: {
+            nombre: "Notebooks",
+            id: "Notebooks"
+        },
+        precio: 1000
+    },
+    {
         id: "Notebook-02",
         titulo: "Notebook 02",
         imagen: "./img/Notebooks/Acer-Aspire-5.webp",

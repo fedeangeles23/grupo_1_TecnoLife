@@ -130,8 +130,8 @@
                                     <% categorias.forEach(categoria => { %>
                                         <option value="<%= categoria %>" <%= producto.Categoria === categoria ? 'selected' : null %> ><%= categoria %></option>
                                     <% }) %>
-                                </select>
-                                <p class="span text-danger">
+                                  </select>
+                                  <p class="span text-danger">
                                     <%= locals.errors && errors.Categoria ? errors.Categoria.msg : null %>
                                 </p>
                             </div>
@@ -141,7 +141,7 @@
                         <div class="row">
                             <div class="col col-12">
                                 <div class="form-floating"> 
-                                    <textarea name="Descripcion" id="Descripcion" cols="300" rows="300" class="form-control" placeholder="Leave a comment here" style="resize: none;"><%= producto.Descripcion %></textarea>
+                                    <textarea name="Descripcion" id="Descripcion" cols="300" rows="300" class="form-control" placeholder="Leave a comment here" style="resize: none;" value="<%= producto.Descripcion %>"></textarea>
                                     <label for="Descripcion">Descripcion del producto</label>
                                 </div>
                                 <p class="span text-danger">

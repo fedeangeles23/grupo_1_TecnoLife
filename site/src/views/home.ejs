@@ -7,187 +7,93 @@
 
         <!-- header section start  -->
 
-            <main>
-                <h2 class="welcome">WELCOME TO <span>TECNOLIFE</span></h2>
-                <!-- Section Slider start -->
+        <%- include('./partials/header') %>
 
+            <main  class="home">
+                
+                <section class="section-home">
 
-                <section class="home-slider" id="home-slider">
-
-                    <div class="container-slider">
+                    <h1 class="welcome">BIENVENIDO A <span class="span-color">TECNOLIFE</span></h2>
+              
+                    <!-- Section Slider start -->
+              
+                    <div class="home-slider" id="home-slider">
+              
+                      <div class="container-slider">
+              
                         <div class="slider" id="slider">
-                            <div class="slider__section">
-                                <img src="/img/slider/slider-1.jpg" alt="" class="slider__img">
-                            </div>
-                            <div class="slider__section">
-                                <img src="/img/slider/slider-2.jpg" alt="" class="slider__img">
-                            </div>
-                            <div class="slider__section">
-                                <img src="/img/slider/slider-3.jpg" alt="" class="slider__img">
-                            </div>
-                            <div class="slider__section">
-                                <img src="/img/slider/slider-4.jpg" alt="" class="slider__img">
-                            </div>
+                          <div class="slider__section">
+                            <img src="/img/slider/slider-1.jpg" alt="" class="slider__img">
+                          </div>
+                          <div class="slider__section">
+                            <img src="/img/slider/slider-2.jpg" alt="" class="slider__img">
+                          </div>
+                          <div class="slider__section">
+                            <img src="/img/slider/slider-3.jpg" alt="" class="slider__img">
+                          </div>
+                          <div class="slider__section">
+                            <img src="/img/slider/slider-4.jpg" alt="" class="slider__img">
+                          </div>
                         </div>
-
+              
                         <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
                         <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
-
+              
+                      </div>
                     </div>
+              
+              
+                    <!-- Start section marcas -->
+              
+                    <section class="simple-cards" id="simple-cards">
+              
+                      <h1 class="heading">#Marcas <span>destacadas</span> </h1>
+              
+                      <div class="box-simple-cards">
+              
+                          <div class="simple-card">
+                              <img src="/img/products/marcas/logo-sony.png" alt="">
+                              <a href="#" class="see-products">Ver productos</a>
+                          </div>
+              
+                          <div class="simple-card">
+                            <img src="/img/products/marcas/logo-sony.png" alt="">
+                            <a href="#" class="see-products">Ver productos</a>
+                          </div>
+              
+                          <div class="simple-card">
+                            <img src="/img/products/marcas/logo-sony.png" alt="">
+                            <a href="#" class="see-products">Ver productos</a>
+                          </div>
+              
+                          <div class="simple-card">
+                            <img src="/img/products/marcas/logo-sony.png" alt="">
+                            <a href="#" class="see-products">Ver productos</a>
+                          </div>
+              
+                          <div class="simple-card">
+                            <img src="/img/products/marcas/logo-sony.png" alt="">
+                            <a href="#" class="see-products">Ver productos</a>
+                          </div>
+              
+                          <div class="simple-card">
+                            <img src="/img/products/marcas/logo-sony.png" alt="">
+                            <a href="#" class="see-products">Ver productos</a>
+                          </div>
+                      </div>
+              
+                  </section>
+              
+                  </section>
 
-                    <!-- Linea bajo carusel -->
-
-                    <div class="lineabajocarousel">
-                        <div class="col1linea">
-                            <img class="imgtrucklinea" src="/img/iconos/delivery-truck.png" alt="">
-                            <span>ENVÍOS A <b> TODO EL PAÍS </b> </span>
-                        </div>
-
-                        <div class="col2linea">
-                            <img class="tarjetaslinea" src="/img/iconos/549d2cb2275c2ae398b2f7bd1450.png" alt="">
-                            <span>Pagá con crédito y débito
-                            </span>
-                            <a href="#" id="open" class="cta">Ver promociones</a>
-                        </div>
-
-                        <div class="modal-container" id="modal_container">
-                            <div class="modal modal-close">
-                                <p class="close" id="close">X</p>
-                                <img src="/img/iconos/medio-de-pago.png" alt="">
-                            </div>
-                        </div>
-
-                        <div class="col3linea">
-                            <img class="envioslinea" src="/img/iconos/ayudar.png" alt="">
-                            <span>Consulta tus dudas al <b>0810-1111-4444</b> </span>
-
-                        </div>
-                    </div>
-                    <br>
-                    <!-- End Linea bajo carusel -->
-
-                </section>
-
-                <!-- Start section marcas -->
-
-                <section class="simple-cards" id="simple-cards">
-
-                    <h1 class="heading">#Marcas <span>destacadas</span> </h1>
-
-                    <div class="box-simple-cards">
-
-                        <div class="simple-card">
-                            <img src="/img/" alt="">
-                            <h3>Marca 1</h3>
-                            <a href="#" class="btn">Ver productos</a>
-                        </div>
-
-                        <div class="simple-card">
-                            <img src="/img/" alt="">
-                            <h3>Marca 2</h3>
-                            <a href="#" class="btn">Ver productos</a>
-                        </div>
-
-                        <div class="simple-card">
-                            <img src="/img/" alt="">
-                            <h3>Marca 3</h3>
-                            <a href="#" class="btn">Ver productos</a>
-                        </div>
-
-                        <div class="simple-card">
-                            <img src="/img/" alt="">
-                            <h3>Marca 4</h3>
-                            <a href="#" class="btn">Ver productos</a>
-                        </div>
-
-                        <div class="simple-card">
-                            <img src="/img/" alt="">
-                            <h3>Marca 5</h3>
-                            <a href="#" class="btn">Ver productos</a>
-                        </div>
-
-                        <div class="simple-card">
-                            <img src="/img/" alt="">
-                            <h3>Marca 6</h3>
-                            <a href="#" class="btn">Ver productos</a>
-                        </div>
-                    </div>
-
-                </section>
-
-                <!-- Ofertas en notebooks -->
-                <section>
-                    <h1 class="heading">#Ofertas en <span>Smart TV</span> </h1>
-                    <div class="article">
-                        <div class="slide-container swiper">
-                            <div class="slide-content">
-                                <div class="card-wrapper swiper-wrapper">
-                                    <% productos.forEach(producto=> { %>
-
-                                        <div class="card swiper-slide">
-
-                                            <div class="logo-cart">
-                                                <img src="/img/products/logo-samsumg.png" alt="logo">
-                                                <i class='bx bx-shopping-bag'></i>
-                                            </div>
-
-                                            <div class="img-product">
-                                                <a href="/products/detail/<%= producto.id %> ">
-                                                    <img class="item" src="/img/products/<%= producto.imagenes[0] %>"
-                                                        alt="Notebook-spin">
-                                                </a>
-                                            </div>
-
-                                            <div class="show-details">
-                                                <span class="show_name">
-                                                    <%= producto.Titulo %>
-                                                </span>
-                                                <p>
-                                                    <%= producto.Descripcion %>
-                                                </p>
-                                            </div>
-
-                                            <div class="color-price">
-
-                                                <div class="color-option">
-                                                    <span class="color">Precio:</span>
-                                                </div>
-
-                                                <div class="price">
-                                                    <span class="price_num">$<%=producto.precio %></span>
-                                                    <span class="price_letter">Precio lista</span>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="button">
-                                                <div class="button-layer"></div>
-                                                <button><a href="/carrito"></a>Añadir al carrito</button>
-                                            </div>
-
-                                            <div class="button">
-                                                <div class="button-layer"></div>
-                                                <a href="/products/detail/<%= producto.id %>"><button>Ver Detalles</button></a>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="swiper-button-next swiper-navBtn"></div>
-                                        <div class="swiper-button-prev swiper-navBtn"></div>
-                                        <div class="swiper-pagination"></div>
-                                    <% }) %>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Ofertas en smart tv -->
-                <section>
-                    <h1 class="heading">#Ofertas en <span>Smart TV</span> </h1>
-                    <div class="article">
-                        <div class="slide-container swiper">
-                            <div class="slide-content">
-                                <div class="card-wrapper swiper-wrapper">
+               <!-- Ofertas en notebooks -->
+               <section>
+                <h1 class="heading">#Ofertas en <span>Smart TV</span> </h1>
+                <div class="article">
+                    <div class="slide-container swiper">
+                        <div class="slide-content">
+                            <div class="card-wrapper swiper-wrapper">
+                                <% productos.forEach(producto=> { %>
 
                                     <div class="card swiper-slide">
 
@@ -197,16 +103,18 @@
                                         </div>
 
                                         <div class="img-product">
-                                            <img id="notebook" class="item" src="/img/products/notebook-spin.webp"
-                                                alt="Notebook-spin">
+                                            <a href="/products/detail/<%= producto.id %> ">
+                                                <img class="item" src="/img/products/<%= producto.imagenes[0] %>"
+                                                    alt="Notebook-spin">
+                                            </a>
                                         </div>
 
                                         <div class="show-details">
-                                            <span class="show_name">Samsung 7 Spin</span>
-                                            <p>Samsung Notebook 7 Spin 2 en 1 13.3" portátil pantalla táctil
-                                                NP740U3L-L02US (Intel Core
-                                                i5-6200U, 8 GB
-                                                de memoria, disco duro de 1 TB, diseño plegable de 360°, platino)
+                                            <span class="show_name">
+                                                <%= producto.Titulo %>
+                                            </span>
+                                            <p>
+                                                <%= producto.Descripcion %>
                                             </p>
                                         </div>
 
@@ -217,7 +125,7 @@
                                             </div>
 
                                             <div class="price">
-                                                <span class="price_num">$120.000</span>
+                                                <span class="price_num">$<%=producto.precio %></span>
                                                 <span class="price_letter">Precio lista</span>
                                             </div>
 
@@ -225,526 +133,589 @@
 
                                         <div class="button">
                                             <div class="button-layer"></div>
-                                            <button>Añadir al carrito</button>
+                                            <button><a href="/carrito"></a>Añadir al carrito</button>
                                         </div>
 
                                         <div class="button">
                                             <div class="button-layer"></div>
-                                            <button>Ver detalles</button>
+                                            <a href="/products/detail/<%= producto.id %>"><button>Ver Detalles</button></a>
                                         </div>
 
                                     </div>
 
-                                    <div class="card swiper-slide">
+                                    <div class="swiper-button-next swiper-navBtn"></div>
+                                    <div class="swiper-button-prev swiper-navBtn"></div>
+                                    <div class="swiper-pagination"></div>
+                                <% }) %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Ofertas en smart tv -->
+            <section>
+                <h1 class="heading">#Ofertas en <span>Smart TV</span> </h1>
+                <div class="article">
+                    <div class="slide-container swiper">
+                        <div class="slide-content">
+                            <div class="card-wrapper swiper-wrapper">
 
-                                        <div class="logo-cart">
-                                            <img src="/img/products/logo-lenovo.png" alt="logo">
-                                            <i class='bx bx-shopping-bag'></i>
+                                <div class="card swiper-slide">
+
+                                    <div class="logo-cart">
+                                        <img src="/img/products/logo-samsumg.png" alt="logo">
+                                        <i class='bx bx-shopping-bag'></i>
+                                    </div>
+
+                                    <div class="img-product">
+                                        <img id="notebook" class="item" src="/img/products/notebook-spin.webp"
+                                            alt="Notebook-spin">
+                                    </div>
+
+                                    <div class="show-details">
+                                        <span class="show_name">Samsung 7 Spin</span>
+                                        <p>Samsung Notebook 7 Spin 2 en 1 13.3" portátil pantalla táctil
+                                            NP740U3L-L02US (Intel Core
+                                            i5-6200U, 8 GB
+                                            de memoria, disco duro de 1 TB, diseño plegable de 360°, platino)
+                                        </p>
+                                    </div>
+
+                                    <div class="color-price">
+
+                                        <div class="color-option">
+                                            <span class="color">Precio:</span>
                                         </div>
 
-                                        <div class="img-product">
-                                            <img id="notebook" class="item"
-                                                src="/img/products/Notebook Lenovo 15itl6.webp" alt="Notebook-spin">
-                                        </div>
-
-                                        <div class="show-details">
-                                            <span class="show_name">Notebook Lenovo 15itl6</span>
-                                            <p>Notebook Lenovo 15itl6 Core I7-1165g7 512ssd 8ram 15.6 Win11</p>
-                                        </div>
-
-                                        <div class="color-price">
-
-                                            <div class="color-option">
-                                                <span class="color">Precio:</span>
-                                            </div>
-
-                                            <div class="price">
-                                                <span class="price_num">$289.999</span>
-                                                <span class="price_letter">Precio lista</span>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <button>Añadir al carrito</button>
-                                        </div>
-
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <button>Ver detalles</button>
+                                        <div class="price">
+                                            <span class="price_num">$120.000</span>
+                                            <span class="price_letter">Precio lista</span>
                                         </div>
 
                                     </div>
 
-                                    <div class="card swiper-slide">
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Añadir al carrito</button>
+                                    </div>
 
-                                        <div class="logo-cart">
-                                            <img src="/img/products/products/acer-logo.jpg" alt="logo">
-                                            <i class='bx bx-shopping-bag'></i>
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Ver detalles</button>
+                                    </div>
+
+                                </div>
+
+                                <div class="card swiper-slide">
+
+                                    <div class="logo-cart">
+                                        <img src="/img/products/logo-lenovo.png" alt="logo">
+                                        <i class='bx bx-shopping-bag'></i>
+                                    </div>
+
+                                    <div class="img-product">
+                                        <img id="notebook" class="item"
+                                            src="/img/products/Notebook Lenovo 15itl6.webp" alt="Notebook-spin">
+                                    </div>
+
+                                    <div class="show-details">
+                                        <span class="show_name">Notebook Lenovo 15itl6</span>
+                                        <p>Notebook Lenovo 15itl6 Core I7-1165g7 512ssd 8ram 15.6 Win11</p>
+                                    </div>
+
+                                    <div class="color-price">
+
+                                        <div class="color-option">
+                                            <span class="color">Precio:</span>
                                         </div>
 
-                                        <div class="img-product">
-                                            <img id="notebook" class="item" src="/img/Acer Aspire 5 A515-54-57MX.webp"
-                                                alt="Notebook-spin">
-                                        </div>
-
-                                        <div class="show-details">
-                                            <span class="show_name">Acer Aspire 5 </span>
-                                            <p>Acer Aspire 5 A515-54 plateada 15.6", Intel Core i5 10210U 8GB de RAM
-                                                256GB SSD, Intel UHD
-                                                Graphics 620 1920x1080px Windows 10 Home</p>
-                                        </div>
-
-                                        <div class="color-price">
-
-                                            <div class="color-option">
-                                                <span class="color">Precio:</span>
-                                            </div>
-
-                                            <div class="price">
-                                                <span class="price_num">$120.000</span>
-                                                <span class="price_letter">Precio lista</span>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <button>Añadir al carrito</button>
-                                        </div>
-
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <button>Ver detalles</button>
+                                        <div class="price">
+                                            <span class="price_num">$289.999</span>
+                                            <span class="price_letter">Precio lista</span>
                                         </div>
 
                                     </div>
 
-                                    <div class="card swiper-slide">
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Añadir al carrito</button>
+                                    </div>
 
-                                        <div class="logo-cart">
-                                            <img src="/img/products/HP-Logo-1999.jpg" alt="logo">
-                                            <i class='bx bx-shopping-bag'></i>
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Ver detalles</button>
+                                    </div>
+
+                                </div>
+
+                                <div class="card swiper-slide">
+
+                                    <div class="logo-cart">
+                                        <img src="/img/products/products/acer-logo.jpg" alt="logo">
+                                        <i class='bx bx-shopping-bag'></i>
+                                    </div>
+
+                                    <div class="img-product">
+                                        <img id="notebook" class="item" src="/img/Acer Aspire 5 A515-54-57MX.webp"
+                                            alt="Notebook-spin">
+                                    </div>
+
+                                    <div class="show-details">
+                                        <span class="show_name">Acer Aspire 5 </span>
+                                        <p>Acer Aspire 5 A515-54 plateada 15.6", Intel Core i5 10210U 8GB de RAM
+                                            256GB SSD, Intel UHD
+                                            Graphics 620 1920x1080px Windows 10 Home</p>
+                                    </div>
+
+                                    <div class="color-price">
+
+                                        <div class="color-option">
+                                            <span class="color">Precio:</span>
                                         </div>
 
-                                        <div class="img-product">
-                                            <img id="notebook" class="item" src="/img/products/Notebook-HP.webp"
-                                                alt="Notebook-spin">
-                                        </div>
-
-                                        <div class="show-details">
-                                            <span class="show_name">Notebook HP</span>
-                                            <p>Notebook HP 15-dy2054la plateada natural 15.6", Intel Core i5 1135G7
-                                                8GB de RAM 256GB SSD,
-                                                Intel Iris Xe Graphics G7 80EUs 1366x768px Windows 11 Home</p>
-                                        </div>
-
-                                        <div class="color-price">
-
-                                            <div class="color-option">
-                                                <span class="color">Precio:</span>
-                                            </div>
-
-                                            <div class="price">
-                                                <span class="price_num">$188.099</span>
-                                                <span class="price_letter">Precio lista</span>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <button>Añadir al carrito</button>
-                                        </div>
-
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <button>Ver detalles</button>
+                                        <div class="price">
+                                            <span class="price_num">$120.000</span>
+                                            <span class="price_letter">Precio lista</span>
                                         </div>
 
                                     </div>
 
-                                    <div class="card swiper-slide">
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Añadir al carrito</button>
+                                    </div>
 
-                                        <div class="logo-cart">
-                                            <img src="/img/products/dell_logo_2016.png" alt="logo">
-                                            <i class='bx bx-shopping-bag'></i>
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Ver detalles</button>
+                                    </div>
+
+                                </div>
+
+                                <div class="card swiper-slide">
+
+                                    <div class="logo-cart">
+                                        <img src="/img/products/HP-Logo-1999.jpg" alt="logo">
+                                        <i class='bx bx-shopping-bag'></i>
+                                    </div>
+
+                                    <div class="img-product">
+                                        <img id="notebook" class="item" src="/img/products/Notebook-HP.webp"
+                                            alt="Notebook-spin">
+                                    </div>
+
+                                    <div class="show-details">
+                                        <span class="show_name">Notebook HP</span>
+                                        <p>Notebook HP 15-dy2054la plateada natural 15.6", Intel Core i5 1135G7
+                                            8GB de RAM 256GB SSD,
+                                            Intel Iris Xe Graphics G7 80EUs 1366x768px Windows 11 Home</p>
+                                    </div>
+
+                                    <div class="color-price">
+
+                                        <div class="color-option">
+                                            <span class="color">Precio:</span>
                                         </div>
 
-                                        <div class="img-product">
-                                            <img id="notebook" class="item" src="/img/products/notebook-dell.webp"
-                                                alt="Notebook-spin">
-                                        </div>
-
-                                        <div class="show-details">
-                                            <span class="show_name">Dell Inspiron</span>
-                                            <p>Notebook Dell Inspiron 3515 azul 15.5", AMD Ryzen 7 3700U 8GB de RAM
-                                                512GB SSD, AMD Radeon RX
-                                                Vega 10 60 Hz 1920x1080px Windows 11 Home</p>
-                                        </div>
-
-                                        <div class="color-price">
-
-                                            <div class="color-option">
-                                                <span class="color">Precio:</span>
-                                            </div>
-
-                                            <div class="price">
-                                                <span class="price_num">$178.000</span>
-                                                <span class="price_letter">Precio lista</span>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <button>Añadir al carrito</button>
-                                        </div>
-
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <button>Ver detalles</button>
+                                        <div class="price">
+                                            <span class="price_num">$188.099</span>
+                                            <span class="price_letter">Precio lista</span>
                                         </div>
 
                                     </div>
 
-                                    <div class="card swiper-slide">
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Añadir al carrito</button>
+                                    </div>
 
-                                        <div class="logo-cart">
-                                            <img src="/img/products/logo-exo.png" alt="logo">
-                                            <i class='bx bx-shopping-bag'></i>
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Ver detalles</button>
+                                    </div>
+
+                                </div>
+
+                                <div class="card swiper-slide">
+
+                                    <div class="logo-cart">
+                                        <img src="/img/products/dell_logo_2016.png" alt="logo">
+                                        <i class='bx bx-shopping-bag'></i>
+                                    </div>
+
+                                    <div class="img-product">
+                                        <img id="notebook" class="item" src="/img/products/notebook-dell.webp"
+                                            alt="Notebook-spin">
+                                    </div>
+
+                                    <div class="show-details">
+                                        <span class="show_name">Dell Inspiron</span>
+                                        <p>Notebook Dell Inspiron 3515 azul 15.5", AMD Ryzen 7 3700U 8GB de RAM
+                                            512GB SSD, AMD Radeon RX
+                                            Vega 10 60 Hz 1920x1080px Windows 11 Home</p>
+                                    </div>
+
+                                    <div class="color-price">
+
+                                        <div class="color-option">
+                                            <span class="color">Precio:</span>
                                         </div>
 
-                                        <div class="img-product">
-                                            <img id="notebook" class="item" src="/img/products/notebook-spin.webp"
-                                                alt="Notebook-spin">
+                                        <div class="price">
+                                            <span class="price_num">$178.000</span>
+                                            <span class="price_letter">Precio lista</span>
                                         </div>
 
-                                        <div class="show-details">
-                                            <span class="show_name">EXO Smart L33E</span>
-                                            <p>Notebook EXO Smart L33E gris 14", Intel Celeron N4020 4GB de RAM 64GB
-                                                SSD, Intel UHD Graphics
-                                                600 1366x768px Windows 10 Home</p>
+                                    </div>
+
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Añadir al carrito</button>
+                                    </div>
+
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Ver detalles</button>
+                                    </div>
+
+                                </div>
+
+                                <div class="card swiper-slide">
+
+                                    <div class="logo-cart">
+                                        <img src="/img/products/logo-exo.png" alt="logo">
+                                        <i class='bx bx-shopping-bag'></i>
+                                    </div>
+
+                                    <div class="img-product">
+                                        <img id="notebook" class="item" src="/img/products/notebook-spin.webp"
+                                            alt="Notebook-spin">
+                                    </div>
+
+                                    <div class="show-details">
+                                        <span class="show_name">EXO Smart L33E</span>
+                                        <p>Notebook EXO Smart L33E gris 14", Intel Celeron N4020 4GB de RAM 64GB
+                                            SSD, Intel UHD Graphics
+                                            600 1366x768px Windows 10 Home</p>
+                                    </div>
+
+                                    <div class="color-price">
+
+                                        <div class="color-option">
+                                            <span class="color">Precio:</span>
                                         </div>
 
-                                        <div class="color-price">
-
-                                            <div class="color-option">
-                                                <span class="color">Precio:</span>
-                                            </div>
-
-                                            <div class="price">
-                                                <span class="price_num">$75.000</span>
-                                                <span class="price_letter">Precio lista</span>
-                                            </div>
-
+                                        <div class="price">
+                                            <span class="price_num">$75.000</span>
+                                            <span class="price_letter">Precio lista</span>
                                         </div>
 
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <button>Añadir al carrito</button>
-                                        </div>
+                                    </div>
 
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <button>Ver detalles</button>
-                                        </div>
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Añadir al carrito</button>
+                                    </div>
 
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Ver detalles</button>
                                     </div>
 
                                 </div>
 
                             </div>
 
-                            <div class="swiper-button-next swiper-navBtn"></div>
-                            <div class="swiper-button-prev swiper-navBtn"></div>
-                            <div class="swiper-pagination"></div>
                         </div>
+
+                        <div class="swiper-button-next swiper-navBtn"></div>
+                        <div class="swiper-button-prev swiper-navBtn"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                </section>
-                <!-- Productos destacados -->
-                <section>
-                    <h1 class="heading">#Ofertas en <span>Smart TV</span> </h1>
-                    <div class="article">
-                        <div class="slide-container swiper">
-                            <div class="slide-content">
-                                <div class="card-wrapper swiper-wrapper">
+                </div>
+            </section>
+            <!-- Productos destacados -->
+            <section>
+                <h1 class="heading">#Ofertas en <span>Smart TV</span> </h1>
+                <div class="article">
+                    <div class="slide-container swiper">
+                        <div class="slide-content">
+                            <div class="card-wrapper swiper-wrapper">
 
-                                    <div class="card swiper-slide">
+                                <div class="card swiper-slide">
 
-                                        <div class="logo-cart">
-                                            <img src="/img/products/logo-samsumg.png" alt="logo">
-                                            <i class='bx bx-shopping-bag'></i>
+                                    <div class="logo-cart">
+                                        <img src="/img/products/logo-samsumg.png" alt="logo">
+                                        <i class='bx bx-shopping-bag'></i>
+                                    </div>
+
+                                    <div class="img-product">
+                                        <img id="notebook" class="item" src="/img/products/notebook-spin.webp"
+                                            alt="Notebook-spin">
+                                    </div>
+
+                                    <div class="show-details">
+                                        <span class="show_name">Samsung 7 Spin</span>
+                                        <p>Samsung Notebook 7 Spin 2 en 1 13.3" portátil pantalla táctil
+                                            NP740U3L-L02US (Intel Core
+                                            i5-6200U, 8 GB
+                                            de memoria, disco duro de 1 TB, diseño plegable de 360°, platino)
+                                        </p>
+                                    </div>
+
+                                    <div class="color-price">
+
+                                        <div class="color-option">
+                                            <span class="color">Precio:</span>
                                         </div>
 
-                                        <div class="img-product">
-                                            <img id="notebook" class="item" src="/img/products/notebook-spin.webp"
-                                                alt="Notebook-spin">
-                                        </div>
-
-                                        <div class="show-details">
-                                            <span class="show_name">Samsung 7 Spin</span>
-                                            <p>Samsung Notebook 7 Spin 2 en 1 13.3" portátil pantalla táctil
-                                                NP740U3L-L02US (Intel Core
-                                                i5-6200U, 8 GB
-                                                de memoria, disco duro de 1 TB, diseño plegable de 360°, platino)
-                                            </p>
-                                        </div>
-
-                                        <div class="color-price">
-
-                                            <div class="color-option">
-                                                <span class="color">Precio:</span>
-                                            </div>
-
-                                            <div class="price">
-                                                <span class="price_num">$120.000</span>
-                                                <span class="price_letter">Precio lista</span>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <button>Añadir al carrito</button>
-                                        </div>
-
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <button>Ver detalles</button>
+                                        <div class="price">
+                                            <span class="price_num">$120.000</span>
+                                            <span class="price_letter">Precio lista</span>
                                         </div>
 
                                     </div>
 
-                                    <div class="card swiper-slide">
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Añadir al carrito</button>
+                                    </div>
 
-                                        <div class="logo-cart">
-                                            <img src="/img/products/logo-lenovo.png" alt="logo">
-                                            <i class='bx bx-shopping-bag'></i>
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Ver detalles</button>
+                                    </div>
+
+                                </div>
+
+                                <div class="card swiper-slide">
+
+                                    <div class="logo-cart">
+                                        <img src="/img/products/logo-lenovo.png" alt="logo">
+                                        <i class='bx bx-shopping-bag'></i>
+                                    </div>
+
+                                    <div class="img-product">
+                                        <img id="notebook" class="item"
+                                            src="/img/products/Notebook Lenovo 15itl6.webp" alt="Notebook-spin">
+                                    </div>
+
+                                    <div class="show-details">
+                                        <span class="show_name">Notebook Lenovo 15itl6</span>
+                                        <p>Notebook Lenovo 15itl6 Core I7-1165g7 512ssd 8ram 15.6 Win11</p>
+                                    </div>
+
+                                    <div class="color-price">
+
+                                        <div class="color-option">
+                                            <span class="color">Precio:</span>
                                         </div>
 
-                                        <div class="img-product">
-                                            <img id="notebook" class="item"
-                                                src="/img/products/Notebook Lenovo 15itl6.webp" alt="Notebook-spin">
-                                        </div>
-
-                                        <div class="show-details">
-                                            <span class="show_name">Notebook Lenovo 15itl6</span>
-                                            <p>Notebook Lenovo 15itl6 Core I7-1165g7 512ssd 8ram 15.6 Win11</p>
-                                        </div>
-
-                                        <div class="color-price">
-
-                                            <div class="color-option">
-                                                <span class="color">Precio:</span>
-                                            </div>
-
-                                            <div class="price">
-                                                <span class="price_num">$289.999</span>
-                                                <span class="price_letter">Precio lista</span>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <button>Añadir al carrito</button>
-                                        </div>
-
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <button>Ver detalles</button>
+                                        <div class="price">
+                                            <span class="price_num">$289.999</span>
+                                            <span class="price_letter">Precio lista</span>
                                         </div>
 
                                     </div>
 
-                                    <div class="card swiper-slide">
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Añadir al carrito</button>
+                                    </div>
 
-                                        <div class="logo-cart">
-                                            <img src="/img/products/products/acer-logo.jpg" alt="logo">
-                                            <i class='bx bx-shopping-bag'></i>
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Ver detalles</button>
+                                    </div>
+
+                                </div>
+
+                                <div class="card swiper-slide">
+
+                                    <div class="logo-cart">
+                                        <img src="/img/products/products/acer-logo.jpg" alt="logo">
+                                        <i class='bx bx-shopping-bag'></i>
+                                    </div>
+
+                                    <div class="img-product">
+                                        <img id="notebook" class="item" src="/img/Acer Aspire 5 A515-54-57MX.webp"
+                                            alt="Notebook-spin">
+                                    </div>
+
+                                    <div class="show-details">
+                                        <span class="show_name">Acer Aspire 5 </span>
+                                        <p>Acer Aspire 5 A515-54 plateada 15.6", Intel Core i5 10210U 8GB de RAM
+                                            256GB SSD, Intel UHD
+                                            Graphics 620 1920x1080px Windows 10 Home</p>
+                                    </div>
+
+                                    <div class="color-price">
+
+                                        <div class="color-option">
+                                            <span class="color">Precio:</span>
                                         </div>
 
-                                        <div class="img-product">
-                                            <img id="notebook" class="item" src="/img/Acer Aspire 5 A515-54-57MX.webp"
-                                                alt="Notebook-spin">
-                                        </div>
-
-                                        <div class="show-details">
-                                            <span class="show_name">Acer Aspire 5 </span>
-                                            <p>Acer Aspire 5 A515-54 plateada 15.6", Intel Core i5 10210U 8GB de RAM
-                                                256GB SSD, Intel UHD
-                                                Graphics 620 1920x1080px Windows 10 Home</p>
-                                        </div>
-
-                                        <div class="color-price">
-
-                                            <div class="color-option">
-                                                <span class="color">Precio:</span>
-                                            </div>
-
-                                            <div class="price">
-                                                <span class="price_num">$120.000</span>
-                                                <span class="price_letter">Precio lista</span>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <button>Añadir al carrito</button>
-                                        </div>
-
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <button>Ver detalles</button>
+                                        <div class="price">
+                                            <span class="price_num">$120.000</span>
+                                            <span class="price_letter">Precio lista</span>
                                         </div>
 
                                     </div>
 
-                                    <div class="card swiper-slide">
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Añadir al carrito</button>
+                                    </div>
 
-                                        <div class="logo-cart">
-                                            <img src="/img/products/HP-Logo-1999.jpg" alt="logo">
-                                            <i class='bx bx-shopping-bag'></i>
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Ver detalles</button>
+                                    </div>
+
+                                </div>
+
+                                <div class="card swiper-slide">
+
+                                    <div class="logo-cart">
+                                        <img src="/img/products/HP-Logo-1999.jpg" alt="logo">
+                                        <i class='bx bx-shopping-bag'></i>
+                                    </div>
+
+                                    <div class="img-product">
+                                        <img id="notebook" class="item" src="/img/products/Notebook-HP.webp"
+                                            alt="Notebook-spin">
+                                    </div>
+
+                                    <div class="show-details">
+                                        <span class="show_name">Notebook HP</span>
+                                        <p>Notebook HP 15-dy2054la plateada natural 15.6", Intel Core i5 1135G7
+                                            8GB de RAM 256GB SSD,
+                                            Intel Iris Xe Graphics G7 80EUs 1366x768px Windows 11 Home</p>
+                                    </div>
+
+                                    <div class="color-price">
+
+                                        <div class="color-option">
+                                            <span class="color">Precio:</span>
                                         </div>
 
-                                        <div class="img-product">
-                                            <img id="notebook" class="item" src="/img/products/Notebook-HP.webp"
-                                                alt="Notebook-spin">
-                                        </div>
-
-                                        <div class="show-details">
-                                            <span class="show_name">Notebook HP</span>
-                                            <p>Notebook HP 15-dy2054la plateada natural 15.6", Intel Core i5 1135G7
-                                                8GB de RAM 256GB SSD,
-                                                Intel Iris Xe Graphics G7 80EUs 1366x768px Windows 11 Home</p>
-                                        </div>
-
-                                        <div class="color-price">
-
-                                            <div class="color-option">
-                                                <span class="color">Precio:</span>
-                                            </div>
-
-                                            <div class="price">
-                                                <span class="price_num">$188.099</span>
-                                                <span class="price_letter">Precio lista</span>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <button>Añadir al carrito</button>
-                                        </div>
-
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <button>Ver detalles</button>
+                                        <div class="price">
+                                            <span class="price_num">$188.099</span>
+                                            <span class="price_letter">Precio lista</span>
                                         </div>
 
                                     </div>
 
-                                    <div class="card swiper-slide">
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Añadir al carrito</button>
+                                    </div>
 
-                                        <div class="logo-cart">
-                                            <img src="/img/products/dell_logo_2016.png" alt="logo">
-                                            <i class='bx bx-shopping-bag'></i>
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Ver detalles</button>
+                                    </div>
+
+                                </div>
+
+                                <div class="card swiper-slide">
+
+                                    <div class="logo-cart">
+                                        <img src="/img/products/dell_logo_2016.png" alt="logo">
+                                        <i class='bx bx-shopping-bag'></i>
+                                    </div>
+
+                                    <div class="img-product">
+                                        <img id="notebook" class="item" src="/img/products/notebook-dell.webp"
+                                            alt="Notebook-spin">
+                                    </div>
+
+                                    <div class="show-details">
+                                        <span class="show_name">Dell Inspiron</span>
+                                        <p>Notebook Dell Inspiron 3515 azul 15.5", AMD Ryzen 7 3700U 8GB de RAM
+                                            512GB SSD, AMD Radeon RX
+                                            Vega 10 60 Hz 1920x1080px Windows 11 Home</p>
+                                    </div>
+
+                                    <div class="color-price">
+
+                                        <div class="color-option">
+                                            <span class="color">Precio:</span>
                                         </div>
 
-                                        <div class="img-product">
-                                            <img id="notebook" class="item" src="/img/products/notebook-dell.webp"
-                                                alt="Notebook-spin">
-                                        </div>
-
-                                        <div class="show-details">
-                                            <span class="show_name">Dell Inspiron</span>
-                                            <p>Notebook Dell Inspiron 3515 azul 15.5", AMD Ryzen 7 3700U 8GB de RAM
-                                                512GB SSD, AMD Radeon RX
-                                                Vega 10 60 Hz 1920x1080px Windows 11 Home</p>
-                                        </div>
-
-                                        <div class="color-price">
-
-                                            <div class="color-option">
-                                                <span class="color">Precio:</span>
-                                            </div>
-
-                                            <div class="price">
-                                                <span class="price_num">$178.000</span>
-                                                <span class="price_letter">Precio lista</span>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <button>Añadir al carrito</button>
-                                        </div>
-
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <button>Ver detalles</button>
+                                        <div class="price">
+                                            <span class="price_num">$178.000</span>
+                                            <span class="price_letter">Precio lista</span>
                                         </div>
 
                                     </div>
 
-                                    <div class="card swiper-slide">
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Añadir al carrito</button>
+                                    </div>
 
-                                        <div class="logo-cart">
-                                            <img src="/img/products/logo-exo.png" alt="logo">
-                                            <i class='bx bx-shopping-bag'></i>
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Ver detalles</button>
+                                    </div>
+
+                                </div>
+
+                                <div class="card swiper-slide">
+
+                                    <div class="logo-cart">
+                                        <img src="/img/products/logo-exo.png" alt="logo">
+                                        <i class='bx bx-shopping-bag'></i>
+                                    </div>
+
+                                    <div class="img-product">
+                                        <img id="notebook" class="item" src="/img/products/notebook-spin.webp"
+                                            alt="Notebook-spin">
+                                    </div>
+
+                                    <div class="show-details">
+                                        <span class="show_name">EXO Smart L33E</span>
+                                        <p>Notebook EXO Smart L33E gris 14", Intel Celeron N4020 4GB de RAM 64GB
+                                            SSD, Intel UHD Graphics
+                                            600 1366x768px Windows 10 Home</p>
+                                    </div>
+
+                                    <div class="color-price">
+
+                                        <div class="color-option">
+                                            <span class="color">Precio:</span>
                                         </div>
 
-                                        <div class="img-product">
-                                            <img id="notebook" class="item" src="/img/products/notebook-spin.webp"
-                                                alt="Notebook-spin">
+                                        <div class="price">
+                                            <span class="price_num">$75.000</span>
+                                            <span class="price_letter">Precio lista</span>
                                         </div>
 
-                                        <div class="show-details">
-                                            <span class="show_name">EXO Smart L33E</span>
-                                            <p>Notebook EXO Smart L33E gris 14", Intel Celeron N4020 4GB de RAM 64GB
-                                                SSD, Intel UHD Graphics
-                                                600 1366x768px Windows 10 Home</p>
-                                        </div>
+                                    </div>
 
-                                        <div class="color-price">
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Añadir al carrito</button>
+                                    </div>
 
-                                            <div class="color-option">
-                                                <span class="color">Precio:</span>
-                                            </div>
-
-                                            <div class="price">
-                                                <span class="price_num">$75.000</span>
-                                                <span class="price_letter">Precio lista</span>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <button>Añadir al carrito</button>
-                                        </div>
-
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <button>Ver detalles</button>
-                                        </div>
-
+                                    <div class="button">
+                                        <div class="button-layer"></div>
+                                        <button>Ver detalles</button>
                                     </div>
 
                                 </div>
 
                             </div>
 
-                            <div class="swiper-button-next swiper-navBtn"></div>
-                            <div class="swiper-button-prev swiper-navBtn"></div>
-                            <div class="swiper-pagination"></div>
                         </div>
+
+                        <div class="swiper-button-next swiper-navBtn"></div>
+                        <div class="swiper-button-prev swiper-navBtn"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                </section>
+                </div>
+            </section>
 
                 <!-- customer's review section starts  -->
 
@@ -899,6 +870,8 @@
 
                 <!-- Scripts -->
 
+                <script src="/js/header.js"></script>
+                <script src="/js/search.js"></script>
                 <script src="/js/slider.js"></script> <!-- Slider -->
 
                 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert -->
