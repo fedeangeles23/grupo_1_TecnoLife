@@ -41,6 +41,7 @@ header .navigation .menu{
   justify-content: center;
   list-style: none;
   user-select: none;
+  margin: 0;
 }
 
 .menu-item > a{
@@ -76,6 +77,7 @@ header.sticky .menu-item .sub-menu{
 }
 
 .menu-item:hover .sub-menu{
+  z-index: 100;
   pointer-events: all;
   transform: translateY(0);
   opacity: 1;

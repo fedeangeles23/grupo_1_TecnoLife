@@ -1,5 +1,6 @@
 let db = require('../database/models')
 const { Op } = require("sequelize");
+const imagenes = ["samsung.jpg"]
 
 module.exports = {
     home: (req, res) => {
@@ -27,7 +28,15 @@ module.exports = {
          
         Promise.all([marcas, ofertasNotebooks, smarts])
         .then(([marcas, ofertasNotebooks, smarts]) => {
-            /* return res.send(ofertasNotebooks) */
+            marcas = marcas.map((marca, index) => {
+                let elemento = {
+                    id : marca.id,
+                    nombre : marca.nombre,
+                    imagen : index + 1 <= imagenes.length ? imagenes[index] : "imagenPorDefecto.jpg"
+                }
+                return elemento
+            })
+/*             return res.send(marcas) */
             return res.render("home", {
                 marcas,
                 ofertasNotebooks,

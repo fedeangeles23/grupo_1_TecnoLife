@@ -28,7 +28,6 @@
                 <label for="pass1">Contraseña</label>
                 <div class="password">
                 <input type="password" name="pass" id="pass"value="<%= locals.old && old.pass ? old.pass: null %>" placeholder="Ingresa tu contraseña" >
-                <i class="fas fa-eye-slash" id="eye-pass"></i>
                 </div>
                 <% if (locals.errors && errors.pass) { %>
                     <small><%= errors.pass.msg %></small>
@@ -38,7 +37,6 @@
                 <label for="pass2">Repita Su Contraseña</label>
                 <div class="password">
                 <input type="password" name="pass2" id="pass2" value="<%= locals.old && old.pass2 ? old.pass2: null %>" placeholder="Confirme su contraseña" >
-                <i class="fas fa-eye-slash" id="eye-pass2"></i>
             </div>
 
                 <% if (locals.errors && errors.pass2) { %>

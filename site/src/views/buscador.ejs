@@ -7,82 +7,81 @@
 
         <!-- header section start  -->
 
-    <%- include('./partials/header') %>
+        <%- include('./partials/header') %>
 
-        <main  class="home">
+            <main class="home buscador" >
 
-            <h1 class="welcome">Resultado de Búsqueda</h1>
-            <section>
-                <h1 class="heading">#Ofertas en <span>Smart TV</span> </h1>
-                <div class="article">
-                    <div class="slide-container swiper">
+                <h1>Resultado de Búsqueda</h1>
+                <section>
+                    <div class="article">
+                        <!-- <div class="slide-container swiper">
                         <div class="slide-content">
-                            <div class="card-wrapper swiper-wrapper">
-                                <% productos.forEach(producto=> { %>
+                            <div class="card-wrapper swiper-wrapper"> -->
 
-                                    <div class="card swiper-slide">
+                        <% productos.forEach(producto=> { %>
+                            <div class="card swiper-slide">
 
-                                        <div class="logo-cart">
-                                            <img src="/img/products/logo-samsumg.png" alt="logo">
-                                            <i class='bx bx-shopping-bag'></i>
-                                        </div>
+                                <div class="logo-cart">
+                                    <img src="/img/products/logo-samsumg.png" alt="logo">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </div>
 
-                                        <div class="img-product">
-                                            <a href="/products/detail/<%= producto.id %> ">
-                                                <img class="item" src="/img/products/<%= producto.imagenes[0].nombre%>"alt="Notebook-spin">
-                                            </a>
-                                        </div>
+                                <div class="img-product">
+                                    <a href="/products/detail/<%= producto.id %> ">
+                                        <img class="item" src="/img/products/<%= producto.imagenes[0].nombre%>"
+                                            alt="Notebook-spin">
+                                    </a>
+                                </div>
 
-                                        <div class="show-details">
-                                            <span class="show_name">
-                                                <%= producto.nombre %>
-                                            </span>
-                                            <p>
-                                                <% if (producto.descripcion.length > 50) { %>
-                                                    <%- `${producto.descripcion.slice(0,150)}...` %>
+                                <div class="show-details">
+                                    <span class="show_name">
+                                        <%= producto.nombre %>
+                                    </span>
+                                    <p>
+                                        <% if (producto.descripcion.length> 50) { %>
+                                            <%- `${producto.descripcion.slice(0,150)}...` %>
                                                 <% } else { %>
                                                     <%= producto.descripcion %>
-                                                <% } %>
-                                            </p>
-                                        </div>
+                                                        <% } %>
+                                    </p>
+                                </div>
 
-                                        <div class="color-price">
+                                <div class="color-price">
 
-                                            <div class="color-option">
-                                                <span class="color">Precio:</span>
-                                            </div>
-
-                                            <div class="price">
-                                                <span class="price_num">$<%=producto.precio%></span>
-                                                <span class="price_letter">Precio lista</span>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <button><a href="/carrito"></a>Añadir al carrito</button>
-                                        </div>
-
-                                        <div class="button">
-                                            <div class="button-layer"></div>
-                                            <a href="/products/detail/<%= producto.id %>"><button>Ver Detalles</button></a>
-                                        </div>
-
+                                    <div class="color-option">
+                                        <span class="color">Precio:</span>
                                     </div>
 
-                                    <div class="swiper-button-next swiper-navBtn"></div>
-                                    <div class="swiper-button-prev swiper-navBtn"></div>
-                                    <div class="swiper-pagination"></div>
-                                <% }) %>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
+                                    <div class="price">
+                                        <span class="price_num">$<%=producto.precio%></span>
+                                        <span class="price_letter">Precio lista</span>
+                                    </div>
 
-        <%- include('./partials/footer') %>
+                                </div>
+
+                                <div class="button">
+                                    <div class="button-layer"></div>
+                                    <button><a href="/carrito"></a>Añadir al carrito</button>
+                                </div>
+
+                                <div class="button">
+                                    <div class="button-layer"></div>
+                                    <a href="/products/detail/<%= producto.id %>"><button>Ver Detalles</button></a>
+                                </div>
+                            </div>
+                        <% }) %>
+
+<!--                         <div class="swiper-button-next swiper-navBtn"></div>
+                        <div class="swiper-button-prev swiper-navBtn"></div>
+                        <div class="swiper-pagination"></div> -->
+                            <!--     </div>
+                        </div>
+                    </div> -->
+                    </div>
+                </section>
+            </main>
+
+            <%- include('./partials/footer') %>
 
     </body>
 

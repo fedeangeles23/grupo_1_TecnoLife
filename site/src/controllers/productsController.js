@@ -117,5 +117,20 @@ module.exports ={
             return res.render('buscador', {productos})
         })
         .catch(error => res.send(error))
-    } 
+    },
+    marcasDestacadas : (req,res) => {
+        let marcaDestacada = +req.params.id
+        db.Productos.findAll({
+            where : {
+                marcas_id : marcaDestacada
+            },
+            include: [{
+                all:true
+            }]
+        })
+        .then(productos => {
+            return res.render('buscador', {productos})
+        })
+        .catch(error => res.send(error))
+    }
 }

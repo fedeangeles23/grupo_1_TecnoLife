@@ -22,10 +22,10 @@
             </ul>
           </li>
           <li class="sub-item more">
-            <a class="more-btn" href="#">Celulares <i class="fas fa-angle-right"></i></a>
+            <a class="more-btn" href=""> Celulares <i class="fas fa-angle-right"></i></a>
             <ul class="more-menu">
-              <li class="more-item"><a href="#">Samsumg</a></li>
-              <li class="more-item"><a href="#">Xiami</a></li>
+              <li class="more-item"><a href="/products/marca/1">Samsung</a></li>
+              <li class="more-item"><a href="#">Xiaomi</a></li>
             </ul>
           </li>
           <li class="sub-item more">
@@ -34,7 +34,7 @@
           <li class="sub-item more">
             <a class="more-btn" href="#">Televisores <i class="fas fa-angle-right"></i></a>
             <ul class="more-menu">
-              <li class="more-item"><a href="#">Samsumg</a></li>
+              <li class="more-item"><a href="">Samsumg</a></li>
               <li class="more-item"><a href="#">Phillips</a></li>
             </ul>
           </li>
@@ -48,8 +48,20 @@
           <div class="fas fa-user" id="user-btn"></div> CUENTA
         </a>
         <ul class="sub-menu">
-          <li class="sub-item"><a href="/users/login">Iniciar Sesión</a></li>
-          <li class="sub-item"><a href="/users/register">Registrarse</a></li>
+          <% if (locals.userLogin) { %>
+            <li class="sub-item"><a href="/users/perfil">Ir al Perfil</a></li>
+            <li class="sub-item">
+              <form action="/users/logout?_method=DELETE" method="post">
+                <button type="submit">Cerrar sesion</button>
+              </form>
+            </li>
+          <% if (locals.userLogin.rol == '2') { %>
+            <li class="sub-item"><a href="/admin/list">Admin de Productos</a></li>
+          <% } %>
+          <% } else { %>
+            <li class="sub-item"><a href="/users/login">Iniciar Sesión</a></li>
+            <li class="sub-item"><a href="/users/register">Registrarse</a></li>
+          <% } %>
         </ul>
       </li>
       <li class="menu-item">
@@ -75,20 +87,6 @@
         </div> -->
       </form>
 
-    </div>
-
-    <div class="icons">       <% if (locals.userLogin && locals.userLogin.rol === "admin") { %>
-        <li><a href="/admin/list">Admin</a></li>
-    <% } %>
-        <div class="fas fa-user" id="user-btn"></div>
-        <div class="fas fa-heart" id="heart-btn"></div>
-        <div class="fas fa-shopping-cart" id="cart-btn"></div>
-             <% if (locals.userLogin) { %>
-                    <li><a href="/users/perfil">Bienvenido <%= locals.userLogin.nombre %> </a></li>
-                <% } else { %>
-                    <li><a href="/users/login">Login</a></li>
-                    <li><a href="/users/register">Registro</a></li>
-                <% } %>
-    </div>
+  </div>
 
 </header>

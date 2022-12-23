@@ -128,6 +128,7 @@ module.exports = {
 
     },
     update: (req, res) => {
+        console.log(req.files)
         let errors = validationResult(req)
         if (req.fileValidationError) {
             let imagen = {
@@ -186,8 +187,8 @@ module.exports = {
                             }
                         }))
                         /* Borramos la imagen anterior */
-                        if(fs.existsSync(path.join(__dirname,'../../public/images/productos',imagen1))){
-                            fs.unlinkSync(path.join(__dirname, '../../public/images/productos', imagen1))
+                        if(fs.existsSync(path.join(__dirname,'../../public/img/products',imagen1))){
+                            fs.unlinkSync(path.join(__dirname,'../../public/img/products', imagen1))
                         }
                     }
                 }else{
@@ -214,8 +215,8 @@ module.exports = {
                                 id : producto.imagenes[1].id
                             }
                         }))
-                        if(fs.existsSync(path.join(__dirname,'../../public/images/productos',imagen2))){
-                            fs.unlinkSync(path.join(__dirname, '../../public/images/productos', imagen2))
+                        if(fs.existsSync(path.join(__dirname,'../../public/img/products',imagen2))){
+                            fs.unlinkSync(path.join(__dirname,'../../public/img/products', imagen2))
                         }
                     }
                 }else{
@@ -239,8 +240,8 @@ module.exports = {
                                 id : producto.imagenes[2].id
                             }
                         }))
-                        if(fs.existsSync(path.join(__dirname,'../../public/images/productos',imagen3))){
-                            fs.unlinkSync(path.join(__dirname, '../../public/images/productos', imagen3))
+                        if(fs.existsSync(path.join(__dirname,'../../public/img/products',imagen3))){
+                            fs.unlinkSync(path.join(__dirname,'../../public/img/products', imagen3))
                         }
                     }
                 }else{
@@ -264,8 +265,8 @@ module.exports = {
                                 id : producto.imagenes[3].id
                             }
                         }))
-                        if(fs.existsSync(path.join(__dirname,'../../public/images/productos',imagen4))){
-                            fs.unlinkSync(path.join(__dirname, '../../public/images/productos', imagen4))
+                        if(fs.existsSync(path.join(__dirname,'../../public/img/products',imagen4))){
+                            fs.unlinkSync(path.join(__dirname,'../../public/img/products', imagen4))
                         }
                     }
                 }else{

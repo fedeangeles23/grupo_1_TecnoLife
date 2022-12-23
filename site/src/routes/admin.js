@@ -1,4 +1,4 @@
-const {list,create,edit,store,update,destroy,history,restore,crash} = require('../controllers/adminController')
+const {list,create,edit,store,update,destroy} = require('../controllers/adminController')
 const express = require('express');
 const router = express.Router();
 const upload = require('../middlewares/multerProductos')

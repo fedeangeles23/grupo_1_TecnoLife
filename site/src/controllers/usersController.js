@@ -26,7 +26,7 @@ module.exports = {
                 email: email,
                 password: bcrypt.hashSync(pass, 12),
                 ciudad: null,
-                rol: 2,
+                rol: 1,
                 imagen: "default-avatar.png",
             })
 

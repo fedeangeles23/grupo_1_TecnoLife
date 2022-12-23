@@ -11,6 +11,11 @@ section {
     text-shadow: 0 5px 25px rgb(0 0 0 / 20%);
     /* opacity: 0.1; */
 }
+.home.buscador section .article {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
 
 /* Start Home Slider */
 
@@ -694,7 +699,7 @@ section {
     position: absolute;
     height: 150px;
     width: 200px;
-    object-fit: cover;
+    object-fit: contain;
     left: 15%;
     top: 0px;
     z-index: -1;

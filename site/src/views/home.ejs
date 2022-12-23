@@ -50,13 +50,16 @@
                       <h1 class="heading">#Marcas <span>destacadas</span> </h1>
               
                       <div class="box-simple-cards">
-                        <% marcas.forEach(marca => { %>
+                        <% for( let i = 0; i < 8; i++ ) { %>
                             <div class="simple-card">
-                                <img src="/img/" alt="">
-                                <h3><%= marca.nombre %> </h3>
-                                <a href="#" class="btn">Ver productos</a>
+                                <div
+                                    class="card-img-background"
+                                    style="background-image: url('/img/products/<%=marcas[i].imagen%>')"
+                                ></div>
+                                <h3><%= marcas[i].nombre %> </h3>
+                                <a href="/products/marca/<%= marcas[i].id %> " class="btn">Ver productos</a>
                             </div>
-                        <% }) %>
+                        <% } %> 
                     </section>
               
                   </section>
@@ -68,7 +71,7 @@
                     <div class="slide-container swiper">
                         <div class="slide-content">
                             <div class="card-wrapper swiper-wrapper">
-                                <% ofertasNotebooks.forEach(producto=> { %>
+                                <% smarts.forEach(producto=> { %>
 
                                     <div class="card swiper-slide">
 

@@ -13,7 +13,7 @@ router.post('/register',registerValidation, upload.single('Image'), registerVali
 router.get('/login', login);
 router.post('/login',loginValidation, processLogin)
 
- router.get('/perfil', perfil);
+router.get('/perfil', perfil);
 router.delete('/logout', logout); 
 
 router.put('/perfil/:id',upload.single('imagen'),updatePerfil)
