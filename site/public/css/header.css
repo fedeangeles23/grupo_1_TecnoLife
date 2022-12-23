@@ -19,9 +19,10 @@ header{
 }
 
 header .logo img {
+  position: relative;
   height: 4rem;
   border-radius: 50%;
-  margin-top: 5PX;
+  margin-top: -2px;
 }
 
 header .navigation{
@@ -89,6 +90,15 @@ header.sticky .menu-item .sub-menu{
   cursor: pointer;
   box-shadow: inset 0px -30px 5px -30px rgba(255, 255, 255, 0.2);
 }
+
+.menu-item .sub-menu .desarrollo{
+  position: relative;
+    width: 25px;
+    height: 25px;
+    top: -5PX;
+    left: 49px;
+}
+
 
 .menu-item .sub-menu .sub-item a{
   color: #fff;
