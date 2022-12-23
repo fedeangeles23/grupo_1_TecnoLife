@@ -10,7 +10,7 @@ module.exports = {
         
         let ofertasNotebooks = db.Productos.findAll({
             where: {
-                categorias_id : 1
+                categorias_id : 2
             },
             include: [
                 {all : true} 
@@ -19,15 +19,24 @@ module.exports = {
 
         let smarts =  db.Productos.findAll({
             where: {
-                categorias_id : 4
+                categorias_id : 5
+            },
+            include: [
+                {all : true} 
+            ]
+        })
+
+        let ofertasCelulares = db.Productos.findAll({
+            where: {
+                categorias_id : 1
             },
             include: [
                 {all : true} 
             ]
         })
          
-        Promise.all([marcas, ofertasNotebooks, smarts])
-        .then(([marcas, ofertasNotebooks, smarts]) => {
+        Promise.all([marcas, ofertasNotebooks, smarts, ofertasCelulares])
+        .then(([marcas, ofertasNotebooks, smarts,ofertasCelulares]) => {
             marcas = marcas.map((marca, index) => {
                 let elemento = {
                     id : marca.id,
@@ -40,19 +49,13 @@ module.exports = {
             return res.render("home", {
                 marcas,
                 ofertasNotebooks,
-                smarts
+                smarts,
+                ofertasCelulares
             })
 
         })
         .catch(error => res.send(error))
       
-    },
-    home2 :(req, res)=> {
-        res.render('home')
-
-
-
-
     },
     prueba: (req, res) =>{
         db.Productos.findAll({

@@ -24,6 +24,7 @@
   margin: 0 0 0 8%;
   width: 85%;
   padding: 9px;
+  outline: none;
 }
 
 .login main small {
