@@ -27,7 +27,7 @@
             <div class="container bottom">
                 <label for="pass1">Contraseña</label>
                 <div class="password">
-                <input type="password" name="pass" id="pass"value="<%= locals.old && old.pass ? old.pass: null %>" placeholder="Ingresa tu contraseña" >
+                    <input type="password" name="pass" id="pass"value="<%= locals.old && old.pass ? old.pass: null %>" placeholder="Ingresa tu contraseña" >
                 </div>
                 <% if (locals.errors && errors.pass) { %>
                     <small><%= errors.pass.msg %></small>
@@ -36,7 +36,7 @@
             <div class="container bottom">
                 <label for="pass2">Repita Su Contraseña</label>
                 <div class="password">
-                <input type="password" name="pass2" id="pass2" value="<%= locals.old && old.pass2 ? old.pass2: null %>" placeholder="Confirme su contraseña" >
+                    <input type="password" name="pass2" id="pass2" value="<%= locals.old && old.pass2 ? old.pass2: null %>" placeholder="Confirme su contraseña" >
             </div>
 
                 <% if (locals.errors && errors.pass2) { %>

@@ -33,34 +33,8 @@ module.exports ={
         })})
         .catch(error => res.send(error))
     },
-    cart: (req,res) =>{
-        let idParams= +req.params.id;
-        db.Productos.findByPk(idParams,{
-            include : [{
-                all : true
-            }]
-        })
-        .then(producto => {
-
-            db.Productos.findAll({
-                where : {
-                    categoriasId: producto.categoriasId
-                },
-                limit : 4,
-                order : [[Sequelize.literal("RAND()")]],
-                include : [{
-                    all : true
-            }]
-            })
-            .then(productos => {
-            return res.render('productCart',{
-                producto,
-                productos
-            })
-        })})
-        .catch(error => res.send(error))
-
-
+    carrito: (req,res) =>{
+        res.render("carrito")
     },
     list: (req,res) =>{
         db.Productos.findAll({

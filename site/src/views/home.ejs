@@ -66,19 +66,13 @@
 
                <!-- Ofertas en Smarts Tv -->
                 <section>
-                <h1 class="heading">#Ofertas en <span>notebooks</span> </h1>
+                <h1 class="heading">#Ofertas en <span>Smart Tv</span> </h1>
                 <div class="article">
                     <div class="slide-container swiper">
                         <div class="slide-content">
                             <div class="card-wrapper swiper-wrapper">
                                 <% smarts.forEach(producto=> { %>
                                     <div class="card swiper-slide">
-
-                                        <div class="logo-cart">
-                                            <img src="/img/products/logo-samsumg.png" alt="logo">
-                                            <i class='bx bx-shopping-bag'></i>
-                                        </div>
-
                                         <div class="img-product">
                                             <a href="/products/detail/<%= producto.id %> ">
                                                 <img class="item" src="/img/products/<%= producto.imagenes[0].nombre%>"alt="Notebook-spin">
@@ -138,12 +132,6 @@
                             <div class="card-wrapper swiper-wrapper">
                                 <% ofertasNotebooks.forEach(producto=> { %>
                                     <div class="card swiper-slide">
-
-                                        <div class="logo-cart">
-                                            <img src="/img/products/logo-samsumg.png" alt="logo">
-                                            <i class='bx bx-shopping-bag'></i>
-                                        </div>
-
                                         <div class="img-product">
                                             <a href="/products/detail/<%= producto.id %> ">
                                                 <img class="item" src="/img/products/<%= producto.imagenes[0].nombre%>"alt="Notebook-spin">
@@ -203,12 +191,6 @@
                             <div class="card-wrapper swiper-wrapper">
                                 <% ofertasCelulares.forEach(producto=> { %>
                                     <div class="card swiper-slide">
-
-                                        <div class="logo-cart">
-                                            <img src="/img/products/logo-samsumg.png" alt="logo">
-                                            <i class='bx bx-shopping-bag'></i>
-                                        </div>
-
                                         <div class="img-product">
                                             <a href="/products/detail/<%= producto.id %> ">
                                                 <img class="item" src="/img/products/<%= producto.imagenes[0].nombre%>"alt="Notebook-spin">
@@ -261,87 +243,44 @@
                 </section>
                 <!-- customer's review section starts  -->
 
-                <section class="review" id="review">
+<!--                 <section class="review" id="review">
 
-                    <h1 class="heading"> #OPINIONES <span>DESTACADAS</span> </h1>
+                    <h1 class="heading"> #SOBRE <span>NOSOTROS</span></h1>
 
                     <div class="box-container">
 
                         <div class="box">
-                            <img src="/img/reviews/quote-img.png" alt="" class="quote">
+                            <img src="/img/reviews/user-incog.jpg" class="user" alt="">
+                            <h3>Federico Ángeles</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga
                                 sequi
                                 nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex
                                 aliquam minus
                                 vel? Nemo.</p>
+                        </div>
+                        <div class="box">
                             <img src="/img/reviews/user-incog.jpg" class="user" alt="">
-                            <h3>No Name</h3>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
+                            <h3>Martín Avendaño</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga
+                                sequi
+                                nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex
+                                aliquam minus
+                                vel? Nemo.</p>
                         </div>
 
                         <div class="box">
-                            <img src="/img/reviews/quote-img.png" alt="" class="quote">
+                            <img src="/img/reviews/user-incog.jpg" class="user" alt="">
+                            <h3>Agustín Sabando</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga
                                 sequi
                                 nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex
                                 aliquam minus
                                 vel? Nemo.</p>
-                            <img src="/img/reviews/user-incog.jpg" class="user" alt="">
-                            <h3>No Name</h3>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-
-                        <div class="box">
-                            <img src="/img/reviews/quote-img.png" alt="" class="quote">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga
-                                sequi
-                                nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex
-                                aliquam minus
-                                vel? Nemo.</p>
-                            <img src="/img/reviews/user-incog.jpg" class="user" alt="">
-                            <h3>No Name</h3>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-
-                        <div class="box">
-                            <img src="/img/reviews/quote-img.png" alt="" class="quote">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga
-                                sequi
-                                nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex
-                                aliquam minus
-                                vel? Nemo.</p>
-                            <img src="/img/reviews/user-incog.jpg" class="user" alt="">
-                            <h3>No Name</h3>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
                         </div>
 
                     </div>
 
-                </section>
+                </section> -->
 
                 <!-- customer's review section ends -->
 

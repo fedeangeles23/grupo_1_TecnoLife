@@ -86,8 +86,24 @@ module.exports = {
             });
     },
     categories:(req, res)=>{
-
-
         console.log();
+    },
+    preguntasFrecuentes:(req,res) =>{
+        res.render("preguntasFrecuentes")
+    },
+    sobreNosotros:(req,res) =>{
+        res.render("sobreNosotros")
+    },
+    terminosYcondiciones:(req,res) =>{
+        res.render("terminosyCondiciones")
+    },
+    trabajaConNosotros:(req,res) =>{
+        res.render("trabajaConNosotros")
+    },
+    politicaYprivacidad:(req,res) =>{
+        res.render("politicaYprivacidad")
+    },
+    contacto:(req,res) =>{
+        res.render("contacto")
     }
 }

@@ -23,11 +23,8 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 
 /* Middlewares */
 app.use(express.json())
-/*app.use(express.static(path.join(__dirname, 'public')))
-app.use(express.static(path.resolve(__dirname, 'public')))*/
 app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended: false }));
-/* Login e inicio de sesion */
 app.use(session({
     secret: "La Comision 17"
   }))

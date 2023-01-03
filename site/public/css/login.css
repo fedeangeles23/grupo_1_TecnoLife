@@ -24,12 +24,27 @@
   margin: 0 0 0 8%;
   width: 85%;
   padding: 9px;
-  outline: none;
 }
 
 .login main small {
-  margin: 5px 0 0 8%;
+  margin: 5px 0 0 0%;
   color: #ed4b4b;
+}
+
+.login main .password {
+  width: 100%;
+  position: relative;
+}
+
+.login main .password i {
+  position: absolute;
+  top: 14px;
+  right: 35px;
+  color: black
+}
+
+.login main .container label {
+  margin-bottom: 5px;
 }
 
 .login main button {
@@ -57,7 +72,12 @@
   text-align: center;
   margin-top: 20px;
 }
-
+.login main .container .password i {
+  position: absolute;
+  top: 6px;
+  right: 29px;
+  padding: 10px;
+}
 .link {
   color: #fafafa;
 }
