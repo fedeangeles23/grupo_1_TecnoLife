@@ -18,38 +18,38 @@
                         <div class="form-floating mb-3"> 
                             <input type="text" class="form-control" name="Titulo" placeholder="Nombre del producto" id="Titulo" value="<%= producto.nombre %> " placeholder="name@example.com">
                             <label for="Titulo">Nombre del producto</label>
-                            <p class="span text-danger">
+                            <p class="span text-danger" id="errorTitulo">
                                 <%= locals.errors && errors.Titulo ? errors.Titulo.msg : null %>
                             </p>
                         </div>
                         <div class="form-floating mb-3">
-                            <select class="form-select" name="marca" id="floatingSelect" aria-label="Floating label select example" value="<%= producto.marca.nombre%>">
+                            <select class="form-select" name="marca" id="Marca" aria-label="Floating label select example" value="<%= producto.marca.nombre%>">
                                 <% marcas.forEach(marca => { %>
                                     <option <%= marca.id == producto.marca.id ? "selected" : null %>  value = <%= marca.id %>><%= marca.nombre %> </option>
                                 <% }) %>
-                              </select>
-                            <% if (locals.errors && errors.marca) { %>
-                                <p class="span text-danger"><%= errors.marca.msg %></p>
-                            <% } %>
+                            </select>
+                            <p class="span text-danger" id="errorMarca">
+                                <%= locals.errors && errors.marca ? errors.marca.msg : null %>
+                            </p>
                         </div>
                         <div class="form-floating mb-3">
-                            <input class="form-control" type="number" name="Precio" placeholder="Precio del producto" id="price" value="<%= producto.precio %>">
+                            <input class="form-control" type="number" name="Precio" placeholder="Precio del producto" id="Precio" value="<%= producto.precio %>">
                             <label class="form-label" for="price">Precio del producto</label>
-                            <p class="span text-danger">
+                            <p class="span text-danger" id="errorPrecio">
                                 <%= locals.errors && errors.Precio ? errors.Precio.msg : null %>
                             </p>
                         </div>
                         <div class="form-floating mb-3">
-                            <input class="form-control" type="number" name="Descuento" placeholder="Descuento del producto" id="discount" value="<%= producto.descuento %>">
+                            <input class="form-control" type="number" name="Descuento" placeholder="Descuento del producto" id="Descuento" value="<%= producto.descuento %>">
                             <label class="form-label" for="discount">Descuento del producto</label>
-                            <p class="span text-danger">
+                            <p class="span text-danger" id="errorDescuento">
                                 <%= locals.errors && errors.Descuento ? errors.Descuento.msg : null %>
                             </p>
                         </div>
                         <div class="form-floating mb-3">
-                            <input class="form-control" type="text" name="Stock" placeholder="Stock con el que cuenta el producto" id="stock" value="<%= producto.stock %> ">
+                            <input class="form-control" type="text" name="Stock"  placeholder="Stock con el que cuenta el producto" id="Stock" value="<%= producto.stock %> ">
                             <label class="form-label" for="stock">Stock con el que cuenta el producto</label>
-                            <p class="span text-danger">
+                            <p class="span text-danger" id="errorStock">
                                 <%= locals.errors && errors.Stock ? errors.Stock.msg : null %>
                             </p>
                         </div>
@@ -112,7 +112,7 @@
                                     <!-- Columnas -->
 
                                 </div>
-                                <p class="span text-danger">
+                                <p class="span text-danger" id="errorImg">
                                     <%= locals.errors && errors.imagen ? errors.imagen.msg : null %>
                                 </p>
                             </div>
@@ -129,12 +129,12 @@
                         <div class="row justify-content-around align-items-center">
                             <div class="col col-4">
                                 <h3 class="text-center">Categorias</h3>
-                                <select class="form-select" name="Categoria" id="floatingSelect" aria-label="Floating label select example">
+                                <select class="form-select" name="Categoria" id="Categoria" aria-label="Floating label select example">
                                     <% categorias.forEach(categoria => { %>
                                         <option <%= categoria.id == producto.categoria.id ? "selected" : null %>  value = <%= categoria.id %>><%= categoria.name %> </option>
                                     <% }) %>
                                 </select>
-                                <p class="span text-danger">
+                                <p class="span text-danger" id="errorCategoria">
                                     <%= locals.errors && errors.Categoria ? errors.Categoria.msg : null %>
                                 </p>
                             </div>
@@ -147,7 +147,7 @@
                                     <textarea name="Descripcion" id="Descripcion" cols="300" rows="300" class="form-control" placeholder="Leave a comment here" style="resize: none;"><%= producto.descripcion %></textarea>
                                     <label for="Descripcion">Descripcion del producto</label>
                                 </div>
-                                <p class="span text-danger">
+                                <p class="span text-danger" id="errorDescripcion">
                                     <%= locals.errors && errors.Descripcion ? errors.Descripcion.msg : null %>
                                 </p>
                             </div>
@@ -162,6 +162,7 @@
         </form>
     </main>
     <script src="/js/imagenesCRUD.js"></script>
+    <script src="/js/validacionProductos.js"></script>
 </body>
 
 </html>
