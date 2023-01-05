@@ -27,17 +27,12 @@ Televisores, Smart TV, Celulares libres, Notebooks, Tablets, Aires Acondicionado
 * Bachillerato en economía.
 * Técnico universitario en informática (UNGS).
 
-[Franco Díaz](https://github.com/Franco-I-D), 22 años.
-* Bachillerato en Ciencias socialas y humanidades.
-* Programación en sistemas (UNLA)
-
 [Martín Avendano](https://github.com/martinavendano), 18 años.
 * Estudiante de programación web Full Stack en Digital House.
 
 * Estudiante de programación web Full Stack en Digital House.
 
 * Estudiante de diseño de video y audio. 
->>>>>>> 002af5e2a9bdba305f711d90949b2dfc23f4e185
 
 ### Sitios web de referencia:
 
