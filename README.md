@@ -1,56 +1,70 @@
-# PROYECTO INTEGRADOR GRUPO 1 - COMISIÓN 17
+# Getting Started with Create React App
 
-<br>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
-## **TECNO LIFE**
+In the project directory, you can run:
 
-[![logo-tecnolife.jpg](https://i.postimg.cc/VvfWGgNd/logo-tecnolife.jpg)](https://postimg.cc/R6YtqcKB)
+### `npm start`
 
-### Descripción del sitio web:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-[TECNO LIFE](www.tecnolife.com.ar) es un eccomerce que ofrece productos electrodomésticos de calidad de diferentes marcas y está dirigida a todo público que necesite uno en la vida diaria de su hogar.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Te ofrecemos el producto que necesites en tu hogar y envío a toda la provincia, más un sitio web flexible para que encuentres
-la mayor variedad de electrodomésticos, tecno y entretenimiento en tu hogar.
+### `npm test`
 
-Además, ofrecemos ofertas especiales, descuentos y planes de financiación para que accedas a eso que tanto querés al precio más accesible y con la mejor cuota.
-Televisores, Smart TV, Celulares libres, Notebooks, Tablets, Aires Acondicionados, Heladeras, Lavarropas y muchos productos en oferta.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Integrantes del proyecto:
+### `npm run build`
 
-[Federico Nahuel Angeles](https://github.com/fedeangeles23) **(Capitán)**, 28 años.
-* Técnico electrónico.
-* Estudiante de programación web Full Stack en Digital House.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-[Agustín Sabando](https://github.com/Agustin-Sabando), 19 años.
-* Bachillerato en economía.
-* Técnico universitario en informática (UNGS).
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-[Franco Díaz](https://github.com/Franco-I-D), 22 años.
-* Bachillerato en Ciencias socialas y humanidades.
-* Programación en sistemas (UNLA)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-[Martín Avendano](https://github.com/martinavendano), 18 años.
-* Estudiante de programación web Full Stack en Digital House.
+### `npm run eject`
 
-* Estudiante de programación web Full Stack en Digital House.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-* Estudiante de diseño de video y audio. 
->>>>>>> 002af5e2a9bdba305f711d90949b2dfc23f4e185
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### Sitios web de referencia:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-Estos son algunos de los sitios web que hemos tomado como referencia para nuestro e-commerce.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-* [Compra Gamer](https://compragamer.com)
+## Learn More
 
-* [Supermercado Dia](https://diaonline.supermercadosdia.com.ar/#)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-* [Ali Express](https://best.aliexpress.com/?lan=es&gatewayAdapt=glo2esp&spm=a2g0o.home.1000002.1.3ad170e5EfAGvJ)
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-* [Amazon](https://www.amazon.com/)
+### Code Splitting
 
-### Diseño en figma:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-* [Figma](https://www.figma.com/file/FtUolI4aoTg3Ul4QFzU66Z/Proyecto---Grupo-1)
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
