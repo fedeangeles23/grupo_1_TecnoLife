@@ -5,7 +5,7 @@ const path = require('path');
 const app = express()
 const session = require("express-session")
 const userLogin = require ('./middlewares/userLoginCheck')
-const port = 3000;
+const port = 3001;
 
 /* View engine setup */
 app.set('views', path.join(__dirname, 'views'));
