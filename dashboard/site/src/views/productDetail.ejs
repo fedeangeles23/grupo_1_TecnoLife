@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include('./partials/head') %>
+
+    <body>
+        <%- include('./partials/header') %>
+
+        <div class="main-wrapper">
+            <div class="container-d">
+                <div class="product-div">
+                    <div class="product-div-left">
+                        <div class="img-container-d">
+                            <img class = "img-d" src="/img/products/<%= producto.imagenes[0].nombre %>" alt="watch">
+                        </div>
+                        <div class="hover-container">
+                            <div><img src="/img/products/<%= producto.imagenes[0].nombre %>"></div>
+                            <div><img src="/img/products/<%= producto.imagenes[1].nombre %>"></div>
+                            <div><img src="/img/products/<%= producto.imagenes[2].nombre %>"></div>
+                            <div><img src="/img/products/<%= producto.imagenes[3].nombre %>"></div>
+                        </div>
+                    </div>
+                    <div class="product-div-right">
+                        <div class="product-rating">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star-half-alt"></i></span>
+                            <span>(350 ratings)</span>
+                        </div>
+                        <span class="product-name"><%= producto.marca.nombre %></span>
+                        <span class="product-name"><%= producto.nombre %></span>
+                        <span class="product-price">Precio Online: $<%= producto.precio %></span>
+                        <span class="product-price">12 x $<%= (producto.precio / 12) %> CUOTAS SIN INTERÉS</span>
+                        <p class="product-description"><%= producto.descripcion %></p>
+                        <div class="btn-groups">
+                            <button type="button" class="add-cart-btn"><i class="fas fa-shopping-cart"><a href="/cart1"></a></i>Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%- include('./partials/footer') %>
+        <script src="/js/imgProductDetail.js"></script>
+    </body>
+
+</html>
