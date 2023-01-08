@@ -113,7 +113,7 @@ function Header() {
                             <div class="fas fa-shopping-cart" id="cart-btn"></div> CARRITO
                         </a>
                         <ul class="sub-menu">
-                        <li class="sub-item"><a href = "/">EN DESARROLLO </a><i class="fas fa-angle-right"></i><img class="desarrollo" src={llaveInglesa} alt=""/></li>
+                            <li class="sub-item"><a href="/">EN DESARROLLO </a><i class="fas fa-angle-right"></i><img class="desarrollo" src={llaveInglesa} alt="" /></li>
                         </ul>
                     </li>
 

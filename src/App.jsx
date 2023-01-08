@@ -4,9 +4,7 @@ import Header from './components/Header';
 import Registro from './components/usuarios/Registro';
 import IniciarSesion from './components/usuarios/IniciarSesion';
 
-
 import Main from './components/Main';
-import Head from './components/Head';
 
 /* Sección del Footer */
 import Footer from './components/footer/Footer';
@@ -24,7 +22,6 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Head />
         <Header />
 
         <Routes>

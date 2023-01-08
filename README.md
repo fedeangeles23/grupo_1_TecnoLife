@@ -43,15 +43,20 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Agustín Sabando](https://github.com/Agustin-Sabando), 19 años.
+* Bachillerato en economía.
+* Técnico universitario en informática (UNGS).
 
-### Code Splitting
+[Franco Díaz](https://github.com/Franco-I-D), 22 años.
+* Bachillerato en Ciencias socialas y humanidades.
+* Programación en sistemas (UNLA)
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
 ### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* Estudiante de diseño de video y audio. 
+>>>>>>> 002af5e2a9bdba305f711d90949b2dfc23f4e185
 
 ### Making a Progressive Web App
 
