@@ -5,7 +5,7 @@ const bcryptjs = require('bcryptjs')
 
 module.exports = {
     usuarios: (req, res) => {
-        db.users.findAll({
+        db.Usuarios.findAll({
             include: [{ all: true }]
         })
             .then(usuarios => {
@@ -16,8 +16,11 @@ module.exports = {
                         first_name: element.nombre,
                         last_name: element.apellido,
                         email: element.email,
-                        contact: element.contacto,
-                        rol: element.rol.title,
+                        ciudad: element.ciudad,
+                        direccion: element.direccion,
+                        codigopostal: element.codigopostal,
+                        imagen: element.imagen,
+                        rol: element.rol,
                         detail: `http://localhost:3001/api/users/${element.id}`,
                     }
                     return usuario
@@ -45,7 +48,7 @@ module.exports = {
 
             const order = orderBy ? orderBy : 'id';
             const direction = orderDirect ? orderDirect : 'ASC';
-            //    console.log(updateQuery);
+        
 
             for (const key in updateQuery) {
                 if (key === 'nombre' || key === 'apellido' || key === 'roles_id') {
@@ -62,7 +65,7 @@ module.exports = {
                     url.searchParams.delete(key);
                 };
             };
-            // console.log(updateQuery);
+           
 
             const getPagination = (page, size) => {
                 const limit = size ? +size : 10;
@@ -182,7 +185,7 @@ module.exports = {
 
         db.Productos.findAll({ include: [{ all: true }] })
             .then(productos => {
-        
+
                 let list = {
                     status: 200,
                     meta: {
@@ -200,9 +203,9 @@ module.exports = {
     catymarca: (req, res) => {
         let marcas = db.Marcas.findAll()
         let categorias = db.Categorias.findAll()
-        Promise.all([marcas,categorias])
+        Promise.all([marcas, categorias])
 
-            .then(([marcas,categorias]) => {         
+            .then(([marcas, categorias]) => {
 
                 let list = {
                     status: 200,
@@ -248,62 +251,63 @@ module.exports = {
     crearProducto: (req, res) => {
         // return res.send('holiss')
 
-        const { selectType, nombre, marca, detalle, precio, descuento, stock, categoria } = req.body;
+        const { Titulo, Precio, Descuento, Stock, Descripcion, Categoria, Marca } = req.body;
         const img = req.file
         let array = []
         console.log(req.body);
-        db.products.create({
-            type_id: +selectType,
-            nombre: nombre,
-            marca: marca,
-            detalle: detalle,
-            precio: +precio,
-            descuento: +descuento,
-            stock: +stock,
-            vendidos: 0,
-            categoria_id: +categoria,
+        db.Productos.create({
+            nombre: Titulo,
+            precio: +Precio,
+            descuento: +Descuento,
+            stock: +Stock,
+            descripcion: Descripcion,
+            categorias_id: +Categoria,
+            marcas_id: +Marca,
         })
-            .then(nuevo => {
-                if (img) {
-                    let imagen = {
-                        name: img.filename,
-                        products_id: nuevo.id,
-                    }
-                    db.images.create(imagen)
-                        .then(img => {
-                            array.push(nuevo)
-                            console.log(array);
+            .then(productoNuevo => {
+                console.log(req.files)
+                if (req.files.length > 0) {
+                    let img = req.files.map(imagen => {
+                        let nuevo = {
+                            nombre: imagen.filename,
+                            producto_id: productoNuevo.id
+                        }
+                        return nuevo
+                    })
+                    db.Imagenes.bulkCreate(img)
+                        .then(imagen => {
                             let result = {
                                 status: 200,
                                 meta: {
-                                    msg: 'producto creado',
+                                    msg: 'Producto creado',
                                     url: `${req.protocol}://${req.get('host')}${req.originalUrl}`
                                 },
-                                data: array,
+                                data: productoNuevo,
                             }
                             return res.status(200).json(result)
                         })
-
                 } else {
-                    db.images.create({
-                        name: "default-img.png",
-                        products_id: nuevo.id,
+                    db.Imagenes.create({
+                        nombre: 'default-image.png',
+                        producto_id: productoNuevo.id
                     })
-                        .then(img => {
-                            array.push(nuevo)
+                        .then(imagenes => {
                             let result = {
                                 status: 200,
                                 meta: {
-                                    msg: 'producto creado',
+                                    msg: 'Producto creado',
                                     url: `${req.protocol}://${req.get('host')}${req.originalUrl}`
                                 },
-                                data: array,
+                                data: productoNuevo,
                             }
                             return res.status(200).json(result)
                         })
                 }
             })
-            .catch(error => req.status(500).send(error))
+            
+            .catch(errors => res.status(500).send(errors))
+
+
     },
     editarProducto: (req, res) => {
 

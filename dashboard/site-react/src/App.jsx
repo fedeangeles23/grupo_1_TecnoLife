@@ -6,7 +6,9 @@ import IniciarSesion from './components/usuarios/IniciarSesion';
 
 import Main from './components/Main';
 
+/* ADMIN */
 import Admin from "./components/Admin/Admin";
+import Usuarios from "./components/Admin/Usuarios"
 import ListaProductos from "./components/Admin/ListaProductos";
 import Editar from "./components/Admin/Editar";
 import Crear from "./components/Admin/Crear";
@@ -48,7 +50,8 @@ function App() {
 
           {/* Admin */}
           <Route path='/admin' element={<Admin />}/>
-          
+
+                <Route path='/admin/usuarios' element={<Usuarios />}/>
                 <Route path='/admin/productos' element={<ListaProductos />}/>
                 <Route path='/admin/editar/:id' element={<Editar />}/>
                 <Route path='/admin/crear' element={<Crear />}/>

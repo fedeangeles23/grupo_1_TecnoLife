@@ -4,7 +4,13 @@ import { NavLink } from 'react-router-dom'
 function Admin() {
 
   return (
-    <main className='Dashboard'>
+    <main className='dashboard'>
+
+
+
+      <section className='separador-e'>
+        <h1 class="panel-admin">#ESTADÍSTICAS DE LA<span class="span-color"> PÁGINA</span></h1>
+      </section>
       <section className="statis">
         <div className="box">
           <i className="far fa-eye"></i>
@@ -27,9 +33,11 @@ function Admin() {
           <p className="lead">Mensajes</p>
         </div>
       </section>
-      <section className='separador'>
-        <h3>ADMINISTRACION</h3>
-        <p>administrar de forma sencilla tu propia pagina</p>
+
+
+
+      <section className='separador-e'>
+        <h1 class="panel-admin">#ADMINISTRACIÓN DE LA<span class="span-color"> PÁGINA</span></h1>
       </section>
 
       <div class="container_all">
@@ -45,7 +53,7 @@ function Admin() {
           </div>
 
           <div class="box">
-            <NavLink>
+            <NavLink to='/admin/usuarios'>
               <i className="fas fa-users icon"></i>
               <h4>Usuarios</h4>
               <p>Lista de usuarios </p>
@@ -54,12 +62,12 @@ function Admin() {
           </div>
 
           <div class="box">
-            <NavLink>
+            <a href='https://mail.google.com/mail/u/0/#inbox' target='_blank'>
               <i className="fas fa-envelope icon"></i>
               <h4>Mensajes</h4>
               <p>Mensajes en la db </p>
               <div class="background_hover"> </div>
-            </NavLink>
+            </a>
           </div>
 
           {/*  <div class="box">

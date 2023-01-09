@@ -1,14 +1,38 @@
-body {
-  background: #ffffff;
-}
-
 /* Dashboard */
-.home .Dashboard {
+
+.Dashboard {
   background-color: white;
-  padding: 10px;
 }
 
-.home .Dashboard .statis {
+.dashboard .separador-e {
+  display: flex;
+  justify-content: center;
+  background-color: #3A4A72;
+  color: white;
+  padding: 20px;
+}
+
+
+.dashboard .separador-e {
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 1.5rem 0 1rem 0;
+  font-size: 5rem;
+}
+
+.dashboard .separador-e span {
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+.dashboard .separador-e{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.dashboard .statis {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,7 +40,7 @@ body {
   background-color: white;
 }
 
-.home .Dashboard .statis .box {
+.dashboard .statis .box {
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -27,7 +51,11 @@ body {
   width: 250px;
 }
 
-.home .Dashboard .statis .box h3:after {
+.dashboard .statis .box p {
+  color: #000000;
+}
+
+.dashboard .statis .box h3:after {
   content: "";
   height: 2px;
   width: 70%;
@@ -37,7 +65,7 @@ body {
   margin-top: 10px;
 }
 
-.home .Dashboard .statis .box i {
+.dashboard .statis .box i {
   position: absolute;
   height: 70px;
   width: 70px;
@@ -45,32 +73,13 @@ body {
   padding: 15px;
   top: -25px;
   left: -25px;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: var(--main-color);
   line-height: 60px;
   text-align: right;
   border-radius: 50%;
 }
 
-.home .Dashboard .separador {
-  padding: 20px;
-  border-radius: 10px;
-  display: flex;
-  background-color: #6f6486;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-}
-
-.home .Dashboard .separador p {
-  color: white;
-}
-
-.home .Dashboard .admin {
-  background-color: #c5bfd2;
-  margin: 20px 0;
-}
-
-.home .Dashboard .admin .box {
+.dashboard .admin .box {
   width: 250px;
   height: 180px;
   padding: 20px;
@@ -83,59 +92,16 @@ body {
   transition: all 300ms;
 }
 
-.home .Dashboard .admin .box i.icon,
-.home .Dashboard .admin .box h4,
-.home .Dashboard .admin .box p {
+.dashboard .admin .box i.icon,
+.dashboard .admin .box h4,
+.dashboard .admin .box p {
   position: relative;
   z-index: 1;
   transition: all 200ms;
 }
 
-.home .Dashboard .admin .box:hover {
-  transform: translate(5px, -5px);
-  box-shadow: -10px 10px 20px -10px rgb(0, 0, 0, .5);
-}
 
-.home .Dashboard .admin .box i.icon {
-  font-size: 40px;
-  color: rgb(24, 211, 124);
-  transform: translateY(30px);
-}
-
-.home .Dashboard .admin .box:hover i.icon {
-  color: white;
-  font-size: 30px;
-  transform: translateY(0);
-}
-
-.home .Dashboard .admin .box h4,
-.home .Dashboard .admin .box p {
-  margin-top: 10px;
-}
-
-.home .Dashboard .admin .box h4 {
-  font-size: 30px;
-  transform: translateY(30px);
-}
-
-.home .Dashboard .admin .box:hover h4 {
-  transform: translateY(0);
-  color: white;
-}
-
-.home .Dashboard .admin .box p {
-  font-size: 14px;
-  transform: translateY(100px);
-  opacity: 0;
-}
-
-.home .Dashboard .admin .box:hover p {
-  transform: translateY(0);
-  opacity: 1;
-  color: white;
-}
-
-.home .Dashboard .admin .box .background_hover {
+.dashboard .admin .box .background_hover {
   width: 100px;
   height: 100px;
   background: red;
@@ -148,88 +114,20 @@ body {
 
 }
 
-.home .Dashboard .admin .box:hover .background_hover {
+.dashboard .admin .box:hover .background_hover {
   width: 400px;
   height: 400px;
-  /*modifica lla posicion del efecto circulo*/
   top: -70px;
   left: -70px;
 }
 
-.home .Dashboard .admin .box:nth-child(1) .icon {
-  color: #3dc315;
-}
+/* Edición del Administrador */
 
-.home .Dashboard .admin .box:nth-child(1) .background_hover {
-  background: linear-gradient(to bottom, #3dc315, #fdb42a)
-}
-
-.home .Dashboard .admin .box:nth-child(2) .icon {
-  color: #9d00f0;
-}
-
-.home .Dashboard .admin .box:nth-child(2) .background_hover {
-  background: linear-gradient(to bottom, #d300cb, #9d00f0)
-}
-
-.home .Dashboard .admin .box:nth-child(3) .icon {
-  color: #ffa700;
-}
-
-.home .Dashboard .admin .box:nth-child(3) .background_hover {
-  background: linear-gradient(to bottom, #dd0f0f, #ffa700)
-}
-
-.home .Dashboard .admin .box:nth-child(4) .icon {
-  color: #ea003f;
-}
-
-.home .Dashboard .admin .box:nth-child(4) .background_hover {
-  background: linear-gradient(to bottom, #e33a67, #ea003f)
-}
-
-.home .Dashboard .admin .box-menu {
-  width: 100%;
-  height: 330px;
-  padding: 20px;
-  margin: 20px;
-  background: #fff;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  transition: all 300ms;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.home .Dashboard .admin .box-menu h4 {
-  font-size: 30px;
-  width: 100%;
-}
-
-.home .Dashboard .admin .box-menu h5 {
-  font-size: 20px;
-  width: 100%;
-}
-
-.home .Dashboard .admin .box-menu .producto {
-  width: 20%
-}
-
-.home .Dashboard .admin .box-menu img {
-  width: 200px;
-}
-
-/* Creacion de productos */
-.home .Crear-Producto h1 {
+.Crear-Producto h1 {
   text-transform: uppercase;
 }
 
-.home .Crear-Producto form {
+.Crear-Producto form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -238,7 +136,7 @@ body {
   margin: 0 auto 40px;
 }
 
-.home .Crear-Producto form .form-control {
+.Crear-Producto form .form-control {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -247,12 +145,12 @@ body {
   margin: 20px auto;
 }
 
-.home .Crear-Producto form .form-control select {
+.Crear-Producto form .form-control select {
   width: 350px;
   margin: 10px 0;
 }
 
-.home .Crear-Producto form .MuiFormControl-root.css-1nrlq1o-MuiFormControl-root {
+.Crear-Producto form .MuiFormControl-root.css-1nrlq1o-MuiFormControl-root {
   width: 350px;
 }
 
@@ -292,6 +190,7 @@ body {
 }
 
 .box:hover {
+  background: linear-gradient(to bottom, #c0c0ce, #9a979c);
   transform: translate(5px, -5px);
   box-shadow: -10px 10px 20px -10px rgb(0, 0, 0, .5);
 }
