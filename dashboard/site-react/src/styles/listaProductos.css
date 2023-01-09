@@ -1,0 +1,99 @@
+
+div .css-399ykn {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    width: 90%;
+    max-width: 1300px;
+    margin: 0px auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.btn-crear{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.css-399ykn .css-1fyyp8j-MuiGrid-root{
+    width: 100%;
+}
+.css-qfz70r-MuiFormGroup-root {
+    color: wheat;
+}
+.css-1a40jv2-MuiTypography-root {
+    margin: 0;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    color: white;
+    text-align: center;
+}
+.css-399ykn .css-1k9ek97 {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+.css-399ykn .css-1k9ek97 .css-1rki8sg-MuiListItem-root{
+    width: 96%;
+    margin: 6px auto;
+    background-color: #d96b0266;
+}
+.css-399ykn .css-1k9ek97 a {
+    text-decoration: none;
+    width: 90%;
+    display: flex;
+}
+.css-399ykn .css-1k9ek97 .divIcons {
+    width: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.css-399ykn .css-1k9ek97 a:hover{
+    color: white;
+    transition: 0.1s;
+}
+.css-399ykn .css-1k9ek97 .css-1rki8sg-MuiListItem-root:hover{
+    width: 96%;
+    background-color: #d96b02;
+    transition: 0.4s;
+}
+.btn-Crear{
+    position: absolute;
+    z-index: 10;
+    top: 8px;
+    right: 8px;
+}
+.btn-Crear a button{
+    background-color: var(--colorButtom);
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 8px
+}
+.btn-Crear a button:hover{
+    background-color: var(--colorNaranja);
+    color: white;
+    transition:all 0.3s;
+}
+@media (min-width: 900px){
+
+    .css-399ykn .css-1fyyp8j-MuiGrid-root {
+        -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+        max-width: 100%;
+    }
+}
