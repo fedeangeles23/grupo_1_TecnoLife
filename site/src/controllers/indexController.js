@@ -1,5 +1,6 @@
 let db = require('../database/models')
 const { Op } = require("sequelize");
+const imagenes = ["samsung.jpg"]
 
 module.exports = {
     home: (req, res) => {
@@ -9,7 +10,7 @@ module.exports = {
         
         let ofertasNotebooks = db.Productos.findAll({
             where: {
-                categorias_id : 1
+                categorias_id : 2
             },
             include: [
                 {all : true} 
@@ -18,32 +19,43 @@ module.exports = {
 
         let smarts =  db.Productos.findAll({
             where: {
-                categorias_id : 4
+                categorias_id : 5
+            },
+            include: [
+                {all : true} 
+            ]
+        })
+
+        let ofertasCelulares = db.Productos.findAll({
+            where: {
+                categorias_id : 1
             },
             include: [
                 {all : true} 
             ]
         })
          
-        Promise.all([marcas, ofertasNotebooks, smarts])
-        .then(([marcas, ofertasNotebooks, smarts]) => {
-            //return res.send(ofertasNotebooks)
+        Promise.all([marcas, ofertasNotebooks, smarts, ofertasCelulares])
+        .then(([marcas, ofertasNotebooks, smarts,ofertasCelulares]) => {
+            marcas = marcas.map((marca, index) => {
+                let elemento = {
+                    id : marca.id,
+                    nombre : marca.nombre,
+                    imagen : index + 1 <= imagenes.length ? imagenes[index] : "imagenPorDefecto.jpg"
+                }
+                return elemento
+            })
+/*             return res.send(marcas) */
             return res.render("home", {
                 marcas,
                 ofertasNotebooks,
-                smarts
+                smarts,
+                ofertasCelulares
             })
 
         })
         .catch(error => res.send(error))
       
-    },
-    home2 :(req, res)=> {
-        res.render('home')
-
-
-
-
     },
     prueba: (req, res) =>{
         db.Productos.findAll({
@@ -74,8 +86,24 @@ module.exports = {
             });
     },
     categories:(req, res)=>{
-
-
         console.log();
+    },
+    preguntasFrecuentes:(req,res) =>{
+        res.render("preguntasFrecuentes")
+    },
+    sobreNosotros:(req,res) =>{
+        res.render("sobreNosotros")
+    },
+    terminosYcondiciones:(req,res) =>{
+        res.render("terminosyCondiciones")
+    },
+    trabajaConNosotros:(req,res) =>{
+        res.render("trabajaConNosotros")
+    },
+    politicaYprivacidad:(req,res) =>{
+        res.render("politicaYprivacidad")
+    },
+    contacto:(req,res) =>{
+        res.render("contacto")
     }
 }

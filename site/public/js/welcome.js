@@ -11,7 +11,7 @@ if (!sessionStorage.getItem("welcome")) {
         // background:
         // grow:
         backdrop: true, /* Oscurece el fondo */
-        timer: 5000,    /* Tiempo de muestreo */
+        timer: 20000,    /* Tiempo de muestreo */
         timerProgressBar: true, /* Muestra barra de progreso */
         // toast:
         // position:

@@ -16,37 +16,40 @@
                     <!-- Principales -->
                     <div class="col col-lg-4 col-md-12 col-sm-12">
                         <div class="form-floating mb-3"> 
-                            <input type="text" class="form-control" name="Titulo" placeholder="Nombre del producto" id="Titulo" value="<%= producto.Titulo %> " placeholder="name@example.com">
+                            <input type="text" class="form-control" name="Titulo" placeholder="Nombre del producto" id="Titulo" value="<%= producto.nombre %> " placeholder="name@example.com">
                             <label for="Titulo">Nombre del producto</label>
-                            <p class="span text-danger">
+                            <p class="span text-danger" id="errorTitulo">
                                 <%= locals.errors && errors.Titulo ? errors.Titulo.msg : null %>
                             </p>
                         </div>
                         <div class="form-floating mb-3">
-                            <input class="form-control" type="text" name="marca" placeholder="Marca del Producto" id="brand" value="<%= producto.marca %> ">
-                            <label class="form-label" for="brand">Marca del Producto</label>
-                            <% if (locals.errors && errors.marca) { %>
-                                <p class="span text-danger"><%= errors.marca.msg %></p>
-                            <% } %>
+                            <select class="form-select" name="marca" id="Marca" aria-label="Floating label select example" value="<%= producto.marca.nombre%>">
+                                <% marcas.forEach(marca => { %>
+                                    <option <%= marca.id == producto.marca.id ? "selected" : null %>  value = <%= marca.id %>><%= marca.nombre %> </option>
+                                <% }) %>
+                            </select>
+                            <p class="span text-danger" id="errorMarca">
+                                <%= locals.errors && errors.marca ? errors.marca.msg : null %>
+                            </p>
                         </div>
                         <div class="form-floating mb-3">
-                            <input class="form-control" type="number" name="Precio" placeholder="Precio del producto" id="price" value="<%= producto.precio %>">
+                            <input class="form-control" type="number" name="Precio" placeholder="Precio del producto" id="Precio" value="<%= producto.precio %>">
                             <label class="form-label" for="price">Precio del producto</label>
-                            <p class="span text-danger">
+                            <p class="span text-danger" id="errorPrecio">
                                 <%= locals.errors && errors.Precio ? errors.Precio.msg : null %>
                             </p>
                         </div>
                         <div class="form-floating mb-3">
-                            <input class="form-control" type="number" name="Descuento" placeholder="Descuento del producto" id="discount" value="<%= producto.Descuento %> ">
+                            <input class="form-control" type="number" name="Descuento" placeholder="Descuento del producto" id="Descuento" value="<%= producto.descuento %>">
                             <label class="form-label" for="discount">Descuento del producto</label>
-                            <p class="span text-danger">
+                            <p class="span text-danger" id="errorDescuento">
                                 <%= locals.errors && errors.Descuento ? errors.Descuento.msg : null %>
                             </p>
                         </div>
                         <div class="form-floating mb-3">
-                            <input class="form-control" type="text" name="Stock" placeholder="Stock con el que cuenta el producto" id="stock" value="<%= producto.stock %> ">
+                            <input class="form-control" type="text" name="Stock"  placeholder="Stock con el que cuenta el producto" id="Stock" value="<%= producto.stock %> ">
                             <label class="form-label" for="stock">Stock con el que cuenta el producto</label>
-                            <p class="span text-danger">
+                            <p class="span text-danger" id="errorStock">
                                 <%= locals.errors && errors.Stock ? errors.Stock.msg : null %>
                             </p>
                         </div>
@@ -61,55 +64,55 @@
                                     <!-- Imagen 1 -->
                                     <div class="col col-5">
                                         <label class="selectImg" for="product-img">
-                                            <img id="img-preview" class="img-fluid img-thumbnail imagen-height rounded" src="/img/products/default-image.png" alt="" value="<%= producto.imagenes[0] %> ">
+                                            <img id="img-preview" class="img-fluid img-thumbnail imagen-height rounded" src="/img/products/<%= producto.imagenes[0].nombre%>" alt="">
                                             <div class="imgHover">
                                                 <p class="text-center">Selecionar Imagen 1</p>
                                             </div>
                                         </label>
                                         <div class="form-admin__box inactivo">
-                                            <input class="d-none" id="product-img" type="file" name="imagen" placeholder="Imagen del Producto" multiple>
+                                            <input class="d-none" id="product-img" type="file" name="imagen1" placeholder="Imagen del Producto" multiple>
                                         </div>
                                     </div>
                                     <!-- Imagen 2 -->
                                     <div class="col col-5">
                                         <label class="selectImg" for="product-sub-img-1">
-                                            <img id="sub-img-preview-1" class="img-fluid img-thumbnail  imagen-height rounded" src="/img/products/default-image.png" alt="" value="<%= producto.imagenes[1] %> ">
+                                            <img id="sub-img-preview-1" class="img-fluid img-thumbnail  imagen-height rounded" src="/img/products/<%= producto.imagenes[1].nombre%>" alt="">
                                             <div class="imgHover">
                                                 <p class="text-center">Selecionar Imagen 2</p>
                                             </div>
                                         </label>
                                         <div class="form_desciption__box inactivo">
-                                            <input class="d-none" id="product-sub-img-1" type="file" name="imagen" placeholder="Imagen del Producto">
+                                            <input class="d-none" id="product-sub-img-1" type="file" name="imagen2" placeholder="Imagen del Producto">
                                         </div>
                                     </div>
                                     <!-- Imagen 3 -->
                                     <div class="col col-5">
                                         <label class="selectImg" for="product-sub-img-2">
-                                            <img id="sub-img-preview-2" class="img-fluid img-thumbnail imagen-height rounded" src="/img/products/default-image.png" height="auto" alt="" value="<%= producto.imagenes[2] %> ">
+                                            <img id="sub-img-preview-2" class="img-fluid img-thumbnail imagen-height rounded" src="/img/products/<%= producto.imagenes[2].nombre%>" alt="">
                                             <div class="imgHover">
                                                 <p class="text-center">Selecionar Imagen 3</p>
                                             </div>
                                         </label>
                                         <div class="form_desciption__box inactivo">
-                                            <input class="d-none " id="product-sub-img-2" type="file" name="imagen" placeholder="Imagen del Producto">
+                                            <input class="d-none " id="product-sub-img-2" type="file" name="imagen3" placeholder="Imagen del Producto">
                                         </div>
                                     </div>
                                     <!-- Imagen 4 -->
                                     <div class="col col-5">
                                         <label class="selectImg" for="product-sub-img-3">
-                                            <img id="sub-img-preview-3" class="img-fluid img-thumbnail imagen-height rounded" src="/img/products/default-image.png" alt="" value="<%= producto.imagenes[3] %>">
+                                            <img id="sub-img-preview-3" class="img-fluid img-thumbnail imagen-height rounded" src="/img/products/<%= producto.imagenes[3].nombre%>" alt="">
                                             <div class="imgHover">
                                                 <p class="text-center">Selecionar Imagen 4</p>
                                             </div>
                                         </label>
                                         <div class="form_desciption__box inactivo">
-                                            <input class="d-none" id="product-sub-img-3" type="file" name="imagen" placeholder="Imagen del Producto">
+                                            <input class="d-none" id="product-sub-img-3" type="file" name="imagen4" placeholder="Imagen del Producto">
                                         </div>
                                     </div>
                                     <!-- Columnas -->
 
                                 </div>
-                                <p class="span text-danger">
+                                <p class="span text-danger" id="errorImg">
                                     <%= locals.errors && errors.imagen ? errors.imagen.msg : null %>
                                 </p>
                             </div>
@@ -126,12 +129,12 @@
                         <div class="row justify-content-around align-items-center">
                             <div class="col col-4">
                                 <h3 class="text-center">Categorias</h3>
-                                <select class="form-select" name="Categoria" id="floatingSelect" aria-label="Floating label select example">
+                                <select class="form-select" name="Categoria" id="Categoria" aria-label="Floating label select example">
                                     <% categorias.forEach(categoria => { %>
-                                        <option value="<%= categoria %>" <%= producto.Categoria === categoria ? 'selected' : null %> ><%= categoria %></option>
+                                        <option <%= categoria.id == producto.categoria.id ? "selected" : null %>  value = <%= categoria.id %>><%= categoria.name %> </option>
                                     <% }) %>
-                                  </select>
-                                  <p class="span text-danger">
+                                </select>
+                                <p class="span text-danger" id="errorCategoria">
                                     <%= locals.errors && errors.Categoria ? errors.Categoria.msg : null %>
                                 </p>
                             </div>
@@ -141,10 +144,10 @@
                         <div class="row">
                             <div class="col col-12">
                                 <div class="form-floating"> 
-                                    <textarea name="Descripcion" id="Descripcion" cols="300" rows="300" class="form-control" placeholder="Leave a comment here" style="resize: none;" value="<%= producto.Descripcion %>"></textarea>
+                                    <textarea name="Descripcion" id="Descripcion" cols="300" rows="300" class="form-control" placeholder="Leave a comment here" style="resize: none;"><%= producto.descripcion %></textarea>
                                     <label for="Descripcion">Descripcion del producto</label>
                                 </div>
-                                <p class="span text-danger">
+                                <p class="span text-danger" id="errorDescripcion">
                                     <%= locals.errors && errors.Descripcion ? errors.Descripcion.msg : null %>
                                 </p>
                             </div>
@@ -158,6 +161,8 @@
             </div> 
         </form>
     </main>
+    <script src="/js/imagenesCRUD.js"></script>
+    <script src="/js/validacionProductos.js"></script>
 </body>
 
 </html>

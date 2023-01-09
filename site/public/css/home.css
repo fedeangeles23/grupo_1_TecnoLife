@@ -11,6 +11,11 @@ section {
     text-shadow: 0 5px 25px rgb(0 0 0 / 20%);
     /* opacity: 0.1; */
 }
+.home.buscador section .article {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
 
 /* Start Home Slider */
 
@@ -245,7 +250,7 @@ section {
 
 .simple-cards .box-simple-cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     gap:1rem;
 }
 
@@ -454,7 +459,7 @@ section {
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .review .box-container{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap:0.8rem;
         margin-top: 90px;
     }
@@ -694,7 +699,7 @@ section {
     position: absolute;
     height: 150px;
     width: 200px;
-    object-fit: cover;
+    object-fit: contain;
     left: 15%;
     top: 0px;
     z-index: -1;

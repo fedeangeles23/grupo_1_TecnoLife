@@ -3,46 +3,62 @@
 
     <%- include('./partials/head') %> 
 
-<body class="registro">
+<body class="register">
 
     <%- include('./partials/header') %> 
 
     <main>
         <h1>Crear cuenta</h1>
         <form action="" method="post">
-            <div class="container bottom">
+            <div class="container bottom" >
+                <label for="name">Nombre y apellido</label>
                 <input type="text" name="name" id="name" placeholder="Ingresa tu nombre y apellido" value="<%= locals.old && old.name ? old.name : null%>">
+                <div id="nameContainer"></div>
                 <% if (locals.errors && errors.name) { %>
                     <small><%= errors.name.msg %></small>
                 <% } %>
             </div>
+
             <div class="container bottom">
-                <input type="text" name="email" id="email" placeholder="Ingresa tu email"value="<%= locals.old && old.email ? old.email : null%>">
+                <label for="name">Email</label>
+                <input type="email" name="email" id="email" placeholder="Ingresa tu email" value="<%= locals.old && old.email ? old.email : null%>">
+                <div id="emailContainer"></div>
                 <% if (locals.errors && errors.email) { %>
                     <small><%= errors.email.msg %></small>
                 <% } %>
             </div>
             <div class="container bottom">
-                <input type="password" name="pass" id="pass"value="<%= locals.old && old.pass ? old.pass: null %>" placeholder="Ingresa tu contraseña" required>
+                <label for="pass">Contraseña</label>
+                <div class="password">
+                    <input type="password" name="pass" id="pass" placeholder="Ingresa tu Contraseña">
+                    <i class="fas fa-eye-slash" id="eye-pass"></i>
+                </div>
+                <div id="passContainer"></div>
                 <% if (locals.errors && errors.pass) { %>
                     <small><%= errors.pass.msg %></small>
-                <% } %>                
+                <% } %>
             </div>
             <div class="container bottom">
-                <input type="password" name="pass2" id="pass2" value="<%= locals.old && old.pass2 ? old.pass2: null %>" placeholder="Confirme su contraseña" required>
+                <label for="pass2">Confirma tu contraseña</label>
+                <div class="password">
+                    <input type="password" name="pass2" id="pass2" placeholder="Confirmar Contraseña">
+                    <i class="fas fa-eye-slash" id="eye-pass2"></i>
+                </div>
+                <div id="passContainer2"></div>
                 <% if (locals.errors && errors.pass2) { %>
                     <small><%= errors.pass2.msg %></small>
-                <% } %>                    
+                <% } %>
             </div>
+           
             <div class="button">
                 <button class = "spacing">REGISTRARSE</button>
                 <p>¿Ya tenés creada una cuenta?</p>
-                <p><a class="link" href="/login">Inicia sesión aquí</a></p>
+                <p><a class="link" href="/users/login">Inicia sesión aquí</a></p>
             </div>
         </form>
     </main>
 
-    <%- include('./partials/footer') %> 
+    <%- include('./partials/footer') %>
 </body>
 
 

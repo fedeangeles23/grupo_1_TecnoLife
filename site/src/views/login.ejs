@@ -6,33 +6,40 @@
 <body class="login">
 
     <%- include('./partials/header') %> 
-
     <main>
         <h1>Iniciá sesión</h1>
         <form action="" method="post">
             <div class="container bottom">
-                <input type="email" name="email" id="email" placeholder="Ingresa tu email" required>
-                <% if (locals.errors && errors.name) { %>
-                    <small><%= errors.name.msg %></small>
-                <% } %>                
+                <label for="name">Email</label>
+                <input type="email" name="email" id="email" placeholder="Ingresa tu email" value="<%= locals.old && old.email ? old.email : null%>">
+                <div id="emailContainer"></div>
+                <% if (locals.errors && errors.email) { %>
+                    <small><%= errors.email.msg %></small>
+                <% } %>
             </div>
             <div class="container bottom">
-                <input type="password" name="pass" id="pass" placeholder="Ingresa tu contraseña" required>
+                <label for="pass">Contraseña</label>
+                <div class="password">
+                    <input type="password" name="pass" id="pass" placeholder="Ingresa tu Contraseña">
+                    <i class="fas fa-eye-slash" id="eye-pass"></i>
+                </div>
+                <div id="passContainer"></div>
                 <% if (locals.errors && errors.pass) { %>
-                    <small><%= errors.pass.msg %> </small>
-                <% } %>                 
+                    <small><%= errors.pass.msg %></small>
+                <% } %>
             </div>
             <div class="button">
                 <button type="submit" class = "spacing">INICIAR SESIÓN</button>
                 <p>¿Has olvidado tu contraseña?</p>
                 <p>¿No tenés una cuenta en nuestra página?</p>
-                <p><a class="link" href="/register">Registrate aquí</a></p>
+                <p><a class="link" href="/users/register">Registrate aquí</a></p>
             </div>
         </form>
     </main>
 
+    
     <%- include('./partials/footer') %> 
-
+    
 </body>
 
 </html>

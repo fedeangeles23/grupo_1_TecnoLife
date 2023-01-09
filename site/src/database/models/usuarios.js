@@ -11,14 +11,14 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Usuarios.hasMany(models.Carrito, {
+      /* Usuarios.hasMany(models.Carritos, {
         as: 'carritos',
         foreignKey: 'usuarios_id'
       })
       Usuarios.hasMany(models.Ordenes, {
         as: 'ordenes',
         foreignKey: 'usuarios_id'
-      })
+      }) */
     }
   }
   Usuarios.init({
@@ -28,6 +28,8 @@ module.exports = (sequelize, DataTypes) => {
     email: DataTypes.STRING,
     password: DataTypes.STRING,
     ciudad: DataTypes.STRING,
+    direccion: DataTypes.STRING,
+    codigopostal: DataTypes.STRING,
     imagen: DataTypes.STRING,
     rol: DataTypes.STRING,
   }, {
