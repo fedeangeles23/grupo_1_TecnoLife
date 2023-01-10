@@ -62,47 +62,50 @@ export default function InteractiveList() {
           }
           label="Enable dense"
         /> */}
-        <FormControlLabel
-          control={
-            <Checkbox
-              checked={secondary}
-              onChange={(event) => setSecondary(event.target.checked)}
-            />
-          }
-          label="Mas detalles"
-        />
+        <div className='checkbox-md'>
+          <FormControlLabel
+            control={
+              <Checkbox
+                checked={secondary}
+                onChange={(event) => setSecondary(event.target.checked)}
+              />
+            }
+            label="Mas detalles"
+          />
+        </div>
       </FormGroup>
 
-      <NavLink className="btn-crear" to= '/admin/crear'>
+      <NavLink className="btn-crear" to='/admin/crear'>
         <button>Crear Producto</button>
       </NavLink>
+      <div className='lista-productos'>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={6}>
+            <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
+              Avatar with text and icon
+            </Typography>
+            <Demo>
+              <List dense={dense}>
 
-      <Grid container spacing={2}>
-        <Grid item xs={12} md={6}>
-          <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
-            Avatar with text and icon
-          </Typography>
-          <Demo>
-            <List dense={dense}>
+                {
+                  resultado.map(resultado => (
+                    <AdminList
+                      id={resultado.id} /* identifica el producto */
+                      nombre={resultado.nombre}
+                      to={`/admin/editar/${resultado.id}`} /* Hace referencia a editar */
+                      Link={''} /* Me lleva al detalle de producto */
+                      detalle={resultado.descripcion}
+                      secondary={secondary}
+                    />
 
-              {
-                resultado.map(resultado => (
-                  <AdminList
-                    id={resultado.id} /* identifica el producto */
-                    nombre={resultado.nombre}
-                    to={`/admin/editar/${resultado.id}`} /* Hace referencia a editar */
-                    Link={''} /* Me lleva al detalle de producto */
-                    detalle={resultado.descripcion}
-                    secondary={secondary}
-                  />
+                  ))
+                }
 
-                ))
-              }
-
-            </List>
-          </Demo>
+              </List>
+            </Demo>
+          </Grid>
         </Grid>
-      </Grid>
+      </div>
     </Box>
   );
 }

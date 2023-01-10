@@ -9,6 +9,10 @@ function Admin() {
 
     <main className='dashboard'>
 
+      <section className='separador-bienvenida'>
+        <h1 class="panel-admin">#BIENVENIDO NUEVAMENTE<span class="span-color"> ADMINISTRADOR</span></h1>
+      </section>  
+
       <section className='separador-e'>
         <h1 class="panel-admin">#ESTADÍSTICAS DE LA<span class="span-color"> PÁGINA</span></h1>
       </section>

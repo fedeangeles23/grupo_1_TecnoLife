@@ -2,6 +2,17 @@
 
 
 /*  Separador */
+.dashboard .separador-bienvenida{
+  color: #3A4A72;
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard .separador-bienvenida span{
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
 .dashboard .separador-e {
   display: flex;
   justify-content: center;
