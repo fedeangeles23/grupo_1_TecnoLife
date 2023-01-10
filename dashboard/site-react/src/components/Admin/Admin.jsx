@@ -4,37 +4,39 @@ import { NavLink } from 'react-router-dom'
 function Admin() {
 
   return (
+
+    /* Estadísticas de la página */
+
     <main className='dashboard'>
-
-
 
       <section className='separador-e'>
         <h1 class="panel-admin">#ESTADÍSTICAS DE LA<span class="span-color"> PÁGINA</span></h1>
       </section>
-      <section className="statis">
-        <div className="box">
+
+      <section className="statiks">
+        <div className="box-statiks">
           <i className="far fa-eye"></i>
           <h3>5,154</h3>
           <p className="lead">Visitas a la Web</p>
         </div>
-        <div className="box">
+        <div className="box-statiks">
           <i className="far fa-user"></i>
           <h3>245</h3>
           <p className="lead">Usuarios Registrados</p>
         </div>
-        <div className="box">
+        <div className="box-statiks">
           <i className="fas fa-shopping-cart"></i>
           <h3>5,154</h3>
           <p className="lead">Cantidad de Productos</p>
         </div>
-        <div className="box">
+        <div className="box-statiks">
           <i className="far fa-envelope"></i>
           <h3>5,154</h3>
           <p className="lead">Mensajes</p>
         </div>
       </section>
 
-
+      {/* Administración de la página */}
 
       <section className='separador-e'>
         <h1 class="panel-admin">#ADMINISTRACIÓN DE LA<span class="span-color"> PÁGINA</span></h1>
