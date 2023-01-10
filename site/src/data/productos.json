@@ -1,50 +1,210 @@
 [
     {
         "id": 1,
-        "marca": "SAMSUNG",
-        "Titulo": "NOTEBOOK SAMSUNG INTEL I3 10100",
-        "Categoria": "Notebooks",
-        "precio": 300000,
+        "nombre": "Auriculares inalámbricos HP",
+        "stock": 50,
+        "precio": 9000,
         "descuento": 0,
-        "stock": 4,
-        "Descripcion": "Compralo.",
+        "descripcion": "Alcance inalámbrico de 10 m. La batería dura 8 h. Modo manos libres incluido. Asistente de voz integrado: Siri. Con micrófono incorporado.",
+        "categorias_id": "4",
+        "marcas_id": "4",
         "imagenes": [
-            "img-1669294071856.webp",
-            "img-1669294071857.webp",
-            "img-1669294071857.webp",
-            "img-1669294071858.webp"
+            "img-1672791591237.jpg",
+            "img-1672791591242.jpg",
+            "img-1672791591243.png",
+            "img-1672791591248.png"
         ]
     },
     {
         "id": 2,
-        "marca": "RAZER",
-        "Titulo": "NOTEBOOK RAZER GAMER",
-        "Categoria": "Notebooks",
-        "precio": 300000,
-        "descuento": 20,
-        "stock": 50,
-        "Descripcion": "Compralo, no te vas a arrepentir.",
+        "nombre": "Apple iPhone 12 Pro Max (512 GB)  ",
+        "stock": 9,
+        "precio": 870000,
+        "descuento": 0,
+        "descripcion": "Pantalla Super Retina XDR de 6.7 pulgadas.  Ceramic Shield, más resistente que cualquier vidrio de smartphone. Chip A14 Bionic, el más rápido en un smartphone. Sistema de cámaras Pro de 12 MP",
+        "categorias_id": "1",
+        "marcas_id": "7",
         "imagenes": [
-            "img-1669294207776.webp",
-            "img-1669294207777.webp",
-            "img-1669294207778.webp",
-            "img-1669294207778.webp"
+            "img-1672792728039.jpg",
+            "img-1672792728041.jpg",
+            "img-1672792836359.jpg",
+            "img-1672792846610.jpg"
         ]
     },
     {
         "id": 3,
-        "marca": "HP",
-        "Titulo": "NOTEBOOK HP INTEL 5",
-        "Categoria": "Notebooks",
-        "precio": 4500000,
-        "descuento": 5,
-        "stock": 30,
-        "Descripcion": "Compralo.",
+        "nombre": "Samsung Galaxy A04 32gb",
+        "stock": 25,
+        "precio": 42000,
+        "descuento": 0,
+        "descripcion": "Tamaño de la pantalla: 6.5, Memoria interna: 32 GB, Cámara frontal principal: 5 Mpx ",
+        "categorias_id": "1",
+        "marcas_id": "1",
         "imagenes": [
-            "img-1669295321820.webp",
-            "img-1669295321821.webp",
-            "img-1669295321822.webp",
-            "img-1669295321823.webp"
+            "img-1671764466790.webp",
+            "img-1671764491720.webp",
+            "img-1671764491721.webp",
+            "img-1671764499255.webp"
+        ]
+    },
+    {
+        "id": 4,
+        "nombre": "Moto E40 64 GB 4 GB RAM",
+        "stock": 5,
+        "precio": 54000,
+        "descuento": 0,
+        "descripcion": " Dispositivo liberado para que elijas la compañía telefónica que prefieras.  Pantalla IPS de 6.5, Tiene 3 cámaras traseras de 48Mpx/2Mpx/2Mpx, Cámara delantera de 8Mpx.",
+        "categorias_id": "1",
+        "marcas_id": "10",
+        "imagenes": [
+            "img-1671765599799.png",
+            "img-1671765599801.png",
+            "img-1671765599802.png",
+            "img-1671765599803.png"
+        ]
+    },
+    {
+        "id": 5,
+        "nombre": "Nokia 1100 Libre Original",
+        "stock": 120,
+        "precio": 9000,
+        "descuento": 0,        
+        "descripcion": "Nokia 1100 Original Liberado para todas las compañías El de la viborita!! con cargador y batería originales nuevas",
+        "categorias_id": "1",
+        "marcas_id": "8",
+        "imagenes": [
+            "img-1671766229301.jpg",
+            "img-1671766281819.jpg",
+            "img-1671766281820.jpg",
+            "img-1671766296416.jpg"
+        ]
+    },
+    {
+        "id": 6,
+        "nombre": "Notebook Gamer Gigabyte 15 Pulgadas 144hz Intel Core I5-10500h",
+        "stock": 8,
+        "precio": 252000,
+        "descuento": 0,
+        "descripcion": "Procesador Intel Core i5, Memoria RAM de 8GB, Resolución de 1920x1080 px, Placa de video NVIDIA GeForce RTX 3060.",
+        "categorias_id": "2",
+        "marcas_id": "13",
+        "imagenes": [
+            "img-1671767808205.jpg",
+            "img-1671767845678.png",
+            "img-1671767845675.png",
+            "img-1671767808205.webp"
+        ]
+    },
+    {
+        "id": 7,
+        "nombre": "Notebook Gamer Exo 15.6 Intel Core i7 10750H",
+        "stock": 20,
+        "precio": 297000,
+        "descuento": 0,
+        "descripcion": "Procesador Intel Core i7, Memoria RAM de 16GB.Resolución de 1920x1080 px, Placa de video NVIDIA GeForce RTX 2060.",
+        "categorias_id": "2",
+        "marcas_id": "6",
+        "imagenes": [
+            "img-1671768495237.jpg",
+            "img-1671768495238.jpg",
+            "img-1671768519073.jpg",
+            "img-1671768531860.jpg"
+        ]
+    },
+    {
+        "id": 8,
+        "nombre": "Notebook Dell 15.6 165hz R7 5800h Rtx 3050ti",
+        "stock": 12,
+        "precio": 324000,
+        "descuento": 0,
+        "descripcion": "PANTALLA 15.6” FULL HD ( 1920 x 1080 ) 165HZ / PROCESADOR AMD RYZEN 7 5800H 8 CORES 4,4Ghz / CAPACIDAD DISCO ESTADO SÓLIDO 512GB / MEMORIA RAM 8GB / PLACA GRÁFICA NVIDIA GEFORCE RTX 3050Ti 4GB ",
+        "categorias_id": "2",
+        "marcas_id": "5",
+        "imagenes": [
+            "img-1671768814151.webp",
+            "img-1671768824761.jpg",
+            "img-1671768874179.jpg",
+            "img-1671768874179.webp"
+        ]
+    },
+    {
+        "id": 9,
+        "nombre": "Smart TV Samsung Neo QLED 4K 65 220V - 240V",
+        "stock": 5,
+        "precio": 216000,
+        "descuento": 0,
+        "descripcion": "Su resolución es 4K, Tecnología HDR para una calidad de imagen mejorada, Modo de sonido: Dolby Atmos, Dolby Digital Plus, Adaptive Sound +, OTS, Q-Symphony, Tiene función Screen Share.",
+        "categorias_id": "5",
+        "marcas_id": "1",
+        "imagenes": [
+            "img-1671770180242.jpg",
+            "img-1671770210883.jpg",
+            "img-1671770226148.jpg",
+            "img-1671770676992.jpg"
+        ]
+    },
+    {
+        "id": 10,
+        "nombre": "Smart TV Lenovo LCD 4K 55 100V/240V",
+        "stock": 5,
+        "precio": 126000,
+        "descuento": 0,
+        "descripcion": "Su resolución es 4K, Tecnología HDR para una calidad de imagen mejorada, Modo de sonido: Dolby Digital, MTS, Tiene función Screen Share, Con Google Play Store, Netflix.",
+        "categorias_id": "5",
+        "marcas_id": "2",
+        "imagenes": [
+            "img-1671770676993.jpg",
+            "img-1671770721332.jpg",
+            "img-1671771124858.jpg",
+            "img-1671771124860.jpg"
+        ]
+    },
+    {
+        "id": 11,
+        "nombre": "Smart TV Philips LED 4K 50 110V/240V",
+        "stock": 5,
+        "precio": 180000,
+        "descuento": 0,
+        "descripcion": "Su resolución es 4K, Tecnología HDR para una calidad de imagen mejorada, Modo de sonido: Dolby Atmos, AI Sound, Con Prime Video, Disney+, YouTube, Netflix.",
+        "categorias_id": "5",
+        "marcas_id": "9",
+        "imagenes": [
+            "img-1671771139960.jpg",
+            "img-1671771149730.jpg",
+            "img-1671771346755.jpg",
+            "img-1671771356021.jpg"
+        ]
+    },
+    {
+        "id": 12,
+        "nombre": "Mouse Gamer Sony Retroiluminado",
+        "stock": 5,
+        "precio": 8700,
+        "descuento": 0,
+        "descripcion": "Utiliza cable, Posee rueda de desplazamiento, Con luces para mejorar la experiencia de uso, Con sensor óptico, Resolución de 6400dpi.",
+        "categorias_id": "9",
+        "marcas_id": "11",
+        "imagenes": [
+            "img-1671777232146.webp",
+            "img-1671777243766.webp",
+            "img-1671777243767.webp",
+            "img-1671777252457.webp"
+        ]
+    },
+    {
+        "id": 13,
+        "nombre": "Teclado Hp Retroiluminado",
+        "stock": 5,
+        "precio": 12000,
+        "descuento": 0,
+        "descripcion": "onsolas compatibles: ps5 y ps4 y xbox series x|s y xbox one, Función antighosting incorporada, Tipo de teclado: mecánico, Tecla cilíndrica, Con conector USB.",
+        "categorias_id": "8",
+        "marcas_id": "4",
+        "imagenes": [
+            "noteboimg-1671778208256.jpg",
+            "img-1671778253576.jpg",
+            "img-1671778253577.jpg",
+            "img-1671778262074.jpg"
         ]
     }
 ]

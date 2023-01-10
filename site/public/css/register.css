@@ -1,4 +1,4 @@
-.registro main {
+.register main {
   border-radius: 0.5rem;
   background-color: #3A4A72;
   width: 35%;
@@ -10,28 +10,44 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.registro main h1 {
+.register main h1 {
   text-align: center;
   padding: 20px 0;
 }
 
-.registro main .container label {
+.register main .container label {
   margin-bottom: 5px;
 }
 
-.registro main .container input {
+.register main .container input {
   display: flex;
   margin: 0 0 0 8%;
   width: 85%;
   padding: 9px;
 }
 
-.registro main small {
-  margin: 5px 0 0 8%;
+.register main small {
+  margin: 5px 0 0 0%;
   color: #ed4b4b;
 }
 
-.registro main button {
+.register main .password {
+  width: 100%;
+  position: relative;
+}
+
+.register main .password i {
+  position: absolute;
+  top: 14px;
+  right: 35px;
+  color: black
+}
+
+.register main .container label {
+  margin-bottom: 5px;
+}
+
+.register main button {
   border-radius: 0.5rem;
   width: 85%;
   margin: 0 0 0 8%;
@@ -41,20 +57,31 @@
   padding: 15px 20px;
 }
 
-.registro .bottom {
-  margin-bottom: 20px;
+.register main button:hover {
+  background: var(--main-color);
+  letter-spacing: .1rem;
 }
 
-.registro .button p {
+.register .bottom {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.register .button p {
   color: #ffffff;
   text-align: center;
   margin-top: 20px;
 }
-
+.register main .container .password i {
+  position: absolute;
+  top: 6px;
+  right: 29px;
+  padding: 10px;
+}
 .link {
   color: #fafafa;
 }
 
 .link:hover {
-  color:var(--main-color)
+  color: var(--main-color);
 }

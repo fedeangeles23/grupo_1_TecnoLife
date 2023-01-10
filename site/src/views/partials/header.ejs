@@ -5,7 +5,7 @@
   <div class="navigation">
     <ul class="menu">
       <div class="close-btn"></div>
-      <li class="menu-item"><a href="#">
+      <li class="menu-item"><a href="/">
           <div class="fas fa-home" id="menu-btn"></div> INICIO
         </a></li>
 
@@ -14,33 +14,85 @@
           <div class="fas fa-bars" id="menu-btn"></div> CATEGORÍAS</i>
         </a>
         <ul class="sub-menu">
-          <li class="sub-item more">
+          <li class="sub-item more"> <!-- Smartphones -->
+            <a class="more-btn" href="#">Smartphones <i class="fas fa-angle-right"></i></a>
+            <ul class="more-menu">
+              <li class="more-item"><a href="#">Samsung</a></li>
+              <li class="more-item"><a href="#">Apple</a></li>
+              <li class="more-item"><a href="#">Xiaomi</a></li>
+              <li class="more-item"><a href="#">Motorola</a></li>
+            </ul>
+          </li>
+          <li class="sub-item more"> <!-- Noteboks -->
             <a class="more-btn" href="#">Notebooks <i class="fas fa-angle-right"></i></a>
             <ul class="more-menu">
-              <li class="more-item"><a href="#">Samsumg</a></li>
+              <li class="more-item"><a href="#">Samsung</a></li>
+              <li class="more-item"><a href="#">Lenovo</a></li>
+              <li class="more-item"><a href="#">Acer</a></li>
               <li class="more-item"><a href="#">HP</a></li>
+              <li class="more-item"><a href="#">Dell</a></li>
+              <li class="more-item"><a href="#">Exo</a></li>
             </ul>
           </li>
-          <li class="sub-item more">
-            <a class="more-btn" href="#">Celulares <i class="fas fa-angle-right"></i></a>
+          <li class="sub-item more">  <!-- Tablets -->
+            <a class="more-btn" href=""> Tablets <i class="fas fa-angle-right"></i></a>
             <ul class="more-menu">
-              <li class="more-item"><a href="#">Samsumg</a></li>
-              <li class="more-item"><a href="#">Xiami</a></li>
+              <li class="more-item"><a href="/products/marca/1">Samsung</a></li>
             </ul>
           </li>
-          <li class="sub-item more">
-            <a class="more-btn" href="#">Auriculares</a>
+          <li class="sub-item more">  <!-- Auriculares -->
+            <a class="more-btn" href=""> Auriculares <i class="fas fa-angle-right"></i></a>
+            <ul class="more-menu">
+              <li class="more-item"><a href="">Xiaomi</a></li>
+            </ul>
+            <ul class="more-menu">
+              <li class="more-item"><a href="">Sony</a></li>
+            </ul>
           </li>
-          <li class="sub-item more">
+          <li class="sub-item more">  <!-- Televisores -->
             <a class="more-btn" href="#">Televisores <i class="fas fa-angle-right"></i></a>
             <ul class="more-menu">
-              <li class="more-item"><a href="#">Samsumg</a></li>
+              <li class="more-item"><a href="">Samsumg</a></li>
               <li class="more-item"><a href="#">Phillips</a></li>
             </ul>
           </li>
-          <li class="sub-item more">
-            <a class="more-btn" href="#">Parlantes</a>
+          <li class="sub-item more">  <!-- Monitores -->
+            <a class="more-btn" href="#">Monitores <i class="fas fa-angle-right"></i></a>
+            <ul class="more-menu">
+              <li class="more-item"><a href="">Samsung</a></li>
+              <li class="more-item"><a href="#">Phillips</a></li>
+            </ul>
           </li>
+          <li class="sub-item more">  <!-- Teclados -->
+            <a class="more-btn" href="#">Teclados <i class="fas fa-angle-right"></i></a>
+            <ul class="more-menu">
+              <li class="more-item"><a href="">HP</a></li>
+              <li class="more-item"><a href="#">Red Dragon</a></li>
+            </ul>
+          </li>
+          <li class="sub-item more">  <!-- Mouse -->
+            <a class="more-btn" href="#">Mouse <i class="fas fa-angle-right"></i></a>
+            <ul class="more-menu">
+              <li class="more-item"><a href="">Lenovo</a></li>
+              <li class="more-item"><a href="#">Noga</a></li>
+            </ul>
+          </li>
+          <li class="sub-item more">  <!-- Parlantes -->
+            <a class="more-btn" href="#">Parlantes <i class="fas fa-angle-right"></i></a>
+            <ul class="more-menu">
+              <li class="more-item"><a href="">Sony</a></li>
+              <li class="more-item"><a href="#">HP</a></li>
+            </ul>
+          </li>
+          <li class="sub-item more">  <!-- Cargadores -->
+            <a class="more-btn" href="#">Cargadores <i class="fas fa-angle-right"></i></a>
+            <ul class="more-menu">
+              <li class="more-item"><a href="">Apple</a></li>
+              <li class="more-item"><a href="#">Nokia</a></li>
+            </ul>
+          </li>
+          
+          
         </ul>
       </li>
       <li class="menu-item">
@@ -48,23 +100,35 @@
           <div class="fas fa-user" id="user-btn"></div> CUENTA
         </a>
         <ul class="sub-menu">
-          <li class="sub-item"><a href="#">Iniciar Sesión</a></li>
-          <li class="sub-item"><a href="#">Registrarse</a></li>
+          <% if (locals.userLogin) { %>
+            <li class="sub-item"><a href="/users/perfil">Ir al Perfil</a></li>
+            <li class="sub-item">
+              <form action="/users/logout?_method=DELETE" method="post">
+                <button type="submit">Cerrar sesion</button>
+              </form>
+            </li>
+          <% if (locals.userLogin.rol == '2') { %>
+            <li class="sub-item"><a href="/admin/list">Admin de Productos</a></li>
+          <% } %>
+          <% } else { %>
+            <li class="sub-item"><a href="/users/login">Iniciar Sesión <i class="fas fa-angle-right"></i></a></li>
+            <li class="sub-item"><a href="/users/register">Registrarse <i class="fas fa-angle-right"></i></a></li>
+          <% } %>
         </ul>
       </li>
       <li class="menu-item">
         <a class="sub-btn" href="#">
-          <div class="fas fa-shopping-cart" id="cart-btn"></div> CARRITO
+          <div class="fas fa-shopping-cart" id="cart-btn" ></div> CARRITO
         </a>
         <ul class="sub-menu">
-          <li class="sub-item"><a href="#">EN DESARROLLO (.-.)</a></li>
+          <li class="sub-item"><a href = "/products/carrito"></i>EN DESARROLLO </a><i class="fas fa-angle-right"></i><img class="desarrollo" src="/img/iconos/llave-inglesa.png" alt=""></li>
         </ul>
       </li>
 
       <!-- Search -->
 
-      <div class="search-box">
-        <input type="text" placeholder="Type to search..">
+      <form action = "/products/busqueda" class = "search-box">
+        <input name = "search"type="text" placeholder="Ingrese para buscar..">
         <div class="search-icon">
           <i class="fas fa-search"></i>
         </div>
@@ -73,10 +137,8 @@
         </div>
         <!-- <div class="search-data">
         </div> -->
-      </div>
+      </form>
 
-    </ul>
   </div>
-  <div class="menu-btn"></div>
+
 </header>
-  <script src="/js/header.js"></script>

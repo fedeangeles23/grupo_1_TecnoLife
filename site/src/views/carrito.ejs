@@ -1,75 +1,82 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 
 <%- include('./partials/head') %>
 
-    <body>
-
-        <%- include('./partials/header') %>
-
-            <div class="wrapper">
-                <aside>
-                    <header>
-                        <h1 class="logo">Tecnolife</h1>
-                    </header>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a class="boton-menu boton-volver" href="./home">
-                                    <i class="bi bi-arrow-return-left"></i> Home
-                                </a>
-                            </li>
-                            <li>
-                                <a class="boton-menu boton-volver" href="./categories">
-                                    <i class="bi bi-arrow-return-left"></i> Seguir comprando
-                                </a>
-                            </li>
-                            <li>
-                                <a class="boton-menu boton-carrito active" href="./carrito">
-                                    <i class="bi bi-cart-fill"></i> Carrito
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <footer>
-                        <p class="texto-footer">© 2022 Tecno Life</p>
-                    </footer>
-                </aside>
-                <main>
-                    <h2 class="titulo-principal">Carrito</h2>
-                    <div class="contenedor-carrito">
-                        <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío. <i
-                                class="bi bi-emoji-frown"></i></p>
-
-                        <div id="carrito-productos" class="carrito-productos disabled">
-                            <!-- Esto se va a completar con el JS -->
-                        </div>
-
-                        <div id="carrito-acciones" class="carrito-acciones disabled">
-                            <div class="carrito-acciones-izquierda">
-                                <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar
-                                    carrito</button>
+<body>
+    <%- include('./partials/header') %>
+    <section>
+        <div class="container">
+            <h2 class="px-5 p-2">Carrito de Compras</h2>
+            <div class="cart">
+                <div class="col-md-12 col-lg-10 mx-auto">
+                    <div class="cart-item">
+                        <div class="row">
+                            <div class="col-md-7 center-item">
+                                <img src="../../img/products/product-1.png" alt="">
+                                <h5>iPhone 11 128GB Black($560.000)</h5>
                             </div>
-                            <div class="carrito-acciones-derecha">
-                                <div class="carrito-acciones-total">
-                                    <p>Total:</p>
-                                    <p id="total">$3000</p>
+
+                            <div class="col-md-5 center-item">
+                                <div class="input-group number-spinner">
+                                    <button id="phone-minus" class="btn btn-default"><i
+                                            class="fas fa-minus"></i></button>
+                                    <input id="phone-number" type="number" min="0" class="form-control text-center"
+                                        value="1">
+                                    <button id="phone-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
                                 </div>
-                                <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar
-                                    ahora</button>
+                                <h5>$<span id="phone-total">560000</span> </h5>
+                                <img src="../../img/products/remove.png" alt="" class="remove-item">
                             </div>
                         </div>
-
-                        <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra. <i
-                                class="bi bi-emoji-laughing"></i></p>
-
                     </div>
-                </main>
 
-                <script src="./js/carrito.js"></script>
+                    <div class="cart-item">
+                        <div class="row">
+                            <div class="col-md-7 center-item mx-auto">
+                                <img src="../../img/products/product-2.png" alt="">
+                                <h5>iPhone 11 Funda de Silicona - Black($2.000)</h5>
+                            </div>
+                            <div class="col-md-5 center-item">
+                                <div class="input-group number-spinner">
+                                    <button id="case-minus" class="btn btn-default"><i
+                                            class="fas fa-minus"></i></button>
+                                    <input id="case-number" type="number" min="0" class="form-control text-center"
+                                        value="1">
+                                    <button id="case-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
 
-    </body>
+                                </div>
+                                <h5>$<span id="case-total">2000</span> </h5>
+                                <img src="../../img/products/remove.png" alt="" class="remove-item">
+                            </div>
+                        </div>
+                    </div>
 
-    <%- include('./partials/footer') %> 
+                    <div class="cart-item">
+                        <div class="row g-2">
+
+                            <div class="col-6">
+                                <h5>Subtotal: </h5>
+                                <h5>Impuestos:</h5>
+                                <h5>Total:</h5>
+                            </div>
+
+                            <div class="col-6 status">
+                                <h5>$<span id="sub-total">562000</span></h5>
+                                <h5>$<span id="tax-amount">0</span></h5>
+                                <h5>$<span id="total-price">562000</span></h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-12 pt-4 pb-4">
+                        <button type="button" class="btn btn-success check-out">Check Out</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <%- include('./partials/footer') %>
+</body>
 
 </html>
